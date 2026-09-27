@@ -82,8 +82,6 @@ View部品、状態の受け渡し方針、プレビューとUI検証の基準�
 
 <!-- references:end -->
 
-roadmap.shで学ぶ：[iOS](https://roadmap.sh/ios)（SwiftUI、Declarative syntax、Views and modifiers、State management、Navigation stacks）／[SwiftUI](https://roadmap.sh/swift-ui)（ViewBuilder、State、Binding、Data flow、NavigationStack、Gestures、UIKit vs SwiftUI）
-
 ## 評価を記録する
 
 [個人の習熟度評価書式](../../templates/individual-assessment.md)に、現在の判定、根拠、支援と制約、次の到達条件を記録します。

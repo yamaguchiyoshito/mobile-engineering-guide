@@ -83,8 +83,6 @@ description: "署名・配布・ストア公開の基準と使い方。モバイ
 
 <!-- references:end -->
 
-roadmap.shで学ぶ：[iOS](https://roadmap.sh/ios)（App Store Distribution、TestFlight、App Store Optimization (ASO)）／[Android](https://roadmap.sh/android)（Distribution、Google Play Store、Firebase Distribution、Signed APK）／[React Native](https://roadmap.sh/react-native)（Publishing Apps、Apple App Store、Google Play Store）
-
 ## 評価を記録する
 
 [個人の習熟度評価書式](../../templates/individual-assessment.md)に、現在の判定、根拠、支援と制約、次の到達条件を記録します。

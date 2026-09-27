@@ -82,8 +82,6 @@ React Nativeは、WebのReactと同じコンポーネント、props、stateの�
 
 <!-- references:end -->
 
-roadmap.shで学ぶ：[React Native](https://roadmap.sh/react-native)（Core components、Props、State、FlatList、Text input、Pressable、Modal、Expo Snack）
-
 ## 評価を記録する
 
 [個人の習熟度評価書式](../../templates/individual-assessment.md)に、現在の判定、根拠、支援と制約、次の到達条件を記録します。

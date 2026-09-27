@@ -84,8 +84,6 @@ description: "開発環境（Xcode／Android Studio／Expo）の基準と使い�
 
 <!-- references:end -->
 
-roadmap.shで学ぶ：[iOS](https://roadmap.sh/ios)（Xcode、Project Files、Interface Builder、Breakpoints、Debug Navigator、Stepping、Xcode Debugger、Debugging Techniques）／[SwiftUI](https://roadmap.sh/swift-ui)（Xcode、Xcode Debugging、Swift Playgrounds、DocC）／[Android](https://roadmap.sh/android)（Development IDE、Debugging、Create a Basic Hello World App）／[React Native](https://roadmap.sh/react-native)（Environment Setup、Metro Bundler、DevTools、In-App Developer Menu、LogBox、Enabling Fast Refresh、Running on Device）
-
 ## 評価を記録する
 
 [個人の習熟度評価書式](../../templates/individual-assessment.md)に、現在の判定、根拠、支援と制約、次の到達条件を記録します。

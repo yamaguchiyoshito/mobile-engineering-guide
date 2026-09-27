@@ -84,8 +84,6 @@ APIの要求・応答、端末内の保存、画面表示の間でデータが�
 
 <!-- references:end -->
 
-roadmap.shで学ぶ：[iOS](https://roadmap.sh/ios)（REST、GraphQL、Networking、Keychain）／[Android](https://roadmap.sh/android)（Authentication、Network、Repository pattern）／[React Native](https://roadmap.sh/react-native)（Authentication、Networking、Storage）
-
 ## 評価を記録する
 
 [個人の習熟度評価書式](../../templates/individual-assessment.md)に、現在の判定、根拠、支援と制約、次の到達条件を記録します。

@@ -82,8 +82,6 @@ iPhoneやiPadのアプリを作るための主要なプログラミング言語�
 
 <!-- references:end -->
 
-roadmap.shで学ぶ：[iOS](https://roadmap.sh/ios)（Swift Basics、Closures、Error Handling、OOP、Functional Programming、Objective-C Basics、Interoperability with Swift）／[SwiftUI](https://roadmap.sh/swift-ui)（Optionals & Nil、Structures & Classes、Protocols、Generics、Error Handling、Extensions、Result Builders、Access Control）
-
 ## 評価を記録する
 
 [個人の習熟度評価書式](../../templates/individual-assessment.md)に、現在の判定、根拠、支援と制約、次の到達条件を記録します。

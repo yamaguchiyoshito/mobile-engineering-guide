@@ -84,8 +84,6 @@ description: "監視・クラッシュ分析の基準と使い方。モバイル
 
 <!-- references:end -->
 
-roadmap.shで学ぶ：[SwiftUI](https://roadmap.sh/swift-ui)（Logging & Debugging、Swift Log、CocoaLumberjack）／[Android](https://roadmap.sh/android)（Crashlytics、Timber、Remote Config、Chucker）／[React Native](https://roadmap.sh/react-native)（Sourcemaps、LogBox）
-
 ## 評価を記録する
 
 [個人の習熟度評価書式](../../templates/individual-assessment.md)に、現在の判定、根拠、支援と制約、次の到達条件を記録します。

@@ -13,7 +13,7 @@ PRはPull Requestを指します。GitLabを使用する場合は、MR（Merge R
 
 ## 要素技術の定義の由来
 
-要素技術の分類と評価対象は、roadmap.shが公開する次の学習ロードマップのトピックを参照して構成しています。各要素技術のページの「技術の対応」に、参照したロードマップへのリンクと主なトピック名を記載しています。「次のLvへ進むために」の参考資料は、Apple、Google、React Native、Expo等の公式資料へのリンクです（到達確認日：2026年9月28日）。
+要素技術の分類と評価対象は、roadmap.shが公開する次の学習ロードマップのトピックを参照して構成しています。「次のLvへ進むために」の参考資料は、Apple、Google、React Native、Expo等の公式資料へのリンクです（到達確認日：2026年9月28日）。
 
 - [iOS Developer Roadmap](https://roadmap.sh/ios)
 - [Android Developer Roadmap](https://roadmap.sh/android)

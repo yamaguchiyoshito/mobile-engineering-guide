@@ -84,8 +84,6 @@ description: "モバイルセキュリティの基準と使い方。モバイル
 
 <!-- references:end -->
 
-roadmap.shで学ぶ：[iOS](https://roadmap.sh/ios)（Keychain）／[SwiftUI](https://roadmap.sh/swift-ui)（Access Control）／[Android](https://roadmap.sh/android)（Security、Authentication、Shared Preferences）／[React Native](https://roadmap.sh/react-native)（Security、Expo Secure Store、Authentication）
-
 ## 評価を記録する
 
 [個人の習熟度評価書式](../../templates/individual-assessment.md)に、現在の判定、根拠、支援と制約、次の到達条件を記録します。

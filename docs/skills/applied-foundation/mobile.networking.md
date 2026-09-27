@@ -84,8 +84,6 @@ HTTPのメソッド、ステータスコード、ヘッダー、JSONの変換、
 
 <!-- references:end -->
 
-roadmap.shで学ぶ：[iOS](https://roadmap.sh/ios)（Networking、HTTP/HTTPS、REST、GraphQL、URLSession、Alamofire、JSON/XML）／[SwiftUI](https://roadmap.sh/swift-ui)（Networking Libraries、Alamofire、Moya）／[Android](https://roadmap.sh/android)（Network、OkHttp、Retrofit、Apollo Android）／[React Native](https://roadmap.sh/react-native)（Networking、Fetch、WebSockets、Connectivity Status）
-
 ## 評価を記録する
 
 [個人の習熟度評価書式](../../templates/individual-assessment.md)に、現在の判定、根拠、支援と制約、次の到達条件を記録します。

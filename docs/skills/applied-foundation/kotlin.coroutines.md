@@ -81,8 +81,6 @@ description: "Kotlinコルーチン・Flowの基準と使い方。モバイル�
 
 <!-- references:end -->
 
-roadmap.shで学ぶ：[Android](https://roadmap.sh/android)（Threads、Coroutines、Flow、Asynchronism）
-
 ## 評価を記録する
 
 [個人の習熟度評価書式](../../templates/individual-assessment.md)に、現在の判定、根拠、支援と制約、次の到達条件を記録します。

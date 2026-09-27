@@ -83,8 +83,6 @@ description: "アプリアーキテクチャと依存性注入の基準と使い
 
 <!-- references:end -->
 
-roadmap.shで学ぶ：[iOS](https://roadmap.sh/ios)（Architectural patterns、MVC、MVVM、MVVM-C、VIPER、TCA）／[Android](https://roadmap.sh/android)（MVVM、MVI、Repository pattern、Dependency injection、Hilt）／[SwiftUI](https://roadmap.sh/swift-ui)（App architecture、Clean architecture、Dependency injection）
-
 ## 評価を記録する
 
 [個人の習熟度評価書式](../../templates/individual-assessment.md)に、現在の判定、根拠、支援と制約、次の到達条件を記録します。

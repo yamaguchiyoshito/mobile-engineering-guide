@@ -83,8 +83,6 @@ description: "ユニットテストの基準と使い方。モバイルアプリ
 
 <!-- references:end -->
 
-roadmap.shで学ぶ：[iOS](https://roadmap.sh/ios)（XCTest）／[SwiftUI](https://roadmap.sh/swift-ui)（Swift Testing、XCTest）／[Android](https://roadmap.sh/android)（JUnit）／[React Native](https://roadmap.sh/react-native)（Jest、React Native Testing Library、React Test Renderer）
-
 ## 評価を記録する
 
 [個人の習熟度評価書式](../../templates/individual-assessment.md)に、現在の判定、根拠、支援と制約、次の到達条件を記録します。

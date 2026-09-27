@@ -83,8 +83,6 @@ description: "UIデザイン原則とローカライズの基準と使い方。�
 
 <!-- references:end -->
 
-roadmap.shで学ぶ：[iOS](https://roadmap.sh/ios)（HIG、UI Design、Auto Layout、Building Interfaces）／[SwiftUI](https://roadmap.sh/swift-ui)（Localization、Font、Padding）／[Android](https://roadmap.sh/android)（Interface & Navigation、ConstraintLayout、Icon、Text）／[React Native](https://roadmap.sh/react-native)（Layouts & Flexbox、Styling、StyleSheets、SafeAreaView、StatusBar）
-
 ## 評価を記録する
 
 [個人の習熟度評価書式](../../templates/individual-assessment.md)に、現在の判定、根拠、支援と制約、次の到達条件を記録します。

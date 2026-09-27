@@ -81,8 +81,6 @@ description: "テスト設計の基準と使い方。モバイルアプリ開発
 
 <!-- references:end -->
 
-roadmap.shで学ぶ：[iOS](https://roadmap.sh/ios)（Test Plan & Coverage、Unit & UI Testing）／[SwiftUI](https://roadmap.sh/swift-ui)（Testing）／[Android](https://roadmap.sh/android)（Testing）／[React Native](https://roadmap.sh/react-native)（Testing）
-
 ## 評価を記録する
 
 [個人の習熟度評価書式](../../templates/individual-assessment.md)に、現在の判定、根拠、支援と制約、次の到達条件を記録します。

@@ -84,8 +84,6 @@ description: "アニメーションとインタラクションの基準と使い
 
 <!-- references:end -->
 
-roadmap.shで学ぶ：[iOS](https://roadmap.sh/ios)（Creating animations、Core Animation、View transitions）／[SwiftUI](https://roadmap.sh/swift-ui)（Animations、Implicit animations、Explicit animations、Animatable protocol、Transitions、Gestures）／[Android](https://roadmap.sh/android)（Animations）／[React Native](https://roadmap.sh/react-native)（Animations、Understand frame rates、Gesture handling）
-
 ## 評価を記録する
 
 [個人の習熟度評価書式](../../templates/individual-assessment.md)に、現在の判定、根拠、支援と制約、次の到達条件を記録します。

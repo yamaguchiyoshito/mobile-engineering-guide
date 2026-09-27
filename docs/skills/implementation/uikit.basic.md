@@ -81,8 +81,6 @@ ViewとView Controllerの役割、ライフサイクル、制約によるレイ�
 
 <!-- references:end -->
 
-roadmap.shで学ぶ：[iOS](https://roadmap.sh/ios)（UIKit、View controllers、ViewController lifecycle、Storyboards、Xibs、Navigation controllers & segues、Delegate pattern）／[SwiftUI](https://roadmap.sh/swift-ui)（UIKit vs SwiftUI）
-
 ## 評価を記録する
 
 [個人の習熟度評価書式](../../templates/individual-assessment.md)に、現在の判定、根拠、支援と制約、次の到達条件を記録します。

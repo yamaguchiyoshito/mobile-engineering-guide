@@ -80,8 +80,6 @@ PR／MR、レビュー、承認、保護ブランチの役割を説明できず�
 
 <!-- references:end -->
 
-roadmap.shで学ぶ：[iOS](https://roadmap.sh/ios)（GitHub、GitLab）／[Android](https://roadmap.sh/android)（GitHub、GitLab、Bitbucket）／[React Native](https://roadmap.sh/react-native)（Development Workflow）
-
 ## 評価を記録する
 
 [個人の習熟度評価書式](../../templates/individual-assessment.md)に、現在の判定、根拠、支援と制約、次の到達条件を記録します。

@@ -80,8 +80,6 @@ description: "Swift並行処理とメモリ管理の基準と使い方。モバ�
 
 <!-- references:end -->
 
-roadmap.shで学ぶ：[iOS](https://roadmap.sh/ios)（Concurrency、GCD、Operation Queues、Async/Await、Memory Management、Callbacks）／[SwiftUI](https://roadmap.sh/swift-ui)（Actors、Tasks & Task Groups、Unstructured Concurrency、Strict Concurrency Checking、ARC）
-
 ## 評価を記録する
 
 [個人の習熟度評価書式](../../templates/individual-assessment.md)に、現在の判定、根拠、支援と制約、次の到達条件を記録します。

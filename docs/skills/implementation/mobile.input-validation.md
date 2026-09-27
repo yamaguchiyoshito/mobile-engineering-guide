@@ -83,8 +83,6 @@ description: "入力とバリデーションの基準と使い方。モバイル
 
 <!-- references:end -->
 
-roadmap.shで学ぶ：[iOS](https://roadmap.sh/ios)（User interactions）／[SwiftUI](https://roadmap.sh/swift-ui)（User interaction、UI controls、Form）／[Android](https://roadmap.sh/android)（TextField、TextView）／[React Native](https://roadmap.sh/react-native)（Text input、KeyboardAvoidingView、Gesture handling）
-
 ## 評価を記録する
 
 [個人の習熟度評価書式](../../templates/individual-assessment.md)に、現在の判定、根拠、支援と制約、次の到達条件を記録します。
