@@ -15,6 +15,7 @@ description: "編集・検証・公開手順の基準と使い方。モバイル
 | 記録書式 | `docs/templates/*.md`のテンプレート欄 |
 | ページの追加・順序・分類 | `build/document-map.json` |
 | 関連ライブラリ・参考資料のリンク | `build/references.json` と各ページの `references` マーカーの id |
+| 学習の段階と要素技術の割り当て | `build/learning-paths.json` |
 | 公開版 | `package.json`のversion・このサイトの改訂履歴 |
 
 一覧ページの`catalog`マーカー内、サイトのHTML、ダウンロードファイルは自動生成します。本文・書式の正本を変更してから生成してください。

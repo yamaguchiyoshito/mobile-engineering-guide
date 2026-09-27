@@ -10,7 +10,7 @@ def main():
  paths=[p['path'] for p in PAGES]
  assert len(paths)==len(set(paths)),'Duplicate page paths'
  assert files==set(paths),f'Unmapped/missing Markdown: {files.symmetric_difference(paths)}'
- assert len(paths)==86,'Initial release must contain 86 pages'
+ assert len(paths)==89,'Initial release must contain 89 pages'
  skills=[p for p in PAGES if p['kind']=='skill'];checks=[p for p in PAGES if p['kind']=='checklist']
  assert len(skills)==34 and len(checks)==25,'Expected 34 skills and 25 checklist groups'
  assert len({p['skillId'] for p in skills})==34,'Duplicate skill ID'
@@ -37,6 +37,18 @@ def main():
   assert ids and 3<=len(ids)<=15,p['path']+': 3 to 15 references required'
   assert len(ids)==len(set(ids)),p['path']+': duplicate reference id'
   used.update(ids)
+ learning_pages=[p for p in PAGES if p.get('learning') and p['learning']!='index']
+ assert [p['learning'] for p in learning_pages]==[pl['id'] for pl in LEARNING['platforms']],'Learning pages must match learning-paths.json platforms'
+ for p,pl in zip(learning_pages,LEARNING['platforms']):
+  assert p['path']==pl['path'],p['path']+': learning path mismatch'
+  ids=reference_ids(body(p['path']));assert ids and len(ids)==len(set(ids)),p['path']+': course references required'
+  used.update(ids)
+  listed=[s for st in pl['stages'] for s in st['skills']]
+  assert len(listed)==len(set(listed)),pl['id']+': skill listed twice'
+  assert set(listed)<=set(SKILLS_BY_ID),pl['id']+': unknown skill id'
+  required={sid for sid,sp in SKILLS_BY_ID.items() if skill_platform(sp) in ('共通',pl['id'])}
+  assert required<=set(listed),pl['id']+': missing skills '+', '.join(sorted(required-set(listed)))
+  for sid in listed:assert len(task_rows(SKILLS_BY_ID[sid]))==3,sid+': three task rows required'
  assert len(REFS)==len(REFERENCES['references']),'Duplicate reference id in registry'
  unused=set(REFS)-used
  assert not unused,'Unused references: '+', '.join(sorted(unused))

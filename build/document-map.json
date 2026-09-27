@@ -64,7 +64,29 @@
       "path": "guide/learning-paths.md",
       "title": "学習の進め方",
       "kind": "guide",
-      "handbook": true
+      "handbook": true,
+      "learning": "index"
+    },
+    {
+      "path": "guide/learning/ios.md",
+      "title": "学習コンテンツ：iOS",
+      "kind": "guide",
+      "handbook": true,
+      "learning": "iOS"
+    },
+    {
+      "path": "guide/learning/android.md",
+      "title": "学習コンテンツ：Android",
+      "kind": "guide",
+      "handbook": true,
+      "learning": "Android"
+    },
+    {
+      "path": "guide/learning/react-native.md",
+      "title": "学習コンテンツ：React Native",
+      "kind": "guide",
+      "handbook": true,
+      "learning": "React Native"
     },
     {
       "path": "guide/glossary.md",

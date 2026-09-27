@@ -13,7 +13,7 @@ iOS、Android、React Nativeのアプリ開発について、個人の要素技�
 
 ## モバイルアプリ開発が初めての方へ
 
-[モバイルアプリ開発の前提](guide/mobile-basics.md)でWebとの違いと3つのプラットフォームを確認し、[学習の進め方](guide/learning-paths.md)で自分のプラットフォームに沿った順序を選びます。各要素技術のページの「この要素技術について」と「次のLvへ進むために」を手がかりに学び、分からない用語は[用語集](guide/glossary.md)で確認します。
+[モバイルアプリ開発の前提](guide/mobile-basics.md)でWebとの違いと3つのプラットフォームを確認し、[学習の進め方](guide/learning-paths.md)で自分のプラットフォームに沿った順序を選びます。段階順の課題と学習資料は、[iOS](guide/learning/ios.md)、[Android](guide/learning/android.md)、[React Native](guide/learning/react-native.md)の学習コンテンツにまとめています。各要素技術のページの「この要素技術について」と「次のLvへ進むために」を手がかりに学び、分からない用語は[用語集](guide/glossary.md)で確認します。
 
 ## 評価を始める方へ
 
@@ -23,7 +23,7 @@ iOS、Android、React Nativeのアプリ開発について、個人の要素技�
 
 | 行いたいこと | 参照するページ |
 | :--- | :--- |
-| モバイル開発を学び始める | [前提の説明](guide/mobile-basics.md)・[学習の進め方](guide/learning-paths.md)・[用語集](guide/glossary.md) |
+| モバイル開発を学び始める | [前提の説明](guide/mobile-basics.md)・[学習の進め方](guide/learning-paths.md)・学習コンテンツ（[iOS](guide/learning/ios.md)、[Android](guide/learning/android.md)、[React Native](guide/learning/react-native.md)）・[用語集](guide/glossary.md) |
 | 自分の実行できる範囲を確認する | [要素技術の定義：34の要素技術のLv0〜Lv4](skills/index.md) |
 | チームの仕組みを見直す | [チームチェック：100項目の基準と回答例](checklists/index.md) |
 | 評価と改善を記録する | [空の書式](templates/index.md)・[記入例](examples/index.md) |

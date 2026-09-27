@@ -10,7 +10,7 @@
 | `ARCHITECTURE.md` | ページ構成と生成・公開設計 |
 | `CONTRIBUTING.md` / `CHANGELOG.md` | 公開側の編集手順・改訂履歴への入口 |
 | `docs/index.md` | 読む順序と目的別の入口 |
-| `docs/guide/` | モバイル開発の前提、評価手順、改善方法、学習の進め方、用語集 |
+| `docs/guide/` | モバイル開発の前提、評価手順、改善方法、学習の進め方、用語集。`learning/` にプラットフォーム別の学習コンテンツ |
 | `docs/skills/<領域>/<ID>.md` | 1の要素技術1ファイル、対象プラットフォーム、Lv0〜Lv4、技術の対応表の正本 |
 | `docs/checklists/<分野>.md` | 1分野1ファイル、各4項目の正本 |
 | `docs/templates/` | 記入説明と空のテンプレートの正本 |
@@ -22,6 +22,7 @@
 | `docs/public/downloads/` | ビルド時に生成する配布物。Git管理対象外 |
 | `build/document-map.json` | 全ページのパス・タイトル・分類・順序。React Nativeの前提となる要素技術の参照先URL |
 | `build/references.json` | 関連ライブラリ・参考資料の参照レジストリ（id、名称、URL、種別、対象、概要、確認日） |
+| `build/learning-paths.json` | 学習の段階とプラットフォームごとの要素技術の割り当て。学習の進め方と学習コンテンツ3ページの正本 |
 | `scripts/` | 構造検査、一覧同期、配布物生成、HTML・ブラウザ検証、タグ検証、外部リンク検査 |
 | `.github/workflows/docs.yml` | PR/mainの検査。ルート・サブディレクトリの2構成 |
 | `.github/workflows/pages.yml` | 公開タグの検証、ビルド、ブラウザ確認、Pagesへの公開 |
@@ -37,7 +38,7 @@
 | ページ群 | ページ数 | 入口 |
 | :--- | ---: | :--- |
 | ホーム | 1 | `docs/index.md` |
-| 使い方ガイド | 7 | `docs/guide/mobile-basics.md` |
+| 使い方ガイド | 10 | `docs/guide/mobile-basics.md`（学習コンテンツ3ページを含む） |
 | 要素技術一覧 | 1 | `docs/skills/index.md` |
 | 領域一覧 | 4 | `docs/skills/<領域>/index.md` |
 | 要素技術個別定義 | 34 | `docs/skills/<領域>/<ID>.md` |
@@ -47,7 +48,7 @@
 | 記入例一覧・記入例 | 3 | `docs/examples/index.md` |
 | 運用・改訂 | 4 | `docs/maintenance/index.md` |
 | ダウンロード | 1 | `docs/downloads.md` |
-| **合計** | **86** | 404ページとダウンロードファイルを除く |
+| **合計** | **89** | 404ページとダウンロードファイルを除く |
 
 全ファイルの対応は `build/document-map.json` で管理します。4領域のディレクトリは `foundation`、`applied-foundation`、`implementation`、`quality` です。要素技術分類に「レベル」は使用せず、習熟度だけをLv0〜Lv4で表します。
 
@@ -70,7 +71,9 @@
 
 ## 正本と生成物
 
-`document-map.json` は構造情報のみを持ち、習熟度定義・回答例は各Markdownに一度だけ記載します。一覧の自動生成箇所は `catalog` コメントで区切ります。領域一覧の表は、各要素技術のページの対象プラットフォーム行と前提行から生成します。各要素技術のページの「関連ライブラリと参考資料」の表は、`references` マーカーに列挙した id を `build/references.json` から引いて生成します。1つのURLを1か所で管理し、未定義・未使用の id と件数（1ページ3〜15件）を `docs:check` で検査します。外部リンクの到達確認は `npm run check:links` と月次のワークフローで行い、PRごとの検査には含めません。変更時に `docs:sync` を実行し、同期漏れをCIで検出します。
+`document-map.json` は構造情報のみを持ち、習熟度定義・回答例は各Markdownに一度だけ記載します。一覧の自動生成箇所は `catalog` コメントで区切ります。領域一覧の表は、各要素技術のページの対象プラットフォーム行と前提行から生成します。各要素技術のページの「関連ライブラリと参考資料」の表は、`references` マーカーに列挙した id を `build/references.json` から引いて生成します。1つのURLを1か所で管理し、未定義・未使用の id と件数（1ページ3〜15件）を `docs:check` で検査します。外部リンクの到達確認は `npm run check:links` と月次のワークフローで行い、PRごとの検査には含めません。
+
+学習コンテンツ3ページ（`docs/guide/learning/`）の段階節は、`learning` マーカーの間に `build/learning-paths.json` の割り当てに従って生成します。各要素技術の概要文は「この要素技術について」の第1文、課題表は「次のLvへ進むために」の表、学習資料は参照レジストリの学習資料種別から転記します。`docs:check` は、対象プラットフォームが一致する要素技術が各ページに漏れなく割り当てられていることを検査します。変更時に `docs:sync` を実行し、同期漏れをCIで検出します。
 
 単一Markdownでは、各ページ・見出しに一意のアンカーを生成し、ページ間の参照を文書内参照へ変換します。コードブロック内の記入用見出しは変換しません。全アンカーの存在を生成時に確認します。
 

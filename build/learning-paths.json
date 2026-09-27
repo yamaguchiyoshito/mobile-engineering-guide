@@ -1,0 +1,204 @@
+{
+  "stages": [
+    {
+      "id": "stage-1",
+      "title": "最初の1か月",
+      "goal": "開発環境を整え、言語の基本と画面の作り方を覚え、小さなアプリを動かす。",
+      "target": "対象の要素技術でLv1"
+    },
+    {
+      "id": "stage-2",
+      "title": "基本を固める",
+      "goal": "通信、保存、画面遷移、テストを含む小さなアプリを自力で完成させる。",
+      "target": "主要な要素技術でLv2"
+    },
+    {
+      "id": "stage-3",
+      "title": "実務で広げる",
+      "goal": "既存アプリの保守、性能・セキュリティ・配布・監視を担当し、設計判断に関わる。",
+      "target": "担当領域でLv2〜Lv3"
+    }
+  ],
+  "platforms": [
+    {
+      "id": "iOS",
+      "title": "iOS",
+      "path": "guide/learning/ios.md",
+      "note": "既存アプリの多くはUIKitで書かれています。保守を担当する場合は、段階2でUIKitを先に学びます。",
+      "stages": [
+        {
+          "id": "stage-1",
+          "title": "最初の1か月",
+          "goal": "開発環境を整え、言語の基本と画面の作り方を覚え、小さなアプリを動かす。",
+          "target": "対象の要素技術でLv1",
+          "skills": [
+            "mobile.basic",
+            "ide.basic",
+            "swift.basic",
+            "swiftui.basic",
+            "mobile.ui-design",
+            "git.basic"
+          ]
+        },
+        {
+          "id": "stage-2",
+          "title": "基本を固める",
+          "goal": "通信、保存、画面遷移、テストを含む小さなアプリを自力で完成させる。",
+          "target": "主要な要素技術でLv2",
+          "skills": [
+            "swift.concurrency",
+            "mobile.networking",
+            "mobile.persistence",
+            "mobile.navigation",
+            "mobile.input-validation",
+            "build.tooling",
+            "test.unit",
+            "git.collaboration"
+          ]
+        },
+        {
+          "id": "stage-3",
+          "title": "実務で広げる",
+          "goal": "既存アプリの保守、性能・セキュリティ・配布・監視を担当し、設計判断に関わる。",
+          "target": "担当領域でLv2〜Lv3",
+          "skills": [
+            "uikit.basic",
+            "reactive.basic",
+            "mobile.architecture",
+            "mobile.api-integration",
+            "mobile.accessibility",
+            "mobile.platform-services",
+            "mobile.animation",
+            "test.design",
+            "test.ui",
+            "mobile.performance",
+            "mobile.security",
+            "mobile.release",
+            "mobile.cicd",
+            "mobile.observability"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "Android",
+      "title": "Android",
+      "path": "guide/learning/android.md",
+      "note": "Androidは端末とOSバージョンの幅が広いため、段階2から端末・OS互換性とサポート方針のチェック項目も参照します。",
+      "stages": [
+        {
+          "id": "stage-1",
+          "title": "最初の1か月",
+          "goal": "開発環境を整え、言語の基本と画面の作り方を覚え、小さなアプリを動かす。",
+          "target": "対象の要素技術でLv1",
+          "skills": [
+            "mobile.basic",
+            "ide.basic",
+            "kotlin.basic",
+            "compose.basic",
+            "mobile.ui-design",
+            "git.basic"
+          ]
+        },
+        {
+          "id": "stage-2",
+          "title": "基本を固める",
+          "goal": "通信、保存、画面遷移、テストを含む小さなアプリを自力で完成させる。",
+          "target": "主要な要素技術でLv2",
+          "skills": [
+            "kotlin.coroutines",
+            "mobile.networking",
+            "mobile.persistence",
+            "mobile.navigation",
+            "mobile.input-validation",
+            "build.tooling",
+            "test.unit",
+            "git.collaboration"
+          ]
+        },
+        {
+          "id": "stage-3",
+          "title": "実務で広げる",
+          "goal": "既存アプリの保守、性能・セキュリティ・配布・監視を担当し、設計判断に関わる。",
+          "target": "担当領域でLv2〜Lv3",
+          "skills": [
+            "android.views",
+            "reactive.basic",
+            "mobile.architecture",
+            "mobile.api-integration",
+            "mobile.accessibility",
+            "mobile.platform-services",
+            "mobile.animation",
+            "test.design",
+            "test.ui",
+            "mobile.performance",
+            "mobile.security",
+            "mobile.release",
+            "mobile.cicd",
+            "mobile.observability"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "React Native",
+      "title": "React Native",
+      "path": "guide/learning/react-native.md",
+      "note": "React Nativeでは、JavaScript、TypeScript、Reactの基礎を先に習得します。これらは本書の対象外で、フロントエンド領域の基準で確認します。SwiftとKotlinの基礎は、ネイティブ連携や不具合調査で必要になったときに学びます。",
+      "stages": [
+        {
+          "id": "stage-1",
+          "title": "最初の1か月",
+          "goal": "開発環境を整え、言語の基本と画面の作り方を覚え、小さなアプリを動かす。",
+          "target": "対象の要素技術でLv1",
+          "skills": [
+            "mobile.basic",
+            "ide.basic",
+            "react-native.basic",
+            "mobile.ui-design",
+            "git.basic"
+          ]
+        },
+        {
+          "id": "stage-2",
+          "title": "基本を固める",
+          "goal": "通信、保存、画面遷移、テストを含む小さなアプリを自力で完成させる。",
+          "target": "主要な要素技術でLv2",
+          "skills": [
+            "mobile.networking",
+            "mobile.persistence",
+            "mobile.navigation",
+            "mobile.input-validation",
+            "build.tooling",
+            "test.unit",
+            "git.collaboration"
+          ]
+        },
+        {
+          "id": "stage-3",
+          "title": "実務で広げる",
+          "goal": "既存アプリの保守、性能・セキュリティ・配布・監視を担当し、設計判断に関わる。",
+          "target": "担当領域でLv2〜Lv3",
+          "skills": [
+            "react-native.native-integration",
+            "swift.basic",
+            "kotlin.basic",
+            "reactive.basic",
+            "mobile.architecture",
+            "mobile.api-integration",
+            "mobile.accessibility",
+            "mobile.platform-services",
+            "mobile.animation",
+            "test.design",
+            "test.ui",
+            "mobile.performance",
+            "mobile.security",
+            "mobile.release",
+            "mobile.cicd",
+            "mobile.observability"
+          ]
+        }
+      ]
+    }
+  ]
+}

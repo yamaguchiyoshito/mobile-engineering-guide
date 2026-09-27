@@ -8,6 +8,16 @@ REFERENCES=json.loads((ROOT/'build/references.json').read_text())
 REFS={r['id']:r for r in REFERENCES['references']}
 REF_TYPES={'official':'公式リファレンス','library':'ライブラリ','learning':'学習資料'}
 PLATFORM_ORDER=['共通','iOS','Android','React Native']
+LEARNING=json.loads((ROOT/'build/learning-paths.json').read_text())
+SKILLS_BY_ID={p['skillId']:p for p in PAGES if p['kind']=='skill'}
+def skill_platform(page):
+ m=re.search(r'^\*\*対象プラットフォーム：\*\* (.+)$',body(page['path']),re.M);return m.group(1).strip() if m else None
+def about_sentence(page):
+ m=re.search(r'^## この要素技術について\n\n(.+?)$',body(page['path']),re.M)
+ if not m:return ''
+ s=m.group(1);i=s.find('。');return s[:i+1] if i>=0 else s
+def task_rows(page):
+ return re.findall(r'^\| (Lv[123]) \| (.*?) \| (.*?) \|$',body(page['path']),re.M)
 def reference_ids(text):
  m=re.search(r'<!-- references:start ids="([^"]*)" -->',text)
  return [i.strip() for i in m.group(1).split(',') if i.strip()] if m else None
