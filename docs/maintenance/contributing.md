@@ -12,11 +12,11 @@ description: "編集・検証・公開手順の基準と使い方。モバイル
 | 使い方・判定方法 | `docs/guide/*.md` |
 | 習熟度の定義 | `docs/skills/<領域>/<スキルID>.md` |
 | チェック項目・回答例 | `docs/checklists/<分野>.md` |
-| 記録書式 | `docs/templates/*.md` のテンプレート欄 |
+| 記録書式 | `docs/templates/*.md`のテンプレート欄 |
 | ページの追加・順序・分類 | `build/document-map.json` |
-| 公開版 | `package.json` のversion・このサイトの改訂履歴 |
+| 公開版 | `package.json`のversion・このサイトの改訂履歴 |
 
-一覧ページの `catalog` マーカー内、サイトのHTML、ダウンロードファイルは自動生成します。本文・書式の正本を変更してから生成してください。
+一覧ページの`catalog`マーカー内、サイトのHTML、ダウンロードファイルは自動生成します。本文・書式の正本を変更してから生成してください。
 
 ## ローカルで確認する
 
@@ -38,7 +38,7 @@ npm run test:site
 npm run docs:preview
 ```
 
-`docs:build` は構造検査、単一文書・書式生成、静的HTML生成を行います。`test:site` は公開用HTMLのリンク・アンカー・ダウンロードとブラウザでの検索・表示を確認します。
+`docs:build`は構造検査、単一文書・書式生成、静的HTML生成を行います。`test:site`は公開用HTMLのリンク・アンカー・ダウンロードとブラウザでの検索・表示を確認します。
 
 ## Pull Requestで確認する
 
@@ -50,21 +50,21 @@ npm run docs:preview
 
 GitHubの一般公開リポジトリを使用します。初回だけ **Settings → Pages → Build and deployment → Source: GitHub Actions** を選びます。Enterpriseは必要ありません。
 
-`github-pages` 環境に公開元の制限がある場合は、リリースタグ `v*` を許可します。初期状態が `main` のみを許可している場合もあるため、**Settings → Environments → github-pages** で設定します。
+`github-pages`環境に公開元の制限がある場合は、リリースタグ`v*`を許可します。初期状態が`main`のみを許可している場合もあるため、**Settings → Environments → github-pages** で設定します。
 
-1. `npm version patch --no-git-tag-version` などでバージョンとlockfileを更新します。
-2. 改訂履歴を更新し、検査の通った変更を `main` に統合します。
-3. 最新の `main` で、package.jsonのversionと一致する `vX.Y.Z` タグを作成してpushします。
+1. `npm version patch --no-git-tag-version`などでバージョンとlockfileを更新します。
+2.改訂履歴を更新し、検査の通った変更を`main`に統合します。
+3.最新の`main`で、package.jsonのversionと一致する`vX.Y.Z`タグを作成してpushします。
 4. Actionsの **Publish GitHub Pages** が成功し、表示された公開URLを開いて版と表示を確認します。
 
-公開処理は、タグ形式、package.jsonとの一致、`main` に含まれるコミットであることを確認します。通常のPRやmainへのpushでは検査だけを行い、公開版を変更しません。
+公開処理は、タグ形式、package.jsonとの一致、`main`に含まれるコミットであることを確認します。通常のPRやmainへのpushでは検査だけを行い、公開版を変更しません。
 
 ## 公開済みの版へ戻す
 
-Actionsの **Publish GitHub Pages → Run workflow** で `release_tag` に検証済みの既存タグを指定します。mainブランチから実行してください。同じタグの内容を再ビルドして公開します。タグの付け替えは行いません。
+Actionsの **Publish GitHub Pages → Run workflow** で`release_tag`に検証済みの既存タグを指定します。mainブランチから実行してください。同じタグの内容を再ビルドして公開します。タグの付け替えは行いません。
 
 ## 公開先とURL
 
-標準URLは `https://<owner>.github.io/<repository>/` です。公開処理がGitHub Pagesの設定からベースパスとオリジンを取得するため、リポジトリ名を変更してもソース内のURL修正は不要です。独自ドメインを使う場合もPagesの設定を先に更新します。
+標準URLは`https://<owner>.github.io/<repository>/`です。公開処理がGitHub Pagesの設定からベースパスとオリジンを取得するため、リポジトリ名を変更してもソース内のURL修正は不要です。独自ドメインを使う場合もPagesの設定を先に更新します。
 
 詳しい初回pushの手順とディレクトリ構成は、リポジトリのREADME・ARCHITECTUREに記載しています。

@@ -14,7 +14,7 @@ description: "SwiftUIの基準と使い方。モバイルアプリ開発のス�
 
 ## このスキルについて
 
-SwiftUI は、iPhone や iPad のアプリの画面を小さな部品（View）の組み合わせで作る Apple の仕組みで、画面サイズや文字サイズ、ダークモードなど端末ごとに異なる表示条件にも同じコードで対応します。宣言的UIと呼ばれる方式で、「この状態のときはこう表示する」と書いておけば、状態の値を書き換えるだけで画面が追従します。これに対して UIKit などの命令的UIでは、ボタンやラベルといった部品を直接操作して表示を一つずつ書き換えるため、書き換え漏れによる表示の食い違いが起きやすくなります。最初に押さえるのは、画面は状態から作られるという考え方と、その状態をどの View が持つか（状態の持ち主）を決めることです。
+SwiftUIは、iPhoneやiPadのアプリの画面を小さな部品（View）の組み合わせで作るAppleの仕組みで、画面サイズや文字サイズ、ダークモードなど端末ごとに異なる表示条件にも同じコードで対応します。宣言的UIと呼ばれる方式で、「この状態のときはこう表示する」と書いておけば、状態の値を書き換えるだけで画面が追従します。これに対してUIKitなどの命令的UIでは、ボタンやラベルといった部品を直接操作して表示を一つずつ書き換えるため、書き換え漏れによる表示の食い違いが起きやすくなります。最初に押さえるのは、画面は状態から作られるという考え方と、その状態をどのViewが持つか（状態の持ち主）を決めることです。
 
 分からない用語は[用語集](../../guide/glossary.md)で確認できます。
 
@@ -44,22 +44,22 @@ View部品、状態の受け渡し方針、プレビューとUI検証の基準�
 
 | 目標 | 取り組む課題の例 | 参考資料 |
 | :--- | :--- | :--- |
-| Lv1 | SwiftUI チュートリアルに沿って、テキスト、画像、一覧を並べた画面を作り、ボタンを押すと数値が増えるカウンターを加えてプレビューで表示を確認する | [SwiftUI チュートリアル](https://developer.apple.com/tutorials/swiftui) |
-| Lv2 | 一覧・詳細・追加フォームの3画面を持つ ToDo アプリを作り、NavigationStack で遷移し、@Binding や @Observable で状態を受け渡す。起動時にサンプルデータを非同期で読み込み、読み込み中の表示も付ける | [SwiftUI](https://developer.apple.com/documentation/swiftui)・[Swift Concurrency](https://developer.apple.com/documentation/swift/concurrency) |
-| Lv3 | 既存の画面で入力中の値が消える、一覧全体が描き直されるといった問題を再現し、状態の初期化位置や監視範囲を見直して改善する。UIViewRepresentable で UIKit の部品を1つ組み込み、両者の境界での責務を文書にまとめる | [SwiftUI](https://developer.apple.com/documentation/swiftui)・[アプリ性能の改善](https://developer.apple.com/documentation/xcode/improving-your-app-s-performance) |
+| Lv1 | SwiftUIチュートリアルに沿って、テキスト、画像、一覧を並べた画面を作り、ボタンを押すと数値が増えるカウンターを加えてプレビューで表示を確認する | [SwiftUIチュートリアル](https://developer.apple.com/tutorials/swiftui) |
+| Lv2 | 一覧・詳細・追加フォームの3画面を持つToDoアプリを作り、NavigationStackで遷移し、@Bindingや@Observableで状態を受け渡す。起動時にサンプルデータを非同期で読み込み、読み込み中の表示も付ける | [SwiftUI](https://developer.apple.com/documentation/swiftui)・[Swift Concurrency](https://developer.apple.com/documentation/swift/concurrency) |
+| Lv3 | 既存の画面で入力中の値が消える、一覧全体が描き直されるといった問題を再現し、状態の初期化位置や監視範囲を見直して改善する。UIViewRepresentableでUIKitの部品を1つ組み込み、両者の境界での責務を文書にまとめる | [SwiftUI](https://developer.apple.com/documentation/swiftui)・[アプリ性能の改善](https://developer.apple.com/documentation/xcode/improving-your-app-s-performance) |
 
 ## 技術の対応
 
 | 用途 | 主な技術・API |
 | :--- | :--- |
-| 画面の部品 | View と ViewModifier、@ViewBuilder |
+| 画面の部品 | ViewとViewModifier、@ViewBuilder |
 | 配置と一覧 | VStack／HStack／ZStack、List、Form、Grid、GeometryReader |
 | 状態の管理 | @State／@Binding／@StateObject／@ObservedObject／@EnvironmentObject／@Observable |
 | 画面遷移 | NavigationStack／NavigationPath／TabView |
 | 操作とデータ表示 | ジェスチャ、Drag & Drop、Swift Charts |
-| UIKit との相互運用 | UIViewRepresentable |
+| UIKitとの相互運用 | UIViewRepresentable |
 
-roadmap.sh で学ぶ：[iOS](https://roadmap.sh/ios)（SwiftUI、Declarative syntax、Views and modifiers、State management、Navigation stacks）／[SwiftUI](https://roadmap.sh/swift-ui)（ViewBuilder、State、Binding、Data flow、NavigationStack、Gestures、UIKit vs SwiftUI）
+roadmap.shで学ぶ：[iOS](https://roadmap.sh/ios)（SwiftUI、Declarative syntax、Views and modifiers、State management、Navigation stacks）／[SwiftUI](https://roadmap.sh/swift-ui)（ViewBuilder、State、Binding、Data flow、NavigationStack、Gestures、UIKit vs SwiftUI）
 
 ## 評価を記録する
 

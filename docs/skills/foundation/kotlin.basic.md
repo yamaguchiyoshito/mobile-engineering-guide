@@ -14,7 +14,7 @@ description: "Kotlinの基準と使い方。モバイルアプリ開発のスキ
 
 ## このスキルについて
 
-Androidアプリを作るための主要なプログラミング言語であるKotlinの文法と、型の使い方を扱います。モバイルアプリの不具合は利用者の端末上で起こり、修正版を届けるにもストアでの公開手続きを経る必要があるため、nullの扱いを誤ってアプリが強制終了（クラッシュ）すると、影響が長く残ります。Kotlinは値がnullになりうるかどうかを型で区別し（null許容型）、コンパイル時に安全な扱いを求めることで、この種の誤りを減らします。最初に押さえるのは、再代入できない val と再代入できる var の違いと、null許容型の値を安全呼び出し（?.）やエルビス演算子（?:）で扱う方法です。
+Androidアプリを作るための主要なプログラミング言語であるKotlinの文法と、型の使い方を扱います。モバイルアプリの不具合は利用者の端末上で起こり、修正版を届けるにもストアでの公開手続きを経る必要があるため、nullの扱いを誤ってアプリが強制終了（クラッシュ）すると、影響が長く残ります。Kotlinは値がnullになりうるかどうかを型で区別し（null許容型）、コンパイル時に安全な扱いを求めることで、この種の誤りを減らします。最初に押さえるのは、再代入できないvalと再代入できるvarの違いと、null許容型の値を安全呼び出し（?.）やエルビス演算子（?:）で扱う方法です。
 
 分からない用語は[用語集](../../guide/glossary.md)で確認できます。
 
@@ -44,9 +44,9 @@ Javaとの相互運用によるnullの混入、可変コレクションの共有
 
 | 目標 | 取り組む課題の例 | 参考資料 |
 | :--- | :--- | :--- |
-| Lv1 | Kotlinドキュメントの基本構文の例をAndroid Studioで実行し、関数、ラムダ、データクラスのプロパティを書き換えて結果の変化を確かめる。null許容型の値を ?. と ?: で扱う短い関数を書く | [Kotlin ドキュメント](https://kotlinlang.org/docs/home.html)・[Android Basics with Compose](https://developer.android.com/courses/android-basics-compose/course) |
-| Lv2 | 買い物リストの合計金額を計算する処理を、データクラス、コレクション操作、拡張関数、sealed class による結果の分岐で実装し、空のリストや不正な数量を与えたときの振る舞いを単体テストで確認する | [Kotlin ドキュメント](https://kotlinlang.org/docs/home.html)・[テスト](https://developer.android.com/training/testing) |
-| Lv3 | Javaで書かれたライブラリの戻り値や、複数の箇所で共有している可変コレクションを扱う既存のコードを調べ、nullの混入や意図しない変更が起きる箇所を洗い出す。スコープ関数を重ねた処理を読みやすい形に書き直す案を比べる | [Kotlin ドキュメント](https://kotlinlang.org/docs/home.html)・[Android の Kotlin](https://developer.android.com/kotlin) |
+| Lv1 | Kotlinドキュメントの基本構文の例をAndroid Studioで実行し、関数、ラムダ、データクラスのプロパティを書き換えて結果の変化を確かめる。null許容型の値を ?.と ?: で扱う短い関数を書く | [Kotlinドキュメント](https://kotlinlang.org/docs/home.html)・[Android Basics with Compose](https://developer.android.com/courses/android-basics-compose/course) |
+| Lv2 | 買い物リストの合計金額を計算する処理を、データクラス、コレクション操作、拡張関数、sealed classによる結果の分岐で実装し、空のリストや不正な数量を与えたときの振る舞いを単体テストで確認する | [Kotlinドキュメント](https://kotlinlang.org/docs/home.html)・[テスト](https://developer.android.com/training/testing) |
+| Lv3 | Javaで書かれたライブラリの戻り値や、複数の箇所で共有している可変コレクションを扱う既存のコードを調べ、nullの混入や意図しない変更が起きる箇所を洗い出す。スコープ関数を重ねた処理を読みやすい形に書き直す案を比べる | [Kotlinドキュメント](https://kotlinlang.org/docs/home.html)・[AndroidのKotlin](https://developer.android.com/kotlin) |
 
 ## 技術の対応
 
@@ -58,7 +58,7 @@ Javaとの相互運用によるnullの混入、可変コレクションの共有
 | データの集まりの操作 | コレクション操作 |
 | Javaとの連携 | Java相互運用 |
 
-roadmap.sh で学ぶ：[Android](https://roadmap.sh/android)（Basics of Kotlin、Basics of OOP、Data Structures and Algorithms、Java、Pick a Language）
+roadmap.shで学ぶ：[Android](https://roadmap.sh/android)（Basics of Kotlin、Basics of OOP、Data Structures and Algorithms、Java、Pick a Language）
 
 ## 評価を記録する
 

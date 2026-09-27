@@ -52,13 +52,13 @@ description: "性能・メモリ・起動時間の基準と使い方。モバイ
 
 | 用途 | iOS | Android | React Native |
 | :--- | :--- | :--- | :--- |
-| 処理時間の計測 | Instruments（Time Profiler） | Android Profiler | Flipper／DevTools のプロファイラ |
-| メモリとリークの調査 | Instruments（Allocations、Leaks）、メモリリーク（循環参照） | LeakCanary | Hermes のヒープ計測、各OSのプロファイラ |
+| 処理時間の計測 | Instruments（Time Profiler） | Android Profiler | Flipper／DevToolsのプロファイラ |
+| メモリとリークの調査 | Instruments（Allocations、Leaks）、メモリリーク（循環参照） | LeakCanary | Hermesのヒープ計測、各OSのプロファイラ |
 | 起動時間の短縮 | 起動時間 | Baseline Profile | Hermes、RAM Bundle／inline require |
-| 描画と応答性 | Hang 検出 | Jetpack Benchmark／Macrobenchmark | FlatList 最適化、JS スレッドと UI スレッド |
+| 描画と応答性 | Hang検出 | Jetpack Benchmark／Macrobenchmark | FlatList最適化、JSスレッドとUIスレッド |
 | 実利用データの監視 | MetricKit | Android vitals（起動時間、ANR、ジャンク） | 各OSの仕組み（MetricKit、Android vitals） |
 
-roadmap.sh で学ぶ：[iOS](https://roadmap.sh/ios)（Profiling Instruments）／[SwiftUI](https://roadmap.sh/swift-ui)（Logging & Debugging）／[Android](https://roadmap.sh/android)（Leak Canary、Jetpack Benchmark、Chucker）／[React Native](https://roadmap.sh/react-native)（Performance、Profiling、Optimizing FlatList Config、RAM Bundles & Inline Requires、Understand Frame Rates）
+roadmap.shで学ぶ：[iOS](https://roadmap.sh/ios)（Profiling Instruments）／[SwiftUI](https://roadmap.sh/swift-ui)（Logging & Debugging）／[Android](https://roadmap.sh/android)（Leak Canary、Jetpack Benchmark、Chucker）／[React Native](https://roadmap.sh/react-native)（Performance、Profiling、Optimizing FlatList Config、RAM Bundles & Inline Requires、Understand Frame Rates）
 
 ## 評価を記録する
 

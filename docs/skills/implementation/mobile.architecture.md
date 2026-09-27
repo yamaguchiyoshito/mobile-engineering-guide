@@ -14,7 +14,7 @@ description: "アプリアーキテクチャと依存性注入の基準と使い
 
 ## このスキルについて
 
-アプリのコードを、画面の表示、画面の状態、データの取得や保存といった役割ごとに分け、部品同士のつながり方を決める技術です。1つの画面のコードに表示と通信と保存をすべて書くと、小さな変更が思わぬ箇所を壊したり、通信せずに動作を確かめるテストが書けなくなったりします。モバイルアプリでは、画面の回転やアプリの中断で表示が作り直されても状態を保ち、通信が途切れても保存済みのデータで動き続ける必要があるため、表示と状態とデータを分けておくことが特に重要です。MVVM などのパターン名はこの分け方の型に付けられた名前で、最初に押さえるのは3つの役割の分け方と、部品が使う相手を内部で作らずに外から渡す依存性注入の考え方です。
+アプリのコードを、画面の表示、画面の状態、データの取得や保存といった役割ごとに分け、部品同士のつながり方を決める技術です。1つの画面のコードに表示と通信と保存をすべて書くと、小さな変更が思わぬ箇所を壊したり、通信せずに動作を確かめるテストが書けなくなったりします。モバイルアプリでは、画面の回転やアプリの中断で表示が作り直されても状態を保ち、通信が途切れても保存済みのデータで動き続ける必要があるため、表示と状態とデータを分けておくことが特に重要です。MVVMなどのパターン名は、この分け方の型に付けられた名前です。最初に押さえるのは3つの役割の分け方と、部品が使う相手を内部で作らずに外から渡す依存性注入の考え方です。
 
 分からない用語は[用語集](../../guide/glossary.md)で確認できます。
 
@@ -53,11 +53,11 @@ description: "アプリアーキテクチャと依存性注入の基準と使い
 | 用途 | iOS | Android | React Native |
 | :--- | :--- | :--- | :--- |
 | 画面と状態の分け方 | MVC、MVVM、MVVM-C、VIPER、TCA | MVVM、MVI | コンテナ・プレゼンテーション分離、状態管理ライブラリ（Redux、Zustand） |
-| データ層・処理層の分け方 | Clean Architecture | Repository パターン、UseCase | サービス層とフックの分離、Repository |
-| 依存性注入 | Swift のDI（イニシャライザ注入、Environment、Factory） | Hilt／Dagger、Koin、Kodein | Context による注入 |
+| データ層・処理層の分け方 | Clean Architecture | Repositoryパターン、UseCase | サービス層とフックの分離、Repository |
+| 依存性注入 | SwiftのDI（イニシャライザ注入、Environment、Factory） | Hilt／Dagger、Koin、Kodein | Contextによる注入 |
 | モジュール分割 | モジュール分割（SPM） | マルチモジュール | 機能ディレクトリ単位の分割、モノレポのパッケージ |
 
-roadmap.sh で学ぶ：[iOS](https://roadmap.sh/ios)（Architectural patterns、MVC、MVVM、MVVM-C、VIPER、TCA）／[Android](https://roadmap.sh/android)（MVVM、MVI、Repository pattern、Dependency injection、Hilt）／[SwiftUI](https://roadmap.sh/swift-ui)（App architecture、Clean architecture、Dependency injection）
+roadmap.shで学ぶ：[iOS](https://roadmap.sh/ios)（Architectural patterns、MVC、MVVM、MVVM-C、VIPER、TCA）／[Android](https://roadmap.sh/android)（MVVM、MVI、Repository pattern、Dependency injection、Hilt）／[SwiftUI](https://roadmap.sh/swift-ui)（App architecture、Clean architecture、Dependency injection）
 
 ## 評価を記録する
 

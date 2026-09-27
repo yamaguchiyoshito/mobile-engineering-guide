@@ -45,20 +45,20 @@ description: "開発環境（Xcode／Android Studio／Expo）の基準と使い�
 | 目標 | 取り組む課題の例 | 参考資料 |
 | :--- | :--- | :--- |
 | Lv1 | 公式の手順に沿って新規プロジェクトを作成し、シミュレータ・エミュレータと実機の両方で起動する。ボタンを押したときの処理にブレークポイントを置き、変数の値とログを確認する | [Xcode](https://developer.apple.com/documentation/xcode)・[Android Studio](https://developer.android.com/studio)・[環境構築（React Native）](https://reactnative.dev/docs/environment-setup) |
-| Lv2 | サンプルアプリに画面を1つ追加し、あらかじめ仕込んだ表示崩れや計算の誤りを、ステップ実行、ログ、画面構造の検査機能を使って見つけて修正する | [Xcode](https://developer.apple.com/documentation/xcode)・[Android Studio](https://developer.android.com/studio)・[Expo ドキュメント](https://docs.expo.dev/) |
+| Lv2 | サンプルアプリに画面を1つ追加し、あらかじめ仕込んだ表示崩れや計算の誤りを、ステップ実行、ログ、画面構造の検査機能を使って見つけて修正する | [Xcode](https://developer.apple.com/documentation/xcode)・[Android Studio](https://developer.android.com/studio)・[Expoドキュメント](https://docs.expo.dev/) |
 | Lv3 | 実機でのみ起きる不具合（権限、性能、センサーなど）を題材に、シミュレータ・エミュレータとの差を切り分ける調査手順を書き、他の人が同じ手順で再現できるかを確かめる | [アプリ性能の改善](https://developer.apple.com/documentation/xcode/improving-your-app-s-performance)・[Android Studio](https://developer.android.com/studio)・[パフォーマンス（React Native）](https://reactnative.dev/docs/performance) |
 
 ## 技術の対応
 
 | 用途 | iOS | Android | React Native |
 | :--- | :--- | :--- | :--- |
-| プロジェクトの構成 | Xcode プロジェクト・ターゲット・スキーム | Android Studio、Gradleモジュール構成 | Expo CLI、Metro |
+| プロジェクトの構成 | Xcodeプロジェクト・ターゲット・スキーム | Android Studio、Gradleモジュール構成 | Expo CLI、Metro |
 | 端末での実行と変更の反映 | Simulator | Emulator、AVD | Fast Refresh |
 | 処理の追跡とログ | ブレークポイント、Debug Navigator | Logcat | 開発者メニュー、LogBox |
 | 画面の編集と構造の検査 | Interface Builder | Layout Inspector | React DevTools |
 | ドキュメントの作成 | DocC | KDoc、Dokka | TSDoc、JSDoc |
 
-roadmap.sh で学ぶ：[iOS](https://roadmap.sh/ios)（Xcode、Project Files、Interface Builder、Breakpoints、Debug Navigator、Stepping、Xcode Debugger、Debugging Techniques）／[SwiftUI](https://roadmap.sh/swift-ui)（Xcode、Xcode Debugging、Swift Playgrounds、DocC）／[Android](https://roadmap.sh/android)（Development IDE、Debugging、Create a Basic Hello World App）／[React Native](https://roadmap.sh/react-native)（Environment Setup、Metro Bundler、DevTools、In-App Developer Menu、LogBox、Enabling Fast Refresh、Running on Device）
+roadmap.shで学ぶ：[iOS](https://roadmap.sh/ios)（Xcode、Project Files、Interface Builder、Breakpoints、Debug Navigator、Stepping、Xcode Debugger、Debugging Techniques）／[SwiftUI](https://roadmap.sh/swift-ui)（Xcode、Xcode Debugging、Swift Playgrounds、DocC）／[Android](https://roadmap.sh/android)（Development IDE、Debugging、Create a Basic Hello World App）／[React Native](https://roadmap.sh/react-native)（Environment Setup、Metro Bundler、DevTools、In-App Developer Menu、LogBox、Enabling Fast Refresh、Running on Device）
 
 ## 評価を記録する
 

@@ -44,7 +44,7 @@ description: "入力とバリデーションの基準と使い方。モバイル
 
 | 目標 | 取り組む課題の例 | 参考資料 |
 | :--- | :--- | :--- |
-| Lv1 | 名前とメールアドレスの2項目を持つ入力画面を作り、メールアドレス用のキーボードを指定して、空欄のまま送信したときにエラーを表示する | [SwiftUI チュートリアル](https://developer.apple.com/tutorials/swiftui)・[Android Basics with Compose](https://developer.android.com/courses/android-basics-compose/course)・[コアコンポーネント](https://reactnative.dev/docs/intro-react-native-components) |
+| Lv1 | 名前とメールアドレスの2項目を持つ入力画面を作り、メールアドレス用のキーボードを指定して、空欄のまま送信したときにエラーを表示する | [SwiftUIチュートリアル](https://developer.apple.com/tutorials/swiftui)・[Android Basics with Compose](https://developer.android.com/courses/android-basics-compose/course)・[コアコンポーネント](https://reactnative.dev/docs/intro-react-native-components) |
 | Lv2 | 5項目程度の会員登録画面を作り、次の項目へのフォーカス移動、キーボードで隠れない配置、項目ごとの検証、送信中の表示と二重送信の防止を実装する。画面の小さい端末と大きい端末の両方で確認する | [SwiftUI](https://developer.apple.com/documentation/swiftui)・[Jetpack Compose](https://developer.android.com/develop/ui/compose)・[コアコンポーネント](https://reactnative.dev/docs/intro-react-native-components)・[Human Interface Guidelines](https://developer.apple.com/design/human-interface-guidelines) |
 | Lv3 | 電話番号を入力中に自動で区切る処理と、3段階に分かれた入力画面で途中の内容を保持して前の段階に戻れる仕組みを作る。読み上げ機能（VoiceOver／TalkBack）と外部キーボードで操作できることを確認する | [Accessibility](https://developer.apple.com/documentation/accessibility)・[アクセシビリティ（Android）](https://developer.android.com/guide/topics/ui/accessibility)・[アクセシビリティ（React Native）](https://reactnative.dev/docs/accessibility) |
 
@@ -53,11 +53,11 @@ description: "入力とバリデーションの基準と使い方。モバイル
 | 用途 | iOS | Android | React Native |
 | :--- | :--- | :--- | :--- |
 | 入力欄 | UITextField／TextField | TextField／EditText | TextInput |
-| キーボードの種類と操作 | キーボード種別 | InputType、IME アクション | keyboardType、returnKeyType |
+| キーボードの種類と操作 | キーボード種別 | InputType、IMEアクション | keyboardType、returnKeyType |
 | キーボードとの重なりとフォーカス | キーボード回避、フォーカス管理 | adjustResize、FocusRequester | KeyboardAvoidingView |
 | 検証とエラー表示 | 入力検証とエラー表示、Formatter | 入力検証、エラー表示 | フォームライブラリ（React Hook Form） |
 
-roadmap.sh で学ぶ：[iOS](https://roadmap.sh/ios)（User interactions）／[SwiftUI](https://roadmap.sh/swift-ui)（User interaction、UI controls、Form）／[Android](https://roadmap.sh/android)（TextField、TextView）／[React Native](https://roadmap.sh/react-native)（Text input、KeyboardAvoidingView、Gesture handling）
+roadmap.shで学ぶ：[iOS](https://roadmap.sh/ios)（User interactions）／[SwiftUI](https://roadmap.sh/swift-ui)（User interaction、UI controls、Form）／[Android](https://roadmap.sh/android)（TextField、TextView）／[React Native](https://roadmap.sh/react-native)（Text input、KeyboardAvoidingView、Gesture handling）
 
 ## 評価を記録する
 

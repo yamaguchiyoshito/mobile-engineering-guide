@@ -44,20 +44,20 @@ PR／MR、レビュー、承認、保護ブランチの役割を説明できず�
 
 | 目標 | 取り組む課題の例 | 参考資料 |
 | :--- | :--- | :--- |
-| Lv1 | 練習用のリポジトリでブランチを作って小さな変更を加え、テンプレートに沿って変更理由と確認結果を書いた PR を作成する。レビューの指摘を反映し、CI の結果を確認してからマージする | [Pro Git（日本語）](https://git-scm.com/book/ja/v2)・[GitHub Pull Request](https://docs.github.com/ja/pull-requests) |
-| Lv2 | 画面の追加など1つの機能を、レビューしやすい大きさの複数の PR に分けて提出し、セルフレビューと CI の確認を済ませてからレビューを依頼する。あわせて、他のメンバーの PR を目的・影響・確認結果の観点でレビューする | [GitHub Pull Request](https://docs.github.com/ja/pull-requests)・[GitHub Actions](https://docs.github.com/ja/actions) |
-| Lv3 | 複数人が並行して進める機能について、ブランチの分け方と取り込む順序を決め、競合の解消を調整する。直近の PR のレビュー待ち時間や差し戻しの理由を集計し、運用の改善案を出す | [Pro Git（日本語）](https://git-scm.com/book/ja/v2)・[GitHub Pull Request](https://docs.github.com/ja/pull-requests)・[GitHub Actions](https://docs.github.com/ja/actions) |
+| Lv1 | 練習用のリポジトリでブランチを作って小さな変更を加え、テンプレートに沿って変更理由と確認結果を書いたPRを作成する。レビューの指摘を反映し、CIの結果を確認してからマージする | [Pro Git（日本語）](https://git-scm.com/book/ja/v2)・[GitHub Pull Request](https://docs.github.com/ja/pull-requests) |
+| Lv2 | 画面の追加など1つの機能を、レビューしやすい大きさの複数のPRに分けて提出し、セルフレビューとCIの確認を済ませてからレビューを依頼する。あわせて、他のメンバーのPRを目的・影響・確認結果の観点でレビューする | [GitHub Pull Request](https://docs.github.com/ja/pull-requests)・[GitHub Actions](https://docs.github.com/ja/actions) |
+| Lv3 | 複数人が並行して進める機能について、ブランチの分け方と取り込む順序を決め、競合の解消を調整する。直近のPRのレビュー待ち時間や差し戻しの理由を集計し、運用の改善案を出す | [Pro Git（日本語）](https://git-scm.com/book/ja/v2)・[GitHub Pull Request](https://docs.github.com/ja/pull-requests)・[GitHub Actions](https://docs.github.com/ja/actions) |
 
 ## 技術の対応
 
 | 用途 | iOS | Android | React Native |
 | :--- | :--- | :--- | :--- |
-| 変更の提案とレビュー | GitHub／GitLab／Bitbucket の PR／MR、レビュー | GitHub／GitLab／Bitbucket の PR／MR、レビュー | GitHub／GitLab／Bitbucket の PR／MR、レビュー |
+| 変更の提案とレビュー | GitHub／GitLab／BitbucketのPR／MR、レビュー | GitHub／GitLab／BitbucketのPR／MR、レビュー | GitHub／GitLab／BitbucketのPR／MR、レビュー |
 | 本流の保護 | 保護ブランチ | 保護ブランチ | 保護ブランチ |
-| CI との連携 | CI（macOS ランナー）との連携 | CIとの連携 | CIとの連携 |
-| レビューで注意する変更 | 署名設定を含む変更 | Gradle 設定変更 | JS とネイティブ設定を含むモノレポ構成 |
+| CIとの連携 | CI（macOSランナー）との連携 | CIとの連携 | CIとの連携 |
+| レビューで注意する変更 | 署名設定を含む変更 | Gradle設定変更 | JSとネイティブ設定を含むモノレポ構成 |
 
-roadmap.sh で学ぶ：[iOS](https://roadmap.sh/ios)（GitHub、GitLab）／[Android](https://roadmap.sh/android)（GitHub、GitLab、Bitbucket）／[React Native](https://roadmap.sh/react-native)（Development Workflow）
+roadmap.shで学ぶ：[iOS](https://roadmap.sh/ios)（GitHub、GitLab）／[Android](https://roadmap.sh/android)（GitHub、GitLab、Bitbucket）／[React Native](https://roadmap.sh/react-native)（Development Workflow）
 
 ## 評価を記録する
 

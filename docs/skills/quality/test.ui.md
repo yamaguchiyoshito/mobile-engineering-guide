@@ -44,8 +44,8 @@ description: "UIテスト・E2Eの基準と使い方。モバイルアプリ開�
 
 | 目標 | 取り組む課題の例 | 参考資料 |
 | :--- | :--- | :--- |
-| Lv1 | 公式ドキュメントの手順に沿って、ログイン画面で ID とパスワードを入力してボタンを押し、次の画面の見出しが表示されることを確かめる UIテストを1件作り、シミュレータ・エミュレータで実行する | [XCTest](https://developer.apple.com/documentation/xctest)・[テスト（Android）](https://developer.android.com/training/testing)・[テストの概要（React Native）](https://reactnative.dev/docs/testing-overview) |
-| Lv2 | 一覧・詳細・編集の3画面を持つメモアプリで、「メモを作成すると一覧に表示される」「編集内容が詳細画面に反映される」などの主要シナリオを識別子と待機を使って自動化する。テストごとにデータを初期化し、CI で実行して失敗時の画面記録とログを確認する | [XCTest](https://developer.apple.com/documentation/xctest)・[テスト（Android）](https://developer.android.com/training/testing)・[テストの概要（React Native）](https://reactnative.dev/docs/testing-overview)・[GitHub Actions](https://docs.github.com/ja/actions) |
+| Lv1 | 公式ドキュメントの手順に沿って、ログイン画面でIDとパスワードを入力してボタンを押し、次の画面の見出しが表示されることを確かめるUIテストを1件作り、シミュレータ・エミュレータで実行する | [XCTest](https://developer.apple.com/documentation/xctest)・[テスト（Android）](https://developer.android.com/training/testing)・[テストの概要（React Native）](https://reactnative.dev/docs/testing-overview) |
+| Lv2 | 一覧・詳細・編集の3画面を持つメモアプリで、「メモを作成すると一覧に表示される」「編集内容が詳細画面に反映される」などの主要シナリオを識別子と待機を使って自動化する。テストごとにデータを初期化し、CIで実行して失敗時の画面記録とログを確認する | [XCTest](https://developer.apple.com/documentation/xctest)・[テスト（Android）](https://developer.android.com/training/testing)・[テストの概要（React Native）](https://reactnative.dev/docs/testing-overview)・[GitHub Actions](https://docs.github.com/ja/actions) |
 | Lv3 | 既存アプリのUIテストに、権限ダイアログ、ディープリンクからの起動、通信の切断、バックグラウンドからの復帰を含むシナリオを追加する。複数の端末・画面サイズで並列実行し、不安定なテストの原因をアプリ・テスト・データ・端末環境に分類して改善する | [Firebase Test Lab](https://firebase.google.com/docs/test-lab)・[テスト（Android）](https://developer.android.com/training/testing)・[XCTest](https://developer.apple.com/documentation/xctest) |
 
 ## 技術の対応
@@ -54,10 +54,10 @@ description: "UIテスト・E2Eの基準と使い方。モバイルアプリ開�
 | :--- | :--- | :--- | :--- |
 | 画面操作の自動化 | XCUITest | Espresso、Compose UI Test、UI Automator | Detox、Appium、Maestro |
 | 画面要素の特定 | Accessibility Identifier | testTag、contentDescription | testID |
-| 表示結果の比較 | スナップショットテスト | Compose のスクリーンショットテスト | Jest のスナップショット |
-| 端末上での実行環境 | Simulator でのCI実行 | Firebase Test Lab | Detox（Simulator／Emulator） |
+| 表示結果の比較 | スナップショットテスト | Composeのスクリーンショットテスト | Jestのスナップショット |
+| 端末上での実行環境 | SimulatorでのCI実行 | Firebase Test Lab | Detox（Simulator／Emulator） |
 
-roadmap.sh で学ぶ：[iOS](https://roadmap.sh/ios)（XCUITest、Unit & UI Testing）／[Android](https://roadmap.sh/android)（Espresso）／[React Native](https://roadmap.sh/react-native)（Detox、Appium）
+roadmap.shで学ぶ：[iOS](https://roadmap.sh/ios)（XCUITest、Unit & UI Testing）／[Android](https://roadmap.sh/android)（Espresso）／[React Native](https://roadmap.sh/react-native)（Detox、Appium）
 
 ## 評価を記録する
 

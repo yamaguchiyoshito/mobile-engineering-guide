@@ -44,9 +44,9 @@ iPhoneやiPadのアプリを作るための主要なプログラミング言語�
 
 | 目標 | 取り組む課題の例 | 参考資料 |
 | :--- | :--- | :--- |
-| Lv1 | Swift言語ガイドの基本の章にある例をXcodeのプレイグラウンドで実行し、関数、クロージャ、構造体のプロパティを書き換えて結果の変化を確かめる。Optionalの値を if let と guard let で取り出す短い関数を書く | [Swift言語ガイド](https://docs.swift.org/swift-book/) |
-| Lv2 | 買い物リストの合計金額を計算する型を、構造体、プロトコル、extension、throws を使って実装し、空のリストや不正な数量を与えたときの振る舞いを単体テストで確認する | [Swift言語ガイド](https://docs.swift.org/swift-book/)・[Swift Testing](https://developer.apple.com/documentation/testing) |
-| Lv3 | 既存のコードから強制アンラップ（!）と、クロージャ内で self を強く参照している箇所を洗い出し、クラッシュやメモリの解放漏れにつながるものを分析する。ジェネリクスを使う案と使わない案を比べ、アクセス制御で公開範囲を整理する | [Swift言語ガイド](https://docs.swift.org/swift-book/)・[Xcode](https://developer.apple.com/documentation/xcode) |
+| Lv1 | Swift言語ガイドの基本の章にある例をXcodeのプレイグラウンドで実行し、関数、クロージャ、構造体のプロパティを書き換えて結果の変化を確かめる。Optionalの値をif letとguard letで取り出す短い関数を書く | [Swift言語ガイド](https://docs.swift.org/swift-book/) |
+| Lv2 | 買い物リストの合計金額を計算する型を、構造体、プロトコル、extension、throwsを使って実装し、空のリストや不正な数量を与えたときの振る舞いを単体テストで確認する | [Swift言語ガイド](https://docs.swift.org/swift-book/)・[Swift Testing](https://developer.apple.com/documentation/testing) |
+| Lv3 | 既存のコードから強制アンラップ（!）と、クロージャ内でselfを強く参照している箇所を洗い出し、クラッシュやメモリの解放漏れにつながるものを分析する。ジェネリクスを使う案と使わない案を比べ、アクセス制御で公開範囲を整理する | [Swift言語ガイド](https://docs.swift.org/swift-book/)・[Xcode](https://developer.apple.com/documentation/xcode) |
 
 ## 技術の対応
 
@@ -59,7 +59,7 @@ iPhoneやiPadのアプリを作るための主要なプログラミング言語�
 | 記述を簡潔にする言語機能 | プロパティラッパー、result builder、マクロ |
 | 公開範囲と他言語との連携 | アクセス制御、Objective-C相互運用 |
 
-roadmap.sh で学ぶ：[iOS](https://roadmap.sh/ios)（Swift Basics、Closures、Error Handling、OOP、Functional Programming、Objective-C Basics、Interoperability with Swift）／[SwiftUI](https://roadmap.sh/swift-ui)（Optionals & Nil、Structures & Classes、Protocols、Generics、Error Handling、Extensions、Result Builders、Access Control）
+roadmap.shで学ぶ：[iOS](https://roadmap.sh/ios)（Swift Basics、Closures、Error Handling、OOP、Functional Programming、Objective-C Basics、Interoperability with Swift）／[SwiftUI](https://roadmap.sh/swift-ui)（Optionals & Nil、Structures & Classes、Protocols、Generics、Error Handling、Extensions、Result Builders、Access Control）
 
 ## 評価を記録する
 

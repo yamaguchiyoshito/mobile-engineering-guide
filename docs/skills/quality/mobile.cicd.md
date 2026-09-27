@@ -14,7 +14,7 @@ description: "CI/CD・静的解析の基準と使い方。モバイルアプリ�
 
 ## このスキルについて
 
-コードの変更をリポジトリに送るたびに、ビルド、テスト、コードの書き方の自動検査（静的解析）、テスト配信などを自動で実行する仕組みを作り、運用する技術です。モバイルアプリは iOS のビルドに macOS の環境が必要で、配布には署名情報も扱うため、Webやサーバーの開発に比べてビルド環境の準備と秘密情報の受け渡しに手間がかかります。最初に押さえるのは、ワークフロー（パイプライン）が「いつ」「どの環境で」「どの手順を」実行するかの定義であることと、失敗したときにログから原因の手順を特定する読み方です。
+コードの変更をリポジトリに送るたびに、ビルド、テスト、コードの書き方の自動検査（静的解析）、テスト配信などを自動で実行する仕組みを作り、運用する技術です。モバイルアプリはiOSのビルドにmacOSの環境が必要で、配布には署名情報も扱うため、Webやサーバーの開発に比べてビルド環境の準備と秘密情報の受け渡しに手間がかかります。最初に押さえるのは、ワークフロー（パイプライン）が「いつ」「どの環境で」「どの手順を」実行するかの定義であることと、失敗したときにログから原因の手順を特定する読み方です。
 
 分からない用語は[用語集](../../guide/glossary.md)で確認できます。
 
@@ -45,20 +45,20 @@ description: "CI/CD・静的解析の基準と使い方。モバイルアプリ�
 | 目標 | 取り組む課題の例 | 参考資料 |
 | :--- | :--- | :--- |
 | Lv1 | 公式ドキュメントに沿って、プッシュのたびに自分のアプリのビルドと単体テストを実行するワークフローを作る。テストをわざと失敗させ、ログから該当箇所を見つける | [GitHub Actions](https://docs.github.com/ja/actions)・[Pro Git（日本語）](https://git-scm.com/book/ja/v2) |
-| Lv2 | 小さなアプリのリポジトリに、プルリクエストごとにビルド、静的解析（SwiftLint、ktlint、ESLint など）、書式検査、単体テストを実行するワークフローを構成する。依存関係のキャッシュを設定し、設定前後の実行時間を比べる | [GitHub Actions](https://docs.github.com/ja/actions)・[GitHub Pull Request](https://docs.github.com/ja/pull-requests)・[Gradle ビルド](https://developer.android.com/build) |
+| Lv2 | 小さなアプリのリポジトリに、プルリクエストごとにビルド、静的解析（SwiftLint、ktlint、ESLintなど）、書式検査、単体テストを実行するワークフローを構成する。依存関係のキャッシュを設定し、設定前後の実行時間を比べる | [GitHub Actions](https://docs.github.com/ja/actions)・[GitHub Pull Request](https://docs.github.com/ja/pull-requests)・[Gradleビルド](https://developer.android.com/build) |
 | Lv3 | 既存のパイプラインに、署名情報を安全に受け渡して配布用ビルドを作成し、テスト配信まで行う段階を追加する。ジョブの実行時間と不安定な失敗を集計し、段階の分割や並列化で待ち時間を短くする | [fastlane](https://docs.fastlane.tools/)・[Xcode Cloud](https://developer.apple.com/xcode-cloud/)・[Expo EAS](https://docs.expo.dev/eas/)・[GitHub Actions](https://docs.github.com/ja/actions) |
 
 ## 技術の対応
 
 | 用途 | iOS | Android | React Native |
 | :--- | :--- | :--- | :--- |
-| ワークフローの実行環境 | GitHub Actions（macOS ランナー）、Xcode Cloud | GitHub Actions、Bitrise | EAS Build のCI連携 |
-| ビルドの自動化と高速化 | fastlane | Gradle キャッシュ | EAS Build |
-| 静的解析と書式検査 | SwiftLint、SwiftFormat | ktlint、detekt、Android Lint | ESLint／TypeScript 検査 |
-| テストの自動実行 | xcodebuild test、fastlane scan | Gradle test、connectedAndroidTest | Jest の CI 実行、Detox の CI 実行 |
-| 署名情報の管理 | 署名の CI 管理（match 等） | Play App Signing、CI のシークレットに保管した keystore | EAS の資格情報管理 |
+| ワークフローの実行環境 | GitHub Actions（macOSランナー）、Xcode Cloud | GitHub Actions、Bitrise | EAS BuildのCI連携 |
+| ビルドの自動化と高速化 | fastlane | Gradleキャッシュ | EAS Build |
+| 静的解析と書式検査 | SwiftLint、SwiftFormat | ktlint、detekt、Android Lint | ESLint／TypeScript検査 |
+| テストの自動実行 | xcodebuild test、fastlane scan | Gradle test、connectedAndroidTest | JestのCI実行、DetoxのCI実行 |
+| 署名情報の管理 | 署名のCI管理（match等） | Play App Signing、CIのシークレットに保管したkeystore | EASの資格情報管理 |
 
-roadmap.sh で学ぶ：[iOS](https://roadmap.sh/ios)（CI/CD、Fastlane、GitHub Actions、Code Quality Tools、SwiftLint、SwiftFormat）／[Android](https://roadmap.sh/android)（Linting、Ktlint、Detekt）／[React Native](https://roadmap.sh/react-native)（Development Workflow、Speeding up Builds）
+roadmap.shで学ぶ：[iOS](https://roadmap.sh/ios)（CI/CD、Fastlane、GitHub Actions、Code Quality Tools、SwiftLint、SwiftFormat）／[Android](https://roadmap.sh/android)（Linting、Ktlint、Detekt）／[React Native](https://roadmap.sh/react-native)（Development Workflow、Speeding up Builds）
 
 ## 評価を記録する
 

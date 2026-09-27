@@ -14,7 +14,7 @@ description: "画面遷移とディープリンクの基準と使い方。モバ
 
 ## このスキルについて
 
-アプリの中で画面を切り替える仕組みと、URL や通知から特定の画面を直接開く仕組み（ディープリンク）を扱う技術です。Web ではブラウザが戻る操作や URL の管理を受け持ちますが、モバイルアプリでは画面の積み重ね、下から重ねて出す画面（モーダル）、タブの切り替えをアプリ自身が管理し、Android の戻る操作や iOS のスワイプでの戻る操作にも対応する必要があります。さらに、アプリが起動していない状態でリンクから開かれる場合や、OS がメモリ不足でアプリを終了した後に画面を復元する場合も考えなければなりません。最初に押さえるのは、画面を積み重ねるスタック、モーダル、タブの違いと、それぞれで戻る操作がどう振る舞うかです。
+アプリの中で画面を切り替える仕組みと、URLや通知から特定の画面を直接開く仕組み（ディープリンク）を扱う技術です。Webではブラウザが戻る操作やURLの管理を受け持ちますが、モバイルアプリでは画面の積み重ね、下から重ねて出す画面（モーダル）、タブの切り替えをアプリ自身が管理し、Androidの戻る操作やiOSのスワイプでの戻る操作にも対応する必要があります。さらに、アプリが起動していない状態でリンクから開かれる場合や、OSがメモリ不足でアプリを終了した後に画面を復元する場合も考えなければなりません。最初に押さえるのは、画面を積み重ねるスタック、モーダル、タブの違いと、それぞれで戻る操作がどう振る舞うかです。
 
 分からない用語は[用語集](../../guide/glossary.md)で確認できます。
 
@@ -44,20 +44,20 @@ description: "画面遷移とディープリンクの基準と使い方。モバ
 
 | 目標 | 取り組む課題の例 | 参考資料 |
 | :--- | :--- | :--- |
-| Lv1 | 一覧から詳細へ ID を渡して遷移し、戻る操作で一覧に戻るアプリを公式の手順に沿って作り、iOS のスワイプや Android の戻る操作での動作を確認する | [SwiftUI チュートリアル](https://developer.apple.com/tutorials/swiftui)・[Navigation](https://developer.android.com/guide/navigation)・[React Navigation](https://reactnavigation.org/docs/getting-started) |
-| Lv2 | 一覧と設定の2つのタブ、一覧から開く詳細、追加用のモーダルを持つアプリを作る。`myapp://items/123` のような URL で詳細画面を開く処理を加え、アプリが起動していない状態と起動中の状態の両方で確認する | [SwiftUI](https://developer.apple.com/documentation/swiftui)・[Navigation](https://developer.android.com/guide/navigation)・[React Navigation](https://reactnavigation.org/docs/getting-started) |
-| Lv3 | ログインが必要な画面へのリンクを未ログインで開いたとき、ログイン後に元の画面へ進む流れを設計して実装する。ボタンの連打による二重遷移や、OS によるアプリ終了後に復元したときの画面状態を検証する | [SwiftUI](https://developer.apple.com/documentation/swiftui)・[Navigation](https://developer.android.com/guide/navigation)・[React Navigation](https://reactnavigation.org/docs/getting-started) |
+| Lv1 | 一覧から詳細へIDを渡して遷移し、戻る操作で一覧に戻るアプリを公式の手順に沿って作り、iOSのスワイプやAndroidの戻る操作での動作を確認する | [SwiftUIチュートリアル](https://developer.apple.com/tutorials/swiftui)・[Navigation](https://developer.android.com/guide/navigation)・[React Navigation](https://reactnavigation.org/docs/getting-started) |
+| Lv2 | 一覧と設定の2つのタブ、一覧から開く詳細、追加用のモーダルを持つアプリを作る。`myapp://items/123`のようなURLで詳細画面を開く処理を加え、アプリが起動していない状態と起動中の状態の両方で確認する | [SwiftUI](https://developer.apple.com/documentation/swiftui)・[Navigation](https://developer.android.com/guide/navigation)・[React Navigation](https://reactnavigation.org/docs/getting-started) |
+| Lv3 | ログインが必要な画面へのリンクを未ログインで開いたとき、ログイン後に元の画面へ進む流れを設計して実装する。ボタンの連打による二重遷移や、OSによるアプリ終了後に復元したときの画面状態を検証する | [SwiftUI](https://developer.apple.com/documentation/swiftui)・[Navigation](https://developer.android.com/guide/navigation)・[React Navigation](https://reactnavigation.org/docs/getting-started) |
 
 ## 技術の対応
 
 | 用途 | iOS | Android | React Native |
 | :--- | :--- | :--- | :--- |
-| 画面の積み重ねと戻る操作 | NavigationStack／UINavigationController | バックスタックと Task、Predictive Back | React Navigation（Stack） |
+| 画面の積み重ねと戻る操作 | NavigationStack／UINavigationController | バックスタックとTask、Predictive Back | React Navigation（Stack） |
 | タブとモーダル | TabView、モーダル | NavigationBar、BottomSheet、Dialog | React Navigation（Tab／Drawer） |
 | 遷移の定義と管理 | Coordinator | Navigation Component | Expo Router |
 | 外部から画面を開く | Universal Links、URL Scheme | Intent Filter、App Links、App Shortcuts | Linking |
 
-roadmap.sh で学ぶ：[iOS](https://roadmap.sh/ios)（Navigation、Navigation stacks、Modals and navigation、View transitions）／[Android](https://roadmap.sh/android)（Tasks & Backstack、Intent filters、App shortcuts、Navigation components）／[React Native](https://roadmap.sh/react-native)（Screen navigation、Deep linking）
+roadmap.shで学ぶ：[iOS](https://roadmap.sh/ios)（Navigation、Navigation stacks、Modals and navigation、View transitions）／[Android](https://roadmap.sh/android)（Tasks & Backstack、Intent filters、App shortcuts、Navigation components）／[React Native](https://roadmap.sh/react-native)（Screen navigation、Deep linking）
 
 ## 評価を記録する
 

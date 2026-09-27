@@ -22,4 +22,4 @@ description: "記入例：クラッシュ率の改善とリリース手順の整
 
 この例では、まず判断基準と運用手順を整備する必要があります。担当者が一度手順を作成したことだけでLv4とは判定しません。個人の習熟度は、[スキル定義](../skills/index.md)の該当定義と本人の行動に照らして別に確認します。
 
-[関連チェック項目 C050](../checklists/distribution.md#c050)・[監視・クラッシュ分析](../skills/quality/mobile.observability.md)・[署名・配布・ストア公開](../skills/quality/mobile.release.md)・[改善イシュー書式](../templates/improvement-issue.md)
+[関連チェック項目C050](../checklists/distribution.md#c050)・[監視・クラッシュ分析](../skills/quality/mobile.observability.md)・[署名・配布・ストア公開](../skills/quality/mobile.release.md)・[改善イシュー書式](../templates/improvement-issue.md)

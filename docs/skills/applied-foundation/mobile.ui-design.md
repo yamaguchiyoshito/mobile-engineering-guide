@@ -14,7 +14,7 @@ description: "UIデザイン原則とローカライズの基準と使い方。�
 
 ## このスキルについて
 
-アプリの画面を、各 OS の見た目と操作の慣習に合わせ、さまざまな画面の大きさや言語でも崩れないように組み立てるためのスキルです。Apple と Google はそれぞれデザインの指針を公開しており、それに沿うことで利用者が慣れた操作で使えます。また、画面の切り欠きやホームバーを避けた表示領域（安全領域）への配慮が必要なほか、ストアを通じて多くの国に配布できるため、画面の文字列をコードに直接書かず言語ごとに差し替えられる形で管理します（ローカライズ）。最初に押さえるのは、プラットフォームのデザインガイドライン、安全領域、文字列リソースの3つの考え方です。
+アプリの画面を、各OSの見た目と操作の慣習に合わせ、さまざまな画面の大きさや言語でも崩れないように組み立てるためのスキルです。AppleとGoogleはそれぞれデザインの指針を公開しており、それに沿うことで利用者が慣れた操作で使えます。また、画面の切り欠きやホームバーを避けた表示領域（安全領域）への配慮が必要です。ストアを通じて多くの国に配布できるため、画面の文字列はコードに直接書かず、言語ごとに差し替えられる形で管理します（ローカライズ）。最初に押さえるのは、プラットフォームのデザインガイドライン、安全領域、文字列リソースの3つの考え方です。
 
 分からない用語は[用語集](../../guide/glossary.md)で確認できます。
 
@@ -44,20 +44,20 @@ description: "UIデザイン原則とローカライズの基準と使い方。�
 
 | 目標 | 取り組む課題の例 | 参考資料 |
 | :--- | :--- | :--- |
-| Lv1 | 公式チュートリアルに沿ってプロフィール画面を作り、デザインどおりに余白、文字、アイコンを配置する。画面の文字列をリソースに分け、画面の小さい端末と大きい端末のシミュレーターで表示を確認する | [SwiftUI チュートリアル](https://developer.apple.com/tutorials/swiftui)・[Android Basics with Compose](https://developer.android.com/courses/android-basics-compose/course)・[スタイル（React Native）](https://reactnative.dev/docs/style) |
+| Lv1 | 公式チュートリアルに沿ってプロフィール画面を作り、デザインどおりに余白、文字、アイコンを配置する。画面の文字列をリソースに分け、画面の小さい端末と大きい端末のシミュレーターで表示を確認する | [SwiftUIチュートリアル](https://developer.apple.com/tutorials/swiftui)・[Android Basics with Compose](https://developer.android.com/courses/android-basics-compose/course)・[スタイル（React Native）](https://reactnative.dev/docs/style) |
 | Lv2 | 設定画面を作り、縦横の向き、ダークモード、日本語と英語の切り替えに対応させる。長い訳文、複数形、日付と数値の書式を入れて表示が崩れないことを確認する | [Human Interface Guidelines](https://developer.apple.com/design/human-interface-guidelines)・[Material Design 3](https://m3.material.io/)・[Flexbox（React Native）](https://reactnative.dev/docs/flexbox) |
-| Lv3 | スマートフォン向けの既存画面を、タブレットと右から左へ書く言語に対応させる設計を行う。iOS と Android で操作の慣習が異なる箇所（戻る操作、タブの位置など）を洗い出し、ブランド表現と両立する案をデザイナーと比較する | [Human Interface Guidelines](https://developer.apple.com/design/human-interface-guidelines)・[Material Design 3](https://m3.material.io/)・[プラットフォーム固有コード（React Native）](https://reactnative.dev/docs/platform-specific-code) |
+| Lv3 | スマートフォン向けの既存画面を、タブレットと右から左へ書く言語に対応させる設計を行う。iOSとAndroidで操作の慣習が異なる箇所（戻る操作、タブの位置など）を洗い出し、ブランド表現と両立する案をデザイナーと比較する | [Human Interface Guidelines](https://developer.apple.com/design/human-interface-guidelines)・[Material Design 3](https://m3.material.io/)・[プラットフォーム固有コード（React Native）](https://reactnative.dev/docs/platform-specific-code) |
 
 ## 技術の対応
 
 | 用途 | iOS | Android | React Native |
 | :--- | :--- | :--- | :--- |
-| デザインの指針とアイコン | Human Interface Guidelines、SF Symbols | Material Design | Platform 別スタイル |
-| レイアウト | Auto Layout | ConstraintLayout／Compose レイアウト | Flexbox、StyleSheet |
+| デザインの指針とアイコン | Human Interface Guidelines、SF Symbols | Material Design | Platform別スタイル |
+| レイアウト | Auto Layout | ConstraintLayout／Composeレイアウト | Flexbox、StyleSheet |
 | 画面サイズと安全領域 | Safe Area、Size Class | 画面密度・リソース修飾子 | SafeAreaView |
-| ローカライズ | String Catalog | strings.xml、多言語・RTL | i18n ライブラリ |
+| ローカライズ | String Catalog | strings.xml、多言語・RTL | i18nライブラリ |
 
-roadmap.sh で学ぶ：[iOS](https://roadmap.sh/ios)（HIG、UI Design、Auto Layout、Building Interfaces）／[SwiftUI](https://roadmap.sh/swift-ui)（Localization、Font、Padding）／[Android](https://roadmap.sh/android)（Interface & Navigation、ConstraintLayout、Icon、Text）／[React Native](https://roadmap.sh/react-native)（Layouts & Flexbox、Styling、StyleSheets、SafeAreaView、StatusBar）
+roadmap.shで学ぶ：[iOS](https://roadmap.sh/ios)（HIG、UI Design、Auto Layout、Building Interfaces）／[SwiftUI](https://roadmap.sh/swift-ui)（Localization、Font、Padding）／[Android](https://roadmap.sh/android)（Interface & Navigation、ConstraintLayout、Icon、Text）／[React Native](https://roadmap.sh/react-native)（Layouts & Flexbox、Styling、StyleSheets、SafeAreaView、StatusBar）
 
 ## 評価を記録する
 

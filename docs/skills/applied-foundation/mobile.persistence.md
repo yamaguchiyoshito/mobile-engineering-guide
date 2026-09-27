@@ -44,8 +44,8 @@ description: "データ永続化の基準と使い方。モバイルアプリ開
 
 | 目標 | 取り組む課題の例 | 参考資料 |
 | :--- | :--- | :--- |
-| Lv1 | 例に沿って、表示テーマの切り替えなど1つの設定値を保存するアプリを作り、アプリを終了して再起動しても値が残ることを確認する | [Foundation（UserDefaults）](https://developer.apple.com/documentation/foundation)・[データストレージ（Android）](https://developer.android.com/training/data-storage)・[Expo ドキュメント](https://docs.expo.dev/) |
-| Lv2 | 一覧と詳細の2画面を持つメモアプリを作り、メモをデータベースに保存して、アプリを終了しても内容が残ることを確認する。ログイン用のトークンは通常のデータと分けて安全な保存領域に保存する | [SwiftData](https://developer.apple.com/documentation/swiftdata)・[Room](https://developer.android.com/training/data-storage/room)・[Keychain Services](https://developer.apple.com/documentation/security/keychain-services)・[Keystore](https://developer.android.com/privacy-and-security/keystore)・[Expo ドキュメント](https://docs.expo.dev/) |
+| Lv1 | 例に沿って、表示テーマの切り替えなど1つの設定値を保存するアプリを作り、アプリを終了して再起動しても値が残ることを確認する | [Foundation（UserDefaults）](https://developer.apple.com/documentation/foundation)・[データストレージ（Android）](https://developer.android.com/training/data-storage)・[Expoドキュメント](https://docs.expo.dev/) |
+| Lv2 | 一覧と詳細の2画面を持つメモアプリを作り、メモをデータベースに保存して、アプリを終了しても内容が残ることを確認する。ログイン用のトークンは通常のデータと分けて安全な保存領域に保存する | [SwiftData](https://developer.apple.com/documentation/swiftdata)・[Room](https://developer.android.com/training/data-storage/room)・[Keychain Services](https://developer.apple.com/documentation/security/keychain-services)・[Keystore](https://developer.android.com/privacy-and-security/keystore)・[Expoドキュメント](https://docs.expo.dev/) |
 | Lv3 | メモアプリに項目を追加するスキーマ変更を行い、旧バージョンで保存したデータが新バージョンで読めることをテストで確認する。数千件のデータで一覧表示と書き込みの速度を測り、サーバーから取得したデータのキャッシュを更新する方針を決める | [Core Data](https://developer.apple.com/documentation/coredata)・[Room](https://developer.android.com/training/data-storage/room)・[データストレージ（Android）](https://developer.android.com/training/data-storage) |
 
 ## 技術の対応
@@ -58,7 +58,7 @@ description: "データ永続化の基準と使い方。モバイルアプリ開
 | 秘密情報の保存 | Keychain | Keystore、EncryptedSharedPreferences | expo-secure-store |
 | クラウドとの同期 | CloudKit | Firebase（Firestore）など | Firebase（Firestore）など |
 
-roadmap.sh で学ぶ：[iOS](https://roadmap.sh/ios)（Data Persistence、User Defaults、Keychain、Core Data、SQLite、File System）／[SwiftUI](https://roadmap.sh/swift-ui)（Data Persistence、SwiftData、Databases、Realm、GRDB、CloudKit）／[Android](https://roadmap.sh/android)（Storage、Shared Preferences、DataStore、Room Database、File System）／[React Native](https://roadmap.sh/react-native)（Storage、Async Storage、Expo Secure Store、Expo SQLite、Expo File System）
+roadmap.shで学ぶ：[iOS](https://roadmap.sh/ios)（Data Persistence、User Defaults、Keychain、Core Data、SQLite、File System）／[SwiftUI](https://roadmap.sh/swift-ui)（Data Persistence、SwiftData、Databases、Realm、GRDB、CloudKit）／[Android](https://roadmap.sh/android)（Storage、Shared Preferences、DataStore、Room Database、File System）／[React Native](https://roadmap.sh/react-native)（Storage、Async Storage、Expo Secure Store、Expo SQLite、Expo File System）
 
 ## 評価を記録する
 

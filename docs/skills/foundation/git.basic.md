@@ -56,7 +56,7 @@ description: "Gitの基準と使い方。モバイルアプリ開発のスキル
 | 記録しないファイルの指定 | .gitignore（DerivedData、build） | .gitignore（build） | .gitignore（node_modules、build） |
 | 大きなアセットの管理 | Git LFS | Git LFS | Git LFS |
 
-roadmap.sh で学ぶ：[iOS](https://roadmap.sh/ios)（Version Control、Git）／[Android](https://roadmap.sh/android)（Version Control、Git）／[React Native](https://roadmap.sh/react-native)（Development Workflow）
+roadmap.shで学ぶ：[iOS](https://roadmap.sh/ios)（Version Control、Git）／[Android](https://roadmap.sh/android)（Version Control、Git）／[React Native](https://roadmap.sh/react-native)（Development Workflow）
 
 ## 評価を記録する
 

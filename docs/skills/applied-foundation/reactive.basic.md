@@ -44,19 +44,19 @@ description: "リアクティブプログラミングの基準と使い方。モ
 
 | 目標 | 取り組む課題の例 | 参考資料 |
 | :--- | :--- | :--- |
-| Lv1 | テキスト入力欄の内容を購読し、入力された文字数を画面に表示するサンプルを作る。画面を閉じるときに購読を解除し、値が届く順序と、解除後に値が届かないことをログで確認する | [Combine](https://developer.apple.com/documentation/combine)・[Kotlin コルーチンガイド](https://kotlinlang.org/docs/coroutines-guide.html) |
-| Lv2 | 検索欄の入力を購読し、入力が一定時間止まってから検索して結果を一覧に表示する機能を作る。通信エラー時の表示と、画面を閉じたときの購読の解除を実装し、値が発行される順序をテストで確認する | [Combine](https://developer.apple.com/documentation/combine)・[Kotlin コルーチンガイド](https://kotlinlang.org/docs/coroutines-guide.html)・[アプリアーキテクチャガイド](https://developer.android.com/topic/architecture) |
-| Lv3 | ログイン状態、通信状態、設定値など複数のデータ源を組み合わせて1つの画面の状態を作る流れを設計する。既存コードの購読箇所を洗い出して多重購読や解除漏れを調べ、同じ処理を非同期関数で書いた場合と比較する | [Combine](https://developer.apple.com/documentation/combine)・[Swift Concurrency](https://developer.apple.com/documentation/swift/concurrency)・[Kotlin コルーチンガイド](https://kotlinlang.org/docs/coroutines-guide.html) |
+| Lv1 | テキスト入力欄の内容を購読し、入力された文字数を画面に表示するサンプルを作る。画面を閉じるときに購読を解除し、値が届く順序と、解除後に値が届かないことをログで確認する | [Combine](https://developer.apple.com/documentation/combine)・[Kotlinコルーチンガイド](https://kotlinlang.org/docs/coroutines-guide.html) |
+| Lv2 | 検索欄の入力を購読し、入力が一定時間止まってから検索して結果を一覧に表示する機能を作る。通信エラー時の表示と、画面を閉じたときの購読の解除を実装し、値が発行される順序をテストで確認する | [Combine](https://developer.apple.com/documentation/combine)・[Kotlinコルーチンガイド](https://kotlinlang.org/docs/coroutines-guide.html)・[アプリアーキテクチャガイド](https://developer.android.com/topic/architecture) |
+| Lv3 | ログイン状態、通信状態、設定値など複数のデータ源を組み合わせて1つの画面の状態を作る流れを設計する。既存コードの購読箇所を洗い出して多重購読や解除漏れを調べ、同じ処理を非同期関数で書いた場合と比較する | [Combine](https://developer.apple.com/documentation/combine)・[Swift Concurrency](https://developer.apple.com/documentation/swift/concurrency)・[Kotlinコルーチンガイド](https://kotlinlang.org/docs/coroutines-guide.html) |
 
 ## 技術の対応
 
 | 用途 | iOS | Android | React Native |
 | :--- | :--- | :--- | :--- |
 | 値の流れの購読 | Combine（Publisher／Subscriber、Subject）、RxSwift | RxJava／RxKotlin、Flow、Observerパターン | RxJS、イベント購読とクリーンアップ |
-| 値の変換と実行スレッドの指定 | Combine（Operator、Scheduler） | Flow の演算子 | RxJS の演算子 |
+| 値の変換と実行スレッドの指定 | Combine（Operator、Scheduler） | Flowの演算子 | RxJSの演算子 |
 | 画面の状態の監視 | Observation（@Observable） | LiveData | 状態購読 |
 
-roadmap.sh で学ぶ：[iOS](https://roadmap.sh/ios)（Reactive Programming、Combine、RxSwift、Publishers & Subscribers、Operators & Pipelines、Schedulers、Subjects）／[SwiftUI](https://roadmap.sh/swift-ui)（Observers）／[Android](https://roadmap.sh/android)（RxJava、RxKotlin、LiveData、Observer Pattern）
+roadmap.shで学ぶ：[iOS](https://roadmap.sh/ios)（Reactive Programming、Combine、RxSwift、Publishers & Subscribers、Operators & Pipelines、Schedulers、Subjects）／[SwiftUI](https://roadmap.sh/swift-ui)（Observers）／[Android](https://roadmap.sh/android)（RxJava、RxKotlin、LiveData、Observer Pattern）
 
 ## 評価を記録する
 

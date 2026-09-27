@@ -52,11 +52,11 @@ description: "テスト設計の基準と使い方。モバイルアプリ開発
 
 | 用途 | iOS | Android | React Native |
 | :--- | :--- | :--- | :--- |
-| テストの種類と役割分担 | Xcode Test Plan | テスト種別（Local／Instrumented） | Jest／Detox の役割分担 |
+| テストの種類と役割分担 | Xcode Test Plan | テスト種別（Local／Instrumented） | Jest／Detoxの役割分担 |
 | 網羅状況の確認 | カバレッジ（Xcode） | カバレッジ（JaCoCo） | カバレッジ（Jest） |
-| 実行する端末・環境の範囲 | 端末・OS マトリクス | 端末マトリクス、Test Lab | Expo 環境でのテスト範囲 |
+| 実行する端末・環境の範囲 | 端末・OSマトリクス | 端末マトリクス、Test Lab | Expo環境でのテスト範囲 |
 
-roadmap.sh で学ぶ：[iOS](https://roadmap.sh/ios)（Test Plan & Coverage、Unit & UI Testing）／[SwiftUI](https://roadmap.sh/swift-ui)（Testing）／[Android](https://roadmap.sh/android)（Testing）／[React Native](https://roadmap.sh/react-native)（Testing）
+roadmap.shで学ぶ：[iOS](https://roadmap.sh/ios)（Test Plan & Coverage、Unit & UI Testing）／[SwiftUI](https://roadmap.sh/swift-ui)（Testing）／[Android](https://roadmap.sh/android)（Testing）／[React Native](https://roadmap.sh/react-native)（Testing）
 
 ## 評価を記録する
 

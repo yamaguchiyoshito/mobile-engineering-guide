@@ -14,7 +14,7 @@ description: "Swift並行処理とメモリ管理の基準と使い方。モバ�
 
 ## このスキルについて
 
-通信やファイルの読み込みのように時間のかかる処理を、画面の操作を止めずに実行する方法と、使い終わったデータをメモリから正しく片付ける仕組みを扱うスキルです。モバイル端末はメモリが限られており、使用量が増えすぎると OS がアプリを終了させることがあります。また、画面の描画を担うメインスレッドが止まるとアプリが固まったように見えるため、処理の実行場所とメモリの解放は利用者の体験に直結します。最初に押さえるのは、画面の更新はメインスレッドで行うという原則と、Swift が参照の数を数えて不要になったデータを解放する仕組み（ARC）です。
+通信やファイルの読み込みのように時間のかかる処理を、画面の操作を止めずに実行する方法と、使い終わったデータをメモリから正しく片付ける仕組みを扱うスキルです。モバイル端末はメモリが限られており、使用量が増えすぎるとOSがアプリを終了させることがあります。また、画面の描画を担うメインスレッドが止まるとアプリが固まったように見えるため、処理の実行場所とメモリの解放は利用者の体験に直結します。最初に押さえるのは、画面の更新はメインスレッドで行うという原則と、Swiftが参照の数を数えて不要になったデータを解放する仕組み（ARC）です。
 
 分からない用語は[用語集](../../guide/glossary.md)で確認できます。
 
@@ -44,9 +44,9 @@ description: "Swift並行処理とメモリ管理の基準と使い方。モバ�
 
 | 目標 | 取り組む課題の例 | 参考資料 |
 | :--- | :--- | :--- |
-| Lv1 | 例に沿って、ボタンを押すと async 関数で数秒待ってから結果を画面に表示するサンプルを作り、デバッガで画面の更新がメインスレッドで行われていることを確認する | [Swift言語ガイド](https://docs.swift.org/swift-book/)・[Swift Concurrency](https://developer.apple.com/documentation/swift/concurrency) |
-| Lv2 | 複数の画像を並列にダウンロードして一覧に表示する画面を作り、画面を閉じたときにダウンロードがキャンセルされること、画面のインスタンスが解放されることを Xcode のメモリグラフで確認する | [Swift Concurrency](https://developer.apple.com/documentation/swift/concurrency)・[Xcode](https://developer.apple.com/documentation/xcode) |
-| Lv3 | コールバック型の既存 API を async／await で呼べるように包み、複数の画面から使うキャッシュを actor で保護する。既存コードで厳格な並行性検査を有効にし、出た警告を分類して段階的な移行計画を立てる | [Swift Concurrency](https://developer.apple.com/documentation/swift/concurrency)・[アプリ性能の改善](https://developer.apple.com/documentation/xcode/improving-your-app-s-performance) |
+| Lv1 | 例に沿って、ボタンを押すとasync関数で数秒待ってから結果を画面に表示するサンプルを作り、デバッガで画面の更新がメインスレッドで行われていることを確認する | [Swift言語ガイド](https://docs.swift.org/swift-book/)・[Swift Concurrency](https://developer.apple.com/documentation/swift/concurrency) |
+| Lv2 | 複数の画像を並列にダウンロードして一覧に表示する画面を作り、画面を閉じたときにダウンロードがキャンセルされること、画面のインスタンスが解放されることをXcodeのメモリグラフで確認する | [Swift Concurrency](https://developer.apple.com/documentation/swift/concurrency)・[Xcode](https://developer.apple.com/documentation/xcode) |
+| Lv3 | コールバック型の既存APIをasync／awaitで呼べるように包み、複数の画面から使うキャッシュをactorで保護する。既存コードで厳格な並行性検査を有効にし、出た警告を分類して段階的な移行計画を立てる | [Swift Concurrency](https://developer.apple.com/documentation/swift/concurrency)・[アプリ性能の改善](https://developer.apple.com/documentation/xcode/improving-your-app-s-performance) |
 
 ## 技術の対応
 
@@ -57,7 +57,7 @@ description: "Swift並行処理とメモリ管理の基準と使い方。モバ�
 | 従来の並行処理 | GCD（DispatchQueue）、OperationQueue |
 | メモリ管理 | ARC、weak／unowned、循環参照 |
 
-roadmap.sh で学ぶ：[iOS](https://roadmap.sh/ios)（Concurrency、GCD、Operation Queues、Async/Await、Memory Management、Callbacks）／[SwiftUI](https://roadmap.sh/swift-ui)（Actors、Tasks & Task Groups、Unstructured Concurrency、Strict Concurrency Checking、ARC）
+roadmap.shで学ぶ：[iOS](https://roadmap.sh/ios)（Concurrency、GCD、Operation Queues、Async/Await、Memory Management、Callbacks）／[SwiftUI](https://roadmap.sh/swift-ui)（Actors、Tasks & Task Groups、Unstructured Concurrency、Strict Concurrency Checking、ARC）
 
 ## 評価を記録する
 

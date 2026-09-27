@@ -14,7 +14,7 @@ description: "Jetpack Composeの基準と使い方。モバイルアプリ開発
 
 ## このスキルについて
 
-Jetpack Compose は、Android アプリの画面を Kotlin の関数（Composable）の組み合わせで作る Google の仕組みで、画面サイズや文字サイズ、ダークモードなど端末ごとに異なる表示条件にも同じコードで対応します。宣言的UIと呼ばれる方式で、「この状態のときはこう表示する」と書いておけば、状態の値を書き換えるだけで画面が描き直されます（再コンポジション）。これに対して従来の XML レイアウトと View による命令的UIでは、部品を直接取り出して表示を一つずつ書き換えます。最初に押さえるのは、画面は状態から作られるという考え方と、状態を呼び出し元に持たせて表示用の関数を状態から切り離す状態ホイスティングです。
+Jetpack Composeは、Androidアプリの画面をKotlinの関数（Composable）の組み合わせで作るGoogleの仕組みで、画面サイズや文字サイズ、ダークモードなど端末ごとに異なる表示条件にも同じコードで対応します。宣言的UIと呼ばれる方式で、「この状態のときはこう表示する」と書いておけば、状態の値を書き換えるだけで画面が描き直されます（再コンポジション）。これに対して従来のXMLレイアウトとViewによる命令的UIでは、部品を直接取り出して表示を一つずつ書き換えます。最初に押さえるのは、画面は状態から作られるという考え方と、状態を呼び出し元に持たせて表示用の関数を状態から切り離す状態ホイスティングです。
 
 分からない用語は[用語集](../../guide/glossary.md)で確認できます。
 
@@ -44,21 +44,21 @@ Composable、状態、再コンポジションの関係を説明できず、単�
 
 | 目標 | 取り組む課題の例 | 参考資料 |
 | :--- | :--- | :--- |
-| Lv1 | Android Basics with Compose のコースに沿って、テキストと画像を並べた画面と、ボタンを押すと数値が増えるカウンターを作り、プレビューとエミュレーターで表示を確認する | [Android Basics with Compose](https://developer.android.com/courses/android-basics-compose/course) |
-| Lv2 | 一覧・詳細・追加の3画面を持つ ToDo アプリを作り、LazyColumn で一覧を表示し、ViewModel の状態を購読して Navigation Compose で遷移する。画面を回転しても入力中の内容が残ることを確認する | [Jetpack Compose](https://developer.android.com/develop/ui/compose)・[Navigation](https://developer.android.com/guide/navigation)・[アプリアーキテクチャガイド](https://developer.android.com/topic/architecture) |
-| Lv3 | 既存の画面で不要な再コンポジションが起きている箇所を Android Studio の Layout Inspector で見つけて減らし、LaunchedEffect の起動条件を見直す。View で作られた既存画面に Composable を1つ組み込み、共存の方針をまとめる | [Jetpack Compose](https://developer.android.com/develop/ui/compose)・[パフォーマンス（Android）](https://developer.android.com/topic/performance) |
+| Lv1 | Android Basics with Composeのコースに沿って、テキストと画像を並べた画面と、ボタンを押すと数値が増えるカウンターを作り、プレビューとエミュレーターで表示を確認する | [Android Basics with Compose](https://developer.android.com/courses/android-basics-compose/course) |
+| Lv2 | 一覧・詳細・追加の3画面を持つToDoアプリを作り、LazyColumnで一覧を表示し、ViewModelの状態を購読してNavigation Composeで遷移する。画面を回転しても入力中の内容が残ることを確認する | [Jetpack Compose](https://developer.android.com/develop/ui/compose)・[Navigation](https://developer.android.com/guide/navigation)・[アプリアーキテクチャガイド](https://developer.android.com/topic/architecture) |
+| Lv3 | 既存の画面で不要な再コンポジションが起きている箇所をAndroid StudioのLayout Inspectorで見つけて減らし、LaunchedEffectの起動条件を見直す。Viewで作られた既存画面にComposableを1つ組み込み、共存の方針をまとめる | [Jetpack Compose](https://developer.android.com/develop/ui/compose)・[パフォーマンス（Android）](https://developer.android.com/topic/performance) |
 
 ## 技術の対応
 
 | 用途 | 主な技術・API |
 | :--- | :--- |
-| 画面の部品 | Composable 関数、Material 3 |
+| 画面の部品 | Composable関数、Material 3 |
 | 配置と一覧 | Column／Row／Box、LazyColumn／LazyRow、Scaffold、TabRow |
-| 状態の管理 | remember／rememberSaveable、State ホイスティング、再コンポジション |
+| 状態の管理 | remember／rememberSaveable、Stateホイスティング、再コンポジション |
 | 副作用 | LaunchedEffect、DisposableEffect |
-| 画面遷移と状態の接続 | Navigation Compose（NavHost）、ViewModel との接続 |
+| 画面遷移と状態の接続 | Navigation Compose（NavHost）、ViewModelとの接続 |
 
-roadmap.sh で学ぶ：[Android](https://roadmap.sh/android)（Jetpack Compose、Remember & State、Side effects、Column & Row、Lazy column & row、Scaffold、NavHost、ViewModel state）
+roadmap.shで学ぶ：[Android](https://roadmap.sh/android)（Jetpack Compose、Remember & State、Side effects、Column & Row、Lazy column & row、Scaffold、NavHost、ViewModel state）
 
 ## 評価を記録する
 

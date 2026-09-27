@@ -14,7 +14,7 @@ description: "ビルドと依存管理の基準と使い方。モバイルアプ
 
 ## このスキルについて
 
-書いたコードと外部のライブラリを組み合わせ、端末にインストールできる形（成果物）にまとめる仕組みを扱います。Webの開発でもライブラリの追加やビルドは行いますが、モバイルアプリではiOS向けとAndroid向けでビルドの仕組みが異なり、ストアに提出する成果物には署名が必要で、開発用とリリース用などのビルド構成の違いがそのまま利用者の手元のアプリの動作に表れます。最初に押さえるのは、アプリが使う外部ライブラリとそのバージョン（依存関係）を管理ツールに宣言して取り込む考え方と、同じコードから複数の構成の成果物を作り分けられることです。
+書いたコードと外部のライブラリを組み合わせ、端末にインストールできる形（成果物）にまとめる仕組みを扱います。Webの開発でもライブラリの追加やビルドは行いますが、モバイルアプリではiOS向けとAndroid向けでビルドの仕組みが異なり、ストアに提出する成果物には署名が必要です。また、開発用とリリース用などのビルド構成の違いが、そのまま利用者の手元のアプリの動作に表れます。最初に押さえるのは、アプリが使う外部ライブラリとそのバージョン（依存関係）を管理ツールに宣言して取り込む考え方と、同じコードから複数の構成の成果物を作り分けられることです。
 
 分からない用語は[用語集](../../guide/glossary.md)で確認できます。
 
@@ -44,20 +44,20 @@ description: "ビルドと依存管理の基準と使い方。モバイルアプ
 
 | 目標 | 取り組む課題の例 | 参考資料 |
 | :--- | :--- | :--- |
-| Lv1 | 公式の手順に沿って、画像の読み込みやHTTP通信などに使う外部ライブラリを1つ追加し、アプリから呼び出してビルド・実行する。開発用の構成で成果物を生成し、その保存場所を確認する | [Swift Package Manager](https://developer.apple.com/documentation/xcode/swift-packages)・[Gradle ビルド](https://developer.android.com/build)・[Expo ドキュメント](https://docs.expo.dev/) |
-| Lv2 | 開発用とリリース用でAPIの接続先とアプリの表示名が切り替わるようにビルド構成を分け、両方の成果物を生成して、実際に切り替わっていることを確認する。依存ライブラリを1つ更新し、ビルドと動作に問題がないことを確かめる | [Xcode](https://developer.apple.com/documentation/xcode)・[Gradle ビルド](https://developer.android.com/build)・[Expo EAS](https://docs.expo.dev/eas/) |
-| Lv3 | 既存プロジェクトの依存関係を一覧にし、同じライブラリの異なるバージョンが間接的に入り込んでいる箇所や、ビルド時間の多くを占める工程を調べる。ライブラリを使い続ける案と置き換える案を、保守性、ビルド時間、成果物サイズの観点で比べる | [Swift Package Manager](https://developer.apple.com/documentation/xcode/swift-packages)・[Gradle ビルド](https://developer.android.com/build)・[Expo EAS](https://docs.expo.dev/eas/) |
+| Lv1 | 公式の手順に沿って、画像の読み込みやHTTP通信などに使う外部ライブラリを1つ追加し、アプリから呼び出してビルド・実行する。開発用の構成で成果物を生成し、その保存場所を確認する | [Swift Package Manager](https://developer.apple.com/documentation/xcode/swift-packages)・[Gradleビルド](https://developer.android.com/build)・[Expoドキュメント](https://docs.expo.dev/) |
+| Lv2 | 開発用とリリース用でAPIの接続先とアプリの表示名が切り替わるようにビルド構成を分け、両方の成果物を生成して、実際に切り替わっていることを確認する。依存ライブラリを1つ更新し、ビルドと動作に問題がないことを確かめる | [Xcode](https://developer.apple.com/documentation/xcode)・[Gradleビルド](https://developer.android.com/build)・[Expo EAS](https://docs.expo.dev/eas/) |
+| Lv3 | 既存プロジェクトの依存関係を一覧にし、同じライブラリの異なるバージョンが間接的に入り込んでいる箇所や、ビルド時間の多くを占める工程を調べる。ライブラリを使い続ける案と置き換える案を、保守性、ビルド時間、成果物サイズの観点で比べる | [Swift Package Manager](https://developer.apple.com/documentation/xcode/swift-packages)・[Gradleビルド](https://developer.android.com/build)・[Expo EAS](https://docs.expo.dev/eas/) |
 
 ## 技術の対応
 
 | 用途 | iOS | Android | React Native |
 | :--- | :--- | :--- | :--- |
 | 依存ライブラリの管理 | Swift Package Manager、CocoaPods、Carthage | バージョンカタログ | npm／yarn、autolinking |
-| ビルド構成の切り替え | ビルド設定（Configuration） | Build Variant | app.config、EAS Build のプロファイル |
-| ビルドの実行 | xcodebuild | Gradle（Kotlin DSL） | Expo プレビルド、EAS Build |
+| ビルド構成の切り替え | ビルド設定（Configuration） | Build Variant | app.config、EAS Buildのプロファイル |
+| ビルドの実行 | xcodebuild | Gradle（Kotlin DSL） | Expoプレビルド、EAS Build |
 | 成果物の生成と最適化 | xcframework | R8、署名付きAPK／AAB | Hermes |
 
-roadmap.sh で学ぶ：[iOS](https://roadmap.sh/ios)（Swift Package Manager、CocoaPods、Carthage、Dependency Manager、XCFramework、Static Library、Dynamic Library、Frameworks & Library）／[SwiftUI](https://roadmap.sh/swift-ui)（Creating Packages、Using Packages、Swift Package Index）／[Android](https://roadmap.sh/android)（What Is and How to Use Gradle、Signed APK）／[React Native](https://roadmap.sh/react-native)（Expo、React Native CLI、Create Expo App、Speeding up Builds）
+roadmap.shで学ぶ：[iOS](https://roadmap.sh/ios)（Swift Package Manager、CocoaPods、Carthage、Dependency Manager、XCFramework、Static Library、Dynamic Library、Frameworks & Library）／[SwiftUI](https://roadmap.sh/swift-ui)（Creating Packages、Using Packages、Swift Package Index）／[Android](https://roadmap.sh/android)（What Is and How to Use Gradle、Signed APK）／[React Native](https://roadmap.sh/react-native)（Expo、React Native CLI、Create Expo App、Speeding up Builds）
 
 ## 評価を記録する
 

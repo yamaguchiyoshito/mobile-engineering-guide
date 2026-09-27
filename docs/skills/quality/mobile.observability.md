@@ -14,7 +14,7 @@ description: "監視・クラッシュ分析の基準と使い方。モバイル
 
 ## このスキルについて
 
-公開したアプリで起きたクラッシュ（異常終了）、応答停止、エラーを利用者の端末から集めて分析し、原因の特定と修正につなげる技術です。モバイルアプリは利用者それぞれの端末の上で動くため、クラッシュもその端末の中で起こり、サーバーのログだけでは何が起きたかは分かりません。そこで、端末から報告を送る収集サービス（Crashlytics や Sentry など）を組み込み、配布用ビルドでは読めない形になっているクラッシュ位置をソースコードの関数名や行番号に対応付けるシンボル化のための情報をアップロードしておく必要があります。最初に押さえるのは、スタックトレース（クラッシュ時に実行中だった処理の履歴）の読み方と、発生したアプリのバージョン・端末・OSを合わせて確認する習慣です。
+公開したアプリで起きたクラッシュ（異常終了）、応答停止、エラーを利用者の端末から集めて分析し、原因の特定と修正につなげる技術です。モバイルアプリは利用者それぞれの端末の上で動くため、クラッシュもその端末の中で起こり、サーバーのログだけでは何が起きたかは分かりません。そこで、端末から報告を送る収集サービス（CrashlyticsやSentryなど）を組み込みます。配布用ビルドではクラッシュ位置が読めない形になっているため、ソースコードの関数名や行番号に対応付ける処理（シンボル化）に必要な情報もアップロードしておきます。最初に押さえるのは、スタックトレース（クラッシュ時に実行中だった処理の履歴）の読み方と、発生したアプリのバージョン・端末・OSを合わせて確認する習慣です。
 
 分からない用語は[用語集](../../guide/glossary.md)で確認できます。
 
@@ -45,20 +45,20 @@ description: "監視・クラッシュ分析の基準と使い方。モバイル
 | 目標 | 取り組む課題の例 | 参考資料 |
 | :--- | :--- | :--- |
 | Lv1 | 公式の手順に沿ってサンプルアプリにクラッシュ報告の収集を組み込み、テスト用のクラッシュを発生させて、管理画面でスタックトレース、アプリのバージョン、端末を確認して記録する | [Firebase Crashlytics](https://firebase.google.com/docs/crashlytics) |
-| Lv2 | 自分のアプリの配布用ビルドで dSYM、ProGuard mapping、ソースマップなどのシンボル情報のアップロードを設定し、読める形になったスタックトレースから原因を特定して修正する。あわせて、個人情報を含めないログの出力規則を決めてアプリに適用する | [Firebase Crashlytics](https://firebase.google.com/docs/crashlytics)・[OSLog](https://developer.apple.com/documentation/os/logging) |
+| Lv2 | 自分のアプリの配布用ビルドでdSYM、ProGuard mapping、ソースマップなどのシンボル情報のアップロードを設定し、読める形になったスタックトレースから原因を特定して修正する。あわせて、個人情報を含めないログの出力規則を決めてアプリに適用する | [Firebase Crashlytics](https://firebase.google.com/docs/crashlytics)・[OSLog](https://developer.apple.com/documentation/os/logging) |
 | Lv3 | 既存アプリのクラッシュ率と応答停止をバージョン、端末、OSごとに集計し、影響の大きい順に対応の優先順位を決める。アプリ側の例外とサーバー側の障害を切り分ける手順と、遠隔設定で問題のある機能を止める方法を設計する | [MetricKit](https://developer.apple.com/documentation/metrickit)・[Android vitals](https://developer.android.com/topic/performance/vitals)・[Firebase Crashlytics](https://firebase.google.com/docs/crashlytics) |
 
 ## 技術の対応
 
 | 用途 | iOS | Android | React Native |
 | :--- | :--- | :--- | :--- |
-| クラッシュ報告の収集 | Crashlytics | Crashlytics | Sentry／Crashlytics、JS 例外とネイティブクラッシュの区別 |
-| シンボル化（クラッシュ位置をソースに対応付ける） | dSYM のシンボル化 | ProGuard mapping のアップロード | ソースマップのアップロード |
+| クラッシュ報告の収集 | Crashlytics | Crashlytics | Sentry／Crashlytics、JS例外とネイティブクラッシュの区別 |
+| シンボル化（クラッシュ位置をソースに対応付ける） | dSYMのシンボル化 | ProGuard mappingのアップロード | ソースマップのアップロード |
 | 応答停止・性能などの指標 | Xcode Organizer（クラッシュ・Hang・エネルギー）、MetricKit | Android vitals | 各OSの仕組み（MetricKit、Android vitals） |
 | ログの出力 | OSLog／swift-log | Timber、Logcat | console、react-native-logs |
 | 機能の遠隔制御 | Remote Config（Firebase） | Remote Config | Remote Config（Firebase） |
 
-roadmap.sh で学ぶ：[SwiftUI](https://roadmap.sh/swift-ui)（Logging & Debugging、Swift Log、CocoaLumberjack）／[Android](https://roadmap.sh/android)（Crashlytics、Timber、Remote Config、Chucker）／[React Native](https://roadmap.sh/react-native)（Sourcemaps、LogBox）
+roadmap.shで学ぶ：[SwiftUI](https://roadmap.sh/swift-ui)（Logging & Debugging、Swift Log、CocoaLumberjack）／[Android](https://roadmap.sh/android)（Crashlytics、Timber、Remote Config、Chucker）／[React Native](https://roadmap.sh/react-native)（Sourcemaps、LogBox）
 
 ## 評価を記録する
 

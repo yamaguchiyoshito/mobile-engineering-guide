@@ -14,7 +14,7 @@ description: "モバイルセキュリティの基準と使い方。モバイル
 
 ## このスキルについて
 
-アプリが扱うパスワード、認証トークン、個人情報などを、端末の中と通信の途中で守る技術です。サーバーのコードと違い、ストアで配布したアプリは第三者が端末に取り込んで中身を解析できるため、API キーなどの秘密情報をアプリに埋め込んでも隠し通すことはできず、秘密はサーバー側で管理する必要があります。最初に押さえるのは、アプリ側の値や判定は書き換えられ得る前提で重要な検証をサーバーで行うことと、認証情報を Keychain や Keystore など OS が用意する保護された保存先に置くことです。
+アプリが扱うパスワード、認証トークン、個人情報などを、端末の中と通信の途中で守る技術です。サーバーのコードと違い、ストアで配布したアプリは第三者が端末に取り込んで中身を解析できるため、APIキーなどの秘密情報をアプリに埋め込んでも隠し通すことはできず、秘密はサーバー側で管理する必要があります。最初に押さえるのは、アプリ側の値や判定は書き換えられ得る前提で重要な検証をサーバーで行うことと、認証情報をKeychainやKeystoreなどOSが用意する保護された保存先に置くことです。
 
 分からない用語は[用語集](../../guide/glossary.md)で確認できます。
 
@@ -44,21 +44,21 @@ description: "モバイルセキュリティの基準と使い方。モバイル
 
 | 目標 | 取り組む課題の例 | 参考資料 |
 | :--- | :--- | :--- |
-| Lv1 | 公式ドキュメントに沿って、ログイン後に受け取るトークンを Keychain、Keystore、または expo-secure-store に保存・読み出し・削除するサンプルを作り、通常の設定値と同じ保存先に置かないことを確認する | [Keychain Services](https://developer.apple.com/documentation/security/keychain-services)・[Keystore](https://developer.android.com/privacy-and-security/keystore)・[セキュリティ（React Native）](https://reactnative.dev/docs/security) |
-| Lv2 | 自分が作ったアプリを見直し、平文で保存している秘密情報、ログに出力している個人情報、アプリに埋め込んだ API キー、不要な権限要求を一覧にして修正する。API キーが必要な処理はサーバー経由の呼び出しに置き換える | [セキュリティのヒント](https://developer.android.com/privacy-and-security/security-tips)・[セキュリティ（React Native）](https://reactnative.dev/docs/security)・[OWASP MAS](https://mas.owasp.org/) |
-| Lv3 | OWASP MASVS の項目を参照して既存アプリのデータの流れと信頼境界を図にまとめ、通信の改ざんや改変された端末での動作を許可された検証環境で確かめる。見つかった問題の対策案と、専門担当者に相談すべき範囲を文書にする | [OWASP MAS](https://mas.owasp.org/)・[セキュリティのヒント](https://developer.android.com/privacy-and-security/security-tips) |
+| Lv1 | 公式ドキュメントに沿って、ログイン後に受け取るトークンをKeychain、Keystore、またはexpo-secure-storeに保存・読み出し・削除するサンプルを作り、通常の設定値と同じ保存先に置かないことを確認する | [Keychain Services](https://developer.apple.com/documentation/security/keychain-services)・[Keystore](https://developer.android.com/privacy-and-security/keystore)・[セキュリティ（React Native）](https://reactnative.dev/docs/security) |
+| Lv2 | 自分が作ったアプリを見直し、平文で保存している秘密情報、ログに出力している個人情報、アプリに埋め込んだAPIキー、不要な権限要求を一覧にして修正する。APIキーが必要な処理はサーバー経由の呼び出しに置き換える | [セキュリティのヒント](https://developer.android.com/privacy-and-security/security-tips)・[セキュリティ（React Native）](https://reactnative.dev/docs/security)・[OWASP MAS](https://mas.owasp.org/) |
+| Lv3 | OWASP MASVSの項目を参照して既存アプリのデータの流れと信頼境界を図にまとめ、通信の改ざんや改変された端末での動作を許可された検証環境で確かめる。見つかった問題の対策案と、専門担当者に相談すべき範囲を文書にする | [OWASP MAS](https://mas.owasp.org/)・[セキュリティのヒント](https://developer.android.com/privacy-and-security/security-tips) |
 
 ## 技術の対応
 
 | 用途 | iOS | Android | React Native |
 | :--- | :--- | :--- | :--- |
-| 秘密情報の保存 | Keychain、Data Protection | Keystore、EncryptedSharedPreferences／DataStore の暗号化 | expo-secure-store |
+| 秘密情報の保存 | Keychain、Data Protection | Keystore、EncryptedSharedPreferences／DataStoreの暗号化 | expo-secure-store |
 | 通信の保護 | App Transport Security、証明書ピンニング | Network Security Config | ネイティブ層の設定 |
-| 解析への備えと秘密情報の扱い | 難読化の限界 | R8 による難読化 | 環境変数と秘密情報の扱い、JS バンドルへの秘密情報混入防止 |
+| 解析への備えと秘密情報の扱い | 難読化の限界 | R8による難読化 | 環境変数と秘密情報の扱い、JSバンドルへの秘密情報混入防止 |
 | 本人確認・端末確認・権限 | 生体認証（LocalAuthentication） | Play Integrity、実行時権限 | expo-local-authentication |
 | 検証基準 | OWASP MASVS／MASTG | OWASP MASVS／MASTG | OWASP MASVS／MASTG |
 
-roadmap.sh で学ぶ：[iOS](https://roadmap.sh/ios)（Keychain）／[SwiftUI](https://roadmap.sh/swift-ui)（Access Control）／[Android](https://roadmap.sh/android)（Security、Authentication、Shared Preferences）／[React Native](https://roadmap.sh/react-native)（Security、Expo Secure Store、Authentication）
+roadmap.shで学ぶ：[iOS](https://roadmap.sh/ios)（Keychain）／[SwiftUI](https://roadmap.sh/swift-ui)（Access Control）／[Android](https://roadmap.sh/android)（Security、Authentication、Shared Preferences）／[React Native](https://roadmap.sh/react-native)（Security、Expo Secure Store、Authentication）
 
 ## 評価を記録する
 
