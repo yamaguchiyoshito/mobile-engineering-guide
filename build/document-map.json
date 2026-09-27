@@ -1,0 +1,767 @@
+{
+  "schemaVersion": 1,
+  "title": "モバイルアプリ開発のスキル評価・チーム改善ガイド",
+  "frontendGuide": {
+    "title": "フロントエンド開発ガイド",
+    "url": "https://github.com/YOUR_OWNER/frontend-engineering-guide"
+  },
+  "areas": [
+    {
+      "id": "foundation",
+      "title": "基礎領域"
+    },
+    {
+      "id": "applied-foundation",
+      "title": "応用基礎領域"
+    },
+    {
+      "id": "implementation",
+      "title": "フレームワーク・実装領域"
+    },
+    {
+      "id": "quality",
+      "title": "品質・高度化領域"
+    }
+  ],
+  "pages": [
+    {
+      "path": "index.md",
+      "title": "モバイルアプリ開発ガイド",
+      "kind": "home",
+      "handbook": false
+    },
+    {
+      "path": "guide/overview.md",
+      "title": "ガイドの目的と評価の全体像",
+      "kind": "guide",
+      "handbook": true
+    },
+    {
+      "path": "guide/individual-assessment.md",
+      "title": "個人のスキルを評価する",
+      "kind": "guide",
+      "handbook": true
+    },
+    {
+      "path": "guide/team-assessment.md",
+      "title": "チームの取り組みを確認する",
+      "kind": "guide",
+      "handbook": true
+    },
+    {
+      "path": "guide/improvement.md",
+      "title": "評価結果を改善につなげる",
+      "kind": "guide",
+      "handbook": true
+    },
+    {
+      "path": "skills/index.md",
+      "title": "スキル定義",
+      "kind": "skill-index",
+      "handbook": true
+    },
+    {
+      "path": "skills/foundation/index.md",
+      "title": "基礎領域",
+      "kind": "area",
+      "handbook": true,
+      "area": "foundation"
+    },
+    {
+      "path": "skills/foundation/mobile.basic.md",
+      "title": "モバイルプラットフォーム基礎",
+      "kind": "skill",
+      "handbook": true,
+      "area": "foundation",
+      "skillId": "mobile.basic"
+    },
+    {
+      "path": "skills/foundation/swift.basic.md",
+      "title": "Swift",
+      "kind": "skill",
+      "handbook": true,
+      "area": "foundation",
+      "skillId": "swift.basic"
+    },
+    {
+      "path": "skills/foundation/kotlin.basic.md",
+      "title": "Kotlin",
+      "kind": "skill",
+      "handbook": true,
+      "area": "foundation",
+      "skillId": "kotlin.basic"
+    },
+    {
+      "path": "skills/foundation/ide.basic.md",
+      "title": "開発環境（Xcode／Android Studio／Expo）",
+      "kind": "skill",
+      "handbook": true,
+      "area": "foundation",
+      "skillId": "ide.basic"
+    },
+    {
+      "path": "skills/foundation/build.tooling.md",
+      "title": "ビルドと依存管理",
+      "kind": "skill",
+      "handbook": true,
+      "area": "foundation",
+      "skillId": "build.tooling"
+    },
+    {
+      "path": "skills/foundation/git.basic.md",
+      "title": "Git",
+      "kind": "skill",
+      "handbook": true,
+      "area": "foundation",
+      "skillId": "git.basic"
+    },
+    {
+      "path": "skills/applied-foundation/index.md",
+      "title": "応用基礎領域",
+      "kind": "area",
+      "handbook": true,
+      "area": "applied-foundation"
+    },
+    {
+      "path": "skills/applied-foundation/swift.concurrency.md",
+      "title": "Swift並行処理とメモリ管理",
+      "kind": "skill",
+      "handbook": true,
+      "area": "applied-foundation",
+      "skillId": "swift.concurrency"
+    },
+    {
+      "path": "skills/applied-foundation/kotlin.coroutines.md",
+      "title": "Kotlinコルーチン・Flow",
+      "kind": "skill",
+      "handbook": true,
+      "area": "applied-foundation",
+      "skillId": "kotlin.coroutines"
+    },
+    {
+      "path": "skills/applied-foundation/reactive.basic.md",
+      "title": "リアクティブプログラミング",
+      "kind": "skill",
+      "handbook": true,
+      "area": "applied-foundation",
+      "skillId": "reactive.basic"
+    },
+    {
+      "path": "skills/applied-foundation/mobile.networking.md",
+      "title": "ネットワーク通信",
+      "kind": "skill",
+      "handbook": true,
+      "area": "applied-foundation",
+      "skillId": "mobile.networking"
+    },
+    {
+      "path": "skills/applied-foundation/mobile.persistence.md",
+      "title": "データ永続化",
+      "kind": "skill",
+      "handbook": true,
+      "area": "applied-foundation",
+      "skillId": "mobile.persistence"
+    },
+    {
+      "path": "skills/applied-foundation/mobile.accessibility.md",
+      "title": "アクセシビリティ",
+      "kind": "skill",
+      "handbook": true,
+      "area": "applied-foundation",
+      "skillId": "mobile.accessibility"
+    },
+    {
+      "path": "skills/applied-foundation/mobile.ui-design.md",
+      "title": "UIデザイン原則とローカライズ",
+      "kind": "skill",
+      "handbook": true,
+      "area": "applied-foundation",
+      "skillId": "mobile.ui-design"
+    },
+    {
+      "path": "skills/applied-foundation/git.collaboration.md",
+      "title": "チーム開発",
+      "kind": "skill",
+      "handbook": true,
+      "area": "applied-foundation",
+      "skillId": "git.collaboration"
+    },
+    {
+      "path": "skills/implementation/index.md",
+      "title": "フレームワーク・実装領域",
+      "kind": "area",
+      "handbook": true,
+      "area": "implementation"
+    },
+    {
+      "path": "skills/implementation/swiftui.basic.md",
+      "title": "SwiftUI",
+      "kind": "skill",
+      "handbook": true,
+      "area": "implementation",
+      "skillId": "swiftui.basic"
+    },
+    {
+      "path": "skills/implementation/uikit.basic.md",
+      "title": "UIKit",
+      "kind": "skill",
+      "handbook": true,
+      "area": "implementation",
+      "skillId": "uikit.basic"
+    },
+    {
+      "path": "skills/implementation/compose.basic.md",
+      "title": "Jetpack Compose",
+      "kind": "skill",
+      "handbook": true,
+      "area": "implementation",
+      "skillId": "compose.basic"
+    },
+    {
+      "path": "skills/implementation/android.views.md",
+      "title": "Android Views・Fragment",
+      "kind": "skill",
+      "handbook": true,
+      "area": "implementation",
+      "skillId": "android.views"
+    },
+    {
+      "path": "skills/implementation/react-native.basic.md",
+      "title": "React Native実装",
+      "kind": "skill",
+      "handbook": true,
+      "area": "implementation",
+      "skillId": "react-native.basic"
+    },
+    {
+      "path": "skills/implementation/react-native.native-integration.md",
+      "title": "React Nativeのネイティブ連携",
+      "kind": "skill",
+      "handbook": true,
+      "area": "implementation",
+      "skillId": "react-native.native-integration"
+    },
+    {
+      "path": "skills/implementation/mobile.architecture.md",
+      "title": "アプリアーキテクチャと依存性注入",
+      "kind": "skill",
+      "handbook": true,
+      "area": "implementation",
+      "skillId": "mobile.architecture"
+    },
+    {
+      "path": "skills/implementation/mobile.navigation.md",
+      "title": "画面遷移とディープリンク",
+      "kind": "skill",
+      "handbook": true,
+      "area": "implementation",
+      "skillId": "mobile.navigation"
+    },
+    {
+      "path": "skills/implementation/mobile.api-integration.md",
+      "title": "API連携とデータフロー",
+      "kind": "skill",
+      "handbook": true,
+      "area": "implementation",
+      "skillId": "mobile.api-integration"
+    },
+    {
+      "path": "skills/implementation/mobile.input-validation.md",
+      "title": "入力とバリデーション",
+      "kind": "skill",
+      "handbook": true,
+      "area": "implementation",
+      "skillId": "mobile.input-validation"
+    },
+    {
+      "path": "skills/implementation/mobile.platform-services.md",
+      "title": "プラットフォーム機能連携",
+      "kind": "skill",
+      "handbook": true,
+      "area": "implementation",
+      "skillId": "mobile.platform-services"
+    },
+    {
+      "path": "skills/implementation/mobile.animation.md",
+      "title": "アニメーションとインタラクション",
+      "kind": "skill",
+      "handbook": true,
+      "area": "implementation",
+      "skillId": "mobile.animation"
+    },
+    {
+      "path": "skills/quality/index.md",
+      "title": "品質・高度化領域",
+      "kind": "area",
+      "handbook": true,
+      "area": "quality"
+    },
+    {
+      "path": "skills/quality/test.design.md",
+      "title": "テスト設計",
+      "kind": "skill",
+      "handbook": true,
+      "area": "quality",
+      "skillId": "test.design"
+    },
+    {
+      "path": "skills/quality/test.unit.md",
+      "title": "ユニットテスト",
+      "kind": "skill",
+      "handbook": true,
+      "area": "quality",
+      "skillId": "test.unit"
+    },
+    {
+      "path": "skills/quality/test.ui.md",
+      "title": "UIテスト・E2E",
+      "kind": "skill",
+      "handbook": true,
+      "area": "quality",
+      "skillId": "test.ui"
+    },
+    {
+      "path": "skills/quality/mobile.performance.md",
+      "title": "性能・メモリ・起動時間",
+      "kind": "skill",
+      "handbook": true,
+      "area": "quality",
+      "skillId": "mobile.performance"
+    },
+    {
+      "path": "skills/quality/mobile.security.md",
+      "title": "モバイルセキュリティ",
+      "kind": "skill",
+      "handbook": true,
+      "area": "quality",
+      "skillId": "mobile.security"
+    },
+    {
+      "path": "skills/quality/mobile.release.md",
+      "title": "署名・配布・ストア公開",
+      "kind": "skill",
+      "handbook": true,
+      "area": "quality",
+      "skillId": "mobile.release"
+    },
+    {
+      "path": "skills/quality/mobile.cicd.md",
+      "title": "CI/CD・静的解析",
+      "kind": "skill",
+      "handbook": true,
+      "area": "quality",
+      "skillId": "mobile.cicd"
+    },
+    {
+      "path": "skills/quality/mobile.observability.md",
+      "title": "監視・クラッシュ分析",
+      "kind": "skill",
+      "handbook": true,
+      "area": "quality",
+      "skillId": "mobile.observability"
+    },
+    {
+      "path": "checklists/index.md",
+      "title": "チームチェックリスト",
+      "kind": "checklist-index",
+      "handbook": true
+    },
+    {
+      "path": "checklists/quality-and-types.md",
+      "title": "品質と型安全性",
+      "kind": "checklist",
+      "handbook": true,
+      "numbers": [
+        "001",
+        "002",
+        "003",
+        "004"
+      ],
+      "section": "設計・開発"
+    },
+    {
+      "path": "checklists/development-tooling.md",
+      "title": "開発環境とツールの運用",
+      "kind": "checklist",
+      "handbook": true,
+      "numbers": [
+        "005",
+        "006",
+        "007",
+        "008"
+      ],
+      "section": "設計・開発"
+    },
+    {
+      "path": "checklists/ui-components.md",
+      "title": "UI部品と画面設計の再利用",
+      "kind": "checklist",
+      "handbook": true,
+      "numbers": [
+        "009",
+        "010",
+        "011",
+        "012"
+      ],
+      "section": "設計・開発"
+    },
+    {
+      "path": "checklists/user-centered-design.md",
+      "title": "ユーザー理解と設計の改善",
+      "kind": "checklist",
+      "handbook": true,
+      "numbers": [
+        "013",
+        "014",
+        "015",
+        "016"
+      ],
+      "section": "設計・開発"
+    },
+    {
+      "path": "checklists/technology-selection.md",
+      "title": "技術情報の収集と技術選定",
+      "kind": "checklist",
+      "handbook": true,
+      "numbers": [
+        "017",
+        "018",
+        "019",
+        "020"
+      ],
+      "section": "設計・開発"
+    },
+    {
+      "path": "checklists/performance.md",
+      "title": "アプリ性能と起動時間",
+      "kind": "checklist",
+      "handbook": true,
+      "numbers": [
+        "021",
+        "022",
+        "023",
+        "024"
+      ],
+      "section": "品質"
+    },
+    {
+      "path": "checklists/accessibility.md",
+      "title": "モバイルアクセシビリティ",
+      "kind": "checklist",
+      "handbook": true,
+      "numbers": [
+        "025",
+        "026",
+        "027",
+        "028"
+      ],
+      "section": "品質"
+    },
+    {
+      "path": "checklists/security.md",
+      "title": "モバイルセキュリティ",
+      "kind": "checklist",
+      "handbook": true,
+      "numbers": [
+        "029",
+        "030",
+        "031",
+        "032"
+      ],
+      "section": "品質"
+    },
+    {
+      "path": "checklists/privacy.md",
+      "title": "権限とプライバシー",
+      "kind": "checklist",
+      "handbook": true,
+      "numbers": [
+        "033",
+        "034",
+        "035",
+        "036"
+      ],
+      "section": "品質"
+    },
+    {
+      "path": "checklists/design-consistency.md",
+      "title": "デザインの一貫性とユーザーテスト",
+      "kind": "checklist",
+      "handbook": true,
+      "numbers": [
+        "037",
+        "038",
+        "039",
+        "040"
+      ],
+      "section": "品質"
+    },
+    {
+      "path": "checklists/testing.md",
+      "title": "テストの計画と保守",
+      "kind": "checklist",
+      "handbook": true,
+      "numbers": [
+        "041",
+        "042",
+        "043",
+        "044"
+      ],
+      "section": "開発・運用"
+    },
+    {
+      "path": "checklists/builds.md",
+      "title": "ビルドの計測と保守",
+      "kind": "checklist",
+      "handbook": true,
+      "numbers": [
+        "045",
+        "046",
+        "047",
+        "048"
+      ],
+      "section": "開発・運用"
+    },
+    {
+      "path": "checklists/distribution.md",
+      "title": "署名・配布・ストア審査",
+      "kind": "checklist",
+      "handbook": true,
+      "numbers": [
+        "049",
+        "050",
+        "051",
+        "052"
+      ],
+      "section": "開発・運用"
+    },
+    {
+      "path": "checklists/dependencies.md",
+      "title": "依存ライブラリの管理",
+      "kind": "checklist",
+      "handbook": true,
+      "numbers": [
+        "053",
+        "054",
+        "055",
+        "056"
+      ],
+      "section": "開発・運用"
+    },
+    {
+      "path": "checklists/cicd.md",
+      "title": "CI/CDの運用と改善",
+      "kind": "checklist",
+      "handbook": true,
+      "numbers": [
+        "057",
+        "058",
+        "059",
+        "060"
+      ],
+      "section": "開発・運用"
+    },
+    {
+      "path": "checklists/backend-collaboration.md",
+      "title": "バックエンドとの連携",
+      "kind": "checklist",
+      "handbook": true,
+      "numbers": [
+        "061",
+        "062",
+        "063",
+        "064"
+      ],
+      "section": "開発・運用"
+    },
+    {
+      "path": "checklists/device-compatibility.md",
+      "title": "端末・OS互換性とサポート方針",
+      "kind": "checklist",
+      "handbook": true,
+      "numbers": [
+        "065",
+        "066",
+        "067",
+        "068"
+      ],
+      "section": "開発・運用"
+    },
+    {
+      "path": "checklists/offline-sync.md",
+      "title": "オフラインと同期",
+      "kind": "checklist",
+      "handbook": true,
+      "numbers": [
+        "069",
+        "070",
+        "071",
+        "072"
+      ],
+      "section": "開発・運用"
+    },
+    {
+      "path": "checklists/observability.md",
+      "title": "モニタリングとクラッシュ分析",
+      "kind": "checklist",
+      "handbook": true,
+      "numbers": [
+        "073",
+        "074",
+        "075",
+        "076"
+      ],
+      "section": "開発・運用"
+    },
+    {
+      "path": "checklists/incident-response.md",
+      "title": "障害対応",
+      "kind": "checklist",
+      "handbook": true,
+      "numbers": [
+        "077",
+        "078",
+        "079",
+        "080"
+      ],
+      "section": "開発・運用"
+    },
+    {
+      "path": "checklists/knowledge-sharing.md",
+      "title": "学習とチーム間の知識共有",
+      "kind": "checklist",
+      "handbook": true,
+      "numbers": [
+        "081",
+        "082",
+        "083",
+        "084"
+      ],
+      "section": "組織・連携"
+    },
+    {
+      "path": "checklists/engineering-improvement.md",
+      "title": "横断的な生産性向上と技術方針",
+      "kind": "checklist",
+      "handbook": true,
+      "numbers": [
+        "085",
+        "086",
+        "087",
+        "088"
+      ],
+      "section": "組織・連携"
+    },
+    {
+      "path": "checklists/roles-and-growth.md",
+      "title": "職能・役割・育成",
+      "kind": "checklist",
+      "handbook": true,
+      "numbers": [
+        "089",
+        "090",
+        "091",
+        "092"
+      ],
+      "section": "組織・連携"
+    },
+    {
+      "path": "checklists/business-collaboration.md",
+      "title": "他部門との連携と事業への貢献",
+      "kind": "checklist",
+      "handbook": true,
+      "numbers": [
+        "093",
+        "094",
+        "095",
+        "096"
+      ],
+      "section": "組織・連携"
+    },
+    {
+      "path": "checklists/technical-communication.md",
+      "title": "技術発信の継続",
+      "kind": "checklist",
+      "handbook": true,
+      "numbers": [
+        "097",
+        "098",
+        "099",
+        "100"
+      ],
+      "section": "組織・連携"
+    },
+    {
+      "path": "templates/index.md",
+      "title": "記録書式",
+      "kind": "template-index",
+      "handbook": true
+    },
+    {
+      "path": "templates/assessment-scope.md",
+      "title": "評価全体の対象範囲",
+      "kind": "template",
+      "handbook": true
+    },
+    {
+      "path": "templates/individual-assessment.md",
+      "title": "個人のスキル評価記録",
+      "kind": "template",
+      "handbook": true
+    },
+    {
+      "path": "templates/team-assessment.md",
+      "title": "チームの確認記録",
+      "kind": "template",
+      "handbook": true
+    },
+    {
+      "path": "templates/improvement-issue.md",
+      "title": "改善・育成イシュー",
+      "kind": "template",
+      "handbook": true
+    },
+    {
+      "path": "examples/index.md",
+      "title": "記入例",
+      "kind": "example-index",
+      "handbook": true
+    },
+    {
+      "path": "examples/crash-rate-release-improvement.md",
+      "title": "記入例：クラッシュ率の改善とリリース手順の整備",
+      "kind": "example",
+      "handbook": true
+    },
+    {
+      "path": "maintenance/index.md",
+      "title": "運用・改訂",
+      "kind": "maintenance",
+      "handbook": true
+    },
+    {
+      "path": "maintenance/contributing.md",
+      "title": "編集・検証・公開手順",
+      "kind": "maintenance",
+      "handbook": true
+    },
+    {
+      "path": "maintenance/changelog.md",
+      "title": "改訂履歴",
+      "kind": "maintenance",
+      "handbook": true
+    },
+    {
+      "path": "maintenance/sources.md",
+      "title": "出典と追加した内容",
+      "kind": "maintenance",
+      "handbook": true
+    },
+    {
+      "path": "downloads.md",
+      "title": "ダウンロード",
+      "kind": "downloads",
+      "handbook": false
+    }
+  ]
+}
