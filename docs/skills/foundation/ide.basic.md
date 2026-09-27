@@ -12,6 +12,12 @@ description: "開発環境（Xcode／Android Studio／Expo）の基準と使い�
 
 [習熟度の共通定義と判定方法](../../guide/individual-assessment.md)に沿って、根拠を確認します。
 
+## このスキルについて
+
+アプリのコードを書き、ビルドして端末で動かし、不具合を調べるための開発環境の使い方を扱います。Webであればブラウザを開けば動作を確認できますが、モバイルアプリはiOSならXcode、AndroidならAndroid Studio、React NativeならExpoなどの専用ツールでビルドし、パソコン上で端末を再現するシミュレータ・エミュレータや、接続した実機にインストールして動作を確認します。シミュレータ・エミュレータと実機では性能やカメラなどのセンサーの有無が異なるため、両方で確認する場面があります。最初に押さえるのは、プロジェクト、ターゲット（モジュール）、ビルド構成の関係と、ブレークポイントで処理を止めて変数の値を確かめるデバッガーの使い方です。
+
+分からない用語は[用語集](../../guide/glossary.md)で確認できます。
+
 ## Lv0
 
 プロジェクト、ターゲットやモジュール、ビルド構成の関係を説明できず、ビルドやアプリの起動に手順ごとの指示が必要である。
@@ -32,15 +38,27 @@ description: "開発環境（Xcode／Android Studio／Expo）の基準と使い�
 
 開発環境の構築手順、推奨設定、デバッグ手順、演習をチームで再現できる形に整備できる。他者の利用実績から、環境構築や不具合調査にかかる時間の変化を確認し、仕組みを更新できる。
 
+## 次のLvへ進むために
+
+学習の目安として、次の段階に進むための課題と参考資料を示します。課題は評価の条件ではありません。
+
+| 目標 | 取り組む課題の例 | 参考資料 |
+| :--- | :--- | :--- |
+| Lv1 | 公式の手順に沿って新規プロジェクトを作成し、シミュレータ・エミュレータと実機の両方で起動する。ボタンを押したときの処理にブレークポイントを置き、変数の値とログを確認する | [Xcode](https://developer.apple.com/documentation/xcode)・[Android Studio](https://developer.android.com/studio)・[環境構築（React Native）](https://reactnative.dev/docs/environment-setup) |
+| Lv2 | サンプルアプリに画面を1つ追加し、あらかじめ仕込んだ表示崩れや計算の誤りを、ステップ実行、ログ、画面構造の検査機能を使って見つけて修正する | [Xcode](https://developer.apple.com/documentation/xcode)・[Android Studio](https://developer.android.com/studio)・[Expo ドキュメント](https://docs.expo.dev/) |
+| Lv3 | 実機でのみ起きる不具合（権限、性能、センサーなど）を題材に、シミュレータ・エミュレータとの差を切り分ける調査手順を書き、他の人が同じ手順で再現できるかを確かめる | [アプリ性能の改善](https://developer.apple.com/documentation/xcode/improving-your-app-s-performance)・[Android Studio](https://developer.android.com/studio)・[パフォーマンス（React Native）](https://reactnative.dev/docs/performance) |
+
 ## 技術の対応
 
-| プラットフォーム | 主な技術・API |
-| :--- | :--- |
-| iOS | Xcode プロジェクト・ターゲット・スキーム、Interface Builder、ブレークポイント、Debug Navigator、Simulator、DocC |
-| Android | Android Studio、Gradleモジュール構成、Logcat、Layout Inspector、Emulator、AVD |
-| React Native | Expo CLI、Metro、Fast Refresh、開発者メニュー、LogBox、React DevTools |
+| 用途 | iOS | Android | React Native |
+| :--- | :--- | :--- | :--- |
+| プロジェクトの構成 | Xcode プロジェクト・ターゲット・スキーム | Android Studio、Gradleモジュール構成 | Expo CLI、Metro |
+| 端末での実行と変更の反映 | Simulator | Emulator、AVD | Fast Refresh |
+| 処理の追跡とログ | ブレークポイント、Debug Navigator | Logcat | 開発者メニュー、LogBox |
+| 画面の編集と構造の検査 | Interface Builder | Layout Inspector | React DevTools |
+| ドキュメントの作成 | DocC | KDoc、Dokka | TSDoc、JSDoc |
 
-roadmap.sh の参照トピック：ios: xcode, project-files, interface-builder, interface-overview, breakpoints, debug-navigator, stepping, xcode-debugger, debugging-techniques, new-project / android: development-ide, debugging, create-a-basic-hello-world-app / react-native: environment-setup, metro-bundler, devtools, in-app-developer-menu, logbox, enabling-fast-refresh, running-on-device / swift-ui: xcode, xcode-debugging, swift-playgrounds, docc
+roadmap.sh で学ぶ：[iOS](https://roadmap.sh/ios)（Xcode、Project Files、Interface Builder、Breakpoints、Debug Navigator、Stepping、Xcode Debugger、Debugging Techniques）／[SwiftUI](https://roadmap.sh/swift-ui)（Xcode、Xcode Debugging、Swift Playgrounds、DocC）／[Android](https://roadmap.sh/android)（Development IDE、Debugging、Create a Basic Hello World App）／[React Native](https://roadmap.sh/react-native)（Environment Setup、Metro Bundler、DevTools、In-App Developer Menu、LogBox、Enabling Fast Refresh、Running on Device）
 
 ## 評価を記録する
 

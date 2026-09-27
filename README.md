@@ -5,9 +5,10 @@
 - 4つのスキル領域、34スキル、Lv0〜Lv4の170定義。各スキルに対象プラットフォーム（共通、iOS、Android、React Native）と技術の対応表
 - 25分野、100チェック項目、原文・望ましい判定・回答例
 - 評価手順、4種類の空の書式、架空の記入例
-- 82ページ、日本語全文検索、単一Markdownと書式のダウンロード
+- モバイル開発に不慣れな読み手向けの前提説明、学習の進め方、用語集。各スキルに「このスキルについて」「次のLvへ進むために」、各チェック分野に「この分野の背景」
+- 86ページ、日本語全文検索、単一Markdownと書式のダウンロード
 
-まず [ガイドの全体像](docs/guide/overview.md) を読み、[スキル定義](docs/skills/index.md)・[チームチェック](docs/checklists/index.md) を参照してください。詳細な構成は [ARCHITECTURE.md](ARCHITECTURE.md)、実行した検証は [VALIDATION.md](VALIDATION.md) に記載しています。スキル体系の出典は [出典と追加した内容](docs/maintenance/sources.md) にあります。
+モバイル開発が初めての場合は [モバイルアプリ開発の前提](docs/guide/mobile-basics.md) と [学習の進め方](docs/guide/learning-paths.md) から、評価を始める場合は [ガイドの全体像](docs/guide/overview.md) から読み、[スキル定義](docs/skills/index.md)・[チームチェック](docs/checklists/index.md) を参照してください。詳細な構成は [ARCHITECTURE.md](ARCHITECTURE.md)、実行した検証は [VALIDATION.md](VALIDATION.md) に記載しています。スキル体系の出典は [出典と追加した内容](docs/maintenance/sources.md) にあります。
 
 ## ローカルで読む
 
@@ -58,7 +59,7 @@ npm run docs:preview
 | コマンド | 処理 |
 | :--- | :--- |
 | `docs:sync` | 文書マップから一覧ページのリンク・表を同期 |
-| `docs:check` | 82ページ、34スキル、170定義、100項目、判定、対象プラットフォーム、内部参照を検査 |
+| `docs:check` | 86ページ、34スキル、170定義、100項目、判定、対象プラットフォーム、内部参照を検査 |
 | `docs:downloads` | 単一Markdown、空の4書式、ZIP、生成元・SHA-256を生成 |
 | `docs:build` | 文書検査・ダウンロード生成・サイトビルド |
 | `test:site` | 生成HTMLの参照検査と、Chromiumによる表示・検索・ダウンロード確認 |

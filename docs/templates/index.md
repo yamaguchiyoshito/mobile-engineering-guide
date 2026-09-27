@@ -18,4 +18,4 @@ description: "記録書式の基準と使い方。モバイルアプリ開発の
 
 <!-- catalog:end -->
 
-[記入例：クラッシュ率の改善とリリース手順の整備](../examples/crash-rate-release-improvement.md)も参照してください。
+[記入例：クラッシュ率の改善とリリース手順の整備](../examples/crash-rate-release-improvement.md)と[記入例：Swiftを学び始めた担当者の個人評価](../examples/individual-swift-lv1.md)も参照してください。

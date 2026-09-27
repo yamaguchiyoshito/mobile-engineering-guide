@@ -7,4 +7,5 @@ description: "記入例の基準と使い方。モバイルアプリ開発のス
 
 以下は記録方法を示す架空の例です。実在するチームの評価結果ではありません。
 
-[クラッシュ率の改善とリリース手順の整備](crash-rate-release-improvement.md)
+- [クラッシュ率の改善とリリース手順の整備](crash-rate-release-improvement.md)：チームの確認と改善イシューの記入例
+- [Swiftを学び始めた担当者の個人評価](individual-swift-lv1.md)：学習初期の個人評価の記入例

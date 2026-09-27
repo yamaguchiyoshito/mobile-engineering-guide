@@ -12,6 +12,12 @@ description: "SwiftUIの基準と使い方。モバイルアプリ開発のス�
 
 [習熟度の共通定義と判定方法](../../guide/individual-assessment.md)に沿って、根拠を確認します。
 
+## このスキルについて
+
+SwiftUI は、iPhone や iPad のアプリの画面を小さな部品（View）の組み合わせで作る Apple の仕組みで、画面サイズや文字サイズ、ダークモードなど端末ごとに異なる表示条件にも同じコードで対応します。宣言的UIと呼ばれる方式で、「この状態のときはこう表示する」と書いておけば、状態の値を書き換えるだけで画面が追従します。これに対して UIKit などの命令的UIでは、ボタンやラベルといった部品を直接操作して表示を一つずつ書き換えるため、書き換え漏れによる表示の食い違いが起きやすくなります。最初に押さえるのは、画面は状態から作られるという考え方と、その状態をどの View が持つか（状態の持ち主）を決めることです。
+
+分からない用語は[用語集](../../guide/glossary.md)で確認できます。
+
 ## Lv0
 
 View、modifier、状態と表示の関係を説明できず、単純な画面の変更にも手順ごとの指示が必要である。
@@ -32,13 +38,28 @@ Viewの再生成、状態の初期化位置、監視範囲の広さに起因す�
 
 View部品、状態の受け渡し方針、プレビューとUI検証の基準を整備できる。他者の利用と更新対応を支援し、同種不具合や画面実装工数の改善を確認できる。
 
+## 次のLvへ進むために
+
+学習の目安として、次の段階に進むための課題と参考資料を示します。課題は評価の条件ではありません。
+
+| 目標 | 取り組む課題の例 | 参考資料 |
+| :--- | :--- | :--- |
+| Lv1 | SwiftUI チュートリアルに沿って、テキスト、画像、一覧を並べた画面を作り、ボタンを押すと数値が増えるカウンターを加えてプレビューで表示を確認する | [SwiftUI チュートリアル](https://developer.apple.com/tutorials/swiftui) |
+| Lv2 | 一覧・詳細・追加フォームの3画面を持つ ToDo アプリを作り、NavigationStack で遷移し、@Binding や @Observable で状態を受け渡す。起動時にサンプルデータを非同期で読み込み、読み込み中の表示も付ける | [SwiftUI](https://developer.apple.com/documentation/swiftui)・[Swift Concurrency](https://developer.apple.com/documentation/swift/concurrency) |
+| Lv3 | 既存の画面で入力中の値が消える、一覧全体が描き直されるといった問題を再現し、状態の初期化位置や監視範囲を見直して改善する。UIViewRepresentable で UIKit の部品を1つ組み込み、両者の境界での責務を文書にまとめる | [SwiftUI](https://developer.apple.com/documentation/swiftui)・[アプリ性能の改善](https://developer.apple.com/documentation/xcode/improving-your-app-s-performance) |
+
 ## 技術の対応
 
-| プラットフォーム | 主な技術・API |
+| 用途 | 主な技術・API |
 | :--- | :--- |
-| iOS | View と ViewModifier、@ViewBuilder、VStack／HStack／ZStack、List、Form、Grid、GeometryReader、@State／@Binding／@StateObject／@ObservedObject／@EnvironmentObject／@Observable、NavigationStack／NavigationPath／TabView、ジェスチャ、Drag & Drop、Swift Charts、UIKit との相互運用（UIViewRepresentable） |
+| 画面の部品 | View と ViewModifier、@ViewBuilder |
+| 配置と一覧 | VStack／HStack／ZStack、List、Form、Grid、GeometryReader |
+| 状態の管理 | @State／@Binding／@StateObject／@ObservedObject／@EnvironmentObject／@Observable |
+| 画面遷移 | NavigationStack／NavigationPath／TabView |
+| 操作とデータ表示 | ジェスチャ、Drag & Drop、Swift Charts |
+| UIKit との相互運用 | UIViewRepresentable |
 
-roadmap.sh の参照トピック：ios: swiftui, declarative-syntax, views-and-modifiers, state-management, navigation-view, navigationlink, navigation-stacks / swift-ui: what-is-swiftui, views, viewbuilder, vstack, hstack, zstack, list, form, grid, geometryreader, state, binding, stateobject, observedobject, environmentobject, data-flow, navigationstack, navigationpath, navigationlink, tabview, gestures, drag--drop, swift-charts, uikit-vs-swiftui, swiftui-inspector
+roadmap.sh で学ぶ：[iOS](https://roadmap.sh/ios)（SwiftUI、Declarative syntax、Views and modifiers、State management、Navigation stacks）／[SwiftUI](https://roadmap.sh/swift-ui)（ViewBuilder、State、Binding、Data flow、NavigationStack、Gestures、UIKit vs SwiftUI）
 
 ## 評価を記録する
 

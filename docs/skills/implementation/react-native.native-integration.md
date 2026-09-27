@@ -12,6 +12,12 @@ description: "React Nativeのネイティブ連携の基準と使い方。モバ
 
 [習熟度の共通定義と判定方法](../../guide/individual-assessment.md)に沿って、根拠を確認します。
 
+## このスキルについて
+
+React Native のアプリは、画面や処理を書く JavaScript の層と、端末の機能を実際に動かす iOS／Android のネイティブの層に分かれています。通知、位置情報、ディープリンクのような OS の機能はネイティブの層を経由しないと使えず、権限の要求や設定ファイルの書き方も OS ごとに異なります。このスキルは、既存のライブラリで両者をつなぐことから、足りない機能を自分でネイティブモジュールとして作ることまでを扱います。最初に押さえるのは、JavaScript からネイティブの機能を呼び出す仕組みと、Platform モジュールや `.ios.js`／`.android.js` のファイル名で OS ごとにコードを分ける方法です。
+
+分からない用語は[用語集](../../guide/glossary.md)で確認できます。
+
 ## Lv0
 
 JavaScript層とネイティブ層の役割分担、プラットフォーム別コードの仕組みを説明できず、ネイティブ機能の利用に手順ごとの指示が必要である。
@@ -32,13 +38,27 @@ JavaScript層とネイティブ層の役割分担、プラットフォーム別�
 
 ネイティブモジュールの作成手順、ライブラリの採用基準、両プラットフォームでの自動ビルドと検証を整備できる。他者の利用を支援し、ネイティブ連携に起因する不具合や更新時の手戻りの減少を確認できる。
 
+## 次のLvへ進むために
+
+学習の目安として、次の段階に進むための課題と参考資料を示します。課題は評価の条件ではありません。
+
+| 目標 | 取り組む課題の例 | 参考資料 |
+| :--- | :--- | :--- |
+| Lv1 | Expo の手順に沿って expo-notifications を導入し、通知の権限を要求してローカル通知を表示する。実機で権限を許可した場合と拒否した場合の動作を確認する | [Expo Notifications](https://docs.expo.dev/versions/latest/sdk/notifications/)・[プラットフォーム固有コード](https://reactnative.dev/docs/platform-specific-code) |
+| Lv2 | 通知をタップすると特定の詳細画面が開くアプリを作り、プッシュ通知の受信とディープリンク（Linking）を iOS と Android の両方で動かす。OS ごとに変更した設定ファイルと理由を記録する | [Expo Notifications](https://docs.expo.dev/versions/latest/sdk/notifications/)・[Firebase Cloud Messaging](https://firebase.google.com/docs/cloud-messaging)・[React Navigation](https://reactnavigation.org/docs/getting-started) |
+| Lv3 | 既存ライブラリにない端末機能を1つ選んで Turbo Native Module として作り、引数と戻り値の型、エラー時の扱い、呼び出されるスレッドを定義する。Expo の管理下で続ける場合と Bare に移る場合を比較し、判断の根拠をまとめる | [Turbo Native Modules](https://reactnative.dev/docs/turbo-native-modules-introduction)・[Expo EAS](https://docs.expo.dev/eas/) |
+
 ## 技術の対応
 
-| プラットフォーム | 主な技術・API |
+| 用途 | 主な技術・API |
 | :--- | :--- |
-| React Native | Native Modules（Turbo Modules）、Platform モジュール、`.ios.js`／`.android.js`、権限（expo-permissions 相当）、Push 通知（expo-notifications、FCM／APNs）、ディープリンク（Linking）、react-native-web、Bare ワークフローでのネイティブ設定 |
+| ネイティブ機能の呼び出し | Native Modules（Turbo Modules） |
+| OSごとのコードの分岐 | Platform モジュール、`.ios.js`／`.android.js` |
+| 権限と通知 | 権限（expo-permissions 相当）、Push 通知（expo-notifications、FCM／APNs） |
+| ディープリンク | Linking |
+| ビルド方式と対象の拡張 | Bare ワークフローでのネイティブ設定、react-native-web |
 
-roadmap.sh の参照トピック：react-native: using-native-modules, writing-platform-specific-code, platform-module, file-extensions, for-ios, for-android, permissions, push-notifications, deeplinking, react-native-web, expo-tradeoffs
+roadmap.sh で学ぶ：[React Native](https://roadmap.sh/react-native)（Using native modules、Platform module、File extensions、Permissions、Push notifications、Deep linking、Expo tradeoffs）
 
 ## 評価を記録する
 

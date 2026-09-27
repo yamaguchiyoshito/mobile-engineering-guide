@@ -12,6 +12,12 @@ description: "Android Views・Fragmentの基準と使い方。モバイルアプ
 
 [習熟度の共通定義と判定方法](../../guide/individual-assessment.md)に沿って、根拠を確認します。
 
+## このスキルについて
+
+Android アプリの画面を、XML で書いたレイアウトと、画面単位の入れ物である Activity と Fragment で組み立てる技術で、既存のアプリの多くがこの方式で作られています。コードからボタンや文字などの部品（View）を取り出して表示や動作を直接書き換える、命令的UIと呼ばれる方式です。Android では画面の回転やメモリ不足をきっかけに OS が画面を作り直したり破棄したりするため、最初に押さえるのは Activity と Fragment のライフサイクルと、どの時点に処理や状態を置けば失われないかという考え方です。
+
+分からない用語は[用語集](../../guide/glossary.md)で確認できます。
+
 ## Lv0
 
 Activity、Fragment、XMLレイアウトの役割とライフサイクルを説明できず、単純な画面の変更にも手順ごとの指示が必要である。
@@ -32,13 +38,27 @@ FragmentとそのViewの寿命のずれ、一覧の差分更新、参照の保�
 
 共通レイアウト、View部品、画面構成の方針、レイアウト検証の基準を整備できる。他者の利用と保守を支援し、表示不具合や改修工数の改善を確認できる。
 
+## 次のLvへ進むために
+
+学習の目安として、次の段階に進むための課題と参考資料を示します。課題は評価の条件ではありません。
+
+| 目標 | 取り組む課題の例 | 参考資料 |
+| :--- | :--- | :--- |
+| Lv1 | Activity 1つにボタンとテキストを置き、ViewBinding で参照してクリックで表示を変える。別の Activity を Intent で起動し、エミュレーターで動作を確認する | [Activity 入門](https://developer.android.com/guide/components/activities/intro-activities)・[Android Studio](https://developer.android.com/studio) |
+| Lv2 | RecyclerView の一覧と詳細の2つの Fragment を持つメモアプリを Navigation Component で作り、ConstraintLayout で配置する。画面を回転しても表示と入力内容が保たれることを確認する | [Fragment](https://developer.android.com/guide/fragments)・[Navigation](https://developer.android.com/guide/navigation)・[Material Design 3](https://m3.material.io/) |
+| Lv3 | 既存の Fragment で、View が破棄された後も参照を持ち続けてリークしている箇所を見つけて直す。一覧全体を更新している Adapter を DiffUtil による差分更新に置き換え、表示の変化と処理量を比べる | [Fragment](https://developer.android.com/guide/fragments)・[パフォーマンス（Android）](https://developer.android.com/topic/performance) |
+
 ## 技術の対応
 
-| プラットフォーム | 主な技術・API |
+| 用途 | 主な技術・API |
 | :--- | :--- |
-| Android | Activity、Fragment、XMLレイアウト、ConstraintLayout、RecyclerView／Adapter、ViewBinding、Navigation Component、Intent（明示的・暗黙的）、Dialog、BottomSheet、Drawer、Material Components |
+| 画面の単位 | Activity、Fragment |
+| レイアウトと部品 | XMLレイアウト、ConstraintLayout、ViewBinding、Material Components |
+| 一覧表示 | RecyclerView／Adapter |
+| 画面遷移 | Navigation Component、Intent（明示的・暗黙的） |
+| ダイアログとメニュー | Dialog、BottomSheet、Drawer |
 
-roadmap.sh の参照トピック：android: activity, fragments, constraintlayout, recycleview, navigation-components, intent, explicit-intents, implicit-intents, dialog, bottomsheet, drawer, imageview, textview, interface--navigation
+roadmap.sh で学ぶ：[Android](https://roadmap.sh/android)（Activity、Fragments、ConstraintLayout、RecyclerView、Navigation components、Intent、Dialog、Bottom sheet）
 
 ## 評価を記録する
 

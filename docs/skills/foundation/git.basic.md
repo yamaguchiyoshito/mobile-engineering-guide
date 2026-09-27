@@ -12,6 +12,12 @@ description: "Gitの基準と使い方。モバイルアプリ開発のスキル
 
 [習熟度の共通定義と判定方法](../../guide/individual-assessment.md)に沿って、根拠を確認します。
 
+## このスキルについて
+
+ソースコードの変更履歴を記録し、複数人で同じコードを並行して変更して取りまとめるための道具であるGitの使い方を扱います。考え方はWebやサーバーの開発と同じですが、モバイルアプリのリポジトリにはXcodeやAndroid Studioが自動で書き換えるプロジェクト設定ファイル、ビルドのたびに生成されるファイル、画像などの大きなアセットが含まれやすく、記録から除外するファイルの指定や、設定ファイルの競合への対応が必要になります。最初に押さえるのは、作業中の変更（作業ツリー）、次に記録する変更（ステージ）、記録済みの変更（コミット）という3つの段階と、作業を分岐させて進めるブランチの考え方です。
+
+分からない用語は[用語集](../../guide/glossary.md)で確認できます。
+
 ## Lv0
 
 作業ツリー、ステージ、コミット、ブランチの関係を説明できず、変更の保存や取り込みに手順ごとの指示が必要である。
@@ -32,15 +38,25 @@ description: "Gitの基準と使い方。モバイルアプリ開発のスキル
 
 リポジトリの特性に合う履歴管理・競合解消・復旧の標準手順を整備し、演習や支援体制を作れる。他者が手順を使って対応した結果から事故や復旧時間の改善を確認できる。
 
+## 次のLvへ進むために
+
+学習の目安として、次の段階に進むための課題と参考資料を示します。課題は評価の条件ではありません。
+
+| 目標 | 取り組む課題の例 | 参考資料 |
+| :--- | :--- | :--- |
+| Lv1 | 練習用のリポジトリでブランチを作成し、画面の文言を変更して差分を確認してから、ステージング、コミット、pushを行う。ビルドで生成されたファイルがコミットに含まれていないことを確認する | [Pro Git（日本語）](https://git-scm.com/book/ja/v2) |
+| Lv2 | 2つのブランチで同じファイルの同じ箇所を変更して競合を起こし、解消後にアプリをビルド・起動して意図した内容になっていることを確認する。同じ作業をmergeとrebaseの両方で行って履歴の違いを比べ、プルリクエストでレビューを依頼する | [Pro Git（日本語）](https://git-scm.com/book/ja/v2)・[GitHub Pull Request](https://docs.github.com/ja/pull-requests) |
+| Lv3 | 練習用のリポジトリで、共有ブランチにpushした誤ったコミットをrevertで取り消し、reflogから失われたコミットを復元する。Xcodeのプロジェクトファイルなど競合しやすいファイルの扱いを調べ、チームの手順案をまとめる | [Pro Git（日本語）](https://git-scm.com/book/ja/v2) |
+
 ## 技術の対応
 
-| プラットフォーム | 主な技術・API |
-| :--- | :--- |
-| iOS | Git、.gitignore（DerivedData、build）、Git LFS（大きなアセット） |
-| Android | Git、.gitignore（build）、Git LFS（大きなアセット） |
-| React Native | Git、.gitignore（node_modules、build）、Git LFS（大きなアセット） |
+| 用途 | iOS | Android | React Native |
+| :--- | :--- | :--- | :--- |
+| 変更履歴の管理 | Git | Git | Git |
+| 記録しないファイルの指定 | .gitignore（DerivedData、build） | .gitignore（build） | .gitignore（node_modules、build） |
+| 大きなアセットの管理 | Git LFS | Git LFS | Git LFS |
 
-roadmap.sh の参照トピック：ios: version-control, git / android: version-control, git / react-native: development-workflow
+roadmap.sh で学ぶ：[iOS](https://roadmap.sh/ios)（Version Control、Git）／[Android](https://roadmap.sh/android)（Version Control、Git）／[React Native](https://roadmap.sh/react-native)（Development Workflow）
 
 ## 評価を記録する
 

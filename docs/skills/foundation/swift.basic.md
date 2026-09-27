@@ -12,6 +12,12 @@ description: "Swiftの基準と使い方。モバイルアプリ開発のスキ�
 
 [習熟度の共通定義と判定方法](../../guide/individual-assessment.md)に沿って、根拠を確認します。
 
+## このスキルについて
+
+iPhoneやiPadのアプリを作るための主要なプログラミング言語であるSwiftの文法と、型の使い方を扱います。モバイルアプリの不具合は利用者の端末上で起こり、修正版を届けるにもストアの審査を経る必要があるため、値が存在しない場合の扱いを誤ってアプリが強制終了（クラッシュ）すると、影響が長く残ります。Swiftは「値がないかもしれない」ことを型（Optional）で表し、コンパイル時に安全な扱いを求めることで、この種の誤りを減らします。最初に押さえるのは、Optionalの値を安全に取り出す方法と、代入するとコピーされる値型（構造体）と同じものを共有する参照型（クラス）の違いです。
+
+分からない用語は[用語集](../../guide/glossary.md)で確認できます。
+
 ## Lv0
 
 定数と変数、Optional、構造体とクラスの違いを説明できず、短い処理でも手順ごとの指示が必要である。
@@ -32,13 +38,28 @@ description: "Swiftの基準と使い方。モバイルアプリ開発のスキ�
 
 チームで繰り返す型設計やエラー処理の方針、共通の型とextension、レビュー観点、演習を整備できる。他者への展開を通じて、nil起因のクラッシュや重複実装の減少を確認し、方針を更新できる。
 
+## 次のLvへ進むために
+
+学習の目安として、次の段階に進むための課題と参考資料を示します。課題は評価の条件ではありません。
+
+| 目標 | 取り組む課題の例 | 参考資料 |
+| :--- | :--- | :--- |
+| Lv1 | Swift言語ガイドの基本の章にある例をXcodeのプレイグラウンドで実行し、関数、クロージャ、構造体のプロパティを書き換えて結果の変化を確かめる。Optionalの値を if let と guard let で取り出す短い関数を書く | [Swift言語ガイド](https://docs.swift.org/swift-book/) |
+| Lv2 | 買い物リストの合計金額を計算する型を、構造体、プロトコル、extension、throws を使って実装し、空のリストや不正な数量を与えたときの振る舞いを単体テストで確認する | [Swift言語ガイド](https://docs.swift.org/swift-book/)・[Swift Testing](https://developer.apple.com/documentation/testing) |
+| Lv3 | 既存のコードから強制アンラップ（!）と、クロージャ内で self を強く参照している箇所を洗い出し、クラッシュやメモリの解放漏れにつながるものを分析する。ジェネリクスを使う案と使わない案を比べ、アクセス制御で公開範囲を整理する | [Swift言語ガイド](https://docs.swift.org/swift-book/)・[Xcode](https://developer.apple.com/documentation/xcode) |
+
 ## 技術の対応
 
-| プラットフォーム | 主な技術・API |
+| 用途 | 主な技術・API |
 | :--- | :--- |
-| iOS | 値型と参照型、Optional、クロージャ、enum、プロトコルとextension、ジェネリクス、throws／Result、プロパティラッパー、result builder、マクロ、アクセス制御、Objective-C相互運用 |
+| 値と型 | 値型と参照型、Optional、enum |
+| 処理の受け渡し | クロージャ |
+| 抽象化と再利用 | プロトコルとextension、ジェネリクス |
+| エラー処理 | throws／Result |
+| 記述を簡潔にする言語機能 | プロパティラッパー、result builder、マクロ |
+| 公開範囲と他言語との連携 | アクセス制御、Objective-C相互運用 |
 
-roadmap.sh の参照トピック：ios: swift-basics, closures, error-handling, oop, functional-programming, objective-c-basics, interoperability-with-swift / swift-ui: optionals--nil, closures, structures--classes, protocols, generics, enumerations, error-handling, extensions, wrappers, result-builders, macros, access-control, type-safety
+roadmap.sh で学ぶ：[iOS](https://roadmap.sh/ios)（Swift Basics、Closures、Error Handling、OOP、Functional Programming、Objective-C Basics、Interoperability with Swift）／[SwiftUI](https://roadmap.sh/swift-ui)（Optionals & Nil、Structures & Classes、Protocols、Generics、Error Handling、Extensions、Result Builders、Access Control）
 
 ## 評価を記録する
 

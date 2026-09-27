@@ -12,6 +12,12 @@ description: "チーム開発の基準と使い方。モバイルアプリ開発
 
 [習熟度の共通定義と判定方法](../../guide/individual-assessment.md)に沿って、根拠を確認します。
 
+## このスキルについて
+
+複数の開発者が同じアプリのコードを変更するときに、変更内容を提案し、他の人に確認（レビュー）してもらってから本流に取り込むという、チームでの進め方を扱うスキルです。モバイルアプリはストアの審査を経て配布されるため、不具合を含んだまま公開すると修正版が利用者に届くまで時間がかかり、取り込む前の確認がサーバー側の開発以上に重要です。また、署名やビルドの設定のように、一人の変更がチーム全員のビルドに影響するファイルもあります。最初に押さえるのは、変更をまとめてレビューを依頼する仕組み（プルリクエスト、PR）と、本流への直接の変更を禁じる保護ブランチの役割です。
+
+分からない用語は[用語集](../../guide/glossary.md)で確認できます。
+
 ## Lv0
 
 PR／MR、レビュー、承認、保護ブランチの役割を説明できず、チームの変更手順を進めるために個別の指示が必要である。
@@ -32,15 +38,26 @@ PR／MR、レビュー、承認、保護ブランチの役割を説明できず�
 
 ブランチ方針、レビュー基準、承認・保護設定、CIとの連携、参加者向けガイドを整備できる。チームで運用し、変更の滞留時間や手戻りの改善を確認できる。
 
+## 次のLvへ進むために
+
+学習の目安として、次の段階に進むための課題と参考資料を示します。課題は評価の条件ではありません。
+
+| 目標 | 取り組む課題の例 | 参考資料 |
+| :--- | :--- | :--- |
+| Lv1 | 練習用のリポジトリでブランチを作って小さな変更を加え、テンプレートに沿って変更理由と確認結果を書いた PR を作成する。レビューの指摘を反映し、CI の結果を確認してからマージする | [Pro Git（日本語）](https://git-scm.com/book/ja/v2)・[GitHub Pull Request](https://docs.github.com/ja/pull-requests) |
+| Lv2 | 画面の追加など1つの機能を、レビューしやすい大きさの複数の PR に分けて提出し、セルフレビューと CI の確認を済ませてからレビューを依頼する。あわせて、他のメンバーの PR を目的・影響・確認結果の観点でレビューする | [GitHub Pull Request](https://docs.github.com/ja/pull-requests)・[GitHub Actions](https://docs.github.com/ja/actions) |
+| Lv3 | 複数人が並行して進める機能について、ブランチの分け方と取り込む順序を決め、競合の解消を調整する。直近の PR のレビュー待ち時間や差し戻しの理由を集計し、運用の改善案を出す | [Pro Git（日本語）](https://git-scm.com/book/ja/v2)・[GitHub Pull Request](https://docs.github.com/ja/pull-requests)・[GitHub Actions](https://docs.github.com/ja/actions) |
+
 ## 技術の対応
 
-| プラットフォーム | 主な技術・API |
-| :--- | :--- |
-| iOS | GitHub／GitLab／Bitbucket の PR／MR、保護ブランチ、レビュー、CI（macOS ランナー）との連携、署名設定を含む変更のレビュー |
-| Android | GitHub／GitLab／Bitbucket の PR／MR、保護ブランチ、レビュー、CIとの連携、Gradle 設定変更のレビュー |
-| React Native | GitHub／GitLab／Bitbucket の PR／MR、保護ブランチ、レビュー、CIとの連携、JS とネイティブ設定を含むモノレポ構成 |
+| 用途 | iOS | Android | React Native |
+| :--- | :--- | :--- | :--- |
+| 変更の提案とレビュー | GitHub／GitLab／Bitbucket の PR／MR、レビュー | GitHub／GitLab／Bitbucket の PR／MR、レビュー | GitHub／GitLab／Bitbucket の PR／MR、レビュー |
+| 本流の保護 | 保護ブランチ | 保護ブランチ | 保護ブランチ |
+| CI との連携 | CI（macOS ランナー）との連携 | CIとの連携 | CIとの連携 |
+| レビューで注意する変更 | 署名設定を含む変更 | Gradle 設定変更 | JS とネイティブ設定を含むモノレポ構成 |
 
-roadmap.sh の参照トピック：ios: github, gitlab / android: github, gitlab, bitbucket / react-native: development-workflow
+roadmap.sh で学ぶ：[iOS](https://roadmap.sh/ios)（GitHub、GitLab）／[Android](https://roadmap.sh/android)（GitHub、GitLab、Bitbucket）／[React Native](https://roadmap.sh/react-native)（Development Workflow）
 
 ## 評価を記録する
 

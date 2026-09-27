@@ -10,7 +10,7 @@
 | `ARCHITECTURE.md` | ページ構成と生成・公開設計 |
 | `CONTRIBUTING.md` / `CHANGELOG.md` | 公開側の編集手順・改訂履歴への入口 |
 | `docs/index.md` | 読む順序と目的別の入口 |
-| `docs/guide/` | 個人・チームの評価手順と改善方法 |
+| `docs/guide/` | モバイル開発の前提、評価手順、改善方法、学習の進め方、用語集 |
 | `docs/skills/<領域>/<ID>.md` | 1スキル1ファイル、対象プラットフォーム、Lv0〜Lv4、技術の対応表の正本 |
 | `docs/checklists/<分野>.md` | 1分野1ファイル、各4項目の正本 |
 | `docs/templates/` | 記入説明と空のテンプレートの正本 |
@@ -35,27 +35,27 @@
 | ページ群 | ページ数 | 入口 |
 | :--- | ---: | :--- |
 | ホーム | 1 | `docs/index.md` |
-| 使い方ガイド | 4 | `docs/guide/overview.md` |
+| 使い方ガイド | 7 | `docs/guide/mobile-basics.md` |
 | スキル一覧 | 1 | `docs/skills/index.md` |
 | 領域一覧 | 4 | `docs/skills/<領域>/index.md` |
 | スキル個別定義 | 34 | `docs/skills/<領域>/<ID>.md` |
 | チェックリスト一覧 | 1 | `docs/checklists/index.md` |
 | 分野別チェックリスト | 25 | `docs/checklists/<分野>.md` |
 | 書式一覧・書式 | 5 | `docs/templates/index.md` |
-| 記入例一覧・記入例 | 2 | `docs/examples/index.md` |
+| 記入例一覧・記入例 | 3 | `docs/examples/index.md` |
 | 運用・改訂 | 4 | `docs/maintenance/index.md` |
 | ダウンロード | 1 | `docs/downloads.md` |
-| **合計** | **82** | 404ページとダウンロードファイルを除く |
+| **合計** | **86** | 404ページとダウンロードファイルを除く |
 
 全ファイルの対応は `build/document-map.json` で管理します。4領域のディレクトリは `foundation`、`applied-foundation`、`implementation`、`quality` です。スキル分類に「レベル」は使用せず、習熟度だけをLv0〜Lv4で表します。
 
 ## スキル定義の構造
 
-各スキルページは、スキルID、領域、対象プラットフォーム（共通・iOS・Android・React Native のいずれか）、前提、Lv0〜Lv4、技術の対応表、roadmap.sh の参照トピックで構成します。Lv0〜Lv4はプラットフォームに依存しない到達状態として記述し、製品名・API名は技術の対応表に置きます。`docs:check` は対象プラットフォーム行の値と5つのLv定義の存在を検査します。
+各スキルページは、スキルID、領域、対象プラットフォーム（共通・iOS・Android・React Native のいずれか）、前提、「このスキルについて」（初学者向けの概要）、Lv0〜Lv4、「次のLvへ進むために」（課題と公式資料）、技術の対応表（用途×プラットフォーム）、roadmap.sh へのリンクで構成します。Lv0〜Lv4はプラットフォームに依存しない到達状態として記述し、製品名・API名は技術の対応表に置きます。`docs:check` は対象プラットフォーム行の値と5つのLv定義の存在を検査します。
 
 ## チェックリストの構造
 
-25分野は「設計・開発」「品質」「開発・運用」「組織・連携」の4区分に分かれ、各分野は連続する4項目を持ちます。各分野の1〜3項目目は取り組みの実施を問い（望ましい回答TRUE）、4項目目は問題の発生を問います（FALSE）。`docs:check` はこの並びを検査します。68項目はDX Criteriaの原文、32項目は本ガイドで作成したモバイル固有の項目です。区別は `docs/maintenance/sources.md` に記載しています。
+25分野は「設計・開発」「品質」「開発・運用」「組織・連携」の4区分に分かれ、各分野は「この分野の背景」（初学者向けの説明）と連続する4項目を持ちます。回答例の固有名詞には初出時に短い補足を付けます。各分野の1〜3項目目は取り組みの実施を問い（望ましい回答TRUE）、4項目目は問題の発生を問います（FALSE）。`docs:check` はこの並びを検査します。68項目はDX Criteriaの原文、32項目は本ガイドで作成したモバイル固有の項目です。区別は `docs/maintenance/sources.md` に記載しています。
 
 ## 閲覧経路とURL
 

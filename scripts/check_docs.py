@@ -10,7 +10,7 @@ def main():
  paths=[p['path'] for p in PAGES]
  assert len(paths)==len(set(paths)),'Duplicate page paths'
  assert files==set(paths),f'Unmapped/missing Markdown: {files.symmetric_difference(paths)}'
- assert len(paths)==82,'Initial release must contain 82 pages'
+ assert len(paths)==86,'Initial release must contain 86 pages'
  skills=[p for p in PAGES if p['kind']=='skill'];checks=[p for p in PAGES if p['kind']=='checklist']
  assert len(skills)==34 and len(checks)==25,'Expected 34 skills and 25 checklist groups'
  assert len({p['skillId'] for p in skills})==34,'Duplicate skill ID'

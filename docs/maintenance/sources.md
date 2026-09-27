@@ -13,7 +13,7 @@ PRはPull Requestを指します。GitLabを使用する場合は、MR（Merge R
 
 ## スキル定義の由来
 
-スキルの分類と評価対象は、roadmap.shが公開する次の学習ロードマップのトピックを参照して構成しています。各スキルページの「技術の対応」に、参照したトピック名を記載しています。
+スキルの分類と評価対象は、roadmap.shが公開する次の学習ロードマップのトピックを参照して構成しています。各スキルページの「技術の対応」に、参照したロードマップへのリンクと主なトピック名を記載しています。「次のLvへ進むために」の参考資料は、Apple、Google、React Native、Expo 等の公式資料へのリンクです（到達確認日：2026年9月28日）。
 
 - [iOS Developer Roadmap](https://roadmap.sh/ios)
 - [Android Developer Roadmap](https://roadmap.sh/android)

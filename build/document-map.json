@@ -31,6 +31,12 @@
       "handbook": false
     },
     {
+      "path": "guide/mobile-basics.md",
+      "title": "モバイルアプリ開発の前提",
+      "kind": "guide",
+      "handbook": true
+    },
+    {
       "path": "guide/overview.md",
       "title": "ガイドの目的と評価の全体像",
       "kind": "guide",
@@ -51,6 +57,18 @@
     {
       "path": "guide/improvement.md",
       "title": "評価結果を改善につなげる",
+      "kind": "guide",
+      "handbook": true
+    },
+    {
+      "path": "guide/learning-paths.md",
+      "title": "学習の進め方",
+      "kind": "guide",
+      "handbook": true
+    },
+    {
+      "path": "guide/glossary.md",
+      "title": "用語集",
       "kind": "guide",
       "handbook": true
     },
@@ -730,6 +748,12 @@
     {
       "path": "examples/crash-rate-release-improvement.md",
       "title": "記入例：クラッシュ率の改善とリリース手順の整備",
+      "kind": "example",
+      "handbook": true
+    },
+    {
+      "path": "examples/individual-swift-lv1.md",
+      "title": "記入例：Swiftを学び始めた担当者の個人評価",
       "kind": "example",
       "handbook": true
     },

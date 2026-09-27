@@ -12,6 +12,12 @@ description: "UIテスト・E2Eの基準と使い方。モバイルアプリ開�
 
 [習熟度の共通定義と判定方法](../../guide/individual-assessment.md)に沿って、根拠を確認します。
 
+## このスキルについて
+
+ボタンを押す、文字を入力するといった利用者の操作をプログラムで再現し、画面の表示や一連の流れが期待どおりかを自動で確かめる技術です。E2E（エンドツーエンド）テストは、アプリの起動から目的の操作の完了までを通して確かめるテストを指します。モバイルアプリのテストはシミュレータ・エミュレータや実機の上で動かす必要があり、権限の確認ダイアログ、アプリの中断と復帰、通信状態の変化など端末特有の出来事も起こるため、結果が不安定になりやすい特徴があります。最初に押さえるのは、画面上の要素を識別子で特定することと、表示が終わるまで適切に待ってから検証することです。
+
+分からない用語は[用語集](../../guide/glossary.md)で確認できます。
+
 ## Lv0
 
 利用者の操作シナリオとUIテスト・E2Eの検証範囲を説明できず、シミュレータ・エミュレータの準備や既存テストの実行に支援が必要である。
@@ -32,15 +38,26 @@ description: "UIテスト・E2Eの基準と使い方。モバイルアプリ開�
 
 リスクに基づく自動化対象と実行端末の選定、共通の操作部品、データ・環境管理、結果分析と保守の体制を整備できる。チームで運用し、実行時間、不安定な失敗、重大不具合の検出状況が改善したことを確認できる。
 
+## 次のLvへ進むために
+
+学習の目安として、次の段階に進むための課題と参考資料を示します。課題は評価の条件ではありません。
+
+| 目標 | 取り組む課題の例 | 参考資料 |
+| :--- | :--- | :--- |
+| Lv1 | 公式ドキュメントの手順に沿って、ログイン画面で ID とパスワードを入力してボタンを押し、次の画面の見出しが表示されることを確かめる UIテストを1件作り、シミュレータ・エミュレータで実行する | [XCTest](https://developer.apple.com/documentation/xctest)・[テスト（Android）](https://developer.android.com/training/testing)・[テストの概要（React Native）](https://reactnative.dev/docs/testing-overview) |
+| Lv2 | 一覧・詳細・編集の3画面を持つメモアプリで、「メモを作成すると一覧に表示される」「編集内容が詳細画面に反映される」などの主要シナリオを識別子と待機を使って自動化する。テストごとにデータを初期化し、CI で実行して失敗時の画面記録とログを確認する | [XCTest](https://developer.apple.com/documentation/xctest)・[テスト（Android）](https://developer.android.com/training/testing)・[テストの概要（React Native）](https://reactnative.dev/docs/testing-overview)・[GitHub Actions](https://docs.github.com/ja/actions) |
+| Lv3 | 既存アプリのUIテストに、権限ダイアログ、ディープリンクからの起動、通信の切断、バックグラウンドからの復帰を含むシナリオを追加する。複数の端末・画面サイズで並列実行し、不安定なテストの原因をアプリ・テスト・データ・端末環境に分類して改善する | [Firebase Test Lab](https://firebase.google.com/docs/test-lab)・[テスト（Android）](https://developer.android.com/training/testing)・[XCTest](https://developer.apple.com/documentation/xctest) |
+
 ## 技術の対応
 
-| プラットフォーム | 主な技術・API |
-| :--- | :--- |
-| iOS | XCUITest、Accessibility Identifier、スナップショットテスト、Simulator でのCI実行 |
-| Android | Espresso、Compose UI Test、UI Automator、Firebase Test Lab |
-| React Native | Detox、Appium、Maestro |
+| 用途 | iOS | Android | React Native |
+| :--- | :--- | :--- | :--- |
+| 画面操作の自動化 | XCUITest | Espresso、Compose UI Test、UI Automator | Detox、Appium、Maestro |
+| 画面要素の特定 | Accessibility Identifier | testTag、contentDescription | testID |
+| 表示結果の比較 | スナップショットテスト | Compose のスクリーンショットテスト | Jest のスナップショット |
+| 端末上での実行環境 | Simulator でのCI実行 | Firebase Test Lab | Detox（Simulator／Emulator） |
 
-roadmap.sh の参照トピック：ios: xcuitest, unit--ui-testing / android: espresso / react-native: detox, appium
+roadmap.sh で学ぶ：[iOS](https://roadmap.sh/ios)（XCUITest、Unit & UI Testing）／[Android](https://roadmap.sh/android)（Espresso）／[React Native](https://roadmap.sh/react-native)（Detox、Appium）
 
 ## 評価を記録する
 
