@@ -56,6 +56,28 @@ description: "Gitの基準と使い方。モバイルアプリ開発の習熟度
 | 記録しないファイルの指定 | .gitignore（DerivedData、build） | .gitignore（build） | .gitignore（node_modules、build） |
 | 大きなアセットの管理 | Git LFS | Git LFS | Git LFS |
 
+## 関連ライブラリと参考資料
+
+主な一次情報の所在です。掲載は公式資料と、技術の対応表に挙げた広く使われるライブラリに限ります。採用を推奨するものではありません。
+
+<!-- references:start ids="pro-git-ja, git-reference, git-branch, git-commit, git-merge, git-rebase, gitignore, github-ignoring-files, github-git-lfs, git-lfs, github-pull-requests" -->
+
+| 種別 | 名称 | 対象 | 概要 |
+| :--- | :--- | :--- | :--- |
+| 公式リファレンス | [Gitリファレンス](https://git-scm.com/docs) | 共通 | Gitの各コマンドと設定項目を一覧で引けるリファレンス |
+| 公式リファレンス | [git branch](https://git-scm.com/docs/git-branch) | 共通 | ブランチの一覧表示、作成、削除を行うコマンド |
+| 公式リファレンス | [git commit](https://git-scm.com/docs/git-commit) | 共通 | ステージした変更を履歴に記録するコマンド |
+| 公式リファレンス | [git merge](https://git-scm.com/docs/git-merge) | 共通 | 別のブランチの変更履歴を現在のブランチへ統合するコマンド |
+| 公式リファレンス | [git rebase](https://git-scm.com/docs/git-rebase) | 共通 | コミットを別の基点の上に付け替えて履歴を整えるコマンド |
+| 公式リファレンス | [gitignore](https://git-scm.com/docs/gitignore) | 共通 | Gitで追跡しないファイルを指定する書式を説明 |
+| ライブラリ | [Git LFS](https://github.com/git-lfs/git-lfs) | 共通 | 大きなファイルをポインタに置き換えて管理するGit拡張 |
+| 学習資料 | [Pro Git（日本語）](https://git-scm.com/book/ja/v2) | 共通 | Gitの基本操作からブランチ運用までを解説する書籍 |
+| 学習資料 | [ファイルを無視する（GitHub Docs）](https://docs.github.com/ja/get-started/git-basics/ignoring-files) | 共通 | .gitignoreでコミット対象外のファイルを設定する手順 |
+| 学習資料 | [Git Large File Storageについて（GitHub Docs）](https://docs.github.com/ja/repositories/working-with-files/managing-large-files/about-git-large-file-storage) | 共通 | 大きなファイルをGit LFSでリポジトリ外に保存する仕組み |
+| 学習資料 | [プルリクエスト（GitHub Docs）](https://docs.github.com/ja/pull-requests) | 共通 | プルリクエストで変更を提案しレビューを受ける手順 |
+
+<!-- references:end -->
+
 roadmap.shで学ぶ：[iOS](https://roadmap.sh/ios)（Version Control、Git）／[Android](https://roadmap.sh/android)（Version Control、Git）／[React Native](https://roadmap.sh/react-native)（Development Workflow）
 
 ## 評価を記録する

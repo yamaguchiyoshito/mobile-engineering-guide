@@ -58,6 +58,32 @@ description: "アクセシビリティの基準と使い方。モバイルアプ
 | 動きの抑制と設定の取得 | Reduce Motion | システムのアニメーション設定 | AccessibilityInfo |
 | 検査ツール | Accessibility Inspector | Accessibility Scanner | 各OSのツール（Accessibility Inspector／Scanner） |
 
+## 関連ライブラリと参考資料
+
+主な一次情報の所在です。掲載は公式資料と、技術の対応表に挙げた広く使われるライブラリに限ります。採用を推奨するものではありません。
+
+<!-- references:start ids="apple-accessibility, uikit-accessibility, swiftui-accessibility, voiceover, dynamic-type, hig-accessibility, reduce-motion, accessibility-inspector, android-accessibility, android-accessibility-apps, compose-accessibility, android-accessibility-testing, m3-accessibility, rn-accessibility, rn-accessibilityinfo" -->
+
+| 種別 | 名称 | 対象 | 概要 |
+| :--- | :--- | :--- | :--- |
+| 公式リファレンス | [Accessibility](https://developer.apple.com/documentation/accessibility) | iOS | 支援技術にアプリの内容を伝えるためのAPIをまとめたページ |
+| 公式リファレンス | [Accessibility for UIKit](https://developer.apple.com/documentation/uikit/accessibility-for-uikit) | iOS | UIKitの画面にラベルや特性を設定し、支援技術に対応する方法 |
+| 公式リファレンス | [Accessibility fundamentals](https://developer.apple.com/documentation/swiftui/accessibility-fundamentals) | iOS | SwiftUIの画面を読み上げなどの支援技術に対応させる基本 |
+| 公式リファレンス | [VoiceOver](https://developer.apple.com/documentation/accessibility/voiceover) | iOS | 画面の内容を音声で伝えるジェスチャー操作のスクリーンリーダー |
+| 公式リファレンス | [Scaling fonts automatically](https://developer.apple.com/documentation/uikit/scaling-fonts-automatically) | iOS | Dynamic Typeで利用者の文字サイズ設定に合わせて表示を変える方法 |
+| 公式リファレンス | [Accessibility（Human Interface Guidelines）](https://developer.apple.com/design/human-interface-guidelines/accessibility) | iOS | タップ領域や文字サイズなど、誰もが使える画面を作るための設計指針 |
+| 公式リファレンス | [isReduceMotionEnabled](https://developer.apple.com/documentation/uikit/uiaccessibility/isreducemotionenabled) | iOS | 視差効果を減らす設定が有効になっているかを返すプロパティ |
+| 公式リファレンス | [Accessibility Inspector](https://developer.apple.com/documentation/accessibility/accessibility-inspector) | iOS | アプリが支援技術にどう見えるかを確認し、問題を検査するツール |
+| 公式リファレンス | [Accessibility in Jetpack Compose](https://developer.android.com/develop/ui/compose/accessibility) | Android | Composeでセマンティクスを設定し、支援技術に対応する方法 |
+| 公式リファレンス | [Accessible design（Material Design 3）](https://m3.material.io/foundations/accessible-design/overview) | Android | 色のコントラストやタッチ領域など、使いやすい画面の設計指針 |
+| 公式リファレンス | [Accessibility（React Native）](https://reactnative.dev/docs/accessibility) | React Native | accessibilityLabelなど読み上げ向けの属性の使い方 |
+| 公式リファレンス | [AccessibilityInfo](https://reactnative.dev/docs/accessibilityinfo) | React Native | スクリーンリーダーや動きを減らす設定の状態を取得するAPI |
+| 学習資料 | [アクセシビリティ（Android）](https://developer.android.com/guide/topics/ui/accessibility) | Android | Androidアプリのアクセシビリティ対応の考え方と手順を示すガイド |
+| 学習資料 | [Make apps more accessible](https://developer.android.com/guide/topics/ui/accessibility/apps) | Android | contentDescriptionやタッチターゲットの大きさなどの対応方法 |
+| 学習資料 | [Test your app's accessibility](https://developer.android.com/guide/topics/ui/accessibility/testing) | Android | TalkBackや検査ツールでアプリの対応状況を調べる方法 |
+
+<!-- references:end -->
+
 roadmap.shで学ぶ：[iOS](https://roadmap.sh/ios)（Accessibility、VoiceOver、Dynamic Type、Accessibility Inspector）／[SwiftUI](https://roadmap.sh/swift-ui)（Accessibility）／[React Native](https://roadmap.sh/react-native)（Accessibility）
 
 ## 評価を記録する

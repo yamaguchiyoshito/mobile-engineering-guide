@@ -57,6 +57,32 @@ description: "入力とバリデーションの基準と使い方。モバイル
 | キーボードとの重なりとフォーカス | キーボード回避、フォーカス管理 | adjustResize、FocusRequester | KeyboardAvoidingView |
 | 検証とエラー表示 | 入力検証とエラー表示、Formatter | 入力検証、エラー表示 | フォームライブラリ（React Hook Form） |
 
+## 関連ライブラリと参考資料
+
+主な一次情報の所在です。掲載は公式資料と、技術の対応表に挙げた広く使われるライブラリに限ります。採用を推奨するものではありません。
+
+<!-- references:start ids="uikit-uitextfield, swiftui-textfield, uikit-uikeyboardtype, uikit-uikeyboardlayoutguide, swiftui-focusstate, foundation-formatter, compose-text-fields, android-edittext, android-input-method-type, android-input-method-visibility, compose-focus, compose-validate-input, rn-textinput, rn-keyboardavoidingview, react-hook-form" -->
+
+| 種別 | 名称 | 対象 | 概要 |
+| :--- | :--- | :--- | :--- |
+| 公式リファレンス | [UITextField](https://developer.apple.com/documentation/uikit/uitextfield) | iOS | UIKitで1行のテキスト入力を受け付けるコントロール |
+| 公式リファレンス | [TextField](https://developer.apple.com/documentation/swiftui/textfield) | iOS | SwiftUIで1行のテキスト入力を受け付けるView |
+| 公式リファレンス | [UIKeyboardType](https://developer.apple.com/documentation/uikit/uikeyboardtype) | iOS | 入力欄に表示するキーボードの種類を指定する型 |
+| 公式リファレンス | [UIKeyboardLayoutGuide](https://developer.apple.com/documentation/uikit/uikeyboardlayoutguide) | iOS | キーボードの位置に合わせてViewを配置するためのガイド |
+| 公式リファレンス | [FocusState](https://developer.apple.com/documentation/swiftui/focusstate) | iOS | 入力欄のフォーカス位置を読み取り・変更するプロパティラッパー |
+| 公式リファレンス | [Formatter](https://developer.apple.com/documentation/foundation/formatter) | iOS | 数値や日付などの値と文字列表現を相互に変換する基底クラス |
+| 公式リファレンス | [Configure text fields](https://developer.android.com/develop/ui/compose/text/user-input) | Android | ComposeのTextFieldで入力を受け付けて設定する方法 |
+| 公式リファレンス | [EditText](https://developer.android.com/reference/android/widget/EditText) | Android | Viewでテキスト入力を受け付ける部品のリファレンス |
+| 公式リファレンス | [Specify the input method type](https://developer.android.com/develop/ui/views/touch-and-input/keyboard-input/style) | Android | InputTypeとIMEアクションでキーボードの種類と動作を指定する方法 |
+| 公式リファレンス | [Handle input method visibility](https://developer.android.com/develop/ui/views/touch-and-input/keyboard-input/visibility) | Android | キーボードの表示とadjustResizeによる画面調整の扱い方 |
+| 公式リファレンス | [Change focus behavior](https://developer.android.com/develop/ui/compose/touch-input/focus/change-focus-behavior) | Android | FocusRequesterなどでフォーカスの移動を制御する方法 |
+| 公式リファレンス | [Validate input as the user types](https://developer.android.com/develop/ui/compose/quick-guides/content/validate-input) | Android | 入力中の値を検証してエラーを表示するComposeの実装例 |
+| 公式リファレンス | [TextInput](https://reactnative.dev/docs/textinput) | React Native | キーボードからテキスト入力を受け付ける部品 |
+| 公式リファレンス | [KeyboardAvoidingView](https://reactnative.dev/docs/keyboardavoidingview) | React Native | キーボードに隠れないように表示位置を調整する部品 |
+| ライブラリ | [React Hook Form](https://github.com/react-hook-form/react-hook-form) | React Native | フックでフォームの入力値と検証を管理するライブラリ |
+
+<!-- references:end -->
+
 roadmap.shで学ぶ：[iOS](https://roadmap.sh/ios)（User interactions）／[SwiftUI](https://roadmap.sh/swift-ui)（User interaction、UI controls、Form）／[Android](https://roadmap.sh/android)（TextField、TextView）／[React Native](https://roadmap.sh/react-native)（Text input、KeyboardAvoidingView、Gesture handling）
 
 ## 評価を記録する

@@ -58,6 +58,29 @@ FragmentとそのViewの寿命のずれ、一覧の差分更新、参照の保�
 | 画面遷移 | Navigation Component、Intent（明示的・暗黙的） |
 | ダイアログとメニュー | Dialog、BottomSheet、Drawer |
 
+## 関連ライブラリと参考資料
+
+主な一次情報の所在です。掲載は公式資料と、技術の対応表に挙げた広く使われるライブラリに限ります。採用を推奨するものではありません。
+
+<!-- references:start ids="android-activities, android-fragments, android-xml-layouts, constraintlayout, android-view-binding, material-components-android, android-recyclerview, android-navigation-graph, android-intents, android-dialogs, m3-bottom-sheets, m3-navigation-drawer" -->
+
+| 種別 | 名称 | 対象 | 概要 |
+| :--- | :--- | :--- | :--- |
+| 公式リファレンス | [Activity入門（Android）](https://developer.android.com/guide/components/activities/intro-activities) | Android | アプリの画面単位であるActivityの役割とライフサイクル |
+| 公式リファレンス | [Fragment](https://developer.android.com/guide/fragments) | Android | 画面の一部を再利用できる単位として扱う仕組み |
+| 公式リファレンス | [Layouts in views](https://developer.android.com/develop/ui/views/layout/declaring-layout) | Android | XMLで画面のView階層を定義する方法 |
+| 公式リファレンス | [Build a responsive UI with ConstraintLayout](https://developer.android.com/develop/ui/views/layout/constraint-layout) | Android | 要素同士の制約で位置を決めるViewのレイアウトの使い方 |
+| 公式リファレンス | [View binding](https://developer.android.com/topic/libraries/view-binding) | Android | レイアウト内のViewを型安全に参照するクラスを生成する機能 |
+| 公式リファレンス | [RecyclerView](https://developer.android.com/develop/ui/views/layout/recyclerview) | Android | Viewを再利用しながら多数の項目を表示する一覧の部品 |
+| 公式リファレンス | [Design your navigation graph](https://developer.android.com/guide/navigation/design) | Android | Navigationで画面と遷移をグラフとして定義する方法 |
+| 公式リファレンス | [Intents and intent filters](https://developer.android.com/guide/components/intents-filters) | Android | 他の画面やアプリの起動を依頼するメッセージの仕組み |
+| 公式リファレンス | [Dialogs](https://developer.android.com/develop/ui/views/components/dialogs) | Android | ユーザーに判断や追加の入力を求める小さなウィンドウ |
+| ライブラリ | [Material Components for Android](https://github.com/material-components/material-components-android) | Android | Material DesignのUI部品を提供するAndroid向けライブラリ |
+| 学習資料 | [Bottom sheets](https://m3.material.io/components/bottom-sheets/overview) | Android | 画面下部に補助的な内容を表示する部品の設計指針 |
+| 学習資料 | [Navigation drawer](https://m3.material.io/components/navigation-drawer/overview) | Android | 画面の端から引き出して使う遷移メニューの設計指針 |
+
+<!-- references:end -->
+
 roadmap.shで学ぶ：[Android](https://roadmap.sh/android)（Activity、Fragments、ConstraintLayout、RecyclerView、Navigation components、Intent、Dialog、Bottom sheet）
 
 ## 評価を記録する

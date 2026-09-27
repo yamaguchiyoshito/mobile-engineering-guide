@@ -59,6 +59,29 @@ View部品、状態の受け渡し方針、プレビューとUI検証の基準�
 | 操作とデータ表示 | ジェスチャ、Drag & Drop、Swift Charts |
 | UIKitとの相互運用 | UIViewRepresentable |
 
+## 関連ライブラリと参考資料
+
+主な一次情報の所在です。掲載は公式資料と、技術の対応表に挙げた広く使われるライブラリに限ります。採用を推奨するものではありません。
+
+<!-- references:start ids="swiftui, swiftui-tutorials, swiftui-viewmodifier, swiftui-layout-fundamentals, swiftui-lists, swiftui-model-data, observation, swiftui-navigationstack, swiftui-tabview, swiftui-gestures, swift-charts, swiftui-uiviewrepresentable" -->
+
+| 種別 | 名称 | 対象 | 概要 |
+| :--- | :--- | :--- | :--- |
+| 公式リファレンス | [SwiftUI](https://developer.apple.com/documentation/swiftui) | iOS | 宣言的な記述で画面を構築するUIフレームワーク |
+| 公式リファレンス | [ViewModifier](https://developer.apple.com/documentation/swiftui/viewmodifier) | iOS | Viewに共通の見た目や振る舞いを加える部品を定義するプロトコル |
+| 公式リファレンス | [Layout fundamentals](https://developer.apple.com/documentation/swiftui/layout-fundamentals) | iOS | スタックやグリッドでViewを配置するAPIの一覧と解説 |
+| 公式リファレンス | [Lists](https://developer.apple.com/documentation/swiftui/lists) | iOS | Listなどで行を並べて一覧を表示するAPI群 |
+| 公式リファレンス | [Model data](https://developer.apple.com/documentation/swiftui/model-data) | iOS | @Stateや@Bindingで画面の状態とデータを管理する仕組み |
+| 公式リファレンス | [Observation](https://developer.apple.com/documentation/observation) | iOS | @Observableでモデルのプロパティの変化を追跡する仕組み |
+| 公式リファレンス | [NavigationStack](https://developer.apple.com/documentation/swiftui/navigationstack) | iOS | 画面を積み重ねて遷移を管理するコンテナView |
+| 公式リファレンス | [TabView](https://developer.apple.com/documentation/swiftui/tabview) | iOS | タブで複数の画面を切り替えるコンテナView |
+| 公式リファレンス | [Gestures](https://developer.apple.com/documentation/swiftui/gestures) | iOS | タップやドラッグなどの操作を認識してViewに結び付けるAPI群 |
+| 公式リファレンス | [Swift Charts](https://developer.apple.com/documentation/charts) | iOS | データを棒や折れ線などのグラフとして表示するフレームワーク |
+| 公式リファレンス | [UIViewRepresentable](https://developer.apple.com/documentation/swiftui/uiviewrepresentable) | iOS | UIKitのViewをSwiftUIの画面に組み込むためのプロトコル |
+| 学習資料 | [SwiftUIチュートリアル（iOS）](https://developer.apple.com/tutorials/swiftui) | iOS | 手順に沿ってSwiftUIでアプリを作る公式チュートリアル |
+
+<!-- references:end -->
+
 roadmap.shで学ぶ：[iOS](https://roadmap.sh/ios)（SwiftUI、Declarative syntax、Views and modifiers、State management、Navigation stacks）／[SwiftUI](https://roadmap.sh/swift-ui)（ViewBuilder、State、Binding、Data flow、NavigationStack、Gestures、UIKit vs SwiftUI）
 
 ## 評価を記録する

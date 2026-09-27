@@ -57,6 +57,32 @@ description: "UIテスト・E2Eの基準と使い方。モバイルアプリ開�
 | 表示結果の比較 | スナップショットテスト | Composeのスクリーンショットテスト | Jestのスナップショット |
 | 端末上での実行環境 | SimulatorでのCI実行 | Firebase Test Lab | Detox（Simulator／Emulator） |
 
+## 関連ライブラリと参考資料
+
+主な一次情報の所在です。掲載は公式資料と、技術の対応表に挙げた広く使われるライブラリに限ります。採用を推奨するものではありません。
+
+<!-- references:start ids="xcuiautomation, uikit-accessibility-identifier, swiftui-accessibility-identifier, xcode-running-tests, espresso, compose-testing, compose-testing-semantics, ui-automator, compose-screenshot-testing, firebase-test-lab, detox, appium, maestro, rn-view-testid, jest" -->
+
+| 種別 | 名称 | 対象 | 概要 |
+| :--- | :--- | :--- | :--- |
+| 公式リファレンス | [XCUIAutomation](https://developer.apple.com/documentation/xcuiautomation) | iOS | 画面操作を再現してUIが意図どおり動くことを確認するUIテストのAPI |
+| 公式リファレンス | [accessibilityIdentifier（UIKit）](https://developer.apple.com/documentation/uikit/uiaccessibilityidentification/accessibilityidentifier) | iOS | UIテストで画面要素を特定するための識別子を設定するプロパティ |
+| 公式リファレンス | [accessibilityIdentifier(_:)（SwiftUI）](https://developer.apple.com/documentation/swiftui/view/accessibilityidentifier(_:)) | iOS | SwiftUIのビューにUIテスト用の識別子を付けるモディファイア |
+| 公式リファレンス | [テストの実行と結果の確認（iOS）](https://developer.apple.com/documentation/xcode/running-tests-and-interpreting-results) | iOS | Xcodeやコマンドラインでテストを実行し、結果を読み取る方法 |
+| 公式リファレンス | [Espresso](https://developer.android.com/training/testing/espresso) | Android | View階層を操作して画面の表示と動作を検証するUIテストのAPI |
+| 公式リファレンス | [Composeのテスト（Android）](https://developer.android.com/develop/ui/compose/testing) | Android | Jetpack ComposeのUIを操作・検証するテストAPIの使い方 |
+| 公式リファレンス | [セマンティクス（Android）](https://developer.android.com/develop/ui/compose/testing/semantics) | Android | testTagなどのセマンティクス情報でComposeの要素を特定する方法 |
+| 公式リファレンス | [UI Automator](https://developer.android.com/training/testing/other-components/ui-automator) | Android | アプリをまたいだ操作やシステムUIを含めて画面を自動操作するAPI |
+| 公式リファレンス | [Compose Preview Screenshot Testing](https://developer.android.com/studio/preview/compose-screenshot-testing) | Android | Composeのプレビューを画像で保存し表示の差分を検出するテスト |
+| 公式リファレンス | [testID（React Native）](https://reactnative.dev/docs/view#testid) | React Native | E2Eテストでビューを特定するための識別子を指定するプロパティ |
+| ライブラリ | [Appium](https://appium.io/docs/en/latest/) | 共通 | WebDriverプロトコルで複数のプラットフォームのアプリを自動操作するツール |
+| ライブラリ | [Maestro](https://docs.maestro.dev/) | 共通 | YAMLで記述した画面操作のシナリオを実機やエミュレータで実行するツール |
+| ライブラリ | [Firebase Test Lab](https://firebase.google.com/docs/test-lab) | Android・iOS | クラウド上の複数の実機・仮想端末でアプリのテストを実行するサービス |
+| ライブラリ | [Detox](https://wix.github.io/Detox/) | React Native | E2EテストをSimulatorやEmulator上で実行するツール |
+| ライブラリ | [Jest](https://github.com/jestjs/jest) | React Native | JavaScriptのテストを記述・実行し、モックやスナップショットを扱うツール |
+
+<!-- references:end -->
+
 roadmap.shで学ぶ：[iOS](https://roadmap.sh/ios)（XCUITest、Unit & UI Testing）／[Android](https://roadmap.sh/android)（Espresso）／[React Native](https://roadmap.sh/react-native)（Detox、Appium）
 
 ## 評価を記録する

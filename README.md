@@ -6,6 +6,7 @@
 - 25分野、100チェック項目、原文・望ましい判定・回答例
 - 評価手順、4種類の空の書式、架空の記入例
 - モバイル開発に不慣れな読み手向けの前提説明、学習の進め方、用語集。各要素技術に「この要素技術について」「次のLvへ進むために」、各チェック分野に「この分野の背景」
+- 各要素技術に関連ライブラリと参考資料（公式リファレンス、ライブラリ、学習資料）の表
 - 86ページ、日本語全文検索、単一Markdownと書式のダウンロード
 
 モバイル開発が初めての場合は [モバイルアプリ開発の前提](docs/guide/mobile-basics.md) と [学習の進め方](docs/guide/learning-paths.md) から、評価を始める場合は [ガイドの全体像](docs/guide/overview.md) から読み、[要素技術の定義](docs/skills/index.md)・[チームチェック](docs/checklists/index.md) を参照してください。詳細な構成は [ARCHITECTURE.md](ARCHITECTURE.md)、実行した検証は [VALIDATION.md](VALIDATION.md) に記載しています。要素技術体系の出典は [出典と追加した内容](docs/maintenance/sources.md) にあります。
@@ -64,6 +65,7 @@ npm run docs:preview
 | `docs:build` | 文書検査・ダウンロード生成・サイトビルド |
 | `test:site` | 生成HTMLの参照検査と、Chromiumによる表示・検索・ダウンロード確認 |
 | `test:release` | 公開タグ検証の単体テスト |
+| `check:links` | 文書内の外部リンクの到達確認（手動実行。月1回のワークフローでも実行） |
 
 ## 構成の由来
 

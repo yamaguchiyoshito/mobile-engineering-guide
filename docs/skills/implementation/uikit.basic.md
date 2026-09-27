@@ -58,6 +58,29 @@ ViewとView Controllerの役割、ライフサイクル、制約によるレイ�
 | 画面遷移 | UINavigationController、Segue、モーダル表示 |
 | 一覧表示 | UITableView／UICollectionView |
 
+## 関連ライブラリと参考資料
+
+主な一次情報の所在です。掲載は公式資料と、技術の対応表に挙げた広く使われるライブラリに限ります。採用を推奨するものではありません。
+
+<!-- references:start ids="uikit, uikit-uiviewcontroller, uikit-uiview, nslayoutconstraint, uikit-uistoryboard, uikit-uinavigationcontroller, uikit-uistoryboardsegue, uikit-present, uikit-uitableview, uikit-uicollectionview, xcode, hig" -->
+
+| 種別 | 名称 | 対象 | 概要 |
+| :--- | :--- | :--- | :--- |
+| 公式リファレンス | [UIKit](https://developer.apple.com/documentation/uikit) | iOS | ViewとView Controllerで画面を構築するUIフレームワーク |
+| 公式リファレンス | [UIViewController](https://developer.apple.com/documentation/uikit/uiviewcontroller) | iOS | 画面のViewとライフサイクルを管理する基底クラス |
+| 公式リファレンス | [UIView](https://developer.apple.com/documentation/uikit/uiview) | iOS | 画面上の矩形領域の描画と操作を扱う基底クラス |
+| 公式リファレンス | [NSLayoutConstraint](https://developer.apple.com/documentation/uikit/nslayoutconstraint) | iOS | Auto Layoutでビュー同士の位置と大きさの関係を定義する制約 |
+| 公式リファレンス | [UIStoryboard](https://developer.apple.com/documentation/uikit/uistoryboard) | iOS | Storyboardに定義した画面を読み込むためのクラス |
+| 公式リファレンス | [UINavigationController](https://developer.apple.com/documentation/uikit/uinavigationcontroller) | iOS | 画面を積み重ねて階層的な遷移を管理するコンテナ |
+| 公式リファレンス | [UIStoryboardSegue](https://developer.apple.com/documentation/uikit/uistoryboardsegue) | iOS | Storyboard上の2つの画面間の遷移を表すクラス |
+| 公式リファレンス | [present(_:animated:completion:)](https://developer.apple.com/documentation/uikit/uiviewcontroller/present(_:animated:completion:)) | iOS | View Controllerをモーダルで表示するメソッド |
+| 公式リファレンス | [UITableView](https://developer.apple.com/documentation/uikit/uitableview) | iOS | 1列に並んだ行で項目の一覧を表示するView |
+| 公式リファレンス | [UICollectionView](https://developer.apple.com/documentation/uikit/uicollectionview) | iOS | 指定したレイアウトで項目の集まりを表示するView |
+| 公式リファレンス | [Xcode](https://developer.apple.com/documentation/xcode) | iOS | Appleプラットフォーム向けアプリを開発する環境のドキュメント |
+| 公式リファレンス | [Human Interface Guidelines](https://developer.apple.com/design/human-interface-guidelines) | iOS | Appleのプラットフォームで画面や操作を設計するための指針 |
+
+<!-- references:end -->
+
 roadmap.shで学ぶ：[iOS](https://roadmap.sh/ios)（UIKit、View controllers、ViewController lifecycle、Storyboards、Xibs、Navigation controllers & segues、Delegate pattern）／[SwiftUI](https://roadmap.sh/swift-ui)（UIKit vs SwiftUI）
 
 ## 評価を記録する

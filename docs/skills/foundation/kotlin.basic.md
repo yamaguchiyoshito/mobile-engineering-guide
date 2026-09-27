@@ -58,6 +58,29 @@ Javaとの相互運用によるnullの混入、可変コレクションの共有
 | データの集まりの操作 | コレクション操作 |
 | Javaとの連携 | Java相互運用 |
 
+## 関連ライブラリと参考資料
+
+主な一次情報の所在です。掲載は公式資料と、技術の対応表に挙げた広く使われるライブラリに限ります。採用を推奨するものではありません。
+
+<!-- references:start ids="kotlin-basic-syntax, kotlin-null-safety, kotlin-data-classes, kotlin-sealed-classes, kotlin-lambdas, kotlin-extensions, kotlin-scope-functions, kotlin-collection-operations, kotlin-java-interop, kotlin-docs, android-kotlin, android-basics-compose" -->
+
+| 種別 | 名称 | 対象 | 概要 |
+| :--- | :--- | :--- | :--- |
+| 公式リファレンス | [Kotlinドキュメント：基本構文（Android）](https://kotlinlang.org/docs/basic-syntax.html) | Android | val・var、関数、制御構文など基本の書き方を示す |
+| 公式リファレンス | [Kotlinドキュメント：Null安全（Android）](https://kotlinlang.org/docs/null-safety.html) | Android | null許容型と安全呼び出し、エルビス演算子を説明 |
+| 公式リファレンス | [Kotlinドキュメント：データクラス（Android）](https://kotlinlang.org/docs/data-classes.html) | Android | データを保持するクラスと自動生成される関数を説明 |
+| 公式リファレンス | [Kotlinドキュメント：sealed class（Android）](https://kotlinlang.org/docs/sealed-classes.html) | Android | 継承先を限定したクラス階層とwhenでの分岐を説明 |
+| 公式リファレンス | [Kotlinドキュメント：高階関数とラムダ（Android）](https://kotlinlang.org/docs/lambdas.html) | Android | 関数を引数や戻り値として扱う方法とラムダ式を説明 |
+| 公式リファレンス | [Kotlinドキュメント：拡張関数（Android）](https://kotlinlang.org/docs/extensions.html) | Android | 既存のクラスに関数やプロパティを追加する方法を説明 |
+| 公式リファレンス | [Kotlinドキュメント：スコープ関数（Android）](https://kotlinlang.org/docs/scope-functions.html) | Android | let・apply・runなどのスコープ関数の違いを説明 |
+| 公式リファレンス | [Kotlinドキュメント：コレクション操作（Android）](https://kotlinlang.org/docs/collection-operations.html) | Android | 変換・絞り込み・集計などコレクション操作の一覧 |
+| 公式リファレンス | [Kotlinドキュメント：Java相互運用（Android）](https://kotlinlang.org/docs/java-interop.html) | Android | KotlinからJavaのコードを呼び出す際の規則を説明 |
+| 学習資料 | [Kotlinドキュメント（Android）](https://kotlinlang.org/docs/home.html) | Android | Kotlin言語の入門から応用までをまとめた公式文書 |
+| 学習資料 | [AndroidでのKotlin（Android）](https://developer.android.com/kotlin) | Android | Android開発でKotlinを学ぶための資料をまとめたページ |
+| 学習資料 | [Android Basics with Compose](https://developer.android.com/courses/android-basics-compose/course) | Android | KotlinとComposeでアプリを作りながら学ぶ公式コース |
+
+<!-- references:end -->
+
 roadmap.shで学ぶ：[Android](https://roadmap.sh/android)（Basics of Kotlin、Basics of OOP、Data Structures and Algorithms、Java、Pick a Language）
 
 ## 評価を記録する

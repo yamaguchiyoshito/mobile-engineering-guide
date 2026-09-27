@@ -4,6 +4,13 @@ ROOT=Path(__file__).resolve().parents[1]
 DOCS=ROOT/'docs'
 MAP=json.loads((ROOT/'build/document-map.json').read_text())
 PAGES=MAP['pages']
+REFERENCES=json.loads((ROOT/'build/references.json').read_text())
+REFS={r['id']:r for r in REFERENCES['references']}
+REF_TYPES={'official':'公式リファレンス','library':'ライブラリ','learning':'学習資料'}
+PLATFORM_ORDER=['共通','iOS','Android','React Native']
+def reference_ids(text):
+ m=re.search(r'<!-- references:start ids="([^"]*)" -->',text)
+ return [i.strip() for i in m.group(1).split(',') if i.strip()] if m else None
 VERSION=json.loads((ROOT/'package.json').read_text())['version']
 def body(path):
  text=(DOCS/path).read_text()

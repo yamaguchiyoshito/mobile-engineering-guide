@@ -59,6 +59,32 @@ description: "モバイルプラットフォーム基礎の基準と使い方。
 | 保存領域の分離 | サンドボックス | アプリ専用ストレージ | 各OSのサンドボックス |
 | 開発・配布の形態 | App Store、TestFlight、Ad Hoc | Google Play、APKの直接配布 | Expo Managed／Bare |
 
+## 関連ライブラリと参考資料
+
+主な一次情報の所在です。掲載は公式資料と、技術の対応表に挙げた広く使われるライブラリに限ります。採用を推奨するものではありません。
+
+<!-- references:start ids="ios-app-lifecycle, apple-info-plist, apple-protected-resources, apple-file-system-guide, apple-app-distribution, android-app-fundamentals, android-activity-lifecycle, android-manifest, android-runtime-permissions, android-app-specific-storage, android-publish, rn-architecture, rn-appstate, expo-app-json, expo-permissions" -->
+
+| 種別 | 名称 | 対象 | 概要 |
+| :--- | :--- | :--- | :--- |
+| 公式リファレンス | [アプリのライフサイクル管理（iOS）](https://developer.apple.com/documentation/uikit/managing-your-app-s-life-cycle) | iOS | アプリの状態遷移と各状態で行う処理を解説するガイド |
+| 公式リファレンス | [Information Property List](https://developer.apple.com/documentation/bundleresources/information-property-list) | iOS | アプリの構成情報や権限の利用目的を宣言するファイル |
+| 公式リファレンス | [保護されたリソースへのアクセス要求（iOS）](https://developer.apple.com/documentation/uikit/requesting-access-to-protected-resources) | iOS | カメラや位置情報などの利用許可をユーザーに求める手順 |
+| 公式リファレンス | [ファイルシステムプログラミングガイド（iOS）](https://developer.apple.com/library/archive/documentation/FileManagement/Conceptual/FileSystemProgrammingGuide/FileSystemOverview/FileSystemOverview.html) | iOS | アプリのサンドボックスと保存先ディレクトリの構成を説明 |
+| 公式リファレンス | [ベータテストとリリースのための配布（iOS）](https://developer.apple.com/documentation/xcode/distributing-your-app-for-beta-testing-and-releases) | iOS | TestFlightやApp Storeへアプリを配布する手順を説明 |
+| 公式リファレンス | [アプリの基礎（Android）](https://developer.android.com/guide/components/fundamentals) | Android | Activityなど4種のアプリコンポーネントと構成を解説 |
+| 公式リファレンス | [Activityのライフサイクル（Android）](https://developer.android.com/guide/components/activities/activity-lifecycle) | Android | Activityの状態遷移と各コールバックの役割を解説 |
+| 公式リファレンス | [アプリマニフェストの概要（Android）](https://developer.android.com/guide/topics/manifest/manifest-intro) | Android | コンポーネントや権限を宣言するAndroidManifestの説明 |
+| 公式リファレンス | [実行時の権限リクエスト（Android）](https://developer.android.com/training/permissions/requesting) | Android | 危険な権限を実行時にユーザーへ要求する手順を説明 |
+| 公式リファレンス | [アプリ固有のストレージ（Android）](https://developer.android.com/training/data-storage/app-specific) | Android | アプリ専用の内部・外部ストレージへの保存方法を説明 |
+| 公式リファレンス | [アプリの公開（Android）](https://developer.android.com/studio/publish) | Android | Google Playや直接配布でアプリを公開する手順を説明 |
+| 公式リファレンス | [アーキテクチャの概要（React Native）](https://reactnative.dev/architecture/overview) | React Native | JSの実行環境とネイティブ層が連携する仕組みを解説 |
+| 公式リファレンス | [AppState](https://reactnative.dev/docs/appstate) | React Native | アプリが前面か背面かの状態と変化を取得するAPI |
+| 公式リファレンス | [app.json／app.config.jsのリファレンス（React Native）](https://docs.expo.dev/versions/latest/config/app/) | React Native | Expoアプリの名前や権限などの設定項目を一覧で示す |
+| 公式リファレンス | [権限の扱い（React Native）](https://docs.expo.dev/guides/permissions/) | React Native | Expoアプリで各OSの権限を設定し要求する方法を説明 |
+
+<!-- references:end -->
+
 roadmap.shで学ぶ：[iOS](https://roadmap.sh/ios)（iOS Architecture、Core OS、Core Services、Cocoa Touch、File System）／[SwiftUI](https://roadmap.sh/swift-ui)（App Lifecycle）／[Android](https://roadmap.sh/android)（App Components、Activity Lifecycle、The Fundamentals、File System）／[React Native](https://roadmap.sh/react-native)（What Is React Native、Why Use React Native、Expo Tradeoffs、React Native Alternatives）
 
 ## 評価を記録する

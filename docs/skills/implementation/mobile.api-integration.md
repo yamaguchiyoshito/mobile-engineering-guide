@@ -58,6 +58,32 @@ APIの要求・応答、端末内の保存、画面表示の間でデータが�
 | 再試行とエラー処理 | 再試行・バックオフ | Retrofit Interceptor（再試行）、Result型 | TanStack Queryのretry、エラー境界 |
 | データ形式の互換性 | Codableの互換性 | kotlinx.serializationの既定値・未知項目の扱い | zodなどによる実行時検証 |
 
+## 関連ライブラリと参考資料
+
+主な一次情報の所在です。掲載は公式資料と、技術の対応表に挙げた広く使われるライブラリに限ります。採用を推奨するものではありません。
+
+<!-- references:start ids="urlsession, urlcache, keychain-services, codable, android-data-layer, android-room, android-paging, retrofit, kotlinx-serialization, kotlin-result, rn-network, tanstack-query, swr, expo-securestore, zod" -->
+
+| 種別 | 名称 | 対象 | 概要 |
+| :--- | :--- | :--- | :--- |
+| 公式リファレンス | [URLSession](https://developer.apple.com/documentation/foundation/urlsession) | iOS | HTTPリクエストの送信と応答の受信を行うiOS標準のAPI |
+| 公式リファレンス | [URLCache](https://developer.apple.com/documentation/foundation/urlcache) | iOS | URLリクエストへの応答をメモリやディスクに保存する仕組み |
+| 公式リファレンス | [Keychain Services](https://developer.apple.com/documentation/security/keychain-services) | iOS | パスワードやトークンなどの秘密情報を暗号化して保存するAPI |
+| 公式リファレンス | [Codable](https://developer.apple.com/documentation/swift/codable) | iOS | JSONなどの外部表現と型の間でデータを相互に変換するプロトコル |
+| 公式リファレンス | [Room](https://developer.android.com/training/data-storage/room) | Android | SQLiteをオブジェクトとして扱えるようにするデータベースのライブラリ |
+| 公式リファレンス | [Paging](https://developer.android.com/topic/libraries/architecture/paging/v3-overview) | Android | 大きなデータを分割して読み込み表示するJetpackライブラリ |
+| 公式リファレンス | [Result](https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-result/) | Android | 処理の成功値または例外を1つの値で表すKotlinの型 |
+| 公式リファレンス | [Networking（React Native）](https://reactnative.dev/docs/network) | React Native | fetchでのHTTP通信とWebSocketの使い方を説明するページ |
+| ライブラリ | [Retrofit](https://github.com/square/retrofit) | Android | インターフェースの定義からHTTP APIの呼び出し処理を生成するライブラリ |
+| ライブラリ | [kotlinx.serialization](https://github.com/Kotlin/kotlinx.serialization) | Android | KotlinのクラスとJSONなどの形式を相互に変換するライブラリ |
+| ライブラリ | [TanStack Query](https://tanstack.com/query/latest) | React Native | サーバーから取得したデータのキャッシュと再取得を管理するライブラリ |
+| ライブラリ | [SWR](https://github.com/vercel/swr) | React Native | キャッシュを返しつつ再検証してデータを取得するReactフック |
+| ライブラリ | [SecureStore](https://docs.expo.dev/versions/latest/sdk/securestore/) | React Native | 端末の安全な保存領域にキーと値を暗号化して保存するライブラリ |
+| ライブラリ | [Zod](https://zod.dev/) | React Native | スキーマを定義して実行時にデータの形式を検証するライブラリ |
+| 学習資料 | [Data layer](https://developer.android.com/topic/architecture/data-layer) | Android | Repositoryでデータの取得元をまとめるデータ層の設計指針 |
+
+<!-- references:end -->
+
 roadmap.shで学ぶ：[iOS](https://roadmap.sh/ios)（REST、GraphQL、Networking、Keychain）／[Android](https://roadmap.sh/android)（Authentication、Network、Repository pattern）／[React Native](https://roadmap.sh/react-native)（Authentication、Networking、Storage）
 
 ## 評価を記録する

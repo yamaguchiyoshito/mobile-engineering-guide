@@ -58,6 +58,29 @@ Composable、状態、再コンポジションの関係を説明できず、単�
 | 副作用 | LaunchedEffect、DisposableEffect |
 | 画面遷移と状態の接続 | Navigation Compose（NavHost）、ViewModelとの接続 |
 
+## 関連ライブラリと参考資料
+
+主な一次情報の所在です。掲載は公式資料と、技術の対応表に挙げた広く使われるライブラリに限ります。採用を推奨するものではありません。
+
+<!-- references:start ids="jetpack-compose, android-basics-compose, compose-material3, compose-layout, compose-lists, compose-scaffold, compose-tabs, compose-state, compose-lifecycle, compose-side-effects, android-navigation, android-viewmodel" -->
+
+| 種別 | 名称 | 対象 | 概要 |
+| :--- | :--- | :--- | :--- |
+| 公式リファレンス | [Jetpack Compose](https://developer.android.com/develop/ui/compose) | Android | Kotlinの関数で画面を宣言的に構築するUIツールキット |
+| 公式リファレンス | [Material Design 3 in Compose](https://developer.android.com/develop/ui/compose/designsystems/material3) | Android | ComposeでMaterial 3のテーマと部品を使う方法 |
+| 公式リファレンス | [Compose layout basics](https://developer.android.com/develop/ui/compose/layouts/basics) | Android | Composeで要素を並べて画面を組み立てるレイアウトの基本 |
+| 公式リファレンス | [Lazy lists and lazy grids](https://developer.android.com/develop/ui/compose/lists) | Android | LazyColumnやLazyRowで一覧とグリッドを表示する方法 |
+| 公式リファレンス | [Scaffold](https://developer.android.com/develop/ui/compose/components/scaffold) | Android | 上部バーや下部バーを含む画面の骨組みを作る部品 |
+| 公式リファレンス | [Tabs](https://developer.android.com/develop/ui/compose/components/tabs) | Android | タブで関連する内容の表示を切り替える部品 |
+| 公式リファレンス | [State and Jetpack Compose](https://developer.android.com/develop/ui/compose/state) | Android | rememberや状態ホイスティングで状態を画面に反映する仕組み |
+| 公式リファレンス | [Lifecycle of composables](https://developer.android.com/develop/ui/compose/lifecycle) | Android | Composableの配置と再コンポジションが起きる流れの解説 |
+| 公式リファレンス | [Side-effects in Compose](https://developer.android.com/develop/ui/compose/side-effects) | Android | LaunchedEffectなどで副作用をComposableの外に出す方法 |
+| 公式リファレンス | [Navigation](https://developer.android.com/guide/navigation) | Android | 画面遷移とバックスタックを管理するJetpackライブラリ |
+| 公式リファレンス | [ViewModel](https://developer.android.com/topic/libraries/architecture/viewmodel) | Android | 画面の状態を保持し構成変更の後も維持するクラス |
+| 学習資料 | [Android Basics with Compose](https://developer.android.com/courses/android-basics-compose/course) | Android | KotlinとComposeでアプリを作りながら学ぶ公式コース |
+
+<!-- references:end -->
+
 roadmap.shで学ぶ：[Android](https://roadmap.sh/android)（Jetpack Compose、Remember & State、Side effects、Column & Row、Lazy column & row、Scaffold、NavHost、ViewModel state）
 
 ## 評価を記録する

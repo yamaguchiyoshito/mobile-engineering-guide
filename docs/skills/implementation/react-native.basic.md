@@ -59,6 +59,29 @@ React Nativeは、WebのReactと同じコンポーネント、props、stateの�
 | 状態と部品の分割 | props／state、Hooks |
 | 開発と確認 | Expo SDK、Expo Snack、Fast Refresh |
 
+## 関連ライブラリと参考資料
+
+主な一次情報の所在です。掲載は公式資料と、技術の対応表に挙げた広く使われるライブラリに限ります。採用を推奨するものではありません。
+
+<!-- references:start ids="rn-core-components, rn-intro-react, rn-image, rn-scrollview, rn-modal, rn-flatlist, rn-sectionlist, rn-textinput, rn-pressable, rn-stylesheet, expo-sdk, rn-fast-refresh" -->
+
+| 種別 | 名称 | 対象 | 概要 |
+| :--- | :--- | :--- | :--- |
+| 公式リファレンス | [Image](https://reactnative.dev/docs/image) | React Native | ネットワークや端末内の画像を表示する部品 |
+| 公式リファレンス | [ScrollView](https://reactnative.dev/docs/scrollview) | React Native | 内容をスクロールして表示するためのコンテナ |
+| 公式リファレンス | [Modal](https://reactnative.dev/docs/modal) | React Native | 現在の画面の上に重ねて内容を表示する部品 |
+| 公式リファレンス | [FlatList](https://reactnative.dev/docs/flatlist) | React Native | 表示範囲に合わせて描画する行の一覧を表示する部品 |
+| 公式リファレンス | [SectionList](https://reactnative.dev/docs/sectionlist) | React Native | 見出しで区切られたセクション単位の一覧を表示する部品 |
+| 公式リファレンス | [TextInput](https://reactnative.dev/docs/textinput) | React Native | キーボードからテキスト入力を受け付ける部品 |
+| 公式リファレンス | [Pressable](https://reactnative.dev/docs/pressable) | React Native | 押す・長押しなどのタッチ操作を検出する部品 |
+| 公式リファレンス | [StyleSheet](https://reactnative.dev/docs/stylesheet) | React Native | 部品のスタイルをオブジェクトとして定義してまとめるAPI |
+| 公式リファレンス | [Fast Refresh](https://reactnative.dev/docs/fast-refresh) | React Native | コードの変更を実行中のアプリへすぐに反映する機能 |
+| ライブラリ | [Expo SDK](https://docs.expo.dev/versions/latest/) | React Native | 端末機能をJavaScriptから使うためのExpoのパッケージ群 |
+| 学習資料 | [コアコンポーネント（React Native）](https://reactnative.dev/docs/intro-react-native-components) | React Native | ViewやTextなど標準の部品とネイティブ表示の関係を学ぶ解説 |
+| 学習資料 | [React Fundamentals](https://reactnative.dev/docs/intro-react) | React Native | props・state・Hooksで部品を組み立てる基本の解説 |
+
+<!-- references:end -->
+
 roadmap.shで学ぶ：[React Native](https://roadmap.sh/react-native)（Core components、Props、State、FlatList、Text input、Pressable、Modal、Expo Snack）
 
 ## 評価を記録する

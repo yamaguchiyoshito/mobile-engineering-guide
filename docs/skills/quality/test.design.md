@@ -56,6 +56,31 @@ description: "テスト設計の基準と使い方。モバイルアプリ開発
 | 網羅状況の確認 | カバレッジ（Xcode） | カバレッジ（JaCoCo） | カバレッジ（Jest） |
 | 実行する端末・環境の範囲 | 端末・OSマトリクス | 端末マトリクス、Test Lab | Expo環境でのテスト範囲 |
 
+## 関連ライブラリと参考資料
+
+主な一次情報の所在です。掲載は公式資料と、技術の対応表に挙げた広く使われるライブラリに限ります。採用を推奨するものではありません。
+
+<!-- references:start ids="xcode-test-plans, xctest, xcode-code-coverage, xcode-testing, android-testing, android-test-fundamentals, android-local-tests, android-instrumented-tests, gradle-jacoco, firebase-test-lab, rn-testing-overview, jest, detox, expo-unit-testing" -->
+
+| 種別 | 名称 | 対象 | 概要 |
+| :--- | :--- | :--- | :--- |
+| 公式リファレンス | [テストプラン（iOS）](https://developer.apple.com/documentation/xcode/organizing-tests-to-improve-feedback) | iOS | テストプランでテストをまとめ、段階ごとに実行構成を切り替える方法 |
+| 公式リファレンス | [XCTest](https://developer.apple.com/documentation/xctest) | iOS | 単体テスト・性能テスト・UIテストを記述して実行するフレームワーク |
+| 公式リファレンス | [コードカバレッジ（iOS）](https://developer.apple.com/documentation/xcode/determining-how-much-code-your-tests-cover) | iOS | Xcodeのコードカバレッジでテストされていない範囲を確認する方法 |
+| 公式リファレンス | [Xcodeでのテスト（iOS）](https://developer.apple.com/documentation/xcode/testing) | iOS | Xcodeでテストを作成・実行してロジックやUIの不具合を検出する方法 |
+| 公式リファレンス | [ローカルテスト（Android）](https://developer.android.com/training/testing/local-tests) | Android | 開発マシンのJVM上で実行する単体テストの作成方法 |
+| 公式リファレンス | [インストルメンテーションテスト（Android）](https://developer.android.com/training/testing/instrumented-tests) | Android | 実機やエミュレータ上で実行するテストの作成と実行の方法 |
+| 公式リファレンス | [The JaCoCo Plugin](https://docs.gradle.org/current/userguide/jacoco_plugin.html) | Android | GradleでJaCoCoを使いテストのカバレッジレポートを出力するプラグイン |
+| ライブラリ | [Firebase Test Lab](https://firebase.google.com/docs/test-lab) | Android・iOS | クラウド上の複数の実機・仮想端末でアプリのテストを実行するサービス |
+| ライブラリ | [Jest](https://github.com/jestjs/jest) | React Native | JavaScriptのテストを記述・実行し、モックやスナップショットを扱うツール |
+| ライブラリ | [Detox](https://wix.github.io/Detox/) | React Native | E2EテストをSimulatorやEmulator上で実行するツール |
+| 学習資料 | [テスト（Android）](https://developer.android.com/training/testing) | Android | Androidアプリのテストの種類・書き方・実行方法をまとめたガイド |
+| 学習資料 | [テストの基本（Android）](https://developer.android.com/training/testing/fundamentals) | Android | テストの範囲・種類と、ローカルテストと実機テストの役割分担の解説 |
+| 学習資料 | [テストの概要（React Native）](https://reactnative.dev/docs/testing-overview) | React Native | React Nativeアプリの静的解析・単体・結合・E2Eテストの考え方の解説 |
+| 学習資料 | [Jestによる単体テスト（React Native）](https://docs.expo.dev/develop/unit-testing/) | React Native | ExpoプロジェクトでJestを設定して単体テストを書く手順 |
+
+<!-- references:end -->
+
 roadmap.shで学ぶ：[iOS](https://roadmap.sh/ios)（Test Plan & Coverage、Unit & UI Testing）／[SwiftUI](https://roadmap.sh/swift-ui)（Testing）／[Android](https://roadmap.sh/android)（Testing）／[React Native](https://roadmap.sh/react-native)（Testing）
 
 ## 評価を記録する

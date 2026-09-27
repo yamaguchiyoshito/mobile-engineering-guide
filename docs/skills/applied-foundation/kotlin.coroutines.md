@@ -58,6 +58,29 @@ description: "Kotlinコルーチン・Flowの基準と使い方。モバイル�
 | 中断とエラー | キャンセルと例外 |
 | 従来のスレッド処理 | Thread／Handler |
 
+## 関連ライブラリと参考資料
+
+主な一次情報の所在です。掲載は公式資料と、技術の対応表に挙げた広く使われるライブラリに限ります。採用を推奨するものではありません。
+
+<!-- references:start ids="kotlin-coroutines-guide, kotlin-coroutine-context, kotlin-flow, kotlin-cancellation, kotlin-exception-handling, android-coroutines, android-flow, android-stateflow, android-lifecycle-coroutines, android-coroutines-best-practices, android-coroutines-test, android-handler" -->
+
+| 種別 | 名称 | 対象 | 概要 |
+| :--- | :--- | :--- | :--- |
+| 公式リファレンス | [Coroutines guide](https://kotlinlang.org/docs/coroutines-guide.html) | Android | コルーチンの主要な機能を章ごとに説明するKotlinのガイド |
+| 公式リファレンス | [Coroutine context and dispatchers](https://kotlinlang.org/docs/coroutine-context-and-dispatchers.html) | Android | コルーチンの実行スレッドを決めるディスパッチャとコンテキスト |
+| 公式リファレンス | [Asynchronous Flow](https://kotlinlang.org/docs/flow.html) | Android | 複数の値を非同期に順に返すFlowの作成、変換、収集の方法 |
+| 公式リファレンス | [Cancellation and timeouts](https://kotlinlang.org/docs/cancellation-and-timeouts.html) | Android | コルーチンのキャンセルの仕組みとタイムアウトの指定方法 |
+| 公式リファレンス | [Coroutine exceptions handling](https://kotlinlang.org/docs/exception-handling.html) | Android | コルーチンでの例外の伝播と、ハンドラによる処理の方法 |
+| 公式リファレンス | [Handler](https://developer.android.com/reference/android/os/Handler) | Android | スレッドのメッセージキューへ処理やメッセージを送るクラス |
+| 学習資料 | [Kotlin coroutines on Android](https://developer.android.com/kotlin/coroutines) | Android | Androidアプリでコルーチンを使い、メインスレッドを止めない方法 |
+| 学習資料 | [Kotlin flows on Android](https://developer.android.com/kotlin/flow) | Android | AndroidでFlowを作成し、変換して画面で収集する方法 |
+| 学習資料 | [StateFlow and SharedFlow](https://developer.android.com/kotlin/flow/stateflow-and-sharedflow) | Android | 状態やイベントを公開するStateFlowとSharedFlowの使い方 |
+| 学習資料 | [Use Kotlin coroutines with lifecycle-aware components](https://developer.android.com/topic/libraries/architecture/coroutines) | Android | lifecycleScopeなどで処理の寿命を画面の寿命に合わせる方法 |
+| 学習資料 | [Best practices for coroutines in Android](https://developer.android.com/kotlin/coroutines/coroutines-best-practices) | Android | ディスパッチャの注入やスコープの選び方など実装上の指針 |
+| 学習資料 | [Testing Kotlin coroutines on Android](https://developer.android.com/kotlin/coroutines/test) | Android | テスト用ディスパッチャを使ってコルーチンの処理を検証する方法 |
+
+<!-- references:end -->
+
 roadmap.shで学ぶ：[Android](https://roadmap.sh/android)（Threads、Coroutines、Flow、Asynchronism）
 
 ## 評価を記録する

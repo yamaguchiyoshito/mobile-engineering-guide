@@ -58,6 +58,32 @@ description: "アニメーションとインタラクションの基準と使い
 | ジェスチャ | ジェスチャ（UIGestureRecognizer、SwiftUIのGesture） | pointerInput、GestureDetector | Gesture Handler |
 | 滑らかさの確認 | Instruments（Core Animation） | Android Profiler、GPUレンダリング速度 | フレームレートの理解、Performance Monitor |
 
+## 関連ライブラリと参考資料
+
+主な一次情報の所在です。掲載は公式資料と、技術の対応表に挙げた広く使われるライブラリに限ります。採用を推奨するものではありません。
+
+<!-- references:start ids="swiftui-animations, core-animation, uikit-uiview-animate, uikit-uigesturerecognizer, swiftui-gestures, compose-animation, android-motionlayout, android-property-animation, compose-gestures, android-gpu-rendering, rn-animated, rn-layoutanimation, react-native-reanimated, react-native-gesture-handler, rn-performance" -->
+
+| 種別 | 名称 | 対象 | 概要 |
+| :--- | :--- | :--- | :--- |
+| 公式リファレンス | [Animations](https://developer.apple.com/documentation/swiftui/animations) | iOS | 状態の変化に合わせてViewの変化を動かすAPI群 |
+| 公式リファレンス | [Core Animation](https://developer.apple.com/documentation/quartzcore) | iOS | 描画層のレイヤーを使って表示と動きを処理するフレームワーク |
+| 公式リファレンス | [UIView.animate(withDuration:animations:)](https://developer.apple.com/documentation/uikit/uiview/animate(withduration:animations:)) | iOS | Viewのプロパティ変化を指定時間で動かすメソッド |
+| 公式リファレンス | [UIGestureRecognizer](https://developer.apple.com/documentation/uikit/uigesturerecognizer) | iOS | タップやスワイプなどの操作を認識する基底クラス |
+| 公式リファレンス | [Gestures](https://developer.apple.com/documentation/swiftui/gestures) | iOS | タップやドラッグなどの操作を認識してViewに結び付けるAPI群 |
+| 公式リファレンス | [Composeのアニメーション（Android）](https://developer.android.com/develop/ui/compose/animation/introduction) | Android | animate*AsStateなどComposeのアニメーションAPIの解説 |
+| 公式リファレンス | [MotionLayout](https://developer.android.com/develop/ui/views/animations/motionlayout) | Android | レイアウト間の遷移と動きを宣言的に定義するレイアウト |
+| 公式リファレンス | [Property Animation Overview](https://developer.android.com/develop/ui/views/animations/prop-animation) | Android | オブジェクトのプロパティ値を時間に沿って変化させる仕組み |
+| 公式リファレンス | [Understand gestures](https://developer.android.com/develop/ui/compose/touch-input/pointer-input/understand-gestures) | Android | pointerInputやジェスチャ検出でタッチ操作を扱う方法 |
+| 公式リファレンス | [Inspect rendering speed](https://developer.android.com/topic/performance/rendering/inspect-gpu-rendering) | Android | GPUレンダリング速度とオーバードローを確認する方法 |
+| 公式リファレンス | [Animated](https://reactnative.dev/docs/animated) | React Native | 値の変化を時間に沿って補間して部品を動かすAPI |
+| 公式リファレンス | [LayoutAnimation](https://reactnative.dev/docs/layoutanimation) | React Native | 次のレイアウト更新時に位置や大きさの変化を動かすAPI |
+| ライブラリ | [React Native Reanimated](https://github.com/software-mansion/react-native-reanimated) | React Native | UIスレッドでアニメーションを実行するReact Native向けライブラリ |
+| ライブラリ | [React Native Gesture Handler](https://github.com/software-mansion/react-native-gesture-handler) | React Native | ネイティブ側でタッチ操作を認識するReact Native向けライブラリ |
+| 学習資料 | [パフォーマンス（React Native）](https://reactnative.dev/docs/performance) | React Native | フレームレートの考え方と表示が遅くなる原因の解説 |
+
+<!-- references:end -->
+
 roadmap.shで学ぶ：[iOS](https://roadmap.sh/ios)（Creating animations、Core Animation、View transitions）／[SwiftUI](https://roadmap.sh/swift-ui)（Animations、Implicit animations、Explicit animations、Animatable protocol、Transitions、Gestures）／[Android](https://roadmap.sh/android)（Animations）／[React Native](https://roadmap.sh/react-native)（Animations、Understand frame rates、Gesture handling）
 
 ## 評価を記録する

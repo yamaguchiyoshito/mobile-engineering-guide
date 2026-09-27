@@ -57,6 +57,32 @@ description: "UIデザイン原則とローカライズの基準と使い方。�
 | 画面サイズと安全領域 | Safe Area、Size Class | 画面密度・リソース修飾子 | SafeAreaView |
 | ローカライズ | String Catalog | strings.xml、多言語・RTL | i18nライブラリ |
 
+## 関連ライブラリと参考資料
+
+主な一次情報の所在です。掲載は公式資料と、技術の対応表に挙げた広く使われるライブラリに限ります。採用を推奨するものではありません。
+
+<!-- references:start ids="hig, hig-layout, hig-sf-symbols, nslayoutconstraint, uikit-safe-area, string-catalog, material-design-3, constraintlayout, compose-layout, android-screen-densities, android-localization, rn-flexbox, rn-stylesheet, rn-safeareaview, rn-platform-specific-code" -->
+
+| 種別 | 名称 | 対象 | 概要 |
+| :--- | :--- | :--- | :--- |
+| 公式リファレンス | [Human Interface Guidelines](https://developer.apple.com/design/human-interface-guidelines) | iOS | Appleのプラットフォームで画面や操作を設計するための指針 |
+| 公式リファレンス | [Layout（Human Interface Guidelines）](https://developer.apple.com/design/human-interface-guidelines/layout) | iOS | 安全領域やサイズクラスを踏まえて画面を配置するための指針 |
+| 公式リファレンス | [SF Symbols（Human Interface Guidelines）](https://developer.apple.com/design/human-interface-guidelines/sf-symbols) | iOS | システムの文字と調和するアイコン群SF Symbolsの使い方 |
+| 公式リファレンス | [NSLayoutConstraint](https://developer.apple.com/documentation/uikit/nslayoutconstraint) | iOS | Auto Layoutでビュー同士の位置と大きさの関係を定義する制約 |
+| 公式リファレンス | [Positioning content relative to the safe area](https://developer.apple.com/documentation/uikit/positioning-content-relative-to-the-safe-area) | iOS | ほかの表示に隠れないよう安全領域に沿ってビューを置く方法 |
+| 公式リファレンス | [Localizing and varying text with a string catalog](https://developer.apple.com/documentation/xcode/localizing-and-varying-text-with-a-string-catalog) | iOS | String Catalogで翻訳や複数形の文字列を管理する方法 |
+| 公式リファレンス | [Material Design 3](https://m3.material.io/) | Android | Googleのデザインシステムの設計指針、部品、アイコンの資料 |
+| 公式リファレンス | [Build a responsive UI with ConstraintLayout](https://developer.android.com/develop/ui/views/layout/constraint-layout) | Android | 要素同士の制約で位置を決めるViewのレイアウトの使い方 |
+| 公式リファレンス | [Compose layout basics](https://developer.android.com/develop/ui/compose/layouts/basics) | Android | Composeで要素を並べて画面を組み立てるレイアウトの基本 |
+| 公式リファレンス | [Support different pixel densities](https://developer.android.com/training/multiscreen/screendensities) | Android | 密度に依存しない単位と、画面密度ごとのリソースの用意の仕方 |
+| 公式リファレンス | [Localize your app](https://developer.android.com/guide/topics/resources/localization) | Android | strings.xmlなどのリソースで多言語に対応する方法 |
+| 公式リファレンス | [Flexbox（React Native）](https://reactnative.dev/docs/flexbox) | React Native | Flexboxで子要素の並ぶ方向、配置、大きさを決める方法 |
+| 公式リファレンス | [StyleSheet](https://reactnative.dev/docs/stylesheet) | React Native | 部品のスタイルをオブジェクトとして定義してまとめるAPI |
+| 公式リファレンス | [SafeAreaView](https://reactnative.dev/docs/safeareaview) | React Native | iOSの安全領域の内側に内容を描画する部品。現在は非推奨 |
+| 公式リファレンス | [Platform-Specific Code（React Native）](https://reactnative.dev/docs/platform-specific-code) | React Native | OSごとに処理やスタイル、ファイルを切り替える方法 |
+
+<!-- references:end -->
+
 roadmap.shで学ぶ：[iOS](https://roadmap.sh/ios)（HIG、UI Design、Auto Layout、Building Interfaces）／[SwiftUI](https://roadmap.sh/swift-ui)（Localization、Font、Padding）／[Android](https://roadmap.sh/android)（Interface & Navigation、ConstraintLayout、Icon、Text）／[React Native](https://roadmap.sh/react-native)（Layouts & Flexbox、Styling、StyleSheets、SafeAreaView、StatusBar）
 
 ## 評価を記録する

@@ -1,0 +1,4101 @@
+{
+  "checkedAt": "2026-09-28",
+  "references": [
+    {
+      "id": "accessibility-inspector",
+      "title": "Accessibility Inspector",
+      "url": "https://developer.apple.com/documentation/accessibility/accessibility-inspector",
+      "type": "official",
+      "platforms": [
+        "iOS"
+      ],
+      "summary": "アプリが支援技術にどう見えるかを確認し、問題を検査するツール"
+    },
+    {
+      "id": "alamofire",
+      "title": "Alamofire",
+      "url": "https://github.com/Alamofire/Alamofire",
+      "type": "library",
+      "platforms": [
+        "iOS"
+      ],
+      "summary": "URLSessionの上でリクエストや応答の検証を簡潔に書くライブラリ"
+    },
+    {
+      "id": "android-accessibility",
+      "title": "アクセシビリティ（Android）",
+      "url": "https://developer.android.com/guide/topics/ui/accessibility",
+      "type": "learning",
+      "platforms": [
+        "Android"
+      ],
+      "summary": "Androidアプリのアクセシビリティ対応の考え方と手順を示すガイド"
+    },
+    {
+      "id": "android-accessibility-apps",
+      "title": "Make apps more accessible",
+      "url": "https://developer.android.com/guide/topics/ui/accessibility/apps",
+      "type": "learning",
+      "platforms": [
+        "Android"
+      ],
+      "summary": "contentDescriptionやタッチターゲットの大きさなどの対応方法"
+    },
+    {
+      "id": "android-accessibility-testing",
+      "title": "Test your app's accessibility",
+      "url": "https://developer.android.com/guide/topics/ui/accessibility/testing",
+      "type": "learning",
+      "platforms": [
+        "Android"
+      ],
+      "summary": "TalkBackや検査ツールでアプリの対応状況を調べる方法"
+    },
+    {
+      "id": "android-activities",
+      "title": "Activity入門（Android）",
+      "url": "https://developer.android.com/guide/components/activities/intro-activities",
+      "type": "official",
+      "platforms": [
+        "Android"
+      ],
+      "summary": "アプリの画面単位であるActivityの役割とライフサイクル"
+    },
+    {
+      "id": "android-activity-lifecycle",
+      "title": "Activityのライフサイクル（Android）",
+      "url": "https://developer.android.com/guide/components/activities/activity-lifecycle",
+      "type": "official",
+      "platforms": [
+        "Android"
+      ],
+      "summary": "Activityの状態遷移と各コールバックの役割を解説"
+    },
+    {
+      "id": "android-app-bundle",
+      "title": "Android App Bundle",
+      "url": "https://developer.android.com/guide/app-bundle",
+      "type": "official",
+      "platforms": [
+        "Android"
+      ],
+      "summary": "端末ごとに最適化したAPKを配信するためのアップロード形式"
+    },
+    {
+      "id": "android-app-fundamentals",
+      "title": "アプリの基礎（Android）",
+      "url": "https://developer.android.com/guide/components/fundamentals",
+      "type": "official",
+      "platforms": [
+        "Android"
+      ],
+      "summary": "Activityなど4種のアプリコンポーネントと構成を解説"
+    },
+    {
+      "id": "android-app-optimization",
+      "title": "アプリの最適化（Android）",
+      "url": "https://developer.android.com/topic/performance/app-optimization/enable-app-optimization",
+      "type": "official",
+      "platforms": [
+        "Android"
+      ],
+      "summary": "R8によるコードの縮小と難読化を有効にする方法を説明"
+    },
+    {
+      "id": "android-app-shortcuts",
+      "title": "App shortcuts overview",
+      "url": "https://developer.android.com/develop/ui/compose/system/shortcuts",
+      "type": "official",
+      "platforms": [
+        "Android"
+      ],
+      "summary": "ホーム画面から特定の機能を直接開くショートカットの解説"
+    },
+    {
+      "id": "android-app-signing",
+      "title": "アプリへの署名（Android）",
+      "url": "https://developer.android.com/studio/publish/app-signing",
+      "type": "official",
+      "platforms": [
+        "Android"
+      ],
+      "summary": "APKやAABに署名してリリース用の成果物を作る手順"
+    },
+    {
+      "id": "android-app-specific-storage",
+      "title": "アプリ固有のストレージ（Android）",
+      "url": "https://developer.android.com/training/data-storage/app-specific",
+      "type": "official",
+      "platforms": [
+        "Android"
+      ],
+      "summary": "アプリ専用の内部・外部ストレージへの保存方法を説明"
+    },
+    {
+      "id": "android-architecture",
+      "title": "アプリアーキテクチャガイド（Android）",
+      "url": "https://developer.android.com/topic/architecture",
+      "type": "learning",
+      "platforms": [
+        "Android"
+      ],
+      "summary": "UI層・データ層などに分けてアプリを構成するための公式ガイド"
+    },
+    {
+      "id": "android-basics-compose",
+      "title": "Android Basics with Compose",
+      "url": "https://developer.android.com/courses/android-basics-compose/course",
+      "type": "learning",
+      "platforms": [
+        "Android"
+      ],
+      "summary": "KotlinとComposeでアプリを作りながら学ぶ公式コース"
+    },
+    {
+      "id": "android-benchmarking",
+      "title": "ベンチマーク（Android）",
+      "url": "https://developer.android.com/topic/performance/benchmarking/benchmarking-overview",
+      "type": "official",
+      "platforms": [
+        "Android"
+      ],
+      "summary": "Benchmarkライブラリで処理時間や起動時間を計測する方法"
+    },
+    {
+      "id": "android-build",
+      "title": "Configure your build（Android）",
+      "url": "https://developer.android.com/build",
+      "type": "official",
+      "platforms": [
+        "Android"
+      ],
+      "summary": "Gradleによるビルド設定の構成とファイルの書き方を説明するページ"
+    },
+    {
+      "id": "android-build-variants",
+      "title": "ビルドバリアントの設定（Android）",
+      "url": "https://developer.android.com/build/build-variants",
+      "type": "official",
+      "platforms": [
+        "Android"
+      ],
+      "summary": "ビルドタイプとフレーバーで成果物を切り替える方法"
+    },
+    {
+      "id": "android-command-line-tests",
+      "title": "コマンドラインからのテスト（Android）",
+      "url": "https://developer.android.com/studio/test/command-line",
+      "type": "official",
+      "platforms": [
+        "Android"
+      ],
+      "summary": "Gradleのコマンドで単体テストや実機テストを実行する方法"
+    },
+    {
+      "id": "android-content-providers",
+      "title": "Content providers",
+      "url": "https://developer.android.com/guide/topics/providers/content-providers",
+      "type": "official",
+      "platforms": [
+        "Android"
+      ],
+      "summary": "アプリ間でデータを共有するためのContentProviderの解説"
+    },
+    {
+      "id": "android-coroutines",
+      "title": "Kotlin coroutines on Android",
+      "url": "https://developer.android.com/kotlin/coroutines",
+      "type": "learning",
+      "platforms": [
+        "Android"
+      ],
+      "summary": "Androidアプリでコルーチンを使い、メインスレッドを止めない方法"
+    },
+    {
+      "id": "android-coroutines-best-practices",
+      "title": "Best practices for coroutines in Android",
+      "url": "https://developer.android.com/kotlin/coroutines/coroutines-best-practices",
+      "type": "learning",
+      "platforms": [
+        "Android"
+      ],
+      "summary": "ディスパッチャの注入やスコープの選び方など実装上の指針"
+    },
+    {
+      "id": "android-coroutines-test",
+      "title": "Testing Kotlin coroutines on Android",
+      "url": "https://developer.android.com/kotlin/coroutines/test",
+      "type": "learning",
+      "platforms": [
+        "Android"
+      ],
+      "summary": "テスト用ディスパッチャを使ってコルーチンの処理を検証する方法"
+    },
+    {
+      "id": "android-data-layer",
+      "title": "Data layer",
+      "url": "https://developer.android.com/topic/architecture/data-layer",
+      "type": "learning",
+      "platforms": [
+        "Android"
+      ],
+      "summary": "Repositoryでデータの取得元をまとめるデータ層の設計指針"
+    },
+    {
+      "id": "android-data-safety",
+      "title": "データの使用の申告（Android）",
+      "url": "https://developer.android.com/privacy-and-security/declare-data-use",
+      "type": "official",
+      "platforms": [
+        "Android"
+      ],
+      "summary": "Google Playのデータセーフティ欄にデータの収集・共有を申告する方法"
+    },
+    {
+      "id": "android-data-storage",
+      "title": "データストレージ（Android）",
+      "url": "https://developer.android.com/training/data-storage",
+      "type": "learning",
+      "platforms": [
+        "Android"
+      ],
+      "summary": "アプリ専用領域、共有領域、設定値など保存先の選び方を示すガイド"
+    },
+    {
+      "id": "android-datastore",
+      "title": "DataStore",
+      "url": "https://developer.android.com/topic/libraries/architecture/datastore",
+      "type": "official",
+      "platforms": [
+        "Android"
+      ],
+      "summary": "キーと値や型付きオブジェクトを非同期に保存するライブラリ"
+    },
+    {
+      "id": "android-deep-links",
+      "title": "About deep links",
+      "url": "https://developer.android.com/training/app-links",
+      "type": "official",
+      "platforms": [
+        "Android"
+      ],
+      "summary": "Intent FilterやApp LinksでURLから画面を開く仕組み"
+    },
+    {
+      "id": "android-dependency-injection",
+      "title": "依存性注入（Android）",
+      "url": "https://developer.android.com/training/dependency-injection",
+      "type": "learning",
+      "platforms": [
+        "Android"
+      ],
+      "summary": "Androidアプリで依存性注入を使う考え方と手順"
+    },
+    {
+      "id": "android-dialogs",
+      "title": "Dialogs",
+      "url": "https://developer.android.com/develop/ui/views/components/dialogs",
+      "type": "official",
+      "platforms": [
+        "Android"
+      ],
+      "summary": "ユーザーに判断や追加の入力を求める小さなウィンドウ"
+    },
+    {
+      "id": "android-domain-layer",
+      "title": "Domain layer",
+      "url": "https://developer.android.com/topic/architecture/domain-layer",
+      "type": "learning",
+      "platforms": [
+        "Android"
+      ],
+      "summary": "UseCaseで業務ロジックを切り出すドメイン層の設計指針"
+    },
+    {
+      "id": "android-edittext",
+      "title": "EditText",
+      "url": "https://developer.android.com/reference/android/widget/EditText",
+      "type": "official",
+      "platforms": [
+        "Android"
+      ],
+      "summary": "Viewでテキスト入力を受け付ける部品のリファレンス"
+    },
+    {
+      "id": "android-emulator",
+      "title": "Android Emulatorでのアプリ実行（Android）",
+      "url": "https://developer.android.com/studio/run/emulator",
+      "type": "official",
+      "platforms": [
+        "Android"
+      ],
+      "summary": "AVDを作成してエミュレータでアプリを動かす手順"
+    },
+    {
+      "id": "android-flow",
+      "title": "Kotlin flows on Android",
+      "url": "https://developer.android.com/kotlin/flow",
+      "type": "learning",
+      "platforms": [
+        "Android"
+      ],
+      "summary": "AndroidでFlowを作成し、変換して画面で収集する方法"
+    },
+    {
+      "id": "android-flow-test",
+      "title": "Flowのテスト（Android）",
+      "url": "https://developer.android.com/kotlin/flow/test",
+      "type": "official",
+      "platforms": [
+        "Android"
+      ],
+      "summary": "Kotlin Flowを出力・受け取りする処理をテストする方法の解説"
+    },
+    {
+      "id": "android-fragments",
+      "title": "Fragment",
+      "url": "https://developer.android.com/guide/fragments",
+      "type": "official",
+      "platforms": [
+        "Android"
+      ],
+      "summary": "画面の一部を再利用できる単位として扱う仕組み"
+    },
+    {
+      "id": "android-gpu-rendering",
+      "title": "Inspect rendering speed",
+      "url": "https://developer.android.com/topic/performance/rendering/inspect-gpu-rendering",
+      "type": "official",
+      "platforms": [
+        "Android"
+      ],
+      "summary": "GPUレンダリング速度とオーバードローを確認する方法"
+    },
+    {
+      "id": "android-handler",
+      "title": "Handler",
+      "url": "https://developer.android.com/reference/android/os/Handler",
+      "type": "official",
+      "platforms": [
+        "Android"
+      ],
+      "summary": "スレッドのメッセージキューへ処理やメッセージを送るクラス"
+    },
+    {
+      "id": "android-hilt",
+      "title": "Hilt",
+      "url": "https://developer.android.com/training/dependency-injection/hilt-android",
+      "type": "official",
+      "platforms": [
+        "Android"
+      ],
+      "summary": "Daggerを基にAndroid向けに依存性注入を行うJetpackライブラリ"
+    },
+    {
+      "id": "android-input-method-type",
+      "title": "Specify the input method type",
+      "url": "https://developer.android.com/develop/ui/views/touch-and-input/keyboard-input/style",
+      "type": "official",
+      "platforms": [
+        "Android"
+      ],
+      "summary": "InputTypeとIMEアクションでキーボードの種類と動作を指定する方法"
+    },
+    {
+      "id": "android-input-method-visibility",
+      "title": "Handle input method visibility",
+      "url": "https://developer.android.com/develop/ui/views/touch-and-input/keyboard-input/visibility",
+      "type": "official",
+      "platforms": [
+        "Android"
+      ],
+      "summary": "キーボードの表示とadjustResizeによる画面調整の扱い方"
+    },
+    {
+      "id": "android-instrumented-tests",
+      "title": "インストルメンテーションテスト（Android）",
+      "url": "https://developer.android.com/training/testing/instrumented-tests",
+      "type": "official",
+      "platforms": [
+        "Android"
+      ],
+      "summary": "実機やエミュレータ上で実行するテストの作成と実行の方法"
+    },
+    {
+      "id": "android-intents",
+      "title": "Intents and intent filters",
+      "url": "https://developer.android.com/guide/components/intents-filters",
+      "type": "official",
+      "platforms": [
+        "Android"
+      ],
+      "summary": "他の画面やアプリの起動を依頼するメッセージの仕組み"
+    },
+    {
+      "id": "android-keystore",
+      "title": "Android Keystore system",
+      "url": "https://developer.android.com/privacy-and-security/keystore",
+      "type": "official",
+      "platforms": [
+        "Android"
+      ],
+      "summary": "暗号鍵を端末内の保護された領域で生成し、保管する仕組み"
+    },
+    {
+      "id": "android-kotlin",
+      "title": "AndroidでのKotlin（Android）",
+      "url": "https://developer.android.com/kotlin",
+      "type": "learning",
+      "platforms": [
+        "Android"
+      ],
+      "summary": "Android開発でKotlinを学ぶための資料をまとめたページ"
+    },
+    {
+      "id": "android-kotlin-dsl",
+      "title": "Kotlin DSLへの移行（Android）",
+      "url": "https://developer.android.com/build/migrate-to-kotlin-dsl",
+      "type": "official",
+      "platforms": [
+        "Android"
+      ],
+      "summary": "GradleのビルドスクリプトをKotlin DSLで書く方法を説明"
+    },
+    {
+      "id": "android-layout-inspector",
+      "title": "Layout Inspector（Android）",
+      "url": "https://developer.android.com/studio/debug/layout-inspector",
+      "type": "official",
+      "platforms": [
+        "Android"
+      ],
+      "summary": "実行中のアプリの画面階層と属性を検査するツール"
+    },
+    {
+      "id": "android-lifecycle-coroutines",
+      "title": "Use Kotlin coroutines with lifecycle-aware components",
+      "url": "https://developer.android.com/topic/libraries/architecture/coroutines",
+      "type": "learning",
+      "platforms": [
+        "Android"
+      ],
+      "summary": "lifecycleScopeなどで処理の寿命を画面の寿命に合わせる方法"
+    },
+    {
+      "id": "android-lint",
+      "title": "Lintによるコードの改善（Android）",
+      "url": "https://developer.android.com/studio/write/lint",
+      "type": "official",
+      "platforms": [
+        "Android"
+      ],
+      "summary": "Android Lintでコードやリソースの問題を検出する方法"
+    },
+    {
+      "id": "android-livedata",
+      "title": "LiveData overview",
+      "url": "https://developer.android.com/topic/libraries/architecture/livedata",
+      "type": "official",
+      "platforms": [
+        "Android"
+      ],
+      "summary": "ライフサイクルに合わせて購読される監視可能なデータ保持クラス"
+    },
+    {
+      "id": "android-local-tests",
+      "title": "ローカルテスト（Android）",
+      "url": "https://developer.android.com/training/testing/local-tests",
+      "type": "official",
+      "platforms": [
+        "Android"
+      ],
+      "summary": "開発マシンのJVM上で実行する単体テストの作成方法"
+    },
+    {
+      "id": "android-localization",
+      "title": "Localize your app",
+      "url": "https://developer.android.com/guide/topics/resources/localization",
+      "type": "official",
+      "platforms": [
+        "Android"
+      ],
+      "summary": "strings.xmlなどのリソースで多言語に対応する方法"
+    },
+    {
+      "id": "android-logcat",
+      "title": "Logcatでログを表示する（Android）",
+      "url": "https://developer.android.com/studio/debug/logcat",
+      "type": "official",
+      "platforms": [
+        "Android"
+      ],
+      "summary": "Android Studioでアプリのログを表示し絞り込む方法"
+    },
+    {
+      "id": "android-manifest",
+      "title": "アプリマニフェストの概要（Android）",
+      "url": "https://developer.android.com/guide/topics/manifest/manifest-intro",
+      "type": "official",
+      "platforms": [
+        "Android"
+      ],
+      "summary": "コンポーネントや権限を宣言するAndroidManifestの説明"
+    },
+    {
+      "id": "android-modularization",
+      "title": "Guide to Android app modularization",
+      "url": "https://developer.android.com/topic/modularization",
+      "type": "learning",
+      "platforms": [
+        "Android"
+      ],
+      "summary": "アプリを複数のGradleモジュールに分ける方法の解説"
+    },
+    {
+      "id": "android-motionlayout",
+      "title": "MotionLayout",
+      "url": "https://developer.android.com/develop/ui/views/animations/motionlayout",
+      "type": "official",
+      "platforms": [
+        "Android"
+      ],
+      "summary": "レイアウト間の遷移と動きを宣言的に定義するレイアウト"
+    },
+    {
+      "id": "android-navigation",
+      "title": "Navigation",
+      "url": "https://developer.android.com/guide/navigation",
+      "type": "official",
+      "platforms": [
+        "Android"
+      ],
+      "summary": "画面遷移とバックスタックを管理するJetpackライブラリ"
+    },
+    {
+      "id": "android-navigation-graph",
+      "title": "Design your navigation graph",
+      "url": "https://developer.android.com/guide/navigation/design",
+      "type": "official",
+      "platforms": [
+        "Android"
+      ],
+      "summary": "Navigationで画面と遷移をグラフとして定義する方法"
+    },
+    {
+      "id": "android-network-ops",
+      "title": "ネットワーク接続の基本（Android）",
+      "url": "https://developer.android.com/training/basics/network-ops",
+      "type": "learning",
+      "platforms": [
+        "Android"
+      ],
+      "summary": "ネットワークへの接続と通信処理の実装方法を示すガイド"
+    },
+    {
+      "id": "android-network-security-config",
+      "title": "Network security configuration",
+      "url": "https://developer.android.com/privacy-and-security/security-config",
+      "type": "official",
+      "platforms": [
+        "Android"
+      ],
+      "summary": "信頼する証明書や平文通信の可否をXMLで宣言する設定"
+    },
+    {
+      "id": "android-network-state",
+      "title": "Read network state",
+      "url": "https://developer.android.com/develop/connectivity/network-ops/reading-network-state",
+      "type": "learning",
+      "platforms": [
+        "Android"
+      ],
+      "summary": "ConnectivityManagerで接続状態を取得し、変化を監視する方法"
+    },
+    {
+      "id": "android-paging",
+      "title": "Paging",
+      "url": "https://developer.android.com/topic/libraries/architecture/paging/v3-overview",
+      "type": "official",
+      "platforms": [
+        "Android"
+      ],
+      "summary": "大きなデータを分割して読み込み表示するJetpackライブラリ"
+    },
+    {
+      "id": "android-predictive-back",
+      "title": "Add support for the predictive back gesture",
+      "url": "https://developer.android.com/guide/navigation/custom-back/predictive-back-gesture",
+      "type": "official",
+      "platforms": [
+        "Android"
+      ],
+      "summary": "戻る操作の前に戻り先を見せるジェスチャへの対応手順"
+    },
+    {
+      "id": "android-profiler",
+      "title": "アプリ性能のプロファイリング（Android）",
+      "url": "https://developer.android.com/studio/profile",
+      "type": "official",
+      "platforms": [
+        "Android"
+      ],
+      "summary": "プロファイラでCPUやメモリの使用状況を調べる方法"
+    },
+    {
+      "id": "android-property-animation",
+      "title": "Property Animation Overview",
+      "url": "https://developer.android.com/develop/ui/views/animations/prop-animation",
+      "type": "official",
+      "platforms": [
+        "Android"
+      ],
+      "summary": "オブジェクトのプロパティ値を時間に沿って変化させる仕組み"
+    },
+    {
+      "id": "android-publish",
+      "title": "アプリの公開（Android）",
+      "url": "https://developer.android.com/studio/publish",
+      "type": "official",
+      "platforms": [
+        "Android"
+      ],
+      "summary": "Google Playや直接配布でアプリを公開する手順を説明"
+    },
+    {
+      "id": "android-recyclerview",
+      "title": "RecyclerView",
+      "url": "https://developer.android.com/develop/ui/views/layout/recyclerview",
+      "type": "official",
+      "platforms": [
+        "Android"
+      ],
+      "summary": "Viewを再利用しながら多数の項目を表示する一覧の部品"
+    },
+    {
+      "id": "android-room",
+      "title": "Room",
+      "url": "https://developer.android.com/training/data-storage/room",
+      "type": "official",
+      "platforms": [
+        "Android"
+      ],
+      "summary": "SQLiteをオブジェクトとして扱えるようにするデータベースのライブラリ"
+    },
+    {
+      "id": "android-runtime-permissions",
+      "title": "実行時の権限リクエスト（Android）",
+      "url": "https://developer.android.com/training/permissions/requesting",
+      "type": "official",
+      "platforms": [
+        "Android"
+      ],
+      "summary": "危険な権限を実行時にユーザーへ要求する手順を説明"
+    },
+    {
+      "id": "android-screen-densities",
+      "title": "Support different pixel densities",
+      "url": "https://developer.android.com/training/multiscreen/screendensities",
+      "type": "official",
+      "platforms": [
+        "Android"
+      ],
+      "summary": "密度に依存しない単位と、画面密度ごとのリソースの用意の仕方"
+    },
+    {
+      "id": "android-services",
+      "title": "Services overview",
+      "url": "https://developer.android.com/develop/background-work/services",
+      "type": "official",
+      "platforms": [
+        "Android"
+      ],
+      "summary": "画面を持たずに処理を続けるServiceの種類と使い方"
+    },
+    {
+      "id": "android-stateflow",
+      "title": "StateFlow and SharedFlow",
+      "url": "https://developer.android.com/kotlin/flow/stateflow-and-sharedflow",
+      "type": "learning",
+      "platforms": [
+        "Android"
+      ],
+      "summary": "状態やイベントを公開するStateFlowとSharedFlowの使い方"
+    },
+    {
+      "id": "android-studio-projects",
+      "title": "プロジェクトの概要（Android）",
+      "url": "https://developer.android.com/studio/projects",
+      "type": "official",
+      "platforms": [
+        "Android"
+      ],
+      "summary": "Android Studioのプロジェクトとモジュールの構成を説明"
+    },
+    {
+      "id": "android-tasks-back-stack",
+      "title": "Tasks and the back stack",
+      "url": "https://developer.android.com/guide/components/activities/tasks-and-back-stack",
+      "type": "official",
+      "platforms": [
+        "Android"
+      ],
+      "summary": "Activityのタスクとバックスタックの動きの解説"
+    },
+    {
+      "id": "android-test-doubles",
+      "title": "テストダブル（Android）",
+      "url": "https://developer.android.com/training/testing/fundamentals/test-doubles",
+      "type": "official",
+      "platforms": [
+        "Android"
+      ],
+      "summary": "フェイクやモックで依存を置き換えてテストする方法の解説"
+    },
+    {
+      "id": "android-test-fundamentals",
+      "title": "テストの基本（Android）",
+      "url": "https://developer.android.com/training/testing/fundamentals",
+      "type": "learning",
+      "platforms": [
+        "Android"
+      ],
+      "summary": "テストの範囲・種類と、ローカルテストと実機テストの役割分担の解説"
+    },
+    {
+      "id": "android-testing",
+      "title": "テスト（Android）",
+      "url": "https://developer.android.com/training/testing",
+      "type": "learning",
+      "platforms": [
+        "Android"
+      ],
+      "summary": "Androidアプリのテストの種類・書き方・実行方法をまとめたガイド"
+    },
+    {
+      "id": "android-ui-layer",
+      "title": "UI layer",
+      "url": "https://developer.android.com/topic/architecture/ui-layer",
+      "type": "learning",
+      "platforms": [
+        "Android"
+      ],
+      "summary": "UIの状態とイベントを単方向の流れで扱うUI層の設計指針"
+    },
+    {
+      "id": "android-version-catalogs",
+      "title": "バージョンカタログへの移行（Android）",
+      "url": "https://developer.android.com/build/migrate-to-catalogs",
+      "type": "official",
+      "platforms": [
+        "Android"
+      ],
+      "summary": "依存ライブラリのバージョンを一か所で管理する方法を説明"
+    },
+    {
+      "id": "android-view-binding",
+      "title": "View binding",
+      "url": "https://developer.android.com/topic/libraries/view-binding",
+      "type": "official",
+      "platforms": [
+        "Android"
+      ],
+      "summary": "レイアウト内のViewを型安全に参照するクラスを生成する機能"
+    },
+    {
+      "id": "android-viewmodel",
+      "title": "ViewModel",
+      "url": "https://developer.android.com/topic/libraries/architecture/viewmodel",
+      "type": "official",
+      "platforms": [
+        "Android"
+      ],
+      "summary": "画面の状態を保持し構成変更の後も維持するクラス"
+    },
+    {
+      "id": "android-vitals",
+      "title": "Android vitals",
+      "url": "https://developer.android.com/google/play/vitals",
+      "type": "official",
+      "platforms": [
+        "Android"
+      ],
+      "summary": "Google Playが集計する起動時間・ANR・クラッシュなどの品質指標"
+    },
+    {
+      "id": "android-workmanager",
+      "title": "Task scheduling",
+      "url": "https://developer.android.com/develop/background-work/background-tasks/persistent",
+      "type": "official",
+      "platforms": [
+        "Android"
+      ],
+      "summary": "WorkManagerで永続的なバックグラウンド処理を登録する方法"
+    },
+    {
+      "id": "android-xml-layouts",
+      "title": "Layouts in views",
+      "url": "https://developer.android.com/develop/ui/views/layout/declaring-layout",
+      "type": "official",
+      "platforms": [
+        "Android"
+      ],
+      "summary": "XMLで画面のView階層を定義する方法"
+    },
+    {
+      "id": "apns-registering",
+      "title": "Registering your app with APNs",
+      "url": "https://developer.apple.com/documentation/usernotifications/registering-your-app-with-apns",
+      "type": "official",
+      "platforms": [
+        "iOS"
+      ],
+      "summary": "APNsに端末を登録してプッシュ通知を受け取るための手順"
+    },
+    {
+      "id": "app-review-guidelines",
+      "title": "App Review Guidelines",
+      "url": "https://developer.apple.com/app-store/review/guidelines/",
+      "type": "official",
+      "platforms": [
+        "iOS"
+      ],
+      "summary": "App Storeの審査で確認される安全性や内容などの基準"
+    },
+    {
+      "id": "app-store-connect-help",
+      "title": "App Store Connectヘルプ（iOS）",
+      "url": "https://developer.apple.com/help/app-store-connect/",
+      "type": "official",
+      "platforms": [
+        "iOS"
+      ],
+      "summary": "アプリの登録・提出・配信管理の手順をまとめたヘルプ"
+    },
+    {
+      "id": "appium",
+      "title": "Appium",
+      "url": "https://appium.io/docs/en/latest/",
+      "type": "library",
+      "platforms": [
+        "共通"
+      ],
+      "summary": "WebDriverプロトコルで複数のプラットフォームのアプリを自動操作するツール"
+    },
+    {
+      "id": "apple-accessibility",
+      "title": "Accessibility",
+      "url": "https://developer.apple.com/documentation/accessibility",
+      "type": "official",
+      "platforms": [
+        "iOS"
+      ],
+      "summary": "支援技術にアプリの内容を伝えるためのAPIをまとめたページ"
+    },
+    {
+      "id": "apple-app-distribution",
+      "title": "ベータテストとリリースのための配布（iOS）",
+      "url": "https://developer.apple.com/documentation/xcode/distributing-your-app-for-beta-testing-and-releases",
+      "type": "official",
+      "platforms": [
+        "iOS"
+      ],
+      "summary": "TestFlightやApp Storeへアプリを配布する手順を説明"
+    },
+    {
+      "id": "apple-appstore-provisioning",
+      "title": "App Storeプロビジョニングプロファイル（iOS）",
+      "url": "https://developer.apple.com/help/account/provisioning-profiles/create-an-app-store-provisioning-profile/",
+      "type": "official",
+      "platforms": [
+        "iOS"
+      ],
+      "summary": "App Store配布用のプロビジョニングプロファイルを作成する手順"
+    },
+    {
+      "id": "apple-certificates",
+      "title": "証明書の概要（iOS）",
+      "url": "https://developer.apple.com/help/account/certificates/certificates-overview/",
+      "type": "official",
+      "platforms": [
+        "iOS"
+      ],
+      "summary": "開発と配布に使う署名用証明書の種類と作成方法の解説"
+    },
+    {
+      "id": "apple-file-system-guide",
+      "title": "ファイルシステムプログラミングガイド（iOS）",
+      "url": "https://developer.apple.com/library/archive/documentation/FileManagement/Conceptual/FileSystemProgrammingGuide/FileSystemOverview/FileSystemOverview.html",
+      "type": "official",
+      "platforms": [
+        "iOS"
+      ],
+      "summary": "アプリのサンドボックスと保存先ディレクトリの構成を説明"
+    },
+    {
+      "id": "apple-info-plist",
+      "title": "Information Property List",
+      "url": "https://developer.apple.com/documentation/bundleresources/information-property-list",
+      "type": "official",
+      "platforms": [
+        "iOS"
+      ],
+      "summary": "アプリの構成情報や権限の利用目的を宣言するファイル"
+    },
+    {
+      "id": "apple-phased-release",
+      "title": "段階的リリース（iOS）",
+      "url": "https://developer.apple.com/help/app-store-connect/update-your-app/release-a-version-update-in-phases",
+      "type": "official",
+      "platforms": [
+        "iOS"
+      ],
+      "summary": "アップデートを7日間かけて自動更新の利用者へ段階的に配信する手順"
+    },
+    {
+      "id": "apple-protected-resources",
+      "title": "保護されたリソースへのアクセス要求（iOS）",
+      "url": "https://developer.apple.com/documentation/uikit/requesting-access-to-protected-resources",
+      "type": "official",
+      "platforms": [
+        "iOS"
+      ],
+      "summary": "カメラや位置情報などの利用許可をユーザーに求める手順"
+    },
+    {
+      "id": "apple-universal-links",
+      "title": "Supporting universal links in your app",
+      "url": "https://developer.apple.com/documentation/xcode/supporting-universal-links-in-your-app",
+      "type": "official",
+      "platforms": [
+        "iOS"
+      ],
+      "summary": "Webのリンクからアプリ内の画面を直接開くための設定手順"
+    },
+    {
+      "id": "apple-url-scheme",
+      "title": "Defining a custom URL scheme for your app",
+      "url": "https://developer.apple.com/documentation/xcode/defining-a-custom-url-scheme-for-your-app",
+      "type": "official",
+      "platforms": [
+        "iOS"
+      ],
+      "summary": "独自のURLスキームでアプリの画面を開くための設定手順"
+    },
+    {
+      "id": "ats",
+      "title": "Preventing Insecure Network Connections",
+      "url": "https://developer.apple.com/documentation/security/preventing-insecure-network-connections",
+      "type": "official",
+      "platforms": [
+        "iOS"
+      ],
+      "summary": "App Transport Securityで安全でない通信を防ぐ設定の説明"
+    },
+    {
+      "id": "avfoundation",
+      "title": "AVFoundation",
+      "url": "https://developer.apple.com/documentation/avfoundation",
+      "type": "official",
+      "platforms": [
+        "iOS"
+      ],
+      "summary": "カメラ撮影や音声・動画の再生と編集を扱うフレームワーク"
+    },
+    {
+      "id": "background-tasks",
+      "title": "Background Tasks",
+      "url": "https://developer.apple.com/documentation/backgroundtasks",
+      "type": "official",
+      "platforms": [
+        "iOS"
+      ],
+      "summary": "アプリがバックグラウンドで行う処理を登録・実行するフレームワーク"
+    },
+    {
+      "id": "baseline-profiles",
+      "title": "Baseline Profile（Android）",
+      "url": "https://developer.android.com/topic/performance/baselineprofiles/overview",
+      "type": "official",
+      "platforms": [
+        "Android"
+      ],
+      "summary": "事前コンパイルするコード経路を指定して起動や描画を速くする仕組み"
+    },
+    {
+      "id": "bitrise",
+      "title": "Bitrise",
+      "url": "https://docs.bitrise.io/en/bitrise-ci",
+      "type": "library",
+      "platforms": [
+        "共通"
+      ],
+      "summary": "モバイルアプリのビルド・テスト・配布を自動化するCIサービス"
+    },
+    {
+      "id": "carthage",
+      "title": "Carthage",
+      "url": "https://github.com/Carthage/Carthage",
+      "type": "library",
+      "platforms": [
+        "iOS"
+      ],
+      "summary": "依存ライブラリをバイナリのフレームワークとして構築するツール"
+    },
+    {
+      "id": "cloudkit",
+      "title": "CloudKit",
+      "url": "https://developer.apple.com/documentation/cloudkit",
+      "type": "official",
+      "platforms": [
+        "iOS"
+      ],
+      "summary": "iCloudのデータベースにアプリのデータを保存して同期する仕組み"
+    },
+    {
+      "id": "cocoapods",
+      "title": "CocoaPods",
+      "url": "https://github.com/CocoaPods/CocoaPods",
+      "type": "library",
+      "platforms": [
+        "iOS"
+      ],
+      "summary": "Xcodeプロジェクトの依存ライブラリを管理するツール"
+    },
+    {
+      "id": "codable",
+      "title": "Codable",
+      "url": "https://developer.apple.com/documentation/swift/codable",
+      "type": "official",
+      "platforms": [
+        "iOS"
+      ],
+      "summary": "JSONなどの外部表現と型の間でデータを相互に変換するプロトコル"
+    },
+    {
+      "id": "combine",
+      "title": "Combine",
+      "url": "https://developer.apple.com/documentation/combine",
+      "type": "official",
+      "platforms": [
+        "iOS"
+      ],
+      "summary": "PublisherとSubscriberで値の流れを処理するフレームワーク"
+    },
+    {
+      "id": "combine-events",
+      "title": "Receiving and Handling Events with Combine",
+      "url": "https://developer.apple.com/documentation/combine/receiving-and-handling-events-with-combine",
+      "type": "learning",
+      "platforms": [
+        "iOS"
+      ],
+      "summary": "Combineで非同期のイベントを受け取り、演算子で加工する手順"
+    },
+    {
+      "id": "compose-accessibility",
+      "title": "Accessibility in Jetpack Compose",
+      "url": "https://developer.android.com/develop/ui/compose/accessibility",
+      "type": "official",
+      "platforms": [
+        "Android"
+      ],
+      "summary": "Composeでセマンティクスを設定し、支援技術に対応する方法"
+    },
+    {
+      "id": "compose-animation",
+      "title": "Composeのアニメーション（Android）",
+      "url": "https://developer.android.com/develop/ui/compose/animation/introduction",
+      "type": "official",
+      "platforms": [
+        "Android"
+      ],
+      "summary": "animate*AsStateなどComposeのアニメーションAPIの解説"
+    },
+    {
+      "id": "compose-focus",
+      "title": "Change focus behavior",
+      "url": "https://developer.android.com/develop/ui/compose/touch-input/focus/change-focus-behavior",
+      "type": "official",
+      "platforms": [
+        "Android"
+      ],
+      "summary": "FocusRequesterなどでフォーカスの移動を制御する方法"
+    },
+    {
+      "id": "compose-gestures",
+      "title": "Understand gestures",
+      "url": "https://developer.android.com/develop/ui/compose/touch-input/pointer-input/understand-gestures",
+      "type": "official",
+      "platforms": [
+        "Android"
+      ],
+      "summary": "pointerInputやジェスチャ検出でタッチ操作を扱う方法"
+    },
+    {
+      "id": "compose-layout",
+      "title": "Compose layout basics",
+      "url": "https://developer.android.com/develop/ui/compose/layouts/basics",
+      "type": "official",
+      "platforms": [
+        "Android"
+      ],
+      "summary": "Composeで要素を並べて画面を組み立てるレイアウトの基本"
+    },
+    {
+      "id": "compose-lifecycle",
+      "title": "Lifecycle of composables",
+      "url": "https://developer.android.com/develop/ui/compose/lifecycle",
+      "type": "official",
+      "platforms": [
+        "Android"
+      ],
+      "summary": "Composableの配置と再コンポジションが起きる流れの解説"
+    },
+    {
+      "id": "compose-lists",
+      "title": "Lazy lists and lazy grids",
+      "url": "https://developer.android.com/develop/ui/compose/lists",
+      "type": "official",
+      "platforms": [
+        "Android"
+      ],
+      "summary": "LazyColumnやLazyRowで一覧とグリッドを表示する方法"
+    },
+    {
+      "id": "compose-material3",
+      "title": "Material Design 3 in Compose",
+      "url": "https://developer.android.com/develop/ui/compose/designsystems/material3",
+      "type": "official",
+      "platforms": [
+        "Android"
+      ],
+      "summary": "ComposeでMaterial 3のテーマと部品を使う方法"
+    },
+    {
+      "id": "compose-scaffold",
+      "title": "Scaffold",
+      "url": "https://developer.android.com/develop/ui/compose/components/scaffold",
+      "type": "official",
+      "platforms": [
+        "Android"
+      ],
+      "summary": "上部バーや下部バーを含む画面の骨組みを作る部品"
+    },
+    {
+      "id": "compose-screenshot-testing",
+      "title": "Compose Preview Screenshot Testing",
+      "url": "https://developer.android.com/studio/preview/compose-screenshot-testing",
+      "type": "official",
+      "platforms": [
+        "Android"
+      ],
+      "summary": "Composeのプレビューを画像で保存し表示の差分を検出するテスト"
+    },
+    {
+      "id": "compose-side-effects",
+      "title": "Side-effects in Compose",
+      "url": "https://developer.android.com/develop/ui/compose/side-effects",
+      "type": "official",
+      "platforms": [
+        "Android"
+      ],
+      "summary": "LaunchedEffectなどで副作用をComposableの外に出す方法"
+    },
+    {
+      "id": "compose-state",
+      "title": "State and Jetpack Compose",
+      "url": "https://developer.android.com/develop/ui/compose/state",
+      "type": "official",
+      "platforms": [
+        "Android"
+      ],
+      "summary": "rememberや状態ホイスティングで状態を画面に反映する仕組み"
+    },
+    {
+      "id": "compose-tabs",
+      "title": "Tabs",
+      "url": "https://developer.android.com/develop/ui/compose/components/tabs",
+      "type": "official",
+      "platforms": [
+        "Android"
+      ],
+      "summary": "タブで関連する内容の表示を切り替える部品"
+    },
+    {
+      "id": "compose-testing",
+      "title": "Composeのテスト（Android）",
+      "url": "https://developer.android.com/develop/ui/compose/testing",
+      "type": "official",
+      "platforms": [
+        "Android"
+      ],
+      "summary": "Jetpack ComposeのUIを操作・検証するテストAPIの使い方"
+    },
+    {
+      "id": "compose-testing-semantics",
+      "title": "セマンティクス（Android）",
+      "url": "https://developer.android.com/develop/ui/compose/testing/semantics",
+      "type": "official",
+      "platforms": [
+        "Android"
+      ],
+      "summary": "testTagなどのセマンティクス情報でComposeの要素を特定する方法"
+    },
+    {
+      "id": "compose-text-fields",
+      "title": "Configure text fields",
+      "url": "https://developer.android.com/develop/ui/compose/text/user-input",
+      "type": "official",
+      "platforms": [
+        "Android"
+      ],
+      "summary": "ComposeのTextFieldで入力を受け付けて設定する方法"
+    },
+    {
+      "id": "compose-validate-input",
+      "title": "Validate input as the user types",
+      "url": "https://developer.android.com/develop/ui/compose/quick-guides/content/validate-input",
+      "type": "official",
+      "platforms": [
+        "Android"
+      ],
+      "summary": "入力中の値を検証してエラーを表示するComposeの実装例"
+    },
+    {
+      "id": "constraintlayout",
+      "title": "Build a responsive UI with ConstraintLayout",
+      "url": "https://developer.android.com/develop/ui/views/layout/constraint-layout",
+      "type": "official",
+      "platforms": [
+        "Android"
+      ],
+      "summary": "要素同士の制約で位置を決めるViewのレイアウトの使い方"
+    },
+    {
+      "id": "core-animation",
+      "title": "Core Animation",
+      "url": "https://developer.apple.com/documentation/quartzcore",
+      "type": "official",
+      "platforms": [
+        "iOS"
+      ],
+      "summary": "描画層のレイヤーを使って表示と動きを処理するフレームワーク"
+    },
+    {
+      "id": "coredata",
+      "title": "Core Data",
+      "url": "https://developer.apple.com/documentation/coredata",
+      "type": "official",
+      "platforms": [
+        "iOS"
+      ],
+      "summary": "オブジェクトのグラフを管理し、端末内に保存するフレームワーク"
+    },
+    {
+      "id": "crashlytics-android-mapping",
+      "title": "読めるクラッシュレポートの取得（Android）",
+      "url": "https://firebase.google.com/docs/crashlytics/android/get-deobfuscated-reports",
+      "type": "library",
+      "platforms": [
+        "Android"
+      ],
+      "summary": "Crashlyticsにmappingファイルを送り難読化を解除する方法"
+    },
+    {
+      "id": "crashlytics-ios-symbols",
+      "title": "読めるクラッシュレポートの取得（iOS）",
+      "url": "https://firebase.google.com/docs/crashlytics/ios/get-deobfuscated-reports",
+      "type": "library",
+      "platforms": [
+        "iOS"
+      ],
+      "summary": "dSYMを送りスタックトレースを読める形にする方法"
+    },
+    {
+      "id": "dagger",
+      "title": "Dagger",
+      "url": "https://dagger.dev/",
+      "type": "library",
+      "platforms": [
+        "Android"
+      ],
+      "summary": "コンパイル時に依存関係のコードを生成する依存性注入ライブラリ"
+    },
+    {
+      "id": "detekt",
+      "title": "detekt",
+      "url": "https://detekt.dev/",
+      "type": "library",
+      "platforms": [
+        "Android"
+      ],
+      "summary": "Kotlinのコードの複雑さや問題のある書き方を検出する静的解析ツール"
+    },
+    {
+      "id": "detox",
+      "title": "Detox",
+      "url": "https://wix.github.io/Detox/",
+      "type": "library",
+      "platforms": [
+        "React Native"
+      ],
+      "summary": "E2EテストをSimulatorやEmulator上で実行するツール"
+    },
+    {
+      "id": "dispatchqueue",
+      "title": "DispatchQueue",
+      "url": "https://developer.apple.com/documentation/dispatch/dispatchqueue",
+      "type": "official",
+      "platforms": [
+        "iOS"
+      ],
+      "summary": "GCDで処理をキューに入れてメインや別スレッドで実行する型"
+    },
+    {
+      "id": "dynamic-type",
+      "title": "Scaling fonts automatically",
+      "url": "https://developer.apple.com/documentation/uikit/scaling-fonts-automatically",
+      "type": "official",
+      "platforms": [
+        "iOS"
+      ],
+      "summary": "Dynamic Typeで利用者の文字サイズ設定に合わせて表示を変える方法"
+    },
+    {
+      "id": "eas-build",
+      "title": "EAS Build",
+      "url": "https://docs.expo.dev/build/introduction/",
+      "type": "official",
+      "platforms": [
+        "React Native"
+      ],
+      "summary": "Expoのクラウド環境でAndroidとiOSのアプリをビルドするサービス"
+    },
+    {
+      "id": "eas-build-ci",
+      "title": "CIからのビルド（React Native）",
+      "url": "https://docs.expo.dev/build/building-on-ci/",
+      "type": "learning",
+      "platforms": [
+        "React Native"
+      ],
+      "summary": "CIサービスからEAS Buildを起動してビルドを自動化する手順"
+    },
+    {
+      "id": "eas-submit",
+      "title": "EAS Submit",
+      "url": "https://docs.expo.dev/deploy/submit-to-app-stores/",
+      "type": "library",
+      "platforms": [
+        "React Native"
+      ],
+      "summary": "ビルドしたアプリをApp StoreとGoogle Playへ提出するサービス"
+    },
+    {
+      "id": "eas-update",
+      "title": "EAS Update",
+      "url": "https://docs.expo.dev/eas-update/introduction/",
+      "type": "library",
+      "platforms": [
+        "React Native"
+      ],
+      "summary": "ストア審査を経ずにJavaScriptと画像などの更新を配信するサービス"
+    },
+    {
+      "id": "encrypted-shared-preferences",
+      "title": "EncryptedSharedPreferences",
+      "url": "https://developer.android.com/reference/androidx/security/crypto/EncryptedSharedPreferences",
+      "type": "official",
+      "platforms": [
+        "Android"
+      ],
+      "summary": "キーと値を暗号化して保存するSharedPreferencesの実装"
+    },
+    {
+      "id": "eslint",
+      "title": "ESLint",
+      "url": "https://github.com/eslint/eslint",
+      "type": "library",
+      "platforms": [
+        "React Native"
+      ],
+      "summary": "JavaScriptとTypeScriptのコードの問題を検出する静的解析ツール"
+    },
+    {
+      "id": "espresso",
+      "title": "Espresso",
+      "url": "https://developer.android.com/training/testing/espresso",
+      "type": "official",
+      "platforms": [
+        "Android"
+      ],
+      "summary": "View階層を操作して画面の表示と動作を検証するUIテストのAPI"
+    },
+    {
+      "id": "expo-app-config",
+      "title": "アプリの設定（React Native）",
+      "url": "https://docs.expo.dev/workflow/configuration/",
+      "type": "official",
+      "platforms": [
+        "React Native"
+      ],
+      "summary": "app.jsonやapp.config.jsでアプリの設定を記述する方法"
+    },
+    {
+      "id": "expo-app-json",
+      "title": "app.json／app.config.jsのリファレンス（React Native）",
+      "url": "https://docs.expo.dev/versions/latest/config/app/",
+      "type": "official",
+      "platforms": [
+        "React Native"
+      ],
+      "summary": "Expoアプリの名前や権限などの設定項目を一覧で示す"
+    },
+    {
+      "id": "expo-autolinking",
+      "title": "Expo Autolinking",
+      "url": "https://docs.expo.dev/modules/autolinking/",
+      "type": "official",
+      "platforms": [
+        "React Native"
+      ],
+      "summary": "インストールしたネイティブモジュールを自動で組み込む仕組み"
+    },
+    {
+      "id": "expo-bare-overview",
+      "title": "Overview of using Expo with existing React Native apps",
+      "url": "https://docs.expo.dev/bare/overview/",
+      "type": "library",
+      "platforms": [
+        "React Native"
+      ],
+      "summary": "ネイティブプロジェクトを直接管理するアプリでExpoを使う方法"
+    },
+    {
+      "id": "expo-camera",
+      "title": "Camera",
+      "url": "https://docs.expo.dev/versions/latest/sdk/camera/",
+      "type": "library",
+      "platforms": [
+        "React Native"
+      ],
+      "summary": "カメラの映像表示と撮影を扱うExpoのライブラリ"
+    },
+    {
+      "id": "expo-cli",
+      "title": "Expo CLI",
+      "url": "https://docs.expo.dev/more/expo-cli/",
+      "type": "official",
+      "platforms": [
+        "React Native"
+      ],
+      "summary": "開発サーバーの起動やビルドを行うコマンドラインツール"
+    },
+    {
+      "id": "expo-cng",
+      "title": "Continuous Native Generation（React Native）",
+      "url": "https://docs.expo.dev/workflow/continuous-native-generation/",
+      "type": "official",
+      "platforms": [
+        "React Native"
+      ],
+      "summary": "prebuildで設定からネイティブプロジェクトを生成する仕組み"
+    },
+    {
+      "id": "expo-file-system",
+      "title": "expo-file-system",
+      "url": "https://docs.expo.dev/versions/latest/sdk/filesystem/",
+      "type": "library",
+      "platforms": [
+        "React Native"
+      ],
+      "summary": "端末のファイルの読み書きやダウンロードを行うExpoのライブラリ"
+    },
+    {
+      "id": "expo-local-authentication",
+      "title": "expo-local-authentication",
+      "url": "https://docs.expo.dev/versions/latest/sdk/local-authentication/",
+      "type": "library",
+      "platforms": [
+        "React Native"
+      ],
+      "summary": "FaceIDや指紋などの生体認証を呼び出すExpoのライブラリ"
+    },
+    {
+      "id": "expo-location",
+      "title": "Location",
+      "url": "https://docs.expo.dev/versions/latest/sdk/location/",
+      "type": "library",
+      "platforms": [
+        "React Native"
+      ],
+      "summary": "端末の位置情報の取得と権限要求を扱うExpoのライブラリ"
+    },
+    {
+      "id": "expo-notifications",
+      "title": "Expo Notifications",
+      "url": "https://docs.expo.dev/versions/latest/sdk/notifications/",
+      "type": "library",
+      "platforms": [
+        "React Native"
+      ],
+      "summary": "通知の権限要求・受信・ローカル通知の表示を扱うライブラリ"
+    },
+    {
+      "id": "expo-permissions",
+      "title": "権限の扱い（React Native）",
+      "url": "https://docs.expo.dev/guides/permissions/",
+      "type": "official",
+      "platforms": [
+        "React Native"
+      ],
+      "summary": "Expoアプリで各OSの権限を設定し要求する方法を説明"
+    },
+    {
+      "id": "expo-router",
+      "title": "Expo Router",
+      "url": "https://docs.expo.dev/router/introduction/",
+      "type": "library",
+      "platforms": [
+        "React Native"
+      ],
+      "summary": "ファイルの配置から画面遷移を定義するルーティングライブラリ"
+    },
+    {
+      "id": "expo-sdk",
+      "title": "Expo SDK",
+      "url": "https://docs.expo.dev/versions/latest/",
+      "type": "library",
+      "platforms": [
+        "React Native"
+      ],
+      "summary": "端末機能をJavaScriptから使うためのExpoのパッケージ群"
+    },
+    {
+      "id": "expo-securestore",
+      "title": "SecureStore",
+      "url": "https://docs.expo.dev/versions/latest/sdk/securestore/",
+      "type": "library",
+      "platforms": [
+        "React Native"
+      ],
+      "summary": "端末の安全な保存領域にキーと値を暗号化して保存するライブラリ"
+    },
+    {
+      "id": "expo-sqlite",
+      "title": "expo-sqlite",
+      "url": "https://docs.expo.dev/versions/latest/sdk/sqlite/",
+      "type": "library",
+      "platforms": [
+        "React Native"
+      ],
+      "summary": "端末内のSQLiteデータベースを操作するExpoのライブラリ"
+    },
+    {
+      "id": "expo-unit-testing",
+      "title": "Jestによる単体テスト（React Native）",
+      "url": "https://docs.expo.dev/develop/unit-testing/",
+      "type": "learning",
+      "platforms": [
+        "React Native"
+      ],
+      "summary": "ExpoプロジェクトでJestを設定して単体テストを書く手順"
+    },
+    {
+      "id": "fastlane-match",
+      "title": "match（fastlane）",
+      "url": "https://docs.fastlane.tools/actions/match/",
+      "type": "library",
+      "platforms": [
+        "iOS"
+      ],
+      "summary": "証明書とプロビジョニングプロファイルをチームで共有・管理するツール"
+    },
+    {
+      "id": "fastlane-scan",
+      "title": "scan（fastlane）",
+      "url": "https://docs.fastlane.tools/actions/scan/",
+      "type": "library",
+      "platforms": [
+        "iOS"
+      ],
+      "summary": "iOSアプリのテストを実行し結果をレポートにまとめるアクション"
+    },
+    {
+      "id": "filemanager",
+      "title": "FileManager",
+      "url": "https://developer.apple.com/documentation/foundation/filemanager",
+      "type": "official",
+      "platforms": [
+        "iOS"
+      ],
+      "summary": "ファイルとディレクトリの作成、移動、削除を行うAPI"
+    },
+    {
+      "id": "firebase-app-distribution",
+      "title": "Firebase App Distribution",
+      "url": "https://firebase.google.com/docs/app-distribution",
+      "type": "library",
+      "platforms": [
+        "iOS",
+        "Android"
+      ],
+      "summary": "リリース前のアプリをテスターに配布してフィードバックを集めるサービス"
+    },
+    {
+      "id": "firebase-cloud-messaging",
+      "title": "Firebase Cloud Messaging",
+      "url": "https://firebase.google.com/docs/cloud-messaging",
+      "type": "official",
+      "platforms": [
+        "共通"
+      ],
+      "summary": "サーバーから端末へプッシュ通知やメッセージを送る仕組み"
+    },
+    {
+      "id": "firebase-crashlytics",
+      "title": "Firebase Crashlytics",
+      "url": "https://firebase.google.com/docs/crashlytics",
+      "type": "library",
+      "platforms": [
+        "iOS",
+        "Android",
+        "React Native"
+      ],
+      "summary": "アプリのクラッシュを収集し、原因ごとにまとめて表示するサービス"
+    },
+    {
+      "id": "firebase-remote-config",
+      "title": "Firebase Remote Config",
+      "url": "https://firebase.google.com/docs/remote-config",
+      "type": "library",
+      "platforms": [
+        "iOS",
+        "Android",
+        "React Native"
+      ],
+      "summary": "アプリを更新せずに設定値を配信して機能の有効・無効を切り替えるサービス"
+    },
+    {
+      "id": "firebase-test-lab",
+      "title": "Firebase Test Lab",
+      "url": "https://firebase.google.com/docs/test-lab",
+      "type": "library",
+      "platforms": [
+        "Android",
+        "iOS"
+      ],
+      "summary": "クラウド上の複数の実機・仮想端末でアプリのテストを実行するサービス"
+    },
+    {
+      "id": "firestore",
+      "title": "Cloud Firestore",
+      "url": "https://firebase.google.com/docs/firestore",
+      "type": "library",
+      "platforms": [
+        "共通"
+      ],
+      "summary": "端末とクラウドの間でデータを同期するNoSQLデータベース"
+    },
+    {
+      "id": "foundation-formatter",
+      "title": "Formatter",
+      "url": "https://developer.apple.com/documentation/foundation/formatter",
+      "type": "official",
+      "platforms": [
+        "iOS"
+      ],
+      "summary": "数値や日付などの値と文字列表現を相互に変換する基底クラス"
+    },
+    {
+      "id": "git-branch",
+      "title": "git branch",
+      "url": "https://git-scm.com/docs/git-branch",
+      "type": "official",
+      "platforms": [
+        "共通"
+      ],
+      "summary": "ブランチの一覧表示、作成、削除を行うコマンド"
+    },
+    {
+      "id": "git-commit",
+      "title": "git commit",
+      "url": "https://git-scm.com/docs/git-commit",
+      "type": "official",
+      "platforms": [
+        "共通"
+      ],
+      "summary": "ステージした変更を履歴に記録するコマンド"
+    },
+    {
+      "id": "git-lfs",
+      "title": "Git LFS",
+      "url": "https://github.com/git-lfs/git-lfs",
+      "type": "library",
+      "platforms": [
+        "共通"
+      ],
+      "summary": "大きなファイルをポインタに置き換えて管理するGit拡張"
+    },
+    {
+      "id": "git-merge",
+      "title": "git merge",
+      "url": "https://git-scm.com/docs/git-merge",
+      "type": "official",
+      "platforms": [
+        "共通"
+      ],
+      "summary": "別のブランチの変更履歴を現在のブランチへ統合するコマンド"
+    },
+    {
+      "id": "git-rebase",
+      "title": "git rebase",
+      "url": "https://git-scm.com/docs/git-rebase",
+      "type": "official",
+      "platforms": [
+        "共通"
+      ],
+      "summary": "コミットを別の基点の上に付け替えて履歴を整えるコマンド"
+    },
+    {
+      "id": "git-reference",
+      "title": "Gitリファレンス",
+      "url": "https://git-scm.com/docs",
+      "type": "official",
+      "platforms": [
+        "共通"
+      ],
+      "summary": "Gitの各コマンドと設定項目を一覧で引けるリファレンス"
+    },
+    {
+      "id": "github-actions",
+      "title": "GitHub Actions",
+      "url": "https://docs.github.com/ja/actions",
+      "type": "official",
+      "platforms": [
+        "共通"
+      ],
+      "summary": "リポジトリのイベントを契機にビルドやテストを自動で実行する仕組み"
+    },
+    {
+      "id": "github-actions-secrets",
+      "title": "GitHub Actionsのシークレット",
+      "url": "https://docs.github.com/ja/actions/how-tos/write-workflows/choose-what-workflows-do/use-secrets",
+      "type": "official",
+      "platforms": [
+        "共通"
+      ],
+      "summary": "署名鍵やトークンをシークレットとして保管しワークフローで使う方法"
+    },
+    {
+      "id": "github-actions-xcode-signing",
+      "title": "Xcode開発用のmacOSランナーへのApple証明書のインストール（GitHub Actions）",
+      "url": "https://docs.github.com/ja/actions/how-tos/deploy/deploy-to-third-party-platforms/sign-xcode-applications",
+      "type": "learning",
+      "platforms": [
+        "iOS"
+      ],
+      "summary": "CIのmacOSランナーで署名用の証明書とプロファイルを設定する手順"
+    },
+    {
+      "id": "github-codeowners",
+      "title": "コードオーナー（GitHub）",
+      "url": "https://docs.github.com/ja/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/about-code-owners",
+      "type": "official",
+      "platforms": [
+        "共通"
+      ],
+      "summary": "変更されたファイルに応じてレビュー担当者を自動で割り当てる仕組み"
+    },
+    {
+      "id": "github-git-lfs",
+      "title": "Git Large File Storageについて（GitHub Docs）",
+      "url": "https://docs.github.com/ja/repositories/working-with-files/managing-large-files/about-git-large-file-storage",
+      "type": "learning",
+      "platforms": [
+        "共通"
+      ],
+      "summary": "大きなファイルをGit LFSでリポジトリ外に保存する仕組み"
+    },
+    {
+      "id": "github-hosted-runners",
+      "title": "GitHubホステッドランナー",
+      "url": "https://docs.github.com/ja/actions/concepts/runners/github-hosted-runners",
+      "type": "official",
+      "platforms": [
+        "共通"
+      ],
+      "summary": "macOSなどワークフローを実行する環境の種類と仕様"
+    },
+    {
+      "id": "github-ignoring-files",
+      "title": "ファイルを無視する（GitHub Docs）",
+      "url": "https://docs.github.com/ja/get-started/git-basics/ignoring-files",
+      "type": "learning",
+      "platforms": [
+        "共通"
+      ],
+      "summary": ".gitignoreでコミット対象外のファイルを設定する手順"
+    },
+    {
+      "id": "github-merge-conflicts",
+      "title": "マージ競合（GitHub）",
+      "url": "https://docs.github.com/ja/pull-requests/reference/merge-conflicts",
+      "type": "official",
+      "platforms": [
+        "共通"
+      ],
+      "summary": "プルリクエストで競合が起きる条件と解消の方法の説明"
+    },
+    {
+      "id": "github-pr-reviews",
+      "title": "プルリクエストのレビュー（GitHub）",
+      "url": "https://docs.github.com/ja/pull-requests/reference/pull-request-reviews",
+      "type": "official",
+      "platforms": [
+        "共通"
+      ],
+      "summary": "プルリクエストへのコメント、承認、変更の要求の仕組み"
+    },
+    {
+      "id": "github-pr-template",
+      "title": "プルリクエストテンプレート（GitHub）",
+      "url": "https://docs.github.com/ja/communities/using-templates-to-encourage-useful-issues-and-pull-requests/creating-a-pull-request-template-for-your-repository",
+      "type": "official",
+      "platforms": [
+        "共通"
+      ],
+      "summary": "プルリクエストの説明欄に定型の記入項目を表示する設定"
+    },
+    {
+      "id": "github-protected-branches",
+      "title": "保護されたブランチ（GitHub）",
+      "url": "https://docs.github.com/ja/repositories/configuring-branches-and-merges-in-your-repository/managing-protected-branches/about-protected-branches",
+      "type": "official",
+      "platforms": [
+        "共通"
+      ],
+      "summary": "マージ前のレビューやステータスチェックを必須にする設定"
+    },
+    {
+      "id": "github-pull-requests",
+      "title": "プルリクエスト（GitHub Docs）",
+      "url": "https://docs.github.com/ja/pull-requests",
+      "type": "learning",
+      "platforms": [
+        "共通"
+      ],
+      "summary": "プルリクエストで変更を提案しレビューを受ける手順"
+    },
+    {
+      "id": "gitignore",
+      "title": "gitignore",
+      "url": "https://git-scm.com/docs/gitignore",
+      "type": "official",
+      "platforms": [
+        "共通"
+      ],
+      "summary": "Gitで追跡しないファイルを指定する書式を説明"
+    },
+    {
+      "id": "gradle-build-cache",
+      "title": "Build Cache（Gradle）",
+      "url": "https://docs.gradle.org/current/userguide/build_cache.html",
+      "type": "official",
+      "platforms": [
+        "Android"
+      ],
+      "summary": "タスクの出力を再利用してGradleビルドの時間を短縮する仕組み"
+    },
+    {
+      "id": "gradle-jacoco",
+      "title": "The JaCoCo Plugin",
+      "url": "https://docs.gradle.org/current/userguide/jacoco_plugin.html",
+      "type": "official",
+      "platforms": [
+        "Android"
+      ],
+      "summary": "GradleでJaCoCoを使いテストのカバレッジレポートを出力するプラグイン"
+    },
+    {
+      "id": "hig",
+      "title": "Human Interface Guidelines",
+      "url": "https://developer.apple.com/design/human-interface-guidelines",
+      "type": "official",
+      "platforms": [
+        "iOS"
+      ],
+      "summary": "Appleのプラットフォームで画面や操作を設計するための指針"
+    },
+    {
+      "id": "hig-accessibility",
+      "title": "Accessibility（Human Interface Guidelines）",
+      "url": "https://developer.apple.com/design/human-interface-guidelines/accessibility",
+      "type": "official",
+      "platforms": [
+        "iOS"
+      ],
+      "summary": "タップ領域や文字サイズなど、誰もが使える画面を作るための設計指針"
+    },
+    {
+      "id": "hig-layout",
+      "title": "Layout（Human Interface Guidelines）",
+      "url": "https://developer.apple.com/design/human-interface-guidelines/layout",
+      "type": "official",
+      "platforms": [
+        "iOS"
+      ],
+      "summary": "安全領域やサイズクラスを踏まえて画面を配置するための指針"
+    },
+    {
+      "id": "hig-sf-symbols",
+      "title": "SF Symbols（Human Interface Guidelines）",
+      "url": "https://developer.apple.com/design/human-interface-guidelines/sf-symbols",
+      "type": "official",
+      "platforms": [
+        "iOS"
+      ],
+      "summary": "システムの文字と調和するアイコン群SF Symbolsの使い方"
+    },
+    {
+      "id": "ios-app-lifecycle",
+      "title": "アプリのライフサイクル管理（iOS）",
+      "url": "https://developer.apple.com/documentation/uikit/managing-your-app-s-life-cycle",
+      "type": "official",
+      "platforms": [
+        "iOS"
+      ],
+      "summary": "アプリの状態遷移と各状態で行う処理を解説するガイド"
+    },
+    {
+      "id": "ios-data-protection",
+      "title": "ファイルの暗号化（iOS）",
+      "url": "https://developer.apple.com/documentation/uikit/encrypting-your-app-s-files",
+      "type": "official",
+      "platforms": [
+        "iOS"
+      ],
+      "summary": "Data Protectionでアプリのファイルを端末上で暗号化する方法"
+    },
+    {
+      "id": "jest",
+      "title": "Jest",
+      "url": "https://github.com/jestjs/jest",
+      "type": "library",
+      "platforms": [
+        "React Native"
+      ],
+      "summary": "JavaScriptのテストを記述・実行し、モックやスナップショットを扱うツール"
+    },
+    {
+      "id": "jetpack-compose",
+      "title": "Jetpack Compose",
+      "url": "https://developer.android.com/develop/ui/compose",
+      "type": "official",
+      "platforms": [
+        "Android"
+      ],
+      "summary": "Kotlinの関数で画面を宣言的に構築するUIツールキット"
+    },
+    {
+      "id": "junit4",
+      "title": "JUnit 4",
+      "url": "https://github.com/junit-team/junit4",
+      "type": "library",
+      "platforms": [
+        "Android"
+      ],
+      "summary": "Java・Kotlinの単体テストを記述して実行するテストフレームワーク"
+    },
+    {
+      "id": "keychain-services",
+      "title": "Keychain Services",
+      "url": "https://developer.apple.com/documentation/security/keychain-services",
+      "type": "official",
+      "platforms": [
+        "iOS"
+      ],
+      "summary": "パスワードやトークンなどの秘密情報を暗号化して保存するAPI"
+    },
+    {
+      "id": "kodein",
+      "title": "Kodein",
+      "url": "https://kosi-libs.org/kodein/",
+      "type": "library",
+      "platforms": [
+        "Android"
+      ],
+      "summary": "Kotlin向けに依存関係の定義と注入を行うライブラリ"
+    },
+    {
+      "id": "koin",
+      "title": "Koin",
+      "url": "https://insert-koin.io/",
+      "type": "library",
+      "platforms": [
+        "Android"
+      ],
+      "summary": "Kotlinの記述で依存関係を定義して注入するライブラリ"
+    },
+    {
+      "id": "kotlin-basic-syntax",
+      "title": "Kotlinドキュメント：基本構文（Android）",
+      "url": "https://kotlinlang.org/docs/basic-syntax.html",
+      "type": "official",
+      "platforms": [
+        "Android"
+      ],
+      "summary": "val・var、関数、制御構文など基本の書き方を示す"
+    },
+    {
+      "id": "kotlin-cancellation",
+      "title": "Cancellation and timeouts",
+      "url": "https://kotlinlang.org/docs/cancellation-and-timeouts.html",
+      "type": "official",
+      "platforms": [
+        "Android"
+      ],
+      "summary": "コルーチンのキャンセルの仕組みとタイムアウトの指定方法"
+    },
+    {
+      "id": "kotlin-collection-operations",
+      "title": "Kotlinドキュメント：コレクション操作（Android）",
+      "url": "https://kotlinlang.org/docs/collection-operations.html",
+      "type": "official",
+      "platforms": [
+        "Android"
+      ],
+      "summary": "変換・絞り込み・集計などコレクション操作の一覧"
+    },
+    {
+      "id": "kotlin-coroutine-context",
+      "title": "Coroutine context and dispatchers",
+      "url": "https://kotlinlang.org/docs/coroutine-context-and-dispatchers.html",
+      "type": "official",
+      "platforms": [
+        "Android"
+      ],
+      "summary": "コルーチンの実行スレッドを決めるディスパッチャとコンテキスト"
+    },
+    {
+      "id": "kotlin-coroutines-guide",
+      "title": "Coroutines guide",
+      "url": "https://kotlinlang.org/docs/coroutines-guide.html",
+      "type": "official",
+      "platforms": [
+        "Android"
+      ],
+      "summary": "コルーチンの主要な機能を章ごとに説明するKotlinのガイド"
+    },
+    {
+      "id": "kotlin-data-classes",
+      "title": "Kotlinドキュメント：データクラス（Android）",
+      "url": "https://kotlinlang.org/docs/data-classes.html",
+      "type": "official",
+      "platforms": [
+        "Android"
+      ],
+      "summary": "データを保持するクラスと自動生成される関数を説明"
+    },
+    {
+      "id": "kotlin-docs",
+      "title": "Kotlinドキュメント（Android）",
+      "url": "https://kotlinlang.org/docs/home.html",
+      "type": "learning",
+      "platforms": [
+        "Android"
+      ],
+      "summary": "Kotlin言語の入門から応用までをまとめた公式文書"
+    },
+    {
+      "id": "kotlin-exception-handling",
+      "title": "Coroutine exceptions handling",
+      "url": "https://kotlinlang.org/docs/exception-handling.html",
+      "type": "official",
+      "platforms": [
+        "Android"
+      ],
+      "summary": "コルーチンでの例外の伝播と、ハンドラによる処理の方法"
+    },
+    {
+      "id": "kotlin-extensions",
+      "title": "Kotlinドキュメント：拡張関数（Android）",
+      "url": "https://kotlinlang.org/docs/extensions.html",
+      "type": "official",
+      "platforms": [
+        "Android"
+      ],
+      "summary": "既存のクラスに関数やプロパティを追加する方法を説明"
+    },
+    {
+      "id": "kotlin-flow",
+      "title": "Asynchronous Flow",
+      "url": "https://kotlinlang.org/docs/flow.html",
+      "type": "official",
+      "platforms": [
+        "Android"
+      ],
+      "summary": "複数の値を非同期に順に返すFlowの作成、変換、収集の方法"
+    },
+    {
+      "id": "kotlin-java-interop",
+      "title": "Kotlinドキュメント：Java相互運用（Android）",
+      "url": "https://kotlinlang.org/docs/java-interop.html",
+      "type": "official",
+      "platforms": [
+        "Android"
+      ],
+      "summary": "KotlinからJavaのコードを呼び出す際の規則を説明"
+    },
+    {
+      "id": "kotlin-kdoc",
+      "title": "KDocによるドキュメント作成（Android）",
+      "url": "https://kotlinlang.org/docs/kotlin-doc.html",
+      "type": "official",
+      "platforms": [
+        "Android"
+      ],
+      "summary": "KDocの記法とDokkaによるドキュメント生成を説明"
+    },
+    {
+      "id": "kotlin-lambdas",
+      "title": "Kotlinドキュメント：高階関数とラムダ（Android）",
+      "url": "https://kotlinlang.org/docs/lambdas.html",
+      "type": "official",
+      "platforms": [
+        "Android"
+      ],
+      "summary": "関数を引数や戻り値として扱う方法とラムダ式を説明"
+    },
+    {
+      "id": "kotlin-null-safety",
+      "title": "Kotlinドキュメント：Null安全（Android）",
+      "url": "https://kotlinlang.org/docs/null-safety.html",
+      "type": "official",
+      "platforms": [
+        "Android"
+      ],
+      "summary": "null許容型と安全呼び出し、エルビス演算子を説明"
+    },
+    {
+      "id": "kotlin-result",
+      "title": "Result",
+      "url": "https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-result/",
+      "type": "official",
+      "platforms": [
+        "Android"
+      ],
+      "summary": "処理の成功値または例外を1つの値で表すKotlinの型"
+    },
+    {
+      "id": "kotlin-scope-functions",
+      "title": "Kotlinドキュメント：スコープ関数（Android）",
+      "url": "https://kotlinlang.org/docs/scope-functions.html",
+      "type": "official",
+      "platforms": [
+        "Android"
+      ],
+      "summary": "let・apply・runなどのスコープ関数の違いを説明"
+    },
+    {
+      "id": "kotlin-sealed-classes",
+      "title": "Kotlinドキュメント：sealed class（Android）",
+      "url": "https://kotlinlang.org/docs/sealed-classes.html",
+      "type": "official",
+      "platforms": [
+        "Android"
+      ],
+      "summary": "継承先を限定したクラス階層とwhenでの分岐を説明"
+    },
+    {
+      "id": "kotlinx-serialization",
+      "title": "kotlinx.serialization",
+      "url": "https://github.com/Kotlin/kotlinx.serialization",
+      "type": "library",
+      "platforms": [
+        "Android"
+      ],
+      "summary": "KotlinのクラスとJSONなどの形式を相互に変換するライブラリ"
+    },
+    {
+      "id": "ktlint",
+      "title": "ktlint",
+      "url": "https://github.com/ktlint/ktlint",
+      "type": "library",
+      "platforms": [
+        "Android"
+      ],
+      "summary": "Kotlinのコードの書式を検査して自動で整形するツール"
+    },
+    {
+      "id": "leakcanary",
+      "title": "LeakCanary",
+      "url": "https://square.github.io/leakcanary/",
+      "type": "library",
+      "platforms": [
+        "Android"
+      ],
+      "summary": "Androidアプリのメモリリークを検出して原因の参照経路を示すライブラリ"
+    },
+    {
+      "id": "local-authentication",
+      "title": "LocalAuthentication",
+      "url": "https://developer.apple.com/documentation/localauthentication",
+      "type": "official",
+      "platforms": [
+        "iOS"
+      ],
+      "summary": "生体認証やパスコードで本人確認を行うフレームワーク"
+    },
+    {
+      "id": "m3-accessibility",
+      "title": "Accessible design（Material Design 3）",
+      "url": "https://m3.material.io/foundations/accessible-design/overview",
+      "type": "official",
+      "platforms": [
+        "Android"
+      ],
+      "summary": "色のコントラストやタッチ領域など、使いやすい画面の設計指針"
+    },
+    {
+      "id": "m3-bottom-sheets",
+      "title": "Bottom sheets",
+      "url": "https://m3.material.io/components/bottom-sheets/overview",
+      "type": "learning",
+      "platforms": [
+        "Android"
+      ],
+      "summary": "画面下部に補助的な内容を表示する部品の設計指針"
+    },
+    {
+      "id": "m3-navigation-drawer",
+      "title": "Navigation drawer",
+      "url": "https://m3.material.io/components/navigation-drawer/overview",
+      "type": "learning",
+      "platforms": [
+        "Android"
+      ],
+      "summary": "画面の端から引き出して使う遷移メニューの設計指針"
+    },
+    {
+      "id": "maestro",
+      "title": "Maestro",
+      "url": "https://docs.maestro.dev/",
+      "type": "library",
+      "platforms": [
+        "共通"
+      ],
+      "summary": "YAMLで記述した画面操作のシナリオを実機やエミュレータで実行するツール"
+    },
+    {
+      "id": "mapkit",
+      "title": "MapKit",
+      "url": "https://developer.apple.com/documentation/mapkit",
+      "type": "official",
+      "platforms": [
+        "iOS"
+      ],
+      "summary": "地図の表示や位置の検索・経路表示を行うフレームワーク"
+    },
+    {
+      "id": "material-components-android",
+      "title": "Material Components for Android",
+      "url": "https://github.com/material-components/material-components-android",
+      "type": "library",
+      "platforms": [
+        "Android"
+      ],
+      "summary": "Material DesignのUI部品を提供するAndroid向けライブラリ"
+    },
+    {
+      "id": "material-design-3",
+      "title": "Material Design 3",
+      "url": "https://m3.material.io/",
+      "type": "official",
+      "platforms": [
+        "Android"
+      ],
+      "summary": "Googleのデザインシステムの設計指針、部品、アイコンの資料"
+    },
+    {
+      "id": "metrickit",
+      "title": "MetricKit",
+      "url": "https://developer.apple.com/documentation/metrickit",
+      "type": "official",
+      "platforms": [
+        "iOS"
+      ],
+      "summary": "利用者の端末で集めた性能指標や診断情報をアプリで受け取るフレームワーク"
+    },
+    {
+      "id": "mockk",
+      "title": "MockK",
+      "url": "https://mockk.io/",
+      "type": "library",
+      "platforms": [
+        "Android"
+      ],
+      "summary": "Kotlin向けにモックやスタブを作成して依存を置き換えるライブラリ"
+    },
+    {
+      "id": "nslayoutconstraint",
+      "title": "NSLayoutConstraint",
+      "url": "https://developer.apple.com/documentation/uikit/nslayoutconstraint",
+      "type": "official",
+      "platforms": [
+        "iOS"
+      ],
+      "summary": "Auto Layoutでビュー同士の位置と大きさの関係を定義する制約"
+    },
+    {
+      "id": "nwpathmonitor",
+      "title": "NWPathMonitor",
+      "url": "https://developer.apple.com/documentation/network/nwpathmonitor",
+      "type": "official",
+      "platforms": [
+        "iOS"
+      ],
+      "summary": "ネットワークの接続状態とその変化を監視するクラス"
+    },
+    {
+      "id": "observable-migration",
+      "title": "Migrating from the Observable Object protocol to the Observable macro",
+      "url": "https://developer.apple.com/documentation/swiftui/migrating-from-the-observable-object-protocol-to-the-observable-macro",
+      "type": "learning",
+      "platforms": [
+        "iOS"
+      ],
+      "summary": "ObservableObjectから@Observableマクロへ移行する手順"
+    },
+    {
+      "id": "observation",
+      "title": "Observation",
+      "url": "https://developer.apple.com/documentation/observation",
+      "type": "official",
+      "platforms": [
+        "iOS"
+      ],
+      "summary": "@Observableでモデルのプロパティの変化を追跡する仕組み"
+    },
+    {
+      "id": "okhttp",
+      "title": "OkHttp",
+      "url": "https://github.com/square/okhttp",
+      "type": "library",
+      "platforms": [
+        "Android"
+      ],
+      "summary": "HTTP/2や接続の再利用に対応したHTTPクライアントのライブラリ"
+    },
+    {
+      "id": "operationqueue",
+      "title": "OperationQueue",
+      "url": "https://developer.apple.com/documentation/foundation/operationqueue",
+      "type": "official",
+      "platforms": [
+        "iOS"
+      ],
+      "summary": "Operationの実行順序、依存関係、同時実行数を管理するキュー"
+    },
+    {
+      "id": "oslog",
+      "title": "OSLog",
+      "url": "https://developer.apple.com/documentation/os/logging",
+      "type": "official",
+      "platforms": [
+        "iOS"
+      ],
+      "summary": "統合ログシステムにログを記録し、取得・閲覧するためのAPI"
+    },
+    {
+      "id": "owasp-mastg",
+      "title": "OWASP MASTG",
+      "url": "https://mas.owasp.org/MASTG/",
+      "type": "learning",
+      "platforms": [
+        "共通"
+      ],
+      "summary": "モバイルアプリのセキュリティをテスト・解析する手法をまとめたガイド"
+    },
+    {
+      "id": "owasp-masvs",
+      "title": "OWASP MASVS",
+      "url": "https://mas.owasp.org/MASVS/",
+      "type": "learning",
+      "platforms": [
+        "共通"
+      ],
+      "summary": "モバイルアプリのセキュリティ要件を分野ごとに定めた検証基準"
+    },
+    {
+      "id": "play-billing",
+      "title": "Google Play's billing system",
+      "url": "https://developer.android.com/google/play/billing",
+      "type": "official",
+      "platforms": [
+        "Android"
+      ],
+      "summary": "Google Playでアプリ内課金と定期購入を扱う仕組み"
+    },
+    {
+      "id": "play-console",
+      "title": "Google Play Console",
+      "url": "https://developer.android.com/distribute/console",
+      "type": "official",
+      "platforms": [
+        "Android"
+      ],
+      "summary": "Google Playでのアプリ公開・テスト配信・段階的公開を管理する画面"
+    },
+    {
+      "id": "play-integrity",
+      "title": "Play Integrity API",
+      "url": "https://developer.android.com/google/play/integrity",
+      "type": "official",
+      "platforms": [
+        "Android"
+      ],
+      "summary": "アプリと端末が改変されていない正規のものかをサーバーで判定するAPI"
+    },
+    {
+      "id": "privacy-manifest",
+      "title": "プライバシーマニフェスト（iOS）",
+      "url": "https://developer.apple.com/documentation/bundleresources/privacy-manifest-files",
+      "type": "official",
+      "platforms": [
+        "iOS"
+      ],
+      "summary": "アプリやSDKが収集するデータと使用するAPIの理由を記述するファイル"
+    },
+    {
+      "id": "pro-git-ja",
+      "title": "Pro Git（日本語）",
+      "url": "https://git-scm.com/book/ja/v2",
+      "type": "learning",
+      "platforms": [
+        "共通"
+      ],
+      "summary": "Gitの基本操作からブランチ運用までを解説する書籍"
+    },
+    {
+      "id": "react-hook-form",
+      "title": "React Hook Form",
+      "url": "https://github.com/react-hook-form/react-hook-form",
+      "type": "library",
+      "platforms": [
+        "React Native"
+      ],
+      "summary": "フックでフォームの入力値と検証を管理するライブラリ"
+    },
+    {
+      "id": "react-native-gesture-handler",
+      "title": "React Native Gesture Handler",
+      "url": "https://github.com/software-mansion/react-native-gesture-handler",
+      "type": "library",
+      "platforms": [
+        "React Native"
+      ],
+      "summary": "ネイティブ側でタッチ操作を認識するReact Native向けライブラリ"
+    },
+    {
+      "id": "react-native-iap",
+      "title": "react-native-iap",
+      "url": "https://github.com/hyochan/react-native-iap",
+      "type": "library",
+      "platforms": [
+        "React Native"
+      ],
+      "summary": "iOSとAndroidのアプリ内課金を扱うReact Native向けライブラリ"
+    },
+    {
+      "id": "react-native-logs",
+      "title": "react-native-logs",
+      "url": "https://github.com/mowispace/react-native-logs",
+      "type": "library",
+      "platforms": [
+        "React Native"
+      ],
+      "summary": "ログの重要度と出力先を設定できるReact Native向けのログライブラリ"
+    },
+    {
+      "id": "react-native-maps",
+      "title": "react-native-maps",
+      "url": "https://github.com/react-native-maps/react-native-maps",
+      "type": "library",
+      "platforms": [
+        "React Native"
+      ],
+      "summary": "iOSとAndroidの地図を表示するReact Native向けライブラリ"
+    },
+    {
+      "id": "react-native-reanimated",
+      "title": "React Native Reanimated",
+      "url": "https://github.com/software-mansion/react-native-reanimated",
+      "type": "library",
+      "platforms": [
+        "React Native"
+      ],
+      "summary": "UIスレッドでアニメーションを実行するReact Native向けライブラリ"
+    },
+    {
+      "id": "react-native-web",
+      "title": "React Native for Web",
+      "url": "https://github.com/necolas/react-native-web",
+      "type": "library",
+      "platforms": [
+        "React Native"
+      ],
+      "summary": "React Nativeの部品をWebブラウザで動かすライブラリ"
+    },
+    {
+      "id": "react-navigation-bottom-tabs",
+      "title": "Bottom Tabs Navigator",
+      "url": "https://reactnavigation.org/docs/bottom-tab-navigator/",
+      "type": "library",
+      "platforms": [
+        "React Native"
+      ],
+      "summary": "React Navigationで下部のタブで画面を切り替えるナビゲーター"
+    },
+    {
+      "id": "react-navigation-stack",
+      "title": "Stack Navigator",
+      "url": "https://reactnavigation.org/docs/stack-navigator/",
+      "type": "library",
+      "platforms": [
+        "React Native"
+      ],
+      "summary": "React Navigationで画面を積み重ねて遷移させるナビゲーター"
+    },
+    {
+      "id": "react-test-renderer",
+      "title": "react-test-renderer",
+      "url": "https://github.com/react/react/tree/main/packages/react-test-renderer",
+      "type": "library",
+      "platforms": [
+        "React Native"
+      ],
+      "summary": "コンポーネントをJSのオブジェクトとして描画するパッケージ"
+    },
+    {
+      "id": "reactivex-operators",
+      "title": "ReactiveX Operators",
+      "url": "https://reactivex.io/documentation/operators.html",
+      "type": "library",
+      "platforms": [
+        "共通"
+      ],
+      "summary": "ReactiveXの演算子を用途別に分類し、動作を図で示す資料"
+    },
+    {
+      "id": "reduce-motion",
+      "title": "isReduceMotionEnabled",
+      "url": "https://developer.apple.com/documentation/uikit/uiaccessibility/isreducemotionenabled",
+      "type": "official",
+      "platforms": [
+        "iOS"
+      ],
+      "summary": "視差効果を減らす設定が有効になっているかを返すプロパティ"
+    },
+    {
+      "id": "redux",
+      "title": "Redux",
+      "url": "https://github.com/reduxjs/redux",
+      "type": "library",
+      "platforms": [
+        "React Native"
+      ],
+      "summary": "アプリ全体の状態を1つのストアで管理するJavaScriptライブラリ"
+    },
+    {
+      "id": "retrofit",
+      "title": "Retrofit",
+      "url": "https://github.com/square/retrofit",
+      "type": "library",
+      "platforms": [
+        "Android"
+      ],
+      "summary": "インターフェースの定義からHTTP APIの呼び出し処理を生成するライブラリ"
+    },
+    {
+      "id": "rn-accessibility",
+      "title": "Accessibility（React Native）",
+      "url": "https://reactnative.dev/docs/accessibility",
+      "type": "official",
+      "platforms": [
+        "React Native"
+      ],
+      "summary": "accessibilityLabelなど読み上げ向けの属性の使い方"
+    },
+    {
+      "id": "rn-accessibilityinfo",
+      "title": "AccessibilityInfo",
+      "url": "https://reactnative.dev/docs/accessibilityinfo",
+      "type": "official",
+      "platforms": [
+        "React Native"
+      ],
+      "summary": "スクリーンリーダーや動きを減らす設定の状態を取得するAPI"
+    },
+    {
+      "id": "rn-animated",
+      "title": "Animated",
+      "url": "https://reactnative.dev/docs/animated",
+      "type": "official",
+      "platforms": [
+        "React Native"
+      ],
+      "summary": "値の変化を時間に沿って補間して部品を動かすAPI"
+    },
+    {
+      "id": "rn-appstate",
+      "title": "AppState",
+      "url": "https://reactnative.dev/docs/appstate",
+      "type": "official",
+      "platforms": [
+        "React Native"
+      ],
+      "summary": "アプリが前面か背面かの状態と変化を取得するAPI"
+    },
+    {
+      "id": "rn-architecture",
+      "title": "アーキテクチャの概要（React Native）",
+      "url": "https://reactnative.dev/architecture/overview",
+      "type": "official",
+      "platforms": [
+        "React Native"
+      ],
+      "summary": "JSの実行環境とネイティブ層が連携する仕組みを解説"
+    },
+    {
+      "id": "rn-async-storage",
+      "title": "Async Storage",
+      "url": "https://github.com/react-native-async-storage/async-storage",
+      "type": "library",
+      "platforms": [
+        "React Native"
+      ],
+      "summary": "キーと値の組を非同期に保存するReact Native向けのストレージ"
+    },
+    {
+      "id": "rn-core-components",
+      "title": "コアコンポーネント（React Native）",
+      "url": "https://reactnative.dev/docs/intro-react-native-components",
+      "type": "learning",
+      "platforms": [
+        "React Native"
+      ],
+      "summary": "ViewやTextなど標準の部品とネイティブ表示の関係を学ぶ解説"
+    },
+    {
+      "id": "rn-debugging",
+      "title": "デバッグの基本（React Native）",
+      "url": "https://reactnative.dev/docs/debugging",
+      "type": "official",
+      "platforms": [
+        "React Native"
+      ],
+      "summary": "開発者メニューやLogBoxを使ったデバッグ方法を説明"
+    },
+    {
+      "id": "rn-devtools",
+      "title": "React Native DevTools",
+      "url": "https://reactnative.dev/docs/react-native-devtools",
+      "type": "official",
+      "platforms": [
+        "React Native"
+      ],
+      "summary": "コンポーネント構造の検査やJSのデバッグを行うツール"
+    },
+    {
+      "id": "rn-fast-refresh",
+      "title": "Fast Refresh",
+      "url": "https://reactnative.dev/docs/fast-refresh",
+      "type": "official",
+      "platforms": [
+        "React Native"
+      ],
+      "summary": "コードの変更を実行中のアプリへすぐに反映する機能"
+    },
+    {
+      "id": "rn-flatlist",
+      "title": "FlatList",
+      "url": "https://reactnative.dev/docs/flatlist",
+      "type": "official",
+      "platforms": [
+        "React Native"
+      ],
+      "summary": "表示範囲に合わせて描画する行の一覧を表示する部品"
+    },
+    {
+      "id": "rn-flatlist-optimization",
+      "title": "FlatListの最適化（React Native）",
+      "url": "https://reactnative.dev/docs/optimizing-flatlist-configuration",
+      "type": "official",
+      "platforms": [
+        "React Native"
+      ],
+      "summary": "FlatListの設定を調整して長い一覧の描画とメモリ使用を改善する方法"
+    },
+    {
+      "id": "rn-flexbox",
+      "title": "Flexbox（React Native）",
+      "url": "https://reactnative.dev/docs/flexbox",
+      "type": "official",
+      "platforms": [
+        "React Native"
+      ],
+      "summary": "Flexboxで子要素の並ぶ方向、配置、大きさを決める方法"
+    },
+    {
+      "id": "rn-hermes",
+      "title": "Hermes",
+      "url": "https://reactnative.dev/docs/hermes",
+      "type": "official",
+      "platforms": [
+        "React Native"
+      ],
+      "summary": "React Native向けに最適化されたJavaScriptエンジン"
+    },
+    {
+      "id": "rn-image",
+      "title": "Image",
+      "url": "https://reactnative.dev/docs/image",
+      "type": "official",
+      "platforms": [
+        "React Native"
+      ],
+      "summary": "ネットワークや端末内の画像を表示する部品"
+    },
+    {
+      "id": "rn-intro-react",
+      "title": "React Fundamentals",
+      "url": "https://reactnative.dev/docs/intro-react",
+      "type": "learning",
+      "platforms": [
+        "React Native"
+      ],
+      "summary": "props・state・Hooksで部品を組み立てる基本の解説"
+    },
+    {
+      "id": "rn-js-loading",
+      "title": "JavaScript読み込みの最適化（React Native）",
+      "url": "https://reactnative.dev/docs/optimizing-javascript-loading",
+      "type": "official",
+      "platforms": [
+        "React Native"
+      ],
+      "summary": "inline requireなどでJSの読み込みを速くする方法"
+    },
+    {
+      "id": "rn-keyboardavoidingview",
+      "title": "KeyboardAvoidingView",
+      "url": "https://reactnative.dev/docs/keyboardavoidingview",
+      "type": "official",
+      "platforms": [
+        "React Native"
+      ],
+      "summary": "キーボードに隠れないように表示位置を調整する部品"
+    },
+    {
+      "id": "rn-layoutanimation",
+      "title": "LayoutAnimation",
+      "url": "https://reactnative.dev/docs/layoutanimation",
+      "type": "official",
+      "platforms": [
+        "React Native"
+      ],
+      "summary": "次のレイアウト更新時に位置や大きさの変化を動かすAPI"
+    },
+    {
+      "id": "rn-linking",
+      "title": "Linking",
+      "url": "https://reactnative.dev/docs/linking",
+      "type": "official",
+      "platforms": [
+        "React Native"
+      ],
+      "summary": "URLで他アプリやアプリ内の画面を開くためのAPI"
+    },
+    {
+      "id": "rn-metro",
+      "title": "Metro",
+      "url": "https://reactnative.dev/docs/metro",
+      "type": "official",
+      "platforms": [
+        "React Native"
+      ],
+      "summary": "JavaScriptコードをまとめて端末へ配信するバンドラー"
+    },
+    {
+      "id": "rn-modal",
+      "title": "Modal",
+      "url": "https://reactnative.dev/docs/modal",
+      "type": "official",
+      "platforms": [
+        "React Native"
+      ],
+      "summary": "現在の画面の上に重ねて内容を表示する部品"
+    },
+    {
+      "id": "rn-netinfo",
+      "title": "NetInfo",
+      "url": "https://github.com/react-native-netinfo/react-native-netinfo",
+      "type": "library",
+      "platforms": [
+        "React Native"
+      ],
+      "summary": "端末のネットワーク接続の種類と状態を取得するライブラリ"
+    },
+    {
+      "id": "rn-network",
+      "title": "Networking（React Native）",
+      "url": "https://reactnative.dev/docs/network",
+      "type": "official",
+      "platforms": [
+        "React Native"
+      ],
+      "summary": "fetchでのHTTP通信とWebSocketの使い方を説明するページ"
+    },
+    {
+      "id": "rn-performance",
+      "title": "パフォーマンス（React Native）",
+      "url": "https://reactnative.dev/docs/performance",
+      "type": "learning",
+      "platforms": [
+        "React Native"
+      ],
+      "summary": "フレームレートの考え方と表示が遅くなる原因の解説"
+    },
+    {
+      "id": "rn-permissionsandroid",
+      "title": "PermissionsAndroid",
+      "url": "https://reactnative.dev/docs/permissionsandroid",
+      "type": "official",
+      "platforms": [
+        "React Native"
+      ],
+      "summary": "Androidの実行時権限を確認・要求するためのAPI"
+    },
+    {
+      "id": "rn-platform",
+      "title": "Platform",
+      "url": "https://reactnative.dev/docs/platform",
+      "type": "official",
+      "platforms": [
+        "React Native"
+      ],
+      "summary": "実行中のOSの種類やバージョンを判定するためのモジュール"
+    },
+    {
+      "id": "rn-platform-specific-code",
+      "title": "Platform-Specific Code（React Native）",
+      "url": "https://reactnative.dev/docs/platform-specific-code",
+      "type": "official",
+      "platforms": [
+        "React Native"
+      ],
+      "summary": "OSごとに処理やスタイル、ファイルを切り替える方法"
+    },
+    {
+      "id": "rn-pressable",
+      "title": "Pressable",
+      "url": "https://reactnative.dev/docs/pressable",
+      "type": "official",
+      "platforms": [
+        "React Native"
+      ],
+      "summary": "押す・長押しなどのタッチ操作を検出する部品"
+    },
+    {
+      "id": "rn-safeareaview",
+      "title": "SafeAreaView",
+      "url": "https://reactnative.dev/docs/safeareaview",
+      "type": "official",
+      "platforms": [
+        "React Native"
+      ],
+      "summary": "iOSの安全領域の内側に内容を描画する部品。現在は非推奨"
+    },
+    {
+      "id": "rn-scrollview",
+      "title": "ScrollView",
+      "url": "https://reactnative.dev/docs/scrollview",
+      "type": "official",
+      "platforms": [
+        "React Native"
+      ],
+      "summary": "内容をスクロールして表示するためのコンテナ"
+    },
+    {
+      "id": "rn-sectionlist",
+      "title": "SectionList",
+      "url": "https://reactnative.dev/docs/sectionlist",
+      "type": "official",
+      "platforms": [
+        "React Native"
+      ],
+      "summary": "見出しで区切られたセクション単位の一覧を表示する部品"
+    },
+    {
+      "id": "rn-security",
+      "title": "セキュリティ（React Native）",
+      "url": "https://reactnative.dev/docs/security",
+      "type": "learning",
+      "platforms": [
+        "React Native"
+      ],
+      "summary": "秘密情報の保存・通信・認証などReact Nativeアプリの安全対策の解説"
+    },
+    {
+      "id": "rn-stylesheet",
+      "title": "StyleSheet",
+      "url": "https://reactnative.dev/docs/stylesheet",
+      "type": "official",
+      "platforms": [
+        "React Native"
+      ],
+      "summary": "部品のスタイルをオブジェクトとして定義してまとめるAPI"
+    },
+    {
+      "id": "rn-testing-library",
+      "title": "React Native Testing Library",
+      "url": "https://github.com/callstack/react-native-testing-library",
+      "type": "library",
+      "platforms": [
+        "React Native"
+      ],
+      "summary": "画面部品を描画し、利用者の操作に近い形で検証するテストライブラリ"
+    },
+    {
+      "id": "rn-testing-overview",
+      "title": "テストの概要（React Native）",
+      "url": "https://reactnative.dev/docs/testing-overview",
+      "type": "learning",
+      "platforms": [
+        "React Native"
+      ],
+      "summary": "React Nativeアプリの静的解析・単体・結合・E2Eテストの考え方の解説"
+    },
+    {
+      "id": "rn-textinput",
+      "title": "TextInput",
+      "url": "https://reactnative.dev/docs/textinput",
+      "type": "official",
+      "platforms": [
+        "React Native"
+      ],
+      "summary": "キーボードからテキスト入力を受け付ける部品"
+    },
+    {
+      "id": "rn-turbo-native-modules",
+      "title": "Turbo Native Modules",
+      "url": "https://reactnative.dev/docs/turbo-native-modules-introduction",
+      "type": "official",
+      "platforms": [
+        "React Native"
+      ],
+      "summary": "型定義に基づいてネイティブコードを呼び出すモジュールの作り方"
+    },
+    {
+      "id": "rn-view-testid",
+      "title": "testID（React Native）",
+      "url": "https://reactnative.dev/docs/view#testid",
+      "type": "official",
+      "platforms": [
+        "React Native"
+      ],
+      "summary": "E2Eテストでビューを特定するための識別子を指定するプロパティ"
+    },
+    {
+      "id": "rxjava",
+      "title": "RxJava",
+      "url": "https://github.com/ReactiveX/RxJava",
+      "type": "library",
+      "platforms": [
+        "Android"
+      ],
+      "summary": "ReactiveXの考え方で値の流れを扱うJVM向けのライブラリ"
+    },
+    {
+      "id": "rxjs",
+      "title": "RxJS",
+      "url": "https://github.com/ReactiveX/rxjs",
+      "type": "library",
+      "platforms": [
+        "React Native"
+      ],
+      "summary": "ReactiveXの考え方で値の流れを扱うJavaScript向けのライブラリ"
+    },
+    {
+      "id": "rxkotlin",
+      "title": "RxKotlin",
+      "url": "https://github.com/ReactiveX/RxKotlin",
+      "type": "library",
+      "platforms": [
+        "Android"
+      ],
+      "summary": "RxJavaをKotlinから扱いやすくする拡張関数のライブラリ"
+    },
+    {
+      "id": "rxswift",
+      "title": "RxSwift",
+      "url": "https://github.com/ReactiveX/RxSwift",
+      "type": "library",
+      "platforms": [
+        "iOS"
+      ],
+      "summary": "ReactiveXの考え方で値の流れを扱うSwift向けのライブラリ"
+    },
+    {
+      "id": "sentry-react-native",
+      "title": "Sentry for React Native",
+      "url": "https://docs.sentry.io/platforms/react-native/",
+      "type": "library",
+      "platforms": [
+        "React Native"
+      ],
+      "summary": "JavaScriptの例外とネイティブのクラッシュを収集して表示するサービス"
+    },
+    {
+      "id": "sentry-rn-sourcemaps",
+      "title": "ソースマップ（React Native）",
+      "url": "https://docs.sentry.io/platforms/react-native/sourcemaps/",
+      "type": "library",
+      "platforms": [
+        "React Native"
+      ],
+      "summary": "ソースマップを送りJSの例外位置を元のコードに対応付ける方法"
+    },
+    {
+      "id": "storekit",
+      "title": "StoreKit",
+      "url": "https://developer.apple.com/documentation/storekit",
+      "type": "official",
+      "platforms": [
+        "iOS"
+      ],
+      "summary": "アプリ内課金とサブスクリプションの購入処理を扱うフレームワーク"
+    },
+    {
+      "id": "string-catalog",
+      "title": "Localizing and varying text with a string catalog",
+      "url": "https://developer.apple.com/documentation/xcode/localizing-and-varying-text-with-a-string-catalog",
+      "type": "official",
+      "platforms": [
+        "iOS"
+      ],
+      "summary": "String Catalogで翻訳や複数形の文字列を管理する方法"
+    },
+    {
+      "id": "swift-6-migration",
+      "title": "Migrating to Swift 6",
+      "url": "https://www.swift.org/migration/documentation/migrationguide/",
+      "type": "learning",
+      "platforms": [
+        "iOS"
+      ],
+      "summary": "厳格な並行性検査を段階的に有効にしていく移行手順のガイド"
+    },
+    {
+      "id": "swift-access-control",
+      "title": "Swift言語ガイド：アクセス制御（iOS）",
+      "url": "https://docs.swift.org/latest/documentation/the-swift-programming-language/accesscontrol/",
+      "type": "official",
+      "platforms": [
+        "iOS"
+      ],
+      "summary": "モジュールやファイル単位で公開範囲を制御する方法"
+    },
+    {
+      "id": "swift-actor",
+      "title": "Actor",
+      "url": "https://developer.apple.com/documentation/swift/actor",
+      "type": "official",
+      "platforms": [
+        "iOS"
+      ],
+      "summary": "共有状態へのアクセスを直列化して保護するactor型のプロトコル"
+    },
+    {
+      "id": "swift-arc",
+      "title": "自動参照カウント（Swift）",
+      "url": "https://docs.swift.org/latest/documentation/the-swift-programming-language/automaticreferencecounting/",
+      "type": "official",
+      "platforms": [
+        "iOS"
+      ],
+      "summary": "ARCの仕組みと、強参照の循環を弱参照などで解消する方法の解説"
+    },
+    {
+      "id": "swift-asyncsequence",
+      "title": "AsyncSequence",
+      "url": "https://developer.apple.com/documentation/swift/asyncsequence",
+      "type": "official",
+      "platforms": [
+        "iOS"
+      ],
+      "summary": "非同期に届く値をfor-await-inで順に取り出すためのプロトコル"
+    },
+    {
+      "id": "swift-book-arc",
+      "title": "Automatic Reference Counting（The Swift Programming Language）",
+      "url": "https://docs.swift.org/swift-book/documentation/the-swift-programming-language/automaticreferencecounting/",
+      "type": "official",
+      "platforms": [
+        "iOS"
+      ],
+      "summary": "ARCの仕組みとweak・unownedによる循環参照の回避を説明する章"
+    },
+    {
+      "id": "swift-book-concurrency",
+      "title": "Concurrency（The Swift Programming Language）",
+      "url": "https://docs.swift.org/swift-book/documentation/the-swift-programming-language/concurrency/",
+      "type": "official",
+      "platforms": [
+        "iOS"
+      ],
+      "summary": "非同期関数、タスク、actorの書き方を説明する言語ガイドの章"
+    },
+    {
+      "id": "swift-charts",
+      "title": "Swift Charts",
+      "url": "https://developer.apple.com/documentation/charts",
+      "type": "official",
+      "platforms": [
+        "iOS"
+      ],
+      "summary": "データを棒や折れ線などのグラフとして表示するフレームワーク"
+    },
+    {
+      "id": "swift-classes-structures",
+      "title": "Swift言語ガイド：構造体とクラス（iOS）",
+      "url": "https://docs.swift.org/latest/documentation/the-swift-programming-language/classesandstructures/",
+      "type": "official",
+      "platforms": [
+        "iOS"
+      ],
+      "summary": "構造体とクラスの違いと値型・参照型の振る舞いを説明"
+    },
+    {
+      "id": "swift-closures",
+      "title": "Swift言語ガイド：クロージャ（iOS）",
+      "url": "https://docs.swift.org/latest/documentation/the-swift-programming-language/closures/",
+      "type": "official",
+      "platforms": [
+        "iOS"
+      ],
+      "summary": "クロージャの書き方と値のキャプチャを説明する章"
+    },
+    {
+      "id": "swift-composable-architecture",
+      "title": "The Composable Architecture",
+      "url": "https://github.com/pointfreeco/swift-composable-architecture",
+      "type": "library",
+      "platforms": [
+        "iOS"
+      ],
+      "summary": "状態・アクション・副作用を一方向の流れで管理するSwiftライブラリ"
+    },
+    {
+      "id": "swift-concurrency",
+      "title": "Swift Concurrency",
+      "url": "https://developer.apple.com/documentation/swift/concurrency",
+      "type": "official",
+      "platforms": [
+        "iOS"
+      ],
+      "summary": "async/await、Task、actorなど並行処理のAPIをまとめたページ"
+    },
+    {
+      "id": "swift-enumerations",
+      "title": "Swift言語ガイド：列挙型（iOS）",
+      "url": "https://docs.swift.org/latest/documentation/the-swift-programming-language/enumerations/",
+      "type": "official",
+      "platforms": [
+        "iOS"
+      ],
+      "summary": "enumの定義、関連値、パターンマッチを説明する章"
+    },
+    {
+      "id": "swift-error-handling",
+      "title": "Swift言語ガイド：エラー処理（iOS）",
+      "url": "https://docs.swift.org/latest/documentation/the-swift-programming-language/errorhandling/",
+      "type": "official",
+      "platforms": [
+        "iOS"
+      ],
+      "summary": "throwsとdo-catchによるエラーの送出と処理を説明"
+    },
+    {
+      "id": "swift-generics",
+      "title": "Swift言語ガイド：ジェネリクス（iOS）",
+      "url": "https://docs.swift.org/latest/documentation/the-swift-programming-language/generics/",
+      "type": "official",
+      "platforms": [
+        "iOS"
+      ],
+      "summary": "型に依存しない関数や型を定義する方法を説明する章"
+    },
+    {
+      "id": "swift-log",
+      "title": "swift-log",
+      "url": "https://github.com/apple/swift-log",
+      "type": "library",
+      "platforms": [
+        "iOS"
+      ],
+      "summary": "出力先を差し替えられるSwift向けのログ出力API"
+    },
+    {
+      "id": "swift-macros",
+      "title": "Swift言語ガイド：マクロ（iOS）",
+      "url": "https://docs.swift.org/latest/documentation/the-swift-programming-language/macros/",
+      "type": "official",
+      "platforms": [
+        "iOS"
+      ],
+      "summary": "コンパイル時にコードを生成するマクロの使い方を説明"
+    },
+    {
+      "id": "swift-mainactor",
+      "title": "MainActor",
+      "url": "https://developer.apple.com/documentation/swift/mainactor",
+      "type": "official",
+      "platforms": [
+        "iOS"
+      ],
+      "summary": "処理をメインスレッドで実行させるグローバルアクター"
+    },
+    {
+      "id": "swift-objc-import",
+      "title": "Objective-CのコードをSwiftから使う（iOS）",
+      "url": "https://developer.apple.com/documentation/swift/importing-objective-c-into-swift",
+      "type": "official",
+      "platforms": [
+        "iOS"
+      ],
+      "summary": "同じターゲット内のObjective-CコードをSwiftで使う方法"
+    },
+    {
+      "id": "swift-packages",
+      "title": "Swift packages",
+      "url": "https://developer.apple.com/documentation/xcode/swift-packages",
+      "type": "official",
+      "platforms": [
+        "iOS"
+      ],
+      "summary": "Swift Package Managerでコードを分割・共有する方法"
+    },
+    {
+      "id": "swift-properties",
+      "title": "Swift言語ガイド：プロパティ（iOS）",
+      "url": "https://docs.swift.org/latest/documentation/the-swift-programming-language/properties/",
+      "type": "official",
+      "platforms": [
+        "iOS"
+      ],
+      "summary": "格納・計算プロパティとプロパティラッパーを説明する章"
+    },
+    {
+      "id": "swift-protocols",
+      "title": "Swift言語ガイド：プロトコル（iOS）",
+      "url": "https://docs.swift.org/latest/documentation/the-swift-programming-language/protocols/",
+      "type": "official",
+      "platforms": [
+        "iOS"
+      ],
+      "summary": "プロトコルの定義とextensionによる準拠を説明する章"
+    },
+    {
+      "id": "swift-result",
+      "title": "Result",
+      "url": "https://developer.apple.com/documentation/swift/result",
+      "type": "official",
+      "platforms": [
+        "iOS"
+      ],
+      "summary": "処理の成功値または失敗のエラーを表す列挙型"
+    },
+    {
+      "id": "swift-task",
+      "title": "Task",
+      "url": "https://developer.apple.com/documentation/swift/task",
+      "type": "official",
+      "platforms": [
+        "iOS"
+      ],
+      "summary": "非同期処理の単位を作成し、キャンセルや結果の取得を行う型"
+    },
+    {
+      "id": "swift-taskgroup",
+      "title": "TaskGroup",
+      "url": "https://developer.apple.com/documentation/swift/taskgroup",
+      "type": "official",
+      "platforms": [
+        "iOS"
+      ],
+      "summary": "動的な数の子タスクを並列に実行して結果を集める型"
+    },
+    {
+      "id": "swift-testing",
+      "title": "Swift Testing",
+      "url": "https://developer.apple.com/documentation/testing",
+      "type": "official",
+      "platforms": [
+        "iOS"
+      ],
+      "summary": "マクロを使ってSwiftのテストを記述・実行するフレームワーク"
+    },
+    {
+      "id": "swift-testing-async",
+      "title": "非同期コードのテスト（iOS）",
+      "url": "https://developer.apple.com/documentation/testing/testing-asynchronous-code",
+      "type": "official",
+      "platforms": [
+        "iOS"
+      ],
+      "summary": "Swift Testingで非同期処理とイベントの発生を検証する方法"
+    },
+    {
+      "id": "swift-the-basics",
+      "title": "Swift言語ガイド：基本（iOS）",
+      "url": "https://docs.swift.org/latest/documentation/the-swift-programming-language/thebasics/",
+      "type": "official",
+      "platforms": [
+        "iOS"
+      ],
+      "summary": "定数・変数、基本の型、Optionalの扱いを説明する章"
+    },
+    {
+      "id": "swiftdata",
+      "title": "SwiftData",
+      "url": "https://developer.apple.com/documentation/swiftdata",
+      "type": "official",
+      "platforms": [
+        "iOS"
+      ],
+      "summary": "Swiftのコードでモデルを定義してデータを永続化するフレームワーク"
+    },
+    {
+      "id": "swiftformat",
+      "title": "SwiftFormat",
+      "url": "https://github.com/nicklockwood/SwiftFormat",
+      "type": "library",
+      "platforms": [
+        "iOS"
+      ],
+      "summary": "Swiftのコードを決めた書式に自動で整形するツール"
+    },
+    {
+      "id": "swiftlint",
+      "title": "SwiftLint",
+      "url": "https://github.com/realm/SwiftLint",
+      "type": "library",
+      "platforms": [
+        "iOS"
+      ],
+      "summary": "Swiftのコードを規約に照らして検査する静的解析ツール"
+    },
+    {
+      "id": "swiftui",
+      "title": "SwiftUI",
+      "url": "https://developer.apple.com/documentation/swiftui",
+      "type": "official",
+      "platforms": [
+        "iOS"
+      ],
+      "summary": "宣言的な記述で画面を構築するUIフレームワーク"
+    },
+    {
+      "id": "swiftui-accessibility",
+      "title": "Accessibility fundamentals",
+      "url": "https://developer.apple.com/documentation/swiftui/accessibility-fundamentals",
+      "type": "official",
+      "platforms": [
+        "iOS"
+      ],
+      "summary": "SwiftUIの画面を読み上げなどの支援技術に対応させる基本"
+    },
+    {
+      "id": "swiftui-accessibility-identifier",
+      "title": "accessibilityIdentifier(_:)（SwiftUI）",
+      "url": "https://developer.apple.com/documentation/swiftui/view/accessibilityidentifier(_:)",
+      "type": "official",
+      "platforms": [
+        "iOS"
+      ],
+      "summary": "SwiftUIのビューにUIテスト用の識別子を付けるモディファイア"
+    },
+    {
+      "id": "swiftui-animations",
+      "title": "Animations",
+      "url": "https://developer.apple.com/documentation/swiftui/animations",
+      "type": "official",
+      "platforms": [
+        "iOS"
+      ],
+      "summary": "状態の変化に合わせてViewの変化を動かすAPI群"
+    },
+    {
+      "id": "swiftui-environment",
+      "title": "Environment",
+      "url": "https://developer.apple.com/documentation/swiftui/environment",
+      "type": "official",
+      "platforms": [
+        "iOS"
+      ],
+      "summary": "View階層を通じて値や依存を受け渡すためのプロパティラッパー"
+    },
+    {
+      "id": "swiftui-focusstate",
+      "title": "FocusState",
+      "url": "https://developer.apple.com/documentation/swiftui/focusstate",
+      "type": "official",
+      "platforms": [
+        "iOS"
+      ],
+      "summary": "入力欄のフォーカス位置を読み取り・変更するプロパティラッパー"
+    },
+    {
+      "id": "swiftui-gestures",
+      "title": "Gestures",
+      "url": "https://developer.apple.com/documentation/swiftui/gestures",
+      "type": "official",
+      "platforms": [
+        "iOS"
+      ],
+      "summary": "タップやドラッグなどの操作を認識してViewに結び付けるAPI群"
+    },
+    {
+      "id": "swiftui-layout-fundamentals",
+      "title": "Layout fundamentals",
+      "url": "https://developer.apple.com/documentation/swiftui/layout-fundamentals",
+      "type": "official",
+      "platforms": [
+        "iOS"
+      ],
+      "summary": "スタックやグリッドでViewを配置するAPIの一覧と解説"
+    },
+    {
+      "id": "swiftui-lists",
+      "title": "Lists",
+      "url": "https://developer.apple.com/documentation/swiftui/lists",
+      "type": "official",
+      "platforms": [
+        "iOS"
+      ],
+      "summary": "Listなどで行を並べて一覧を表示するAPI群"
+    },
+    {
+      "id": "swiftui-modal-presentations",
+      "title": "Modal presentations",
+      "url": "https://developer.apple.com/documentation/swiftui/modal-presentations",
+      "type": "official",
+      "platforms": [
+        "iOS"
+      ],
+      "summary": "シートやアラートなどで画面をモーダル表示するAPI群"
+    },
+    {
+      "id": "swiftui-model-data",
+      "title": "Model data",
+      "url": "https://developer.apple.com/documentation/swiftui/model-data",
+      "type": "official",
+      "platforms": [
+        "iOS"
+      ],
+      "summary": "@Stateや@Bindingで画面の状態とデータを管理する仕組み"
+    },
+    {
+      "id": "swiftui-navigationstack",
+      "title": "NavigationStack",
+      "url": "https://developer.apple.com/documentation/swiftui/navigationstack",
+      "type": "official",
+      "platforms": [
+        "iOS"
+      ],
+      "summary": "画面を積み重ねて遷移を管理するコンテナView"
+    },
+    {
+      "id": "swiftui-tabview",
+      "title": "TabView",
+      "url": "https://developer.apple.com/documentation/swiftui/tabview",
+      "type": "official",
+      "platforms": [
+        "iOS"
+      ],
+      "summary": "タブで複数の画面を切り替えるコンテナView"
+    },
+    {
+      "id": "swiftui-textfield",
+      "title": "TextField",
+      "url": "https://developer.apple.com/documentation/swiftui/textfield",
+      "type": "official",
+      "platforms": [
+        "iOS"
+      ],
+      "summary": "SwiftUIで1行のテキスト入力を受け付けるView"
+    },
+    {
+      "id": "swiftui-tutorials",
+      "title": "SwiftUIチュートリアル（iOS）",
+      "url": "https://developer.apple.com/tutorials/swiftui",
+      "type": "learning",
+      "platforms": [
+        "iOS"
+      ],
+      "summary": "手順に沿ってSwiftUIでアプリを作る公式チュートリアル"
+    },
+    {
+      "id": "swiftui-uiviewrepresentable",
+      "title": "UIViewRepresentable",
+      "url": "https://developer.apple.com/documentation/swiftui/uiviewrepresentable",
+      "type": "official",
+      "platforms": [
+        "iOS"
+      ],
+      "summary": "UIKitのViewをSwiftUIの画面に組み込むためのプロトコル"
+    },
+    {
+      "id": "swiftui-viewmodifier",
+      "title": "ViewModifier",
+      "url": "https://developer.apple.com/documentation/swiftui/viewmodifier",
+      "type": "official",
+      "platforms": [
+        "iOS"
+      ],
+      "summary": "Viewに共通の見た目や振る舞いを加える部品を定義するプロトコル"
+    },
+    {
+      "id": "swr",
+      "title": "SWR",
+      "url": "https://github.com/vercel/swr",
+      "type": "library",
+      "platforms": [
+        "React Native"
+      ],
+      "summary": "キャッシュを返しつつ再検証してデータを取得するReactフック"
+    },
+    {
+      "id": "tanstack-query",
+      "title": "TanStack Query",
+      "url": "https://tanstack.com/query/latest",
+      "type": "library",
+      "platforms": [
+        "React Native"
+      ],
+      "summary": "サーバーから取得したデータのキャッシュと再取得を管理するライブラリ"
+    },
+    {
+      "id": "testflight",
+      "title": "TestFlight",
+      "url": "https://developer.apple.com/testflight/",
+      "type": "official",
+      "platforms": [
+        "iOS"
+      ],
+      "summary": "ベータ版のアプリをテスターに配布してフィードバックを集める仕組み"
+    },
+    {
+      "id": "timber",
+      "title": "Timber",
+      "url": "https://github.com/JakeWharton/timber",
+      "type": "library",
+      "platforms": [
+        "Android"
+      ],
+      "summary": "出力先を差し替えられるAndroid向けのログ出力ライブラリ"
+    },
+    {
+      "id": "turbine",
+      "title": "Turbine",
+      "url": "https://github.com/cashapp/turbine",
+      "type": "library",
+      "platforms": [
+        "Android"
+      ],
+      "summary": "Kotlin Flowが流す値を順に取り出して検証するテスト用ライブラリ"
+    },
+    {
+      "id": "ui-automator",
+      "title": "UI Automator",
+      "url": "https://developer.android.com/training/testing/other-components/ui-automator",
+      "type": "official",
+      "platforms": [
+        "Android"
+      ],
+      "summary": "アプリをまたいだ操作やシステムUIを含めて画面を自動操作するAPI"
+    },
+    {
+      "id": "uikit",
+      "title": "UIKit",
+      "url": "https://developer.apple.com/documentation/uikit",
+      "type": "official",
+      "platforms": [
+        "iOS"
+      ],
+      "summary": "ViewとView Controllerで画面を構築するUIフレームワーク"
+    },
+    {
+      "id": "uikit-accessibility",
+      "title": "Accessibility for UIKit",
+      "url": "https://developer.apple.com/documentation/uikit/accessibility-for-uikit",
+      "type": "official",
+      "platforms": [
+        "iOS"
+      ],
+      "summary": "UIKitの画面にラベルや特性を設定し、支援技術に対応する方法"
+    },
+    {
+      "id": "uikit-accessibility-identifier",
+      "title": "accessibilityIdentifier（UIKit）",
+      "url": "https://developer.apple.com/documentation/uikit/uiaccessibilityidentification/accessibilityidentifier",
+      "type": "official",
+      "platforms": [
+        "iOS"
+      ],
+      "summary": "UIテストで画面要素を特定するための識別子を設定するプロパティ"
+    },
+    {
+      "id": "uikit-present",
+      "title": "present(_:animated:completion:)",
+      "url": "https://developer.apple.com/documentation/uikit/uiviewcontroller/present(_:animated:completion:)",
+      "type": "official",
+      "platforms": [
+        "iOS"
+      ],
+      "summary": "View Controllerをモーダルで表示するメソッド"
+    },
+    {
+      "id": "uikit-safe-area",
+      "title": "Positioning content relative to the safe area",
+      "url": "https://developer.apple.com/documentation/uikit/positioning-content-relative-to-the-safe-area",
+      "type": "official",
+      "platforms": [
+        "iOS"
+      ],
+      "summary": "ほかの表示に隠れないよう安全領域に沿ってビューを置く方法"
+    },
+    {
+      "id": "uikit-uicollectionview",
+      "title": "UICollectionView",
+      "url": "https://developer.apple.com/documentation/uikit/uicollectionview",
+      "type": "official",
+      "platforms": [
+        "iOS"
+      ],
+      "summary": "指定したレイアウトで項目の集まりを表示するView"
+    },
+    {
+      "id": "uikit-uigesturerecognizer",
+      "title": "UIGestureRecognizer",
+      "url": "https://developer.apple.com/documentation/uikit/uigesturerecognizer",
+      "type": "official",
+      "platforms": [
+        "iOS"
+      ],
+      "summary": "タップやスワイプなどの操作を認識する基底クラス"
+    },
+    {
+      "id": "uikit-uikeyboardlayoutguide",
+      "title": "UIKeyboardLayoutGuide",
+      "url": "https://developer.apple.com/documentation/uikit/uikeyboardlayoutguide",
+      "type": "official",
+      "platforms": [
+        "iOS"
+      ],
+      "summary": "キーボードの位置に合わせてViewを配置するためのガイド"
+    },
+    {
+      "id": "uikit-uikeyboardtype",
+      "title": "UIKeyboardType",
+      "url": "https://developer.apple.com/documentation/uikit/uikeyboardtype",
+      "type": "official",
+      "platforms": [
+        "iOS"
+      ],
+      "summary": "入力欄に表示するキーボードの種類を指定する型"
+    },
+    {
+      "id": "uikit-uinavigationcontroller",
+      "title": "UINavigationController",
+      "url": "https://developer.apple.com/documentation/uikit/uinavigationcontroller",
+      "type": "official",
+      "platforms": [
+        "iOS"
+      ],
+      "summary": "画面を積み重ねて階層的な遷移を管理するコンテナ"
+    },
+    {
+      "id": "uikit-uistoryboard",
+      "title": "UIStoryboard",
+      "url": "https://developer.apple.com/documentation/uikit/uistoryboard",
+      "type": "official",
+      "platforms": [
+        "iOS"
+      ],
+      "summary": "Storyboardに定義した画面を読み込むためのクラス"
+    },
+    {
+      "id": "uikit-uistoryboardsegue",
+      "title": "UIStoryboardSegue",
+      "url": "https://developer.apple.com/documentation/uikit/uistoryboardsegue",
+      "type": "official",
+      "platforms": [
+        "iOS"
+      ],
+      "summary": "Storyboard上の2つの画面間の遷移を表すクラス"
+    },
+    {
+      "id": "uikit-uitableview",
+      "title": "UITableView",
+      "url": "https://developer.apple.com/documentation/uikit/uitableview",
+      "type": "official",
+      "platforms": [
+        "iOS"
+      ],
+      "summary": "1列に並んだ行で項目の一覧を表示するView"
+    },
+    {
+      "id": "uikit-uitextfield",
+      "title": "UITextField",
+      "url": "https://developer.apple.com/documentation/uikit/uitextfield",
+      "type": "official",
+      "platforms": [
+        "iOS"
+      ],
+      "summary": "UIKitで1行のテキスト入力を受け付けるコントロール"
+    },
+    {
+      "id": "uikit-uiview",
+      "title": "UIView",
+      "url": "https://developer.apple.com/documentation/uikit/uiview",
+      "type": "official",
+      "platforms": [
+        "iOS"
+      ],
+      "summary": "画面上の矩形領域の描画と操作を扱う基底クラス"
+    },
+    {
+      "id": "uikit-uiview-animate",
+      "title": "UIView.animate(withDuration:animations:)",
+      "url": "https://developer.apple.com/documentation/uikit/uiview/animate(withduration:animations:)",
+      "type": "official",
+      "platforms": [
+        "iOS"
+      ],
+      "summary": "Viewのプロパティ変化を指定時間で動かすメソッド"
+    },
+    {
+      "id": "uikit-uiviewcontroller",
+      "title": "UIViewController",
+      "url": "https://developer.apple.com/documentation/uikit/uiviewcontroller",
+      "type": "official",
+      "platforms": [
+        "iOS"
+      ],
+      "summary": "画面のViewとライフサイクルを管理する基底クラス"
+    },
+    {
+      "id": "urlcache",
+      "title": "URLCache",
+      "url": "https://developer.apple.com/documentation/foundation/urlcache",
+      "type": "official",
+      "platforms": [
+        "iOS"
+      ],
+      "summary": "URLリクエストへの応答をメモリやディスクに保存する仕組み"
+    },
+    {
+      "id": "urlsession",
+      "title": "URLSession",
+      "url": "https://developer.apple.com/documentation/foundation/urlsession",
+      "type": "official",
+      "platforms": [
+        "iOS"
+      ],
+      "summary": "HTTPリクエストの送信と応答の受信を行うiOS標準のAPI"
+    },
+    {
+      "id": "urlsessionwebsockettask",
+      "title": "URLSessionWebSocketTask",
+      "url": "https://developer.apple.com/documentation/foundation/urlsessionwebsockettask",
+      "type": "official",
+      "platforms": [
+        "iOS"
+      ],
+      "summary": "WebSocketでサーバーとメッセージを送受信するタスク"
+    },
+    {
+      "id": "user-notifications",
+      "title": "User Notifications",
+      "url": "https://developer.apple.com/documentation/usernotifications",
+      "type": "official",
+      "platforms": [
+        "iOS"
+      ],
+      "summary": "ローカル通知とプッシュ通知の権限要求・配信・受信を扱うフレームワーク"
+    },
+    {
+      "id": "userdefaults",
+      "title": "UserDefaults",
+      "url": "https://developer.apple.com/documentation/foundation/userdefaults",
+      "type": "official",
+      "platforms": [
+        "iOS"
+      ],
+      "summary": "設定値などの小さなデータをキーと値の組で保存するAPI"
+    },
+    {
+      "id": "voiceover",
+      "title": "VoiceOver",
+      "url": "https://developer.apple.com/documentation/accessibility/voiceover",
+      "type": "official",
+      "platforms": [
+        "iOS"
+      ],
+      "summary": "画面の内容を音声で伝えるジェスチャー操作のスクリーンリーダー"
+    },
+    {
+      "id": "xcode",
+      "title": "Xcode",
+      "url": "https://developer.apple.com/documentation/xcode",
+      "type": "official",
+      "platforms": [
+        "iOS"
+      ],
+      "summary": "Appleプラットフォーム向けアプリを開発する環境のドキュメント"
+    },
+    {
+      "id": "xcode-breakpoints",
+      "title": "ブレークポイントの設定（iOS）",
+      "url": "https://developer.apple.com/documentation/xcode/setting-breakpoints-to-pause-your-running-app",
+      "type": "official",
+      "platforms": [
+        "iOS"
+      ],
+      "summary": "実行中のアプリを任意の行で止めて状態を調べる方法"
+    },
+    {
+      "id": "xcode-build-config-file",
+      "title": "ビルド設定ファイルの追加（iOS）",
+      "url": "https://developer.apple.com/documentation/xcode/adding-a-build-configuration-file-to-your-project",
+      "type": "official",
+      "platforms": [
+        "iOS"
+      ],
+      "summary": "xcconfigファイルで構成ごとのビルド設定を管理する方法"
+    },
+    {
+      "id": "xcode-build-schemes",
+      "title": "ビルドスキームのカスタマイズ（iOS）",
+      "url": "https://developer.apple.com/documentation/xcode/customizing-the-build-schemes-for-a-project",
+      "type": "official",
+      "platforms": [
+        "iOS"
+      ],
+      "summary": "ビルドや実行、テストの設定をスキームで切り替える方法"
+    },
+    {
+      "id": "xcode-cloud",
+      "title": "Xcode Cloud",
+      "url": "https://developer.apple.com/documentation/xcode/xcode-cloud",
+      "type": "official",
+      "platforms": [
+        "iOS"
+      ],
+      "summary": "Appleのクラウドでアプリのビルド・テスト・配布を自動化するサービス"
+    },
+    {
+      "id": "xcode-code-coverage",
+      "title": "コードカバレッジ（iOS）",
+      "url": "https://developer.apple.com/documentation/xcode/determining-how-much-code-your-tests-cover",
+      "type": "official",
+      "platforms": [
+        "iOS"
+      ],
+      "summary": "Xcodeのコードカバレッジでテストされていない範囲を確認する方法"
+    },
+    {
+      "id": "xcode-debug-symbols",
+      "title": "デバッグ情報を含むビルド（iOS）",
+      "url": "https://developer.apple.com/documentation/xcode/building-your-app-to-include-debugging-information",
+      "type": "official",
+      "platforms": [
+        "iOS"
+      ],
+      "summary": "デバッグとクラッシュ解析に使うdSYMなどのシンボル情報を生成する設定"
+    },
+    {
+      "id": "xcode-docc",
+      "title": "DocCによるドキュメント作成（iOS）",
+      "url": "https://developer.apple.com/documentation/xcode/documenting-apps-frameworks-and-packages",
+      "type": "official",
+      "platforms": [
+        "iOS"
+      ],
+      "summary": "DocCでコードからAPIドキュメントを生成する方法"
+    },
+    {
+      "id": "xcode-hangs",
+      "title": "Hangの理解（iOS）",
+      "url": "https://developer.apple.com/documentation/xcode/understanding-hangs-in-your-app",
+      "type": "official",
+      "platforms": [
+        "iOS"
+      ],
+      "summary": "メインスレッドの処理を調べて操作への応答の遅れの原因を特定する方法"
+    },
+    {
+      "id": "xcode-improving-performance",
+      "title": "アプリ性能の改善（iOS）",
+      "url": "https://developer.apple.com/documentation/xcode/improving-your-app-s-performance",
+      "type": "learning",
+      "platforms": [
+        "iOS"
+      ],
+      "summary": "性能の計測・分析・改善を繰り返してアプリの性能を上げる進め方"
+    },
+    {
+      "id": "xcode-launch-time",
+      "title": "起動時間の短縮（iOS）",
+      "url": "https://developer.apple.com/documentation/xcode/reducing-your-app-s-launch-time",
+      "type": "official",
+      "platforms": [
+        "iOS"
+      ],
+      "summary": "起動処理にかかる時間を計測して短縮する方法の解説"
+    },
+    {
+      "id": "xcode-memory-use",
+      "title": "Gathering information about memory use",
+      "url": "https://developer.apple.com/documentation/xcode/gathering-information-about-memory-use",
+      "type": "learning",
+      "platforms": [
+        "iOS"
+      ],
+      "summary": "メモリグラフなどでアプリのメモリ使用量とリークを調べる方法"
+    },
+    {
+      "id": "xcode-projects-workspaces",
+      "title": "プロジェクトとワークスペース（iOS）",
+      "url": "https://developer.apple.com/documentation/xcode/projects-and-workspaces",
+      "type": "official",
+      "platforms": [
+        "iOS"
+      ],
+      "summary": "Xcodeのプロジェクト、ターゲット、ワークスペースの構成"
+    },
+    {
+      "id": "xcode-run-on-devices",
+      "title": "シミュレータや実機でのアプリ実行（iOS）",
+      "url": "https://developer.apple.com/documentation/xcode/running-your-app-on-simulated-or-physical-devices",
+      "type": "official",
+      "platforms": [
+        "iOS"
+      ],
+      "summary": "Simulatorや実機でアプリを起動する手順を説明"
+    },
+    {
+      "id": "xcode-running-tests",
+      "title": "テストの実行と結果の確認（iOS）",
+      "url": "https://developer.apple.com/documentation/xcode/running-tests-and-interpreting-results",
+      "type": "official",
+      "platforms": [
+        "iOS"
+      ],
+      "summary": "Xcodeやコマンドラインでテストを実行し、結果を読み取る方法"
+    },
+    {
+      "id": "xcode-shipping-performance",
+      "title": "配信中アプリの性能分析（iOS）",
+      "url": "https://developer.apple.com/documentation/xcode/analyzing-the-performance-of-your-shipping-app",
+      "type": "official",
+      "platforms": [
+        "iOS"
+      ],
+      "summary": "Xcode Organizerで配信中アプリの電力や性能の指標を確認する方法"
+    },
+    {
+      "id": "xcode-test-plans",
+      "title": "テストプラン（iOS）",
+      "url": "https://developer.apple.com/documentation/xcode/organizing-tests-to-improve-feedback",
+      "type": "official",
+      "platforms": [
+        "iOS"
+      ],
+      "summary": "テストプランでテストをまとめ、段階ごとに実行構成を切り替える方法"
+    },
+    {
+      "id": "xcode-testing",
+      "title": "Xcodeでのテスト（iOS）",
+      "url": "https://developer.apple.com/documentation/xcode/testing",
+      "type": "official",
+      "platforms": [
+        "iOS"
+      ],
+      "summary": "Xcodeでテストを作成・実行してロジックやUIの不具合を検出する方法"
+    },
+    {
+      "id": "xcode-xcframework",
+      "title": "マルチプラットフォームのバイナリフレームワーク作成（iOS）",
+      "url": "https://developer.apple.com/documentation/xcode/creating-a-multi-platform-binary-framework-bundle",
+      "type": "official",
+      "platforms": [
+        "iOS"
+      ],
+      "summary": "xcodebuildでXCFrameworkを作成し配布する方法"
+    },
+    {
+      "id": "xctest",
+      "title": "XCTest",
+      "url": "https://developer.apple.com/documentation/xctest",
+      "type": "official",
+      "platforms": [
+        "iOS"
+      ],
+      "summary": "単体テスト・性能テスト・UIテストを記述して実行するフレームワーク"
+    },
+    {
+      "id": "xctest-async",
+      "title": "非同期テストと期待値（iOS）",
+      "url": "https://developer.apple.com/documentation/xctest/asynchronous-tests-and-expectations",
+      "type": "official",
+      "platforms": [
+        "iOS"
+      ],
+      "summary": "async／awaitやexpectationで非同期処理を検証する方法"
+    },
+    {
+      "id": "xcuiautomation",
+      "title": "XCUIAutomation",
+      "url": "https://developer.apple.com/documentation/xcuiautomation",
+      "type": "official",
+      "platforms": [
+        "iOS"
+      ],
+      "summary": "画面操作を再現してUIが意図どおり動くことを確認するUIテストのAPI"
+    },
+    {
+      "id": "zod",
+      "title": "Zod",
+      "url": "https://zod.dev/",
+      "type": "library",
+      "platforms": [
+        "React Native"
+      ],
+      "summary": "スキーマを定義して実行時にデータの形式を検証するライブラリ"
+    },
+    {
+      "id": "zustand",
+      "title": "Zustand",
+      "url": "https://github.com/pmndrs/zustand",
+      "type": "library",
+      "platforms": [
+        "React Native"
+      ],
+      "summary": "フックでストアの状態を読み書きする状態管理ライブラリ"
+    }
+  ]
+}

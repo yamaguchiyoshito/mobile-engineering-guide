@@ -58,6 +58,29 @@ JavaScript層とネイティブ層の役割分担、プラットフォーム別�
 | ディープリンク | Linking |
 | ビルド方式と対象の拡張 | Bareワークフローでのネイティブ設定、react-native-web |
 
+## 関連ライブラリと参考資料
+
+主な一次情報の所在です。掲載は公式資料と、技術の対応表に挙げた広く使われるライブラリに限ります。採用を推奨するものではありません。
+
+<!-- references:start ids="rn-turbo-native-modules, rn-platform-specific-code, rn-platform, rn-permissionsandroid, expo-permissions, expo-notifications, firebase-cloud-messaging, apns-registering, rn-linking, expo-cng, expo-bare-overview, react-native-web" -->
+
+| 種別 | 名称 | 対象 | 概要 |
+| :--- | :--- | :--- | :--- |
+| 公式リファレンス | [Firebase Cloud Messaging](https://firebase.google.com/docs/cloud-messaging) | 共通 | サーバーから端末へプッシュ通知やメッセージを送る仕組み |
+| 公式リファレンス | [Registering your app with APNs](https://developer.apple.com/documentation/usernotifications/registering-your-app-with-apns) | iOS | APNsに端末を登録してプッシュ通知を受け取るための手順 |
+| 公式リファレンス | [Turbo Native Modules](https://reactnative.dev/docs/turbo-native-modules-introduction) | React Native | 型定義に基づいてネイティブコードを呼び出すモジュールの作り方 |
+| 公式リファレンス | [Platform-Specific Code（React Native）](https://reactnative.dev/docs/platform-specific-code) | React Native | OSごとに処理やスタイル、ファイルを切り替える方法 |
+| 公式リファレンス | [Platform](https://reactnative.dev/docs/platform) | React Native | 実行中のOSの種類やバージョンを判定するためのモジュール |
+| 公式リファレンス | [PermissionsAndroid](https://reactnative.dev/docs/permissionsandroid) | React Native | Androidの実行時権限を確認・要求するためのAPI |
+| 公式リファレンス | [権限の扱い（React Native）](https://docs.expo.dev/guides/permissions/) | React Native | Expoアプリで各OSの権限を設定し要求する方法を説明 |
+| 公式リファレンス | [Linking](https://reactnative.dev/docs/linking) | React Native | URLで他アプリやアプリ内の画面を開くためのAPI |
+| 公式リファレンス | [Continuous Native Generation（React Native）](https://docs.expo.dev/workflow/continuous-native-generation/) | React Native | prebuildで設定からネイティブプロジェクトを生成する仕組み |
+| ライブラリ | [Expo Notifications](https://docs.expo.dev/versions/latest/sdk/notifications/) | React Native | 通知の権限要求・受信・ローカル通知の表示を扱うライブラリ |
+| ライブラリ | [Overview of using Expo with existing React Native apps](https://docs.expo.dev/bare/overview/) | React Native | ネイティブプロジェクトを直接管理するアプリでExpoを使う方法 |
+| ライブラリ | [React Native for Web](https://github.com/necolas/react-native-web) | React Native | React Nativeの部品をWebブラウザで動かすライブラリ |
+
+<!-- references:end -->
+
 roadmap.shで学ぶ：[React Native](https://roadmap.sh/react-native)（Using native modules、Platform module、File extensions、Permissions、Push notifications、Deep linking、Expo tradeoffs）
 
 ## 評価を記録する

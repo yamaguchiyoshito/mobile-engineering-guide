@@ -57,6 +57,32 @@ description: "署名・配布・ストア公開の基準と使い方。モバイ
 | ストア掲載と審査 | App Store Connect、App Review Guidelines、プライバシーマニフェスト、ASO | Play Console、データセーフティ | EAS Submit、ストア公開手順 |
 | 段階的な公開と更新 | 段階的リリース | Play Consoleの段階的公開 | EAS Update、OTA更新の制約 |
 
+## 関連ライブラリと参考資料
+
+主な一次情報の所在です。掲載は公式資料と、技術の対応表に挙げた広く使われるライブラリに限ります。採用を推奨するものではありません。
+
+<!-- references:start ids="apple-certificates, apple-appstore-provisioning, testflight, app-store-connect-help, app-review-guidelines, privacy-manifest, apple-phased-release, play-console, android-app-signing, android-app-bundle, android-data-safety, firebase-app-distribution, eas-build, eas-submit, eas-update" -->
+
+| 種別 | 名称 | 対象 | 概要 |
+| :--- | :--- | :--- | :--- |
+| 公式リファレンス | [証明書の概要（iOS）](https://developer.apple.com/help/account/certificates/certificates-overview/) | iOS | 開発と配布に使う署名用証明書の種類と作成方法の解説 |
+| 公式リファレンス | [App Storeプロビジョニングプロファイル（iOS）](https://developer.apple.com/help/account/provisioning-profiles/create-an-app-store-provisioning-profile/) | iOS | App Store配布用のプロビジョニングプロファイルを作成する手順 |
+| 公式リファレンス | [TestFlight](https://developer.apple.com/testflight/) | iOS | ベータ版のアプリをテスターに配布してフィードバックを集める仕組み |
+| 公式リファレンス | [App Store Connectヘルプ（iOS）](https://developer.apple.com/help/app-store-connect/) | iOS | アプリの登録・提出・配信管理の手順をまとめたヘルプ |
+| 公式リファレンス | [App Review Guidelines](https://developer.apple.com/app-store/review/guidelines/) | iOS | App Storeの審査で確認される安全性や内容などの基準 |
+| 公式リファレンス | [プライバシーマニフェスト（iOS）](https://developer.apple.com/documentation/bundleresources/privacy-manifest-files) | iOS | アプリやSDKが収集するデータと使用するAPIの理由を記述するファイル |
+| 公式リファレンス | [段階的リリース（iOS）](https://developer.apple.com/help/app-store-connect/update-your-app/release-a-version-update-in-phases) | iOS | アップデートを7日間かけて自動更新の利用者へ段階的に配信する手順 |
+| 公式リファレンス | [Google Play Console](https://developer.android.com/distribute/console) | Android | Google Playでのアプリ公開・テスト配信・段階的公開を管理する画面 |
+| 公式リファレンス | [アプリへの署名（Android）](https://developer.android.com/studio/publish/app-signing) | Android | APKやAABに署名してリリース用の成果物を作る手順 |
+| 公式リファレンス | [Android App Bundle](https://developer.android.com/guide/app-bundle) | Android | 端末ごとに最適化したAPKを配信するためのアップロード形式 |
+| 公式リファレンス | [データの使用の申告（Android）](https://developer.android.com/privacy-and-security/declare-data-use) | Android | Google Playのデータセーフティ欄にデータの収集・共有を申告する方法 |
+| 公式リファレンス | [EAS Build](https://docs.expo.dev/build/introduction/) | React Native | Expoのクラウド環境でAndroidとiOSのアプリをビルドするサービス |
+| ライブラリ | [Firebase App Distribution](https://firebase.google.com/docs/app-distribution) | iOS・Android | リリース前のアプリをテスターに配布してフィードバックを集めるサービス |
+| ライブラリ | [EAS Submit](https://docs.expo.dev/deploy/submit-to-app-stores/) | React Native | ビルドしたアプリをApp StoreとGoogle Playへ提出するサービス |
+| ライブラリ | [EAS Update](https://docs.expo.dev/eas-update/introduction/) | React Native | ストア審査を経ずにJavaScriptと画像などの更新を配信するサービス |
+
+<!-- references:end -->
+
 roadmap.shで学ぶ：[iOS](https://roadmap.sh/ios)（App Store Distribution、TestFlight、App Store Optimization (ASO)）／[Android](https://roadmap.sh/android)（Distribution、Google Play Store、Firebase Distribution、Signed APK）／[React Native](https://roadmap.sh/react-native)（Publishing Apps、Apple App Store、Google Play Store）
 
 ## 評価を記録する

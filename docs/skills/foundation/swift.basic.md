@@ -59,6 +59,29 @@ iPhoneやiPadのアプリを作るための主要なプログラミング言語�
 | 記述を簡潔にする言語機能 | プロパティラッパー、result builder、マクロ |
 | 公開範囲と他言語との連携 | アクセス制御、Objective-C相互運用 |
 
+## 関連ライブラリと参考資料
+
+主な一次情報の所在です。掲載は公式資料と、技術の対応表に挙げた広く使われるライブラリに限ります。採用を推奨するものではありません。
+
+<!-- references:start ids="swift-the-basics, swift-classes-structures, swift-enumerations, swift-closures, swift-protocols, swift-generics, swift-error-handling, swift-result, swift-properties, swift-macros, swift-access-control, swift-objc-import" -->
+
+| 種別 | 名称 | 対象 | 概要 |
+| :--- | :--- | :--- | :--- |
+| 公式リファレンス | [Swift言語ガイド：基本（iOS）](https://docs.swift.org/latest/documentation/the-swift-programming-language/thebasics/) | iOS | 定数・変数、基本の型、Optionalの扱いを説明する章 |
+| 公式リファレンス | [Swift言語ガイド：構造体とクラス（iOS）](https://docs.swift.org/latest/documentation/the-swift-programming-language/classesandstructures/) | iOS | 構造体とクラスの違いと値型・参照型の振る舞いを説明 |
+| 公式リファレンス | [Swift言語ガイド：列挙型（iOS）](https://docs.swift.org/latest/documentation/the-swift-programming-language/enumerations/) | iOS | enumの定義、関連値、パターンマッチを説明する章 |
+| 公式リファレンス | [Swift言語ガイド：クロージャ（iOS）](https://docs.swift.org/latest/documentation/the-swift-programming-language/closures/) | iOS | クロージャの書き方と値のキャプチャを説明する章 |
+| 公式リファレンス | [Swift言語ガイド：プロトコル（iOS）](https://docs.swift.org/latest/documentation/the-swift-programming-language/protocols/) | iOS | プロトコルの定義とextensionによる準拠を説明する章 |
+| 公式リファレンス | [Swift言語ガイド：ジェネリクス（iOS）](https://docs.swift.org/latest/documentation/the-swift-programming-language/generics/) | iOS | 型に依存しない関数や型を定義する方法を説明する章 |
+| 公式リファレンス | [Swift言語ガイド：エラー処理（iOS）](https://docs.swift.org/latest/documentation/the-swift-programming-language/errorhandling/) | iOS | throwsとdo-catchによるエラーの送出と処理を説明 |
+| 公式リファレンス | [Result](https://developer.apple.com/documentation/swift/result) | iOS | 処理の成功値または失敗のエラーを表す列挙型 |
+| 公式リファレンス | [Swift言語ガイド：プロパティ（iOS）](https://docs.swift.org/latest/documentation/the-swift-programming-language/properties/) | iOS | 格納・計算プロパティとプロパティラッパーを説明する章 |
+| 公式リファレンス | [Swift言語ガイド：マクロ（iOS）](https://docs.swift.org/latest/documentation/the-swift-programming-language/macros/) | iOS | コンパイル時にコードを生成するマクロの使い方を説明 |
+| 公式リファレンス | [Swift言語ガイド：アクセス制御（iOS）](https://docs.swift.org/latest/documentation/the-swift-programming-language/accesscontrol/) | iOS | モジュールやファイル単位で公開範囲を制御する方法 |
+| 公式リファレンス | [Objective-CのコードをSwiftから使う（iOS）](https://developer.apple.com/documentation/swift/importing-objective-c-into-swift) | iOS | 同じターゲット内のObjective-CコードをSwiftで使う方法 |
+
+<!-- references:end -->
+
 roadmap.shで学ぶ：[iOS](https://roadmap.sh/ios)（Swift Basics、Closures、Error Handling、OOP、Functional Programming、Objective-C Basics、Interoperability with Swift）／[SwiftUI](https://roadmap.sh/swift-ui)（Optionals & Nil、Structures & Classes、Protocols、Generics、Error Handling、Extensions、Result Builders、Access Control）
 
 ## 評価を記録する

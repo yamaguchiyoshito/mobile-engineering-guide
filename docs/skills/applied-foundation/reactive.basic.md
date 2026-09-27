@@ -56,6 +56,32 @@ description: "リアクティブプログラミングの基準と使い方。モ
 | 値の変換と実行スレッドの指定 | Combine（Operator、Scheduler） | Flowの演算子 | RxJSの演算子 |
 | 画面の状態の監視 | Observation（@Observable） | LiveData | 状態購読 |
 
+## 関連ライブラリと参考資料
+
+主な一次情報の所在です。掲載は公式資料と、技術の対応表に挙げた広く使われるライブラリに限ります。採用を推奨するものではありません。
+
+<!-- references:start ids="combine, combine-events, observation, observable-migration, rxswift, swift-concurrency, rxjava, rxkotlin, kotlin-flow, android-flow, android-livedata, kotlin-coroutines-guide, rxjs, rn-appstate, reactivex-operators" -->
+
+| 種別 | 名称 | 対象 | 概要 |
+| :--- | :--- | :--- | :--- |
+| 公式リファレンス | [Combine](https://developer.apple.com/documentation/combine) | iOS | PublisherとSubscriberで値の流れを処理するフレームワーク |
+| 公式リファレンス | [Observation](https://developer.apple.com/documentation/observation) | iOS | @Observableでモデルのプロパティの変化を追跡する仕組み |
+| 公式リファレンス | [Swift Concurrency](https://developer.apple.com/documentation/swift/concurrency) | iOS | async/await、Task、actorなど並行処理のAPIをまとめたページ |
+| 公式リファレンス | [Asynchronous Flow](https://kotlinlang.org/docs/flow.html) | Android | 複数の値を非同期に順に返すFlowの作成、変換、収集の方法 |
+| 公式リファレンス | [LiveData overview](https://developer.android.com/topic/libraries/architecture/livedata) | Android | ライフサイクルに合わせて購読される監視可能なデータ保持クラス |
+| 公式リファレンス | [Coroutines guide](https://kotlinlang.org/docs/coroutines-guide.html) | Android | コルーチンの主要な機能を章ごとに説明するKotlinのガイド |
+| 公式リファレンス | [AppState](https://reactnative.dev/docs/appstate) | React Native | アプリが前面か背面かの状態と変化を取得するAPI |
+| ライブラリ | [ReactiveX Operators](https://reactivex.io/documentation/operators.html) | 共通 | ReactiveXの演算子を用途別に分類し、動作を図で示す資料 |
+| ライブラリ | [RxSwift](https://github.com/ReactiveX/RxSwift) | iOS | ReactiveXの考え方で値の流れを扱うSwift向けのライブラリ |
+| ライブラリ | [RxJava](https://github.com/ReactiveX/RxJava) | Android | ReactiveXの考え方で値の流れを扱うJVM向けのライブラリ |
+| ライブラリ | [RxKotlin](https://github.com/ReactiveX/RxKotlin) | Android | RxJavaをKotlinから扱いやすくする拡張関数のライブラリ |
+| ライブラリ | [RxJS](https://github.com/ReactiveX/rxjs) | React Native | ReactiveXの考え方で値の流れを扱うJavaScript向けのライブラリ |
+| 学習資料 | [Receiving and Handling Events with Combine](https://developer.apple.com/documentation/combine/receiving-and-handling-events-with-combine) | iOS | Combineで非同期のイベントを受け取り、演算子で加工する手順 |
+| 学習資料 | [Migrating from the Observable Object protocol to the Observable macro](https://developer.apple.com/documentation/swiftui/migrating-from-the-observable-object-protocol-to-the-observable-macro) | iOS | ObservableObjectから@Observableマクロへ移行する手順 |
+| 学習資料 | [Kotlin flows on Android](https://developer.android.com/kotlin/flow) | Android | AndroidでFlowを作成し、変換して画面で収集する方法 |
+
+<!-- references:end -->
+
 roadmap.shで学ぶ：[iOS](https://roadmap.sh/ios)（Reactive Programming、Combine、RxSwift、Publishers & Subscribers、Operators & Pipelines、Schedulers、Subjects）／[SwiftUI](https://roadmap.sh/swift-ui)（Observers）／[Android](https://roadmap.sh/android)（RxJava、RxKotlin、LiveData、Observer Pattern）
 
 ## 評価を記録する

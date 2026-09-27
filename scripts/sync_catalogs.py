@@ -28,12 +28,29 @@ def catalog(page):
  else:return None
  return '\n'.join(out).strip()
 
+def references_table(ids):
+ order={k:i for i,k in enumerate(REF_TYPES)}
+ rows=sorted((REFS[i] for i in ids),key=lambda r:(order[r['type']],min(PLATFORM_ORDER.index(x) for x in r['platforms'])))
+ out=['| 種別 | 名称 | 対象 | 概要 |','| :--- | :--- | :--- | :--- |']
+ for r in rows:out.append(f"| {REF_TYPES[r['type']]} | [{r['title']}]({r['url']}) | {'・'.join(r['platforms'])} | {r['summary']} |")
+ return '\n'.join(out)
+
 def sync(check=False):
  dirty=[]
  for page in PAGES:
+  file=DOCS/page['path'];text=file.read_text()
+  if page['kind']=='skill':
+   ids=reference_ids(text)
+   if ids is None:raise ValueError(f'{file}: references block missing')
+   missing=[i for i in ids if i not in REFS]
+   if missing:raise ValueError(f'{file}: unknown reference ids: {", ".join(missing)}')
+   new=re.sub(r'(<!-- references:start ids="[^"]*" -->).*?(<!-- references:end -->)',lambda m:f'{m.group(1)}\n\n{references_table(ids)}\n\n{m.group(2)}',text,flags=re.S)
+   if new!=text:
+    dirty.append(page['path'])
+    if not check:file.write_text(new)
+    text=new
   value=catalog(page)
   if value is None:continue
-  file=DOCS/page['path'];text=file.read_text()
   new,count=re.subn(r'<!-- catalog:start -->.*?<!-- catalog:end -->',f'<!-- catalog:start -->\n\n{value}\n\n<!-- catalog:end -->',text,flags=re.S)
   if count!=1:raise ValueError(f'{file}: catalog markers missing or duplicated')
   if new!=text:

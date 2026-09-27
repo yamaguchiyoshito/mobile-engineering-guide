@@ -58,6 +58,32 @@ description: "開発環境（Xcode／Android Studio／Expo）の基準と使い�
 | 画面の編集と構造の検査 | Interface Builder | Layout Inspector | React DevTools |
 | ドキュメントの作成 | DocC | KDoc、Dokka | TSDoc、JSDoc |
 
+## 関連ライブラリと参考資料
+
+主な一次情報の所在です。掲載は公式資料と、技術の対応表に挙げた広く使われるライブラリに限ります。採用を推奨するものではありません。
+
+<!-- references:start ids="xcode-projects-workspaces, xcode-build-schemes, xcode-run-on-devices, xcode-breakpoints, xcode-docc, android-studio-projects, android-emulator, android-logcat, android-layout-inspector, kotlin-kdoc, expo-cli, rn-metro, rn-fast-refresh, rn-debugging, rn-devtools" -->
+
+| 種別 | 名称 | 対象 | 概要 |
+| :--- | :--- | :--- | :--- |
+| 公式リファレンス | [プロジェクトとワークスペース（iOS）](https://developer.apple.com/documentation/xcode/projects-and-workspaces) | iOS | Xcodeのプロジェクト、ターゲット、ワークスペースの構成 |
+| 公式リファレンス | [ビルドスキームのカスタマイズ（iOS）](https://developer.apple.com/documentation/xcode/customizing-the-build-schemes-for-a-project) | iOS | ビルドや実行、テストの設定をスキームで切り替える方法 |
+| 公式リファレンス | [シミュレータや実機でのアプリ実行（iOS）](https://developer.apple.com/documentation/xcode/running-your-app-on-simulated-or-physical-devices) | iOS | Simulatorや実機でアプリを起動する手順を説明 |
+| 公式リファレンス | [ブレークポイントの設定（iOS）](https://developer.apple.com/documentation/xcode/setting-breakpoints-to-pause-your-running-app) | iOS | 実行中のアプリを任意の行で止めて状態を調べる方法 |
+| 公式リファレンス | [DocCによるドキュメント作成（iOS）](https://developer.apple.com/documentation/xcode/documenting-apps-frameworks-and-packages) | iOS | DocCでコードからAPIドキュメントを生成する方法 |
+| 公式リファレンス | [プロジェクトの概要（Android）](https://developer.android.com/studio/projects) | Android | Android Studioのプロジェクトとモジュールの構成を説明 |
+| 公式リファレンス | [Android Emulatorでのアプリ実行（Android）](https://developer.android.com/studio/run/emulator) | Android | AVDを作成してエミュレータでアプリを動かす手順 |
+| 公式リファレンス | [Logcatでログを表示する（Android）](https://developer.android.com/studio/debug/logcat) | Android | Android Studioでアプリのログを表示し絞り込む方法 |
+| 公式リファレンス | [Layout Inspector（Android）](https://developer.android.com/studio/debug/layout-inspector) | Android | 実行中のアプリの画面階層と属性を検査するツール |
+| 公式リファレンス | [KDocによるドキュメント作成（Android）](https://kotlinlang.org/docs/kotlin-doc.html) | Android | KDocの記法とDokkaによるドキュメント生成を説明 |
+| 公式リファレンス | [Expo CLI](https://docs.expo.dev/more/expo-cli/) | React Native | 開発サーバーの起動やビルドを行うコマンドラインツール |
+| 公式リファレンス | [Metro](https://reactnative.dev/docs/metro) | React Native | JavaScriptコードをまとめて端末へ配信するバンドラー |
+| 公式リファレンス | [Fast Refresh](https://reactnative.dev/docs/fast-refresh) | React Native | コードの変更を実行中のアプリへすぐに反映する機能 |
+| 公式リファレンス | [デバッグの基本（React Native）](https://reactnative.dev/docs/debugging) | React Native | 開発者メニューやLogBoxを使ったデバッグ方法を説明 |
+| 公式リファレンス | [React Native DevTools](https://reactnative.dev/docs/react-native-devtools) | React Native | コンポーネント構造の検査やJSのデバッグを行うツール |
+
+<!-- references:end -->
+
 roadmap.shで学ぶ：[iOS](https://roadmap.sh/ios)（Xcode、Project Files、Interface Builder、Breakpoints、Debug Navigator、Stepping、Xcode Debugger、Debugging Techniques）／[SwiftUI](https://roadmap.sh/swift-ui)（Xcode、Xcode Debugging、Swift Playgrounds、DocC）／[Android](https://roadmap.sh/android)（Development IDE、Debugging、Create a Basic Hello World App）／[React Native](https://roadmap.sh/react-native)（Environment Setup、Metro Bundler、DevTools、In-App Developer Menu、LogBox、Enabling Fast Refresh、Running on Device）
 
 ## 評価を記録する

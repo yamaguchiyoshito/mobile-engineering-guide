@@ -58,6 +58,32 @@ OS機能の利用方針、権限要求の共通処理、実機・OS版ごとの�
 | カメラなどの端末機能と他アプリとの連携 | AVFoundation、HealthKit、ARKit、Core ML | ContentProvider、Play Services | expo-camera |
 | アプリ内課金 | In-App Purchase（StoreKit） | Play Billing | expo-in-app-purchases、react-native-iap |
 
+## 関連ライブラリと参考資料
+
+主な一次情報の所在です。掲載は公式資料と、技術の対応表に挙げた広く使われるライブラリに限ります。採用を推奨するものではありません。
+
+<!-- references:start ids="user-notifications, background-tasks, mapkit, avfoundation, storekit, firebase-cloud-messaging, android-workmanager, android-services, android-content-providers, play-billing, expo-notifications, expo-location, react-native-maps, expo-camera, react-native-iap" -->
+
+| 種別 | 名称 | 対象 | 概要 |
+| :--- | :--- | :--- | :--- |
+| 公式リファレンス | [Firebase Cloud Messaging](https://firebase.google.com/docs/cloud-messaging) | 共通 | サーバーから端末へプッシュ通知やメッセージを送る仕組み |
+| 公式リファレンス | [User Notifications](https://developer.apple.com/documentation/usernotifications) | iOS | ローカル通知とプッシュ通知の権限要求・配信・受信を扱うフレームワーク |
+| 公式リファレンス | [Background Tasks](https://developer.apple.com/documentation/backgroundtasks) | iOS | アプリがバックグラウンドで行う処理を登録・実行するフレームワーク |
+| 公式リファレンス | [MapKit](https://developer.apple.com/documentation/mapkit) | iOS | 地図の表示や位置の検索・経路表示を行うフレームワーク |
+| 公式リファレンス | [AVFoundation](https://developer.apple.com/documentation/avfoundation) | iOS | カメラ撮影や音声・動画の再生と編集を扱うフレームワーク |
+| 公式リファレンス | [StoreKit](https://developer.apple.com/documentation/storekit) | iOS | アプリ内課金とサブスクリプションの購入処理を扱うフレームワーク |
+| 公式リファレンス | [Task scheduling](https://developer.android.com/develop/background-work/background-tasks/persistent) | Android | WorkManagerで永続的なバックグラウンド処理を登録する方法 |
+| 公式リファレンス | [Services overview](https://developer.android.com/develop/background-work/services) | Android | 画面を持たずに処理を続けるServiceの種類と使い方 |
+| 公式リファレンス | [Content providers](https://developer.android.com/guide/topics/providers/content-providers) | Android | アプリ間でデータを共有するためのContentProviderの解説 |
+| 公式リファレンス | [Google Play's billing system](https://developer.android.com/google/play/billing) | Android | Google Playでアプリ内課金と定期購入を扱う仕組み |
+| ライブラリ | [Expo Notifications](https://docs.expo.dev/versions/latest/sdk/notifications/) | React Native | 通知の権限要求・受信・ローカル通知の表示を扱うライブラリ |
+| ライブラリ | [Location](https://docs.expo.dev/versions/latest/sdk/location/) | React Native | 端末の位置情報の取得と権限要求を扱うExpoのライブラリ |
+| ライブラリ | [react-native-maps](https://github.com/react-native-maps/react-native-maps) | React Native | iOSとAndroidの地図を表示するReact Native向けライブラリ |
+| ライブラリ | [Camera](https://docs.expo.dev/versions/latest/sdk/camera/) | React Native | カメラの映像表示と撮影を扱うExpoのライブラリ |
+| ライブラリ | [react-native-iap](https://github.com/hyochan/react-native-iap) | React Native | iOSとAndroidのアプリ内課金を扱うReact Native向けライブラリ |
+
+<!-- references:end -->
+
 roadmap.shで学ぶ：[iOS](https://roadmap.sh/ios)（MapKit、AVFoundation、Core ML、HealthKit、ARKit）／[SwiftUI](https://roadmap.sh/swift-ui)（Background）／[Android](https://roadmap.sh/android)（Cloud messaging、WorkManager、Services、Broadcast receiver、Content provider、Google Maps、Google Play services）／[React Native](https://roadmap.sh/react-native)（Push notifications、Permissions）
 
 ## 評価を記録する

@@ -57,6 +57,32 @@ description: "画面遷移とディープリンクの基準と使い方。モバ
 | 遷移の定義と管理 | Coordinator | Navigation Component | Expo Router |
 | 外部から画面を開く | Universal Links、URL Scheme | Intent Filter、App Links、App Shortcuts | Linking |
 
+## 関連ライブラリと参考資料
+
+主な一次情報の所在です。掲載は公式資料と、技術の対応表に挙げた広く使われるライブラリに限ります。採用を推奨するものではありません。
+
+<!-- references:start ids="swiftui-navigationstack, uikit-uinavigationcontroller, swiftui-tabview, swiftui-modal-presentations, apple-universal-links, apple-url-scheme, android-tasks-back-stack, android-predictive-back, android-navigation, android-deep-links, android-app-shortcuts, react-navigation-stack, react-navigation-bottom-tabs, expo-router, rn-linking" -->
+
+| 種別 | 名称 | 対象 | 概要 |
+| :--- | :--- | :--- | :--- |
+| 公式リファレンス | [NavigationStack](https://developer.apple.com/documentation/swiftui/navigationstack) | iOS | 画面を積み重ねて遷移を管理するコンテナView |
+| 公式リファレンス | [UINavigationController](https://developer.apple.com/documentation/uikit/uinavigationcontroller) | iOS | 画面を積み重ねて階層的な遷移を管理するコンテナ |
+| 公式リファレンス | [TabView](https://developer.apple.com/documentation/swiftui/tabview) | iOS | タブで複数の画面を切り替えるコンテナView |
+| 公式リファレンス | [Modal presentations](https://developer.apple.com/documentation/swiftui/modal-presentations) | iOS | シートやアラートなどで画面をモーダル表示するAPI群 |
+| 公式リファレンス | [Supporting universal links in your app](https://developer.apple.com/documentation/xcode/supporting-universal-links-in-your-app) | iOS | Webのリンクからアプリ内の画面を直接開くための設定手順 |
+| 公式リファレンス | [Defining a custom URL scheme for your app](https://developer.apple.com/documentation/xcode/defining-a-custom-url-scheme-for-your-app) | iOS | 独自のURLスキームでアプリの画面を開くための設定手順 |
+| 公式リファレンス | [Tasks and the back stack](https://developer.android.com/guide/components/activities/tasks-and-back-stack) | Android | Activityのタスクとバックスタックの動きの解説 |
+| 公式リファレンス | [Add support for the predictive back gesture](https://developer.android.com/guide/navigation/custom-back/predictive-back-gesture) | Android | 戻る操作の前に戻り先を見せるジェスチャへの対応手順 |
+| 公式リファレンス | [Navigation](https://developer.android.com/guide/navigation) | Android | 画面遷移とバックスタックを管理するJetpackライブラリ |
+| 公式リファレンス | [About deep links](https://developer.android.com/training/app-links) | Android | Intent FilterやApp LinksでURLから画面を開く仕組み |
+| 公式リファレンス | [App shortcuts overview](https://developer.android.com/develop/ui/compose/system/shortcuts) | Android | ホーム画面から特定の機能を直接開くショートカットの解説 |
+| 公式リファレンス | [Linking](https://reactnative.dev/docs/linking) | React Native | URLで他アプリやアプリ内の画面を開くためのAPI |
+| ライブラリ | [Stack Navigator](https://reactnavigation.org/docs/stack-navigator/) | React Native | React Navigationで画面を積み重ねて遷移させるナビゲーター |
+| ライブラリ | [Bottom Tabs Navigator](https://reactnavigation.org/docs/bottom-tab-navigator/) | React Native | React Navigationで下部のタブで画面を切り替えるナビゲーター |
+| ライブラリ | [Expo Router](https://docs.expo.dev/router/introduction/) | React Native | ファイルの配置から画面遷移を定義するルーティングライブラリ |
+
+<!-- references:end -->
+
 roadmap.shで学ぶ：[iOS](https://roadmap.sh/ios)（Navigation、Navigation stacks、Modals and navigation、View transitions）／[Android](https://roadmap.sh/android)（Tasks & Backstack、Intent filters、App shortcuts、Navigation components）／[React Native](https://roadmap.sh/react-native)（Screen navigation、Deep linking）
 
 ## 評価を記録する

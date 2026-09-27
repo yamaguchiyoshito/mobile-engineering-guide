@@ -58,6 +58,32 @@ description: "性能・メモリ・起動時間の基準と使い方。モバイ
 | 描画と応答性 | Hang検出 | Jetpack Benchmark／Macrobenchmark | FlatList最適化、JSスレッドとUIスレッド |
 | 実利用データの監視 | MetricKit | Android vitals（起動時間、ANR、ジャンク） | 各OSの仕組み（MetricKit、Android vitals） |
 
+## 関連ライブラリと参考資料
+
+主な一次情報の所在です。掲載は公式資料と、技術の対応表に挙げた広く使われるライブラリに限ります。採用を推奨するものではありません。
+
+<!-- references:start ids="xcode-improving-performance, xcode-memory-use, swift-arc, xcode-launch-time, xcode-hangs, metrickit, android-profiler, leakcanary, baseline-profiles, android-benchmarking, android-vitals, rn-hermes, rn-flatlist-optimization, rn-js-loading, rn-devtools" -->
+
+| 種別 | 名称 | 対象 | 概要 |
+| :--- | :--- | :--- | :--- |
+| 公式リファレンス | [自動参照カウント（Swift）](https://docs.swift.org/latest/documentation/the-swift-programming-language/automaticreferencecounting/) | iOS | ARCの仕組みと、強参照の循環を弱参照などで解消する方法の解説 |
+| 公式リファレンス | [起動時間の短縮（iOS）](https://developer.apple.com/documentation/xcode/reducing-your-app-s-launch-time) | iOS | 起動処理にかかる時間を計測して短縮する方法の解説 |
+| 公式リファレンス | [Hangの理解（iOS）](https://developer.apple.com/documentation/xcode/understanding-hangs-in-your-app) | iOS | メインスレッドの処理を調べて操作への応答の遅れの原因を特定する方法 |
+| 公式リファレンス | [MetricKit](https://developer.apple.com/documentation/metrickit) | iOS | 利用者の端末で集めた性能指標や診断情報をアプリで受け取るフレームワーク |
+| 公式リファレンス | [アプリ性能のプロファイリング（Android）](https://developer.android.com/studio/profile) | Android | プロファイラでCPUやメモリの使用状況を調べる方法 |
+| 公式リファレンス | [Baseline Profile（Android）](https://developer.android.com/topic/performance/baselineprofiles/overview) | Android | 事前コンパイルするコード経路を指定して起動や描画を速くする仕組み |
+| 公式リファレンス | [ベンチマーク（Android）](https://developer.android.com/topic/performance/benchmarking/benchmarking-overview) | Android | Benchmarkライブラリで処理時間や起動時間を計測する方法 |
+| 公式リファレンス | [Android vitals](https://developer.android.com/google/play/vitals) | Android | Google Playが集計する起動時間・ANR・クラッシュなどの品質指標 |
+| 公式リファレンス | [Hermes](https://reactnative.dev/docs/hermes) | React Native | React Native向けに最適化されたJavaScriptエンジン |
+| 公式リファレンス | [FlatListの最適化（React Native）](https://reactnative.dev/docs/optimizing-flatlist-configuration) | React Native | FlatListの設定を調整して長い一覧の描画とメモリ使用を改善する方法 |
+| 公式リファレンス | [JavaScript読み込みの最適化（React Native）](https://reactnative.dev/docs/optimizing-javascript-loading) | React Native | inline requireなどでJSの読み込みを速くする方法 |
+| 公式リファレンス | [React Native DevTools](https://reactnative.dev/docs/react-native-devtools) | React Native | コンポーネント構造の検査やJSのデバッグを行うツール |
+| ライブラリ | [LeakCanary](https://square.github.io/leakcanary/) | Android | Androidアプリのメモリリークを検出して原因の参照経路を示すライブラリ |
+| 学習資料 | [アプリ性能の改善（iOS）](https://developer.apple.com/documentation/xcode/improving-your-app-s-performance) | iOS | 性能の計測・分析・改善を繰り返してアプリの性能を上げる進め方 |
+| 学習資料 | [Gathering information about memory use](https://developer.apple.com/documentation/xcode/gathering-information-about-memory-use) | iOS | メモリグラフなどでアプリのメモリ使用量とリークを調べる方法 |
+
+<!-- references:end -->
+
 roadmap.shで学ぶ：[iOS](https://roadmap.sh/ios)（Profiling Instruments）／[SwiftUI](https://roadmap.sh/swift-ui)（Logging & Debugging）／[Android](https://roadmap.sh/android)（Leak Canary、Jetpack Benchmark、Chucker）／[React Native](https://roadmap.sh/react-native)（Performance、Profiling、Optimizing FlatList Config、RAM Bundles & Inline Requires、Understand Frame Rates）
 
 ## 評価を記録する

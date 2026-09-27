@@ -57,6 +57,32 @@ description: "アプリアーキテクチャと依存性注入の基準と使い
 | 依存性注入 | SwiftのDI（イニシャライザ注入、Environment、Factory） | Hilt／Dagger、Koin、Kodein | Contextによる注入 |
 | モジュール分割 | モジュール分割（SPM） | マルチモジュール | 機能ディレクトリ単位の分割、モノレポのパッケージ |
 
+## 関連ライブラリと参考資料
+
+主な一次情報の所在です。掲載は公式資料と、技術の対応表に挙げた広く使われるライブラリに限ります。採用を推奨するものではありません。
+
+<!-- references:start ids="android-architecture, android-ui-layer, android-data-layer, android-domain-layer, android-dependency-injection, android-hilt, dagger, koin, kodein, android-modularization, swiftui-environment, swift-packages, swift-composable-architecture, redux, zustand" -->
+
+| 種別 | 名称 | 対象 | 概要 |
+| :--- | :--- | :--- | :--- |
+| 公式リファレンス | [Environment](https://developer.apple.com/documentation/swiftui/environment) | iOS | View階層を通じて値や依存を受け渡すためのプロパティラッパー |
+| 公式リファレンス | [Swift packages](https://developer.apple.com/documentation/xcode/swift-packages) | iOS | Swift Package Managerでコードを分割・共有する方法 |
+| 公式リファレンス | [Hilt](https://developer.android.com/training/dependency-injection/hilt-android) | Android | Daggerを基にAndroid向けに依存性注入を行うJetpackライブラリ |
+| ライブラリ | [The Composable Architecture](https://github.com/pointfreeco/swift-composable-architecture) | iOS | 状態・アクション・副作用を一方向の流れで管理するSwiftライブラリ |
+| ライブラリ | [Dagger](https://dagger.dev/) | Android | コンパイル時に依存関係のコードを生成する依存性注入ライブラリ |
+| ライブラリ | [Koin](https://insert-koin.io/) | Android | Kotlinの記述で依存関係を定義して注入するライブラリ |
+| ライブラリ | [Kodein](https://kosi-libs.org/kodein/) | Android | Kotlin向けに依存関係の定義と注入を行うライブラリ |
+| ライブラリ | [Redux](https://github.com/reduxjs/redux) | React Native | アプリ全体の状態を1つのストアで管理するJavaScriptライブラリ |
+| ライブラリ | [Zustand](https://github.com/pmndrs/zustand) | React Native | フックでストアの状態を読み書きする状態管理ライブラリ |
+| 学習資料 | [アプリアーキテクチャガイド（Android）](https://developer.android.com/topic/architecture) | Android | UI層・データ層などに分けてアプリを構成するための公式ガイド |
+| 学習資料 | [UI layer](https://developer.android.com/topic/architecture/ui-layer) | Android | UIの状態とイベントを単方向の流れで扱うUI層の設計指針 |
+| 学習資料 | [Data layer](https://developer.android.com/topic/architecture/data-layer) | Android | Repositoryでデータの取得元をまとめるデータ層の設計指針 |
+| 学習資料 | [Domain layer](https://developer.android.com/topic/architecture/domain-layer) | Android | UseCaseで業務ロジックを切り出すドメイン層の設計指針 |
+| 学習資料 | [依存性注入（Android）](https://developer.android.com/training/dependency-injection) | Android | Androidアプリで依存性注入を使う考え方と手順 |
+| 学習資料 | [Guide to Android app modularization](https://developer.android.com/topic/modularization) | Android | アプリを複数のGradleモジュールに分ける方法の解説 |
+
+<!-- references:end -->
+
 roadmap.shで学ぶ：[iOS](https://roadmap.sh/ios)（Architectural patterns、MVC、MVVM、MVVM-C、VIPER、TCA）／[Android](https://roadmap.sh/android)（MVVM、MVI、Repository pattern、Dependency injection、Hilt）／[SwiftUI](https://roadmap.sh/swift-ui)（App architecture、Clean architecture、Dependency injection）
 
 ## 評価を記録する

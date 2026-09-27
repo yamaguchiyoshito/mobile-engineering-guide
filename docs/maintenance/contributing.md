@@ -14,6 +14,7 @@ description: "編集・検証・公開手順の基準と使い方。モバイル
 | チェック項目・回答例 | `docs/checklists/<分野>.md` |
 | 記録書式 | `docs/templates/*.md`のテンプレート欄 |
 | ページの追加・順序・分類 | `build/document-map.json` |
+| 関連ライブラリ・参考資料のリンク | `build/references.json` と各ページの `references` マーカーの id |
 | 公開版 | `package.json`のversion・このサイトの改訂履歴 |
 
 一覧ページの`catalog`マーカー内、サイトのHTML、ダウンロードファイルは自動生成します。本文・書式の正本を変更してから生成してください。

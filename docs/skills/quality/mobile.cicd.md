@@ -58,6 +58,32 @@ description: "CI/CD・静的解析の基準と使い方。モバイルアプリ�
 | テストの自動実行 | xcodebuild test、fastlane scan | Gradle test、connectedAndroidTest | JestのCI実行、DetoxのCI実行 |
 | 署名情報の管理 | 署名のCI管理（match等） | Play App Signing、CIのシークレットに保管したkeystore | EASの資格情報管理 |
 
+## 関連ライブラリと参考資料
+
+主な一次情報の所在です。掲載は公式資料と、技術の対応表に挙げた広く使われるライブラリに限ります。採用を推奨するものではありません。
+
+<!-- references:start ids="github-actions, github-actions-secrets, xcode-cloud, bitrise, eas-build-ci, fastlane-match, fastlane-scan, gradle-build-cache, android-command-line-tests, swiftlint, swiftformat, ktlint, detekt, android-lint, eslint" -->
+
+| 種別 | 名称 | 対象 | 概要 |
+| :--- | :--- | :--- | :--- |
+| 公式リファレンス | [GitHub Actions](https://docs.github.com/ja/actions) | 共通 | リポジトリのイベントを契機にビルドやテストを自動で実行する仕組み |
+| 公式リファレンス | [GitHub Actionsのシークレット](https://docs.github.com/ja/actions/how-tos/write-workflows/choose-what-workflows-do/use-secrets) | 共通 | 署名鍵やトークンをシークレットとして保管しワークフローで使う方法 |
+| 公式リファレンス | [Xcode Cloud](https://developer.apple.com/documentation/xcode/xcode-cloud) | iOS | Appleのクラウドでアプリのビルド・テスト・配布を自動化するサービス |
+| 公式リファレンス | [Build Cache（Gradle）](https://docs.gradle.org/current/userguide/build_cache.html) | Android | タスクの出力を再利用してGradleビルドの時間を短縮する仕組み |
+| 公式リファレンス | [コマンドラインからのテスト（Android）](https://developer.android.com/studio/test/command-line) | Android | Gradleのコマンドで単体テストや実機テストを実行する方法 |
+| 公式リファレンス | [Lintによるコードの改善（Android）](https://developer.android.com/studio/write/lint) | Android | Android Lintでコードやリソースの問題を検出する方法 |
+| ライブラリ | [Bitrise](https://docs.bitrise.io/en/bitrise-ci) | 共通 | モバイルアプリのビルド・テスト・配布を自動化するCIサービス |
+| ライブラリ | [match（fastlane）](https://docs.fastlane.tools/actions/match/) | iOS | 証明書とプロビジョニングプロファイルをチームで共有・管理するツール |
+| ライブラリ | [scan（fastlane）](https://docs.fastlane.tools/actions/scan/) | iOS | iOSアプリのテストを実行し結果をレポートにまとめるアクション |
+| ライブラリ | [SwiftLint](https://github.com/realm/SwiftLint) | iOS | Swiftのコードを規約に照らして検査する静的解析ツール |
+| ライブラリ | [SwiftFormat](https://github.com/nicklockwood/SwiftFormat) | iOS | Swiftのコードを決めた書式に自動で整形するツール |
+| ライブラリ | [ktlint](https://github.com/ktlint/ktlint) | Android | Kotlinのコードの書式を検査して自動で整形するツール |
+| ライブラリ | [detekt](https://detekt.dev/) | Android | Kotlinのコードの複雑さや問題のある書き方を検出する静的解析ツール |
+| ライブラリ | [ESLint](https://github.com/eslint/eslint) | React Native | JavaScriptとTypeScriptのコードの問題を検出する静的解析ツール |
+| 学習資料 | [CIからのビルド（React Native）](https://docs.expo.dev/build/building-on-ci/) | React Native | CIサービスからEAS Buildを起動してビルドを自動化する手順 |
+
+<!-- references:end -->
+
 roadmap.shで学ぶ：[iOS](https://roadmap.sh/ios)（CI/CD、Fastlane、GitHub Actions、Code Quality Tools、SwiftLint、SwiftFormat）／[Android](https://roadmap.sh/android)（Linting、Ktlint、Detekt）／[React Native](https://roadmap.sh/react-native)（Development Workflow、Speeding up Builds）
 
 ## 評価を記録する

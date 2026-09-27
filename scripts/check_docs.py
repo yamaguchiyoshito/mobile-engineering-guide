@@ -31,6 +31,18 @@ def main():
    assert row[2]==('FALSE' if int(num)%4==0 else 'TRUE'),f'C{num}: expected polarity changed; revise the validation rule only with a criteria change'
    items[num]=hashlib.sha256(json.dumps(row,ensure_ascii=False,separators=(',',':')).encode()).hexdigest()
  assert list(items)==[f'{n:03}' for n in range(1,101)],'100 sequential items required'
+ used=set()
+ for p in skills:
+  ids=reference_ids(body(p['path']))
+  assert ids and 3<=len(ids)<=15,p['path']+': 3 to 15 references required'
+  assert len(ids)==len(set(ids)),p['path']+': duplicate reference id'
+  used.update(ids)
+ assert len(REFS)==len(REFERENCES['references']),'Duplicate reference id in registry'
+ unused=set(REFS)-used
+ assert not unused,'Unused references: '+', '.join(sorted(unused))
+ for r in REFERENCES['references']:
+  assert r['url'].startswith('https://') and r['type'] in REF_TYPES and r['platforms'] and set(r['platforms'])<=set(PLATFORM_ORDER),r['id']+': invalid reference record'
+  assert 0<len(r['summary'])<=60,r['id']+': summary must be 1 to 60 characters'
  for p in PAGES:
   text=without_code(body(p['path']))
   assert re.findall(r'^# (.+)$',text,re.M)==[p['title']],p['path']+': page title differs from document map'
@@ -40,7 +52,7 @@ def main():
    target=url.split('#')[0]
    assert not target.startswith('/'),f'{p["path"]}: use relative Markdown links: {url}'
    assert (DOCS/p['path']).parent.joinpath(target).exists(),f'{p["path"]}: broken link {url}'
- print(f'Docs OK: {len(paths)} pages, {len(definitions)} definitions, {len(items)} items (75 TRUE / 25 FALSE)')
+ print(f'Docs OK: {len(paths)} pages, {len(definitions)} definitions, {len(items)} items (75 TRUE / 25 FALSE), {len(REFS)} references')
 if __name__=='__main__':
  try:main()
  except (AssertionError,ValueError) as e:sys.exit(str(e))

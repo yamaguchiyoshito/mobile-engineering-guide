@@ -58,6 +58,32 @@ description: "監視・クラッシュ分析の基準と使い方。モバイル
 | ログの出力 | OSLog／swift-log | Timber、Logcat | console、react-native-logs |
 | 機能の遠隔制御 | Remote Config（Firebase） | Remote Config | Remote Config（Firebase） |
 
+## 関連ライブラリと参考資料
+
+主な一次情報の所在です。掲載は公式資料と、技術の対応表に挙げた広く使われるライブラリに限ります。採用を推奨するものではありません。
+
+<!-- references:start ids="firebase-crashlytics, crashlytics-ios-symbols, crashlytics-android-mapping, xcode-debug-symbols, xcode-shipping-performance, metrickit, android-vitals, oslog, swift-log, timber, android-logcat, sentry-react-native, sentry-rn-sourcemaps, react-native-logs, firebase-remote-config" -->
+
+| 種別 | 名称 | 対象 | 概要 |
+| :--- | :--- | :--- | :--- |
+| 公式リファレンス | [デバッグ情報を含むビルド（iOS）](https://developer.apple.com/documentation/xcode/building-your-app-to-include-debugging-information) | iOS | デバッグとクラッシュ解析に使うdSYMなどのシンボル情報を生成する設定 |
+| 公式リファレンス | [配信中アプリの性能分析（iOS）](https://developer.apple.com/documentation/xcode/analyzing-the-performance-of-your-shipping-app) | iOS | Xcode Organizerで配信中アプリの電力や性能の指標を確認する方法 |
+| 公式リファレンス | [MetricKit](https://developer.apple.com/documentation/metrickit) | iOS | 利用者の端末で集めた性能指標や診断情報をアプリで受け取るフレームワーク |
+| 公式リファレンス | [OSLog](https://developer.apple.com/documentation/os/logging) | iOS | 統合ログシステムにログを記録し、取得・閲覧するためのAPI |
+| 公式リファレンス | [Android vitals](https://developer.android.com/google/play/vitals) | Android | Google Playが集計する起動時間・ANR・クラッシュなどの品質指標 |
+| 公式リファレンス | [Logcatでログを表示する（Android）](https://developer.android.com/studio/debug/logcat) | Android | Android Studioでアプリのログを表示し絞り込む方法 |
+| ライブラリ | [Firebase Crashlytics](https://firebase.google.com/docs/crashlytics) | iOS・Android・React Native | アプリのクラッシュを収集し、原因ごとにまとめて表示するサービス |
+| ライブラリ | [読めるクラッシュレポートの取得（iOS）](https://firebase.google.com/docs/crashlytics/ios/get-deobfuscated-reports) | iOS | dSYMを送りスタックトレースを読める形にする方法 |
+| ライブラリ | [swift-log](https://github.com/apple/swift-log) | iOS | 出力先を差し替えられるSwift向けのログ出力API |
+| ライブラリ | [Firebase Remote Config](https://firebase.google.com/docs/remote-config) | iOS・Android・React Native | アプリを更新せずに設定値を配信して機能の有効・無効を切り替えるサービス |
+| ライブラリ | [読めるクラッシュレポートの取得（Android）](https://firebase.google.com/docs/crashlytics/android/get-deobfuscated-reports) | Android | Crashlyticsにmappingファイルを送り難読化を解除する方法 |
+| ライブラリ | [Timber](https://github.com/JakeWharton/timber) | Android | 出力先を差し替えられるAndroid向けのログ出力ライブラリ |
+| ライブラリ | [Sentry for React Native](https://docs.sentry.io/platforms/react-native/) | React Native | JavaScriptの例外とネイティブのクラッシュを収集して表示するサービス |
+| ライブラリ | [ソースマップ（React Native）](https://docs.sentry.io/platforms/react-native/sourcemaps/) | React Native | ソースマップを送りJSの例外位置を元のコードに対応付ける方法 |
+| ライブラリ | [react-native-logs](https://github.com/mowispace/react-native-logs) | React Native | ログの重要度と出力先を設定できるReact Native向けのログライブラリ |
+
+<!-- references:end -->
+
 roadmap.shで学ぶ：[SwiftUI](https://roadmap.sh/swift-ui)（Logging & Debugging、Swift Log、CocoaLumberjack）／[Android](https://roadmap.sh/android)（Crashlytics、Timber、Remote Config、Chucker）／[React Native](https://roadmap.sh/react-native)（Sourcemaps、LogBox）
 
 ## 評価を記録する

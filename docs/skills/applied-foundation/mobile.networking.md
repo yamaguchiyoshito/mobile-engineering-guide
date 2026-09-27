@@ -58,6 +58,32 @@ HTTPのメソッド、ステータスコード、ヘッダー、JSONの変換、
 | 通信の安全性 | HTTPS／ATS | HTTPS／Network Security Config | 各OSの設定に従う（ATS、Network Security Config） |
 | 接続状態の確認 | NWPathMonitor | ConnectivityManager | NetInfo |
 
+## 関連ライブラリと参考資料
+
+主な一次情報の所在です。掲載は公式資料と、技術の対応表に挙げた広く使われるライブラリに限ります。採用を推奨するものではありません。
+
+<!-- references:start ids="urlsession, okhttp, retrofit, alamofire, rn-network, android-network-ops, codable, urlsessionwebsockettask, ats, nwpathmonitor, android-network-security-config, android-network-state, kotlinx-serialization, zod, rn-netinfo" -->
+
+| 種別 | 名称 | 対象 | 概要 |
+| :--- | :--- | :--- | :--- |
+| 公式リファレンス | [URLSession](https://developer.apple.com/documentation/foundation/urlsession) | iOS | HTTPリクエストの送信と応答の受信を行うiOS標準のAPI |
+| 公式リファレンス | [Codable](https://developer.apple.com/documentation/swift/codable) | iOS | JSONなどの外部表現と型の間でデータを相互に変換するプロトコル |
+| 公式リファレンス | [URLSessionWebSocketTask](https://developer.apple.com/documentation/foundation/urlsessionwebsockettask) | iOS | WebSocketでサーバーとメッセージを送受信するタスク |
+| 公式リファレンス | [Preventing Insecure Network Connections](https://developer.apple.com/documentation/security/preventing-insecure-network-connections) | iOS | App Transport Securityで安全でない通信を防ぐ設定の説明 |
+| 公式リファレンス | [NWPathMonitor](https://developer.apple.com/documentation/network/nwpathmonitor) | iOS | ネットワークの接続状態とその変化を監視するクラス |
+| 公式リファレンス | [Network security configuration](https://developer.android.com/privacy-and-security/security-config) | Android | 信頼する証明書や平文通信の可否をXMLで宣言する設定 |
+| 公式リファレンス | [Networking（React Native）](https://reactnative.dev/docs/network) | React Native | fetchでのHTTP通信とWebSocketの使い方を説明するページ |
+| ライブラリ | [Alamofire](https://github.com/Alamofire/Alamofire) | iOS | URLSessionの上でリクエストや応答の検証を簡潔に書くライブラリ |
+| ライブラリ | [OkHttp](https://github.com/square/okhttp) | Android | HTTP/2や接続の再利用に対応したHTTPクライアントのライブラリ |
+| ライブラリ | [Retrofit](https://github.com/square/retrofit) | Android | インターフェースの定義からHTTP APIの呼び出し処理を生成するライブラリ |
+| ライブラリ | [kotlinx.serialization](https://github.com/Kotlin/kotlinx.serialization) | Android | KotlinのクラスとJSONなどの形式を相互に変換するライブラリ |
+| ライブラリ | [Zod](https://zod.dev/) | React Native | スキーマを定義して実行時にデータの形式を検証するライブラリ |
+| ライブラリ | [NetInfo](https://github.com/react-native-netinfo/react-native-netinfo) | React Native | 端末のネットワーク接続の種類と状態を取得するライブラリ |
+| 学習資料 | [ネットワーク接続の基本（Android）](https://developer.android.com/training/basics/network-ops) | Android | ネットワークへの接続と通信処理の実装方法を示すガイド |
+| 学習資料 | [Read network state](https://developer.android.com/develop/connectivity/network-ops/reading-network-state) | Android | ConnectivityManagerで接続状態を取得し、変化を監視する方法 |
+
+<!-- references:end -->
+
 roadmap.shで学ぶ：[iOS](https://roadmap.sh/ios)（Networking、HTTP/HTTPS、REST、GraphQL、URLSession、Alamofire、JSON/XML）／[SwiftUI](https://roadmap.sh/swift-ui)（Networking Libraries、Alamofire、Moya）／[Android](https://roadmap.sh/android)（Network、OkHttp、Retrofit、Apollo Android）／[React Native](https://roadmap.sh/react-native)（Networking、Fetch、WebSockets、Connectivity Status）
 
 ## 評価を記録する

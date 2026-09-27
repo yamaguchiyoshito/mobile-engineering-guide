@@ -58,6 +58,32 @@ description: "モバイルセキュリティの基準と使い方。モバイル
 | 本人確認・端末確認・権限 | 生体認証（LocalAuthentication） | Play Integrity、実行時権限 | expo-local-authentication |
 | 検証基準 | OWASP MASVS／MASTG | OWASP MASVS／MASTG | OWASP MASVS／MASTG |
 
+## 関連ライブラリと参考資料
+
+主な一次情報の所在です。掲載は公式資料と、技術の対応表に挙げた広く使われるライブラリに限ります。採用を推奨するものではありません。
+
+<!-- references:start ids="keychain-services, ios-data-protection, ats, local-authentication, android-keystore, encrypted-shared-preferences, android-network-security-config, android-app-optimization, play-integrity, android-runtime-permissions, expo-securestore, expo-local-authentication, rn-security, owasp-masvs, owasp-mastg" -->
+
+| 種別 | 名称 | 対象 | 概要 |
+| :--- | :--- | :--- | :--- |
+| 公式リファレンス | [Keychain Services](https://developer.apple.com/documentation/security/keychain-services) | iOS | パスワードやトークンなどの秘密情報を暗号化して保存するAPI |
+| 公式リファレンス | [ファイルの暗号化（iOS）](https://developer.apple.com/documentation/uikit/encrypting-your-app-s-files) | iOS | Data Protectionでアプリのファイルを端末上で暗号化する方法 |
+| 公式リファレンス | [Preventing Insecure Network Connections](https://developer.apple.com/documentation/security/preventing-insecure-network-connections) | iOS | App Transport Securityで安全でない通信を防ぐ設定の説明 |
+| 公式リファレンス | [LocalAuthentication](https://developer.apple.com/documentation/localauthentication) | iOS | 生体認証やパスコードで本人確認を行うフレームワーク |
+| 公式リファレンス | [Android Keystore system](https://developer.android.com/privacy-and-security/keystore) | Android | 暗号鍵を端末内の保護された領域で生成し、保管する仕組み |
+| 公式リファレンス | [EncryptedSharedPreferences](https://developer.android.com/reference/androidx/security/crypto/EncryptedSharedPreferences) | Android | キーと値を暗号化して保存するSharedPreferencesの実装 |
+| 公式リファレンス | [Network security configuration](https://developer.android.com/privacy-and-security/security-config) | Android | 信頼する証明書や平文通信の可否をXMLで宣言する設定 |
+| 公式リファレンス | [アプリの最適化（Android）](https://developer.android.com/topic/performance/app-optimization/enable-app-optimization) | Android | R8によるコードの縮小と難読化を有効にする方法を説明 |
+| 公式リファレンス | [Play Integrity API](https://developer.android.com/google/play/integrity) | Android | アプリと端末が改変されていない正規のものかをサーバーで判定するAPI |
+| 公式リファレンス | [実行時の権限リクエスト（Android）](https://developer.android.com/training/permissions/requesting) | Android | 危険な権限を実行時にユーザーへ要求する手順を説明 |
+| ライブラリ | [SecureStore](https://docs.expo.dev/versions/latest/sdk/securestore/) | React Native | 端末の安全な保存領域にキーと値を暗号化して保存するライブラリ |
+| ライブラリ | [expo-local-authentication](https://docs.expo.dev/versions/latest/sdk/local-authentication/) | React Native | FaceIDや指紋などの生体認証を呼び出すExpoのライブラリ |
+| 学習資料 | [OWASP MASVS](https://mas.owasp.org/MASVS/) | 共通 | モバイルアプリのセキュリティ要件を分野ごとに定めた検証基準 |
+| 学習資料 | [OWASP MASTG](https://mas.owasp.org/MASTG/) | 共通 | モバイルアプリのセキュリティをテスト・解析する手法をまとめたガイド |
+| 学習資料 | [セキュリティ（React Native）](https://reactnative.dev/docs/security) | React Native | 秘密情報の保存・通信・認証などReact Nativeアプリの安全対策の解説 |
+
+<!-- references:end -->
+
 roadmap.shで学ぶ：[iOS](https://roadmap.sh/ios)（Keychain）／[SwiftUI](https://roadmap.sh/swift-ui)（Access Control）／[Android](https://roadmap.sh/android)（Security、Authentication、Shared Preferences）／[React Native](https://roadmap.sh/react-native)（Security、Expo Secure Store、Authentication）
 
 ## 評価を記録する

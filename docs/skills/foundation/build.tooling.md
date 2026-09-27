@@ -57,6 +57,32 @@ description: "ビルドと依存管理の基準と使い方。モバイルアプ
 | ビルドの実行 | xcodebuild | Gradle（Kotlin DSL） | Expoプレビルド、EAS Build |
 | 成果物の生成と最適化 | xcframework | R8、署名付きAPK／AAB | Hermes |
 
+## 関連ライブラリと参考資料
+
+主な一次情報の所在です。掲載は公式資料と、技術の対応表に挙げた広く使われるライブラリに限ります。採用を推奨するものではありません。
+
+<!-- references:start ids="swift-packages, cocoapods, carthage, xcode-build-config-file, xcode-xcframework, android-version-catalogs, android-build-variants, android-kotlin-dsl, android-app-optimization, android-app-signing, expo-app-config, expo-autolinking, expo-cng, eas-build, rn-hermes" -->
+
+| 種別 | 名称 | 対象 | 概要 |
+| :--- | :--- | :--- | :--- |
+| 公式リファレンス | [Swift packages](https://developer.apple.com/documentation/xcode/swift-packages) | iOS | Swift Package Managerでコードを分割・共有する方法 |
+| 公式リファレンス | [ビルド設定ファイルの追加（iOS）](https://developer.apple.com/documentation/xcode/adding-a-build-configuration-file-to-your-project) | iOS | xcconfigファイルで構成ごとのビルド設定を管理する方法 |
+| 公式リファレンス | [マルチプラットフォームのバイナリフレームワーク作成（iOS）](https://developer.apple.com/documentation/xcode/creating-a-multi-platform-binary-framework-bundle) | iOS | xcodebuildでXCFrameworkを作成し配布する方法 |
+| 公式リファレンス | [バージョンカタログへの移行（Android）](https://developer.android.com/build/migrate-to-catalogs) | Android | 依存ライブラリのバージョンを一か所で管理する方法を説明 |
+| 公式リファレンス | [ビルドバリアントの設定（Android）](https://developer.android.com/build/build-variants) | Android | ビルドタイプとフレーバーで成果物を切り替える方法 |
+| 公式リファレンス | [Kotlin DSLへの移行（Android）](https://developer.android.com/build/migrate-to-kotlin-dsl) | Android | GradleのビルドスクリプトをKotlin DSLで書く方法を説明 |
+| 公式リファレンス | [アプリの最適化（Android）](https://developer.android.com/topic/performance/app-optimization/enable-app-optimization) | Android | R8によるコードの縮小と難読化を有効にする方法を説明 |
+| 公式リファレンス | [アプリへの署名（Android）](https://developer.android.com/studio/publish/app-signing) | Android | APKやAABに署名してリリース用の成果物を作る手順 |
+| 公式リファレンス | [アプリの設定（React Native）](https://docs.expo.dev/workflow/configuration/) | React Native | app.jsonやapp.config.jsでアプリの設定を記述する方法 |
+| 公式リファレンス | [Expo Autolinking](https://docs.expo.dev/modules/autolinking/) | React Native | インストールしたネイティブモジュールを自動で組み込む仕組み |
+| 公式リファレンス | [Continuous Native Generation（React Native）](https://docs.expo.dev/workflow/continuous-native-generation/) | React Native | prebuildで設定からネイティブプロジェクトを生成する仕組み |
+| 公式リファレンス | [EAS Build](https://docs.expo.dev/build/introduction/) | React Native | Expoのクラウド環境でAndroidとiOSのアプリをビルドするサービス |
+| 公式リファレンス | [Hermes](https://reactnative.dev/docs/hermes) | React Native | React Native向けに最適化されたJavaScriptエンジン |
+| ライブラリ | [CocoaPods](https://github.com/CocoaPods/CocoaPods) | iOS | Xcodeプロジェクトの依存ライブラリを管理するツール |
+| ライブラリ | [Carthage](https://github.com/Carthage/Carthage) | iOS | 依存ライブラリをバイナリのフレームワークとして構築するツール |
+
+<!-- references:end -->
+
 roadmap.shで学ぶ：[iOS](https://roadmap.sh/ios)（Swift Package Manager、CocoaPods、Carthage、Dependency Manager、XCFramework、Static Library、Dynamic Library、Frameworks & Library）／[SwiftUI](https://roadmap.sh/swift-ui)（Creating Packages、Using Packages、Swift Package Index）／[Android](https://roadmap.sh/android)（What Is and How to Use Gradle、Signed APK）／[React Native](https://roadmap.sh/react-native)（Expo、React Native CLI、Create Expo App、Speeding up Builds）
 
 ## 評価を記録する

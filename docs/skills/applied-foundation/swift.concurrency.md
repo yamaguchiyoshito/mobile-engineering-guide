@@ -57,6 +57,29 @@ description: "Swift並行処理とメモリ管理の基準と使い方。モバ�
 | 従来の並行処理 | GCD（DispatchQueue）、OperationQueue |
 | メモリ管理 | ARC、weak／unowned、循環参照 |
 
+## 関連ライブラリと参考資料
+
+主な一次情報の所在です。掲載は公式資料と、技術の対応表に挙げた広く使われるライブラリに限ります。採用を推奨するものではありません。
+
+<!-- references:start ids="swift-concurrency, swift-book-concurrency, swift-book-arc, swift-task, swift-taskgroup, swift-asyncsequence, swift-actor, swift-mainactor, swift-6-migration, dispatchqueue, operationqueue, xcode-memory-use" -->
+
+| 種別 | 名称 | 対象 | 概要 |
+| :--- | :--- | :--- | :--- |
+| 公式リファレンス | [Swift Concurrency](https://developer.apple.com/documentation/swift/concurrency) | iOS | async/await、Task、actorなど並行処理のAPIをまとめたページ |
+| 公式リファレンス | [Concurrency（The Swift Programming Language）](https://docs.swift.org/swift-book/documentation/the-swift-programming-language/concurrency/) | iOS | 非同期関数、タスク、actorの書き方を説明する言語ガイドの章 |
+| 公式リファレンス | [Automatic Reference Counting（The Swift Programming Language）](https://docs.swift.org/swift-book/documentation/the-swift-programming-language/automaticreferencecounting/) | iOS | ARCの仕組みとweak・unownedによる循環参照の回避を説明する章 |
+| 公式リファレンス | [Task](https://developer.apple.com/documentation/swift/task) | iOS | 非同期処理の単位を作成し、キャンセルや結果の取得を行う型 |
+| 公式リファレンス | [TaskGroup](https://developer.apple.com/documentation/swift/taskgroup) | iOS | 動的な数の子タスクを並列に実行して結果を集める型 |
+| 公式リファレンス | [AsyncSequence](https://developer.apple.com/documentation/swift/asyncsequence) | iOS | 非同期に届く値をfor-await-inで順に取り出すためのプロトコル |
+| 公式リファレンス | [Actor](https://developer.apple.com/documentation/swift/actor) | iOS | 共有状態へのアクセスを直列化して保護するactor型のプロトコル |
+| 公式リファレンス | [MainActor](https://developer.apple.com/documentation/swift/mainactor) | iOS | 処理をメインスレッドで実行させるグローバルアクター |
+| 公式リファレンス | [DispatchQueue](https://developer.apple.com/documentation/dispatch/dispatchqueue) | iOS | GCDで処理をキューに入れてメインや別スレッドで実行する型 |
+| 公式リファレンス | [OperationQueue](https://developer.apple.com/documentation/foundation/operationqueue) | iOS | Operationの実行順序、依存関係、同時実行数を管理するキュー |
+| 学習資料 | [Migrating to Swift 6](https://www.swift.org/migration/documentation/migrationguide/) | iOS | 厳格な並行性検査を段階的に有効にしていく移行手順のガイド |
+| 学習資料 | [Gathering information about memory use](https://developer.apple.com/documentation/xcode/gathering-information-about-memory-use) | iOS | メモリグラフなどでアプリのメモリ使用量とリークを調べる方法 |
+
+<!-- references:end -->
+
 roadmap.shで学ぶ：[iOS](https://roadmap.sh/ios)（Concurrency、GCD、Operation Queues、Async/Await、Memory Management、Callbacks）／[SwiftUI](https://roadmap.sh/swift-ui)（Actors、Tasks & Task Groups、Unstructured Concurrency、Strict Concurrency Checking、ARC）
 
 ## 評価を記録する
