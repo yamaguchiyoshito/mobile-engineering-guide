@@ -1,14 +1,14 @@
 # モバイルアプリ開発ガイド
 
-一般公開のGitHub Pagesで読む、iOS・Android・React Nativeアプリ開発のスキル評価とチーム改善の文書です。
+一般公開のGitHub Pagesで読む、iOS・Android・React Nativeアプリ開発の習熟度評価とチーム改善の文書です。
 
-- 4つのスキル領域、34スキル、Lv0〜Lv4の170定義。各スキルに対象プラットフォーム（共通、iOS、Android、React Native）と技術の対応表
+- 4つの技術領域、34の要素技術、Lv0〜Lv4の170定義。各要素技術に対象プラットフォーム（共通、iOS、Android、React Native）と技術の対応表
 - 25分野、100チェック項目、原文・望ましい判定・回答例
 - 評価手順、4種類の空の書式、架空の記入例
-- モバイル開発に不慣れな読み手向けの前提説明、学習の進め方、用語集。各スキルに「このスキルについて」「次のLvへ進むために」、各チェック分野に「この分野の背景」
+- モバイル開発に不慣れな読み手向けの前提説明、学習の進め方、用語集。各要素技術に「この要素技術について」「次のLvへ進むために」、各チェック分野に「この分野の背景」
 - 86ページ、日本語全文検索、単一Markdownと書式のダウンロード
 
-モバイル開発が初めての場合は [モバイルアプリ開発の前提](docs/guide/mobile-basics.md) と [学習の進め方](docs/guide/learning-paths.md) から、評価を始める場合は [ガイドの全体像](docs/guide/overview.md) から読み、[スキル定義](docs/skills/index.md)・[チームチェック](docs/checklists/index.md) を参照してください。詳細な構成は [ARCHITECTURE.md](ARCHITECTURE.md)、実行した検証は [VALIDATION.md](VALIDATION.md) に記載しています。スキル体系の出典は [出典と追加した内容](docs/maintenance/sources.md) にあります。
+モバイル開発が初めての場合は [モバイルアプリ開発の前提](docs/guide/mobile-basics.md) と [学習の進め方](docs/guide/learning-paths.md) から、評価を始める場合は [ガイドの全体像](docs/guide/overview.md) から読み、[要素技術の定義](docs/skills/index.md)・[チームチェック](docs/checklists/index.md) を参照してください。詳細な構成は [ARCHITECTURE.md](ARCHITECTURE.md)、実行した検証は [VALIDATION.md](VALIDATION.md) に記載しています。要素技術体系の出典は [出典と追加した内容](docs/maintenance/sources.md) にあります。
 
 ## ローカルで読む
 
@@ -42,7 +42,7 @@ git push origin v1.0.0
 
 **Publish GitHub Pages** がビルド・ブラウザ検証後に公開します。公開URLはActionsのdeploymentまたはSettings → Pagesに表示されます。標準URLは `https://YOUR_OWNER.github.io/mobile-engineering-guide/` です。
 
-React Native の前提スキルへの参照先（`build/document-map.json` の `frontendGuide.url` と `docs/skills/implementation/react-native.basic.md` のリンク）は、同じ所有者で公開しているフロントエンド領域のガイドを指します。別の所有者で公開する場合は、その所有者名に置き換えてください。
+React Native の前提要素技術への参照先（`build/document-map.json` の `frontendGuide.url` と `docs/skills/implementation/react-native.basic.md` のリンク）は、同じ所有者で公開しているフロントエンド領域のガイドを指します。別の所有者で公開する場合は、その所有者名に置き換えてください。
 
 GitHub Freeでは公開リポジトリからPagesを公開できます。公開サイトにログインは不要です。[公式仕様](https://docs.github.com/en/pages/getting-started-with-github-pages/what-is-github-pages)
 
@@ -59,7 +59,7 @@ npm run docs:preview
 | コマンド | 処理 |
 | :--- | :--- |
 | `docs:sync` | 文書マップから一覧ページのリンク・表を同期 |
-| `docs:check` | 86ページ、34スキル、170定義、100項目、判定、対象プラットフォーム、内部参照を検査 |
+| `docs:check` | 86ページ、34の要素技術、170定義、100項目、判定、対象プラットフォーム、内部参照を検査 |
 | `docs:downloads` | 単一Markdown、空の4書式、ZIP、生成元・SHA-256を生成 |
 | `docs:build` | 文書検査・ダウンロード生成・サイトビルド |
 | `test:site` | 生成HTMLの参照検査と、Chromiumによる表示・検索・ダウンロード確認 |
@@ -67,4 +67,4 @@ npm run docs:preview
 
 ## 構成の由来
 
-評価手順、判定ルール、記録書式、サイトの生成・公開の仕組みは、同じ形式のフロントエンド領域のガイドと共通です。スキル体系は roadmap.sh の iOS、Android、React Native、SwiftUI のロードマップを参照して構成しています。詳細は [出典と追加した内容](docs/maintenance/sources.md) を参照してください。
+評価手順、判定ルール、記録書式、サイトの生成・公開の仕組みは、同じ形式のフロントエンド領域のガイドと共通です。要素技術体系は roadmap.sh の iOS、Android、React Native、SwiftUI のロードマップを参照して構成しています。詳細は [出典と追加した内容](docs/maintenance/sources.md) を参照してください。

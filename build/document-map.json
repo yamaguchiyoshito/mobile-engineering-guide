@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "title": "モバイルアプリ開発のスキル評価・チーム改善ガイド",
+  "title": "モバイルアプリ開発の習熟度評価・チーム改善ガイド",
   "frontendGuide": {
     "title": "フロントエンド開発ガイド",
     "url": "https://github.com/yamaguchiyoshito/frontend-engineering-guide"
@@ -44,7 +44,7 @@
     },
     {
       "path": "guide/individual-assessment.md",
-      "title": "個人のスキルを評価する",
+      "title": "個人の習熟度を評価する",
       "kind": "guide",
       "handbook": true
     },
@@ -74,7 +74,7 @@
     },
     {
       "path": "skills/index.md",
-      "title": "スキル定義",
+      "title": "要素技術の定義",
       "kind": "skill-index",
       "handbook": true
     },
@@ -723,7 +723,7 @@
     },
     {
       "path": "templates/individual-assessment.md",
-      "title": "個人のスキル評価記録",
+      "title": "個人の習熟度評価記録",
       "kind": "template",
       "handbook": true
     },

@@ -1,18 +1,18 @@
 ---
 title: "React Native実装"
-description: "React Native実装の基準と使い方。モバイルアプリ開発のスキル評価・チーム改善ガイド。"
+description: "React Native実装の基準と使い方。モバイルアプリ開発の習熟度評価・チーム改善ガイド。"
 ---
 
 # React Native実装
 
-**スキルID：** `react-native.basic`  
-**スキル領域：** [フレームワーク・実装領域](index.md)  
+**要素技術ID：** `react-native.basic`  
+**技術領域：** [フレームワーク・実装領域](index.md)  
 **対象プラットフォーム：** React Native  
 **主な前提：** JavaScript、TypeScript、React（[フロントエンド開発ガイド](https://github.com/yamaguchiyoshito/frontend-engineering-guide)を参照）
 
 [習熟度の共通定義と判定方法](../../guide/individual-assessment.md)に沿って、根拠を確認します。
 
-## このスキルについて
+## この要素技術について
 
 React Nativeは、WebのReactと同じコンポーネント、props、stateの考え方で画面を組み立てながら、HTMLとCSSではなくiOSとAndroidのネイティブの画面部品を描いてアプリを作る仕組みです。そのためdivやspanの代わりにViewやTextなどのコアコンポーネントを使い、スタイルもCSSファイルではなくJavaScriptのオブジェクトで指定します。開発の進め方には、環境構築や実機での確認、ストア配布用のビルドを代行する基盤であるExpoを使う方法と、XcodeとAndroid Studioのネイティブプロジェクトを直接扱うBareの方法があります。Expoで用意されていない端末機能を使うとき、ネイティブ側のビルドエラーを調べるとき、ストア配布の設定を変えるときには、iOSとAndroidそれぞれの知識が必要になります。最初に押さえるのは、コアコンポーネントとprops／stateの関係と、同じコードでもiOSとAndroidで見た目や挙動が異なる場合があることです。
 
@@ -63,4 +63,4 @@ roadmap.shで学ぶ：[React Native](https://roadmap.sh/react-native)（Core com
 
 ## 評価を記録する
 
-[個人のスキル評価書式](../../templates/individual-assessment.md)に、現在の判定、根拠、支援と制約、次の到達条件を記録します。
+[個人の習熟度評価書式](../../templates/individual-assessment.md)に、現在の判定、根拠、支援と制約、次の到達条件を記録します。

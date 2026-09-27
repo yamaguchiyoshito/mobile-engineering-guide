@@ -5,12 +5,12 @@ import sys
 def catalog(page):
  path=page['path'];kind=page['kind'];out=[]
  if kind=='skill-index':
-  out=['| 領域 | スキル数 |','| :--- | :---: |']
+  out=['| 領域 | 要素技術数 |','| :--- | :---: |']
   for area in MAP['areas']:
    target=f'skills/{area["id"]}/index.md';count=sum(p['kind']=='skill' and p['area']==area['id'] for p in PAGES)
    out.append(f'| [{area["title"]}]({rel(path,target)}) | {count} |')
  elif kind=='area':
-  out=['| スキルID | スキル | 対象 | 評価対象・主な前提 |','| :--- | :--- | :--- | :--- |']
+  out=['| 要素技術ID | 要素技術 | 対象 | 評価対象・主な前提 |','| :--- | :--- | :--- | :--- |']
   for p in PAGES:
    if p['kind']=='skill' and p['area']==page['area']:
     text=body(p['path']);prerequisite=re.search(r'\*\*(?:評価対象|主な前提)：\*\* (.+)',text).group(1).strip()

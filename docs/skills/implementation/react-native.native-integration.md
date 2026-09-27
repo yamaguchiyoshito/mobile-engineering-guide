@@ -1,20 +1,20 @@
 ---
 title: "React Nativeのネイティブ連携"
-description: "React Nativeのネイティブ連携の基準と使い方。モバイルアプリ開発のスキル評価・チーム改善ガイド。"
+description: "React Nativeのネイティブ連携の基準と使い方。モバイルアプリ開発の習熟度評価・チーム改善ガイド。"
 ---
 
 # React Nativeのネイティブ連携
 
-**スキルID：** `react-native.native-integration`  
-**スキル領域：** [フレームワーク・実装領域](index.md)  
+**要素技術ID：** `react-native.native-integration`  
+**技術領域：** [フレームワーク・実装領域](index.md)  
 **対象プラットフォーム：** React Native  
 **主な前提：** React Native実装、SwiftまたはKotlinの基礎
 
 [習熟度の共通定義と判定方法](../../guide/individual-assessment.md)に沿って、根拠を確認します。
 
-## このスキルについて
+## この要素技術について
 
-React Nativeのアプリは、画面や処理を書くJavaScriptの層と、端末の機能を実際に動かすiOS／Androidのネイティブの層に分かれています。通知、位置情報、ディープリンクのようなOSの機能はネイティブの層を経由しないと使えず、権限の要求や設定ファイルの書き方もOSごとに異なります。このスキルは、既存のライブラリで両者をつなぐことから、足りない機能を自分でネイティブモジュールとして作ることまでを扱います。最初に押さえるのは、JavaScriptからネイティブの機能を呼び出す仕組みと、Platformモジュールや`.ios.js`／`.android.js`のファイル名でOSごとにコードを分ける方法です。
+React Nativeのアプリは、画面や処理を書くJavaScriptの層と、端末の機能を実際に動かすiOS／Androidのネイティブの層に分かれています。通知、位置情報、ディープリンクのようなOSの機能はネイティブの層を経由しないと使えず、権限の要求や設定ファイルの書き方もOSごとに異なります。この要素技術は、既存のライブラリで両者をつなぐことから、足りない機能を自分でネイティブモジュールとして作ることまでを扱います。最初に押さえるのは、JavaScriptからネイティブの機能を呼び出す仕組みと、Platformモジュールや`.ios.js`／`.android.js`のファイル名でOSごとにコードを分ける方法です。
 
 分からない用語は[用語集](../../guide/glossary.md)で確認できます。
 
@@ -62,4 +62,4 @@ roadmap.shで学ぶ：[React Native](https://roadmap.sh/react-native)（Using na
 
 ## 評価を記録する
 
-[個人のスキル評価書式](../../templates/individual-assessment.md)に、現在の判定、根拠、支援と制約、次の到達条件を記録します。
+[個人の習熟度評価書式](../../templates/individual-assessment.md)に、現在の判定、根拠、支援と制約、次の到達条件を記録します。

@@ -1,15 +1,15 @@
 ---
 title: "応用基礎領域"
-description: "応用基礎領域の基準と使い方。モバイルアプリ開発のスキル評価・チーム改善ガイド。"
+description: "応用基礎領域の基準と使い方。モバイルアプリ開発の習熟度評価・チーム改善ガイド。"
 ---
 
 # 応用基礎領域
 
-この領域に含まれる8スキルを示します。対象はプラットフォーム（共通、iOS、Android、React Native）を示します。前提知識は学習の目安であり、同じ習熟度への到達を一律に要求するものではありません。
+この領域に含まれる要素技術8件を示します。対象はプラットフォーム（共通、iOS、Android、React Native）を示します。前提知識は学習の目安であり、同じ習熟度への到達を一律に要求するものではありません。
 
 <!-- catalog:start -->
 
-| スキルID | スキル | 対象 | 評価対象・主な前提 |
+| 要素技術ID | 要素技術 | 対象 | 評価対象・主な前提 |
 | :--- | :--- | :--- | :--- |
 | `swift.concurrency` | [Swift並行処理とメモリ管理](swift.concurrency.md) | iOS | Swift |
 | `kotlin.coroutines` | [Kotlinコルーチン・Flow](kotlin.coroutines.md) | Android | Kotlin |

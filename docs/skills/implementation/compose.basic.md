@@ -1,18 +1,18 @@
 ---
 title: "Jetpack Compose"
-description: "Jetpack Composeの基準と使い方。モバイルアプリ開発のスキル評価・チーム改善ガイド。"
+description: "Jetpack Composeの基準と使い方。モバイルアプリ開発の習熟度評価・チーム改善ガイド。"
 ---
 
 # Jetpack Compose
 
-**スキルID：** `compose.basic`  
-**スキル領域：** [フレームワーク・実装領域](index.md)  
+**要素技術ID：** `compose.basic`  
+**技術領域：** [フレームワーク・実装領域](index.md)  
 **対象プラットフォーム：** Android  
 **主な前提：** Kotlin、Kotlinコルーチン
 
 [習熟度の共通定義と判定方法](../../guide/individual-assessment.md)に沿って、根拠を確認します。
 
-## このスキルについて
+## この要素技術について
 
 Jetpack Composeは、Androidアプリの画面をKotlinの関数（Composable）の組み合わせで作るGoogleの仕組みで、画面サイズや文字サイズ、ダークモードなど端末ごとに異なる表示条件にも同じコードで対応します。宣言的UIと呼ばれる方式で、「この状態のときはこう表示する」と書いておけば、状態の値を書き換えるだけで画面が描き直されます（再コンポジション）。これに対して従来のXMLレイアウトとViewによる命令的UIでは、部品を直接取り出して表示を一つずつ書き換えます。最初に押さえるのは、画面は状態から作られるという考え方と、状態を呼び出し元に持たせて表示用の関数を状態から切り離す状態ホイスティングです。
 
@@ -62,4 +62,4 @@ roadmap.shで学ぶ：[Android](https://roadmap.sh/android)（Jetpack Compose、
 
 ## 評価を記録する
 
-[個人のスキル評価書式](../../templates/individual-assessment.md)に、現在の判定、根拠、支援と制約、次の到達条件を記録します。
+[個人の習熟度評価書式](../../templates/individual-assessment.md)に、現在の判定、根拠、支援と制約、次の到達条件を記録します。

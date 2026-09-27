@@ -1,6 +1,6 @@
 ---
 title: "記録書式"
-description: "記録書式の基準と使い方。モバイルアプリ開発のスキル評価・チーム改善ガイド。"
+description: "記録書式の基準と使い方。モバイルアプリ開発の習熟度評価・チーム改善ガイド。"
 ---
 
 # 記録書式
@@ -12,7 +12,7 @@ description: "記録書式の基準と使い方。モバイルアプリ開発の
 <!-- catalog:start -->
 
 - [評価全体の対象範囲](assessment-scope.md)
-- [個人のスキル評価記録](individual-assessment.md)
+- [個人の習熟度評価記録](individual-assessment.md)
 - [チームの確認記録](team-assessment.md)
 - [改善・育成イシュー](improvement-issue.md)
 

@@ -1,11 +1,11 @@
 ---
 title: "モバイルアプリ開発の前提"
-description: "モバイルアプリ開発の前提の基準と使い方。モバイルアプリ開発のスキル評価・チーム改善ガイド。"
+description: "モバイルアプリ開発の前提の基準と使い方。モバイルアプリ開発の習熟度評価・チーム改善ガイド。"
 ---
 
 # モバイルアプリ開発の前提
 
-このページは、モバイルアプリ開発に初めて関わる人が、本書のスキル定義とチェックリストを読む前に押さえておく前提をまとめたものです。Webやサーバーの開発経験がある人が戸惑いやすい点を中心に説明します。
+このページは、モバイルアプリ開発に初めて関わる人が、本書の要素技術の定義とチェックリストを読む前に押さえておく前提をまとめたものです。Webやサーバーの開発経験がある人が戸惑いやすい点を中心に説明します。
 
 ## Webアプリとの違い
 
@@ -34,7 +34,7 @@ description: "モバイルアプリ開発の前提の基準と使い方。モバ
 | UIの作り方 | SwiftUI（宣言的）、UIKit（命令的） | Jetpack Compose（宣言的）、Views／XML（命令的） | Reactのコンポーネント。実行時にネイティブ部品を描画 |
 | 開発環境 | Xcode（macOSが必要） | Android Studio（Windows、macOS、Linux） | エディタ＋Expoまたは各ネイティブ環境 |
 | 配布先 | App Store、TestFlight | Google Play、内部テスト配布 | 両ストア |
-| 本書のスキル | Swift、Swift並行処理、SwiftUI、UIKit | Kotlin、Kotlinコルーチン・Flow、Jetpack Compose、Android Views・Fragment | React Native実装、React Nativeのネイティブ連携 |
+| 本書の要素技術 | Swift、Swift並行処理、SwiftUI、UIKit | Kotlin、Kotlinコルーチン・Flow、Jetpack Compose、Android Views・Fragment | React Native実装、React Nativeのネイティブ連携 |
 
 「宣言的UI」は、状態を書き換えると画面が自動的に追従する作り方です。「命令的UI」は、画面の部品を直接操作して更新する作り方です。近年の新規開発は宣言的UIが主流ですが、既存アプリの保守では命令的UIの知識も必要です。
 
@@ -53,6 +53,6 @@ React Nativeは、Webで使われるReactと同じコンポーネントの考え
 ## 本書の読み方
 
 1.このページで前提を確認したら、[学習の進め方](learning-paths.md)で自分のプラットフォームに沿った順序を確認します。
-2. [ガイドの目的と評価の全体像](overview.md)で、スキル領域、習熟度、チームの取り組みの区別を理解します。
-3.各スキルページの「このスキルについて」と「次のLvへ進むために」を手がかりに学習し、[個人のスキル評価](individual-assessment.md)の手順で現在地を記録します。
+2. [ガイドの目的と評価の全体像](overview.md)で、技術領域、習熟度、チームの取り組みの区別を理解します。
+3.各要素技術のページの「この要素技術について」と「次のLvへ進むために」を手がかりに学習し、[個人の習熟度評価](individual-assessment.md)の手順で現在地を記録します。
 4.分からない用語は[用語集](glossary.md)で確認します。

@@ -1,6 +1,6 @@
 ---
 title: "記入例：Swiftを学び始めた担当者の個人評価"
-description: "記入例：Swiftを学び始めた担当者の個人評価の基準と使い方。モバイルアプリ開発のスキル評価・チーム改善ガイド。"
+description: "記入例：Swiftを学び始めた担当者の個人評価の基準と使い方。モバイルアプリ開発の習熟度評価・チーム改善ガイド。"
 ---
 
 # 記入例：Swiftを学び始めた担当者の個人評価
@@ -9,7 +9,7 @@ description: "記入例：Swiftを学び始めた担当者の個人評価の基�
 
 | 項目 | 記入例 |
 | :--- | :--- |
-| 対象者・スキルID | 担当者A・`swift.basic` |
+| 対象者・要素技術ID | 担当者A・`swift.basic` |
 | 対象業務・目標Lv | 既存iOSアプリの画面修正と小さな機能追加を担当する。目標はLv2。設定理由は、レビュー担当者の支援なしで通常の修正を完了できる状態を半年以内に目指すため。 |
 | 自己評価 | Lv1 |
 | 確認後の判定 | Lv1 |
@@ -19,8 +19,8 @@ description: "記入例：Swiftを学び始めた担当者の個人評価の基�
 | 次の到達条件 | 一覧と詳細の2画面を持つ小さなアプリを、通信エラー時の表示を含めて自力で完成させる。プロトコルを使った差し替え可能な設計を1件レビューで説明できる。 |
 | 支援者・確認日・評価者 | 支援者：レビュー担当者B（週1回のペア作業）。確認日：導入から2か月目の月次確認。評価者：テックリードC。次回確認は3か月後。 |
 
-この例では、Webでの経験があっても、Swiftの型やOptionalの扱いはLv1から積み上げています。他の言語の経験を理由にLvを上げず、対象スキルの成果物と行動で確認します。同じ担当者でも[Git](../skills/foundation/git.basic.md)はLv3、[モバイルプラットフォーム基礎](../skills/foundation/mobile.basic.md)は未評価というように、スキルごとに記録が分かれます。
+この例では、Webでの経験があっても、Swiftの型やOptionalの扱いはLv1から積み上げています。他の言語の経験を理由にLvを上げず、対象の要素技術の成果物と行動で確認します。同じ担当者でも[Git](../skills/foundation/git.basic.md)はLv3、[モバイルプラットフォーム基礎](../skills/foundation/mobile.basic.md)は未評価というように、要素技術ごとに記録が分かれます。
 
 「未評価」は、証拠がないだけでLv0ではありません。この例では、モバイルプラットフォーム基礎について確認機会がまだないため未評価とし、次回確認の対象にしています。
 
-[Swift](../skills/foundation/swift.basic.md)・[学習の進め方](../guide/learning-paths.md)・[個人のスキル評価書式](../templates/individual-assessment.md)
+[Swift](../skills/foundation/swift.basic.md)・[学習の進め方](../guide/learning-paths.md)・[個人の習熟度評価書式](../templates/individual-assessment.md)

@@ -47,7 +47,7 @@ for anchor in re.findall(r'\]\(#([^)]+)\)',without_code(book)):
  assert anchor in anchors,'Broken handbook anchor: '+anchor
 filename=f'mobile-handbook-v{VERSION}.md'
 (out/'mobile-handbook.md').write_text(book);(public/filename).write_text(book)
-files=[{'name':filename,'title':'全編を読む：単一Markdown','description':'使い方・34スキル・100項目・書式・運用'}]
+files=[{'name':filename,'title':'全編を読む：単一Markdown','description':'使い方・34の要素技術・100項目・書式・運用'}]
 forms=[]
 for p in PAGES:
  if p['kind']!='template':continue

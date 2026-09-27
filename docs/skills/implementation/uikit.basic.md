@@ -1,18 +1,18 @@
 ---
 title: "UIKit"
-description: "UIKitの基準と使い方。モバイルアプリ開発のスキル評価・チーム改善ガイド。"
+description: "UIKitの基準と使い方。モバイルアプリ開発の習熟度評価・チーム改善ガイド。"
 ---
 
 # UIKit
 
-**スキルID：** `uikit.basic`  
-**スキル領域：** [フレームワーク・実装領域](index.md)  
+**要素技術ID：** `uikit.basic`  
+**技術領域：** [フレームワーク・実装領域](index.md)  
 **対象プラットフォーム：** iOS  
 **主な前提：** Swift
 
 [習熟度の共通定義と判定方法](../../guide/individual-assessment.md)に沿って、根拠を確認します。
 
-## このスキルについて
+## この要素技術について
 
 UIKitは、iPhoneやiPadのアプリの画面を、画面単位の管理役（View Controller）と、その上に置く部品（View）で組み立てるAppleの仕組みです。命令的UIと呼ばれる方式で、ボタンやラベルなどの部品を直接取り出して表示や位置を書き換えます。SwiftUIより前から使われており、既存のアプリの多くがUIKitで作られているため、保守やSwiftUIとの併用で読み書きする場面が多くあります。最初に押さえるのは、View Controllerが表示されてから消えるまでに呼ばれる処理の順序（ライフサイクル）と、部品同士の位置関係を制約（Auto Layout）で指定して画面サイズの異なる端末に対応する考え方です。
 
@@ -62,4 +62,4 @@ roadmap.shで学ぶ：[iOS](https://roadmap.sh/ios)（UIKit、View controllers�
 
 ## 評価を記録する
 
-[個人のスキル評価書式](../../templates/individual-assessment.md)に、現在の判定、根拠、支援と制約、次の到達条件を記録します。
+[個人の習熟度評価書式](../../templates/individual-assessment.md)に、現在の判定、根拠、支援と制約、次の到達条件を記録します。

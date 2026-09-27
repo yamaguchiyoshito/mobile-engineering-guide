@@ -1,18 +1,18 @@
 ---
 title: "Android Views・Fragment"
-description: "Android Views・Fragmentの基準と使い方。モバイルアプリ開発のスキル評価・チーム改善ガイド。"
+description: "Android Views・Fragmentの基準と使い方。モバイルアプリ開発の習熟度評価・チーム改善ガイド。"
 ---
 
 # Android Views・Fragment
 
-**スキルID：** `android.views`  
-**スキル領域：** [フレームワーク・実装領域](index.md)  
+**要素技術ID：** `android.views`  
+**技術領域：** [フレームワーク・実装領域](index.md)  
 **対象プラットフォーム：** Android  
 **主な前提：** Kotlin
 
 [習熟度の共通定義と判定方法](../../guide/individual-assessment.md)に沿って、根拠を確認します。
 
-## このスキルについて
+## この要素技術について
 
 Androidアプリの画面を、XMLで書いたレイアウトと、画面単位の入れ物であるActivityとFragmentで組み立てる技術で、既存のアプリの多くがこの方式で作られています。コードからボタンや文字などの部品（View）を取り出して表示や動作を直接書き換える、命令的UIと呼ばれる方式です。Androidでは画面の回転やメモリ不足をきっかけにOSが画面を作り直したり破棄したりします。最初に押さえるのはActivityとFragmentのライフサイクルと、どの時点に処理や状態を置けば失われないかという考え方です。
 
@@ -62,4 +62,4 @@ roadmap.shで学ぶ：[Android](https://roadmap.sh/android)（Activity、Fragmen
 
 ## 評価を記録する
 
-[個人のスキル評価書式](../../templates/individual-assessment.md)に、現在の判定、根拠、支援と制約、次の到達条件を記録します。
+[個人の習熟度評価書式](../../templates/individual-assessment.md)に、現在の判定、根拠、支援と制約、次の到達条件を記録します。

@@ -1,18 +1,18 @@
 ---
 title: "開発環境（Xcode／Android Studio／Expo）"
-description: "開発環境（Xcode／Android Studio／Expo）の基準と使い方。モバイルアプリ開発のスキル評価・チーム改善ガイド。"
+description: "開発環境（Xcode／Android Studio／Expo）の基準と使い方。モバイルアプリ開発の習熟度評価・チーム改善ガイド。"
 ---
 
 # 開発環境（Xcode／Android Studio／Expo）
 
-**スキルID：** `ide.basic`  
-**スキル領域：** [基礎領域](index.md)  
+**要素技術ID：** `ide.basic`  
+**技術領域：** [基礎領域](index.md)  
 **対象プラットフォーム：** 共通  
 **評価対象：** プロジェクト構成、ビルド実行、デバッガ、シミュレータ・エミュレータ
 
 [習熟度の共通定義と判定方法](../../guide/individual-assessment.md)に沿って、根拠を確認します。
 
-## このスキルについて
+## この要素技術について
 
 アプリのコードを書き、ビルドして端末で動かし、不具合を調べるための開発環境の使い方を扱います。Webであればブラウザを開けば動作を確認できますが、モバイルアプリはiOSならXcode、AndroidならAndroid Studio、React NativeならExpoなどの専用ツールでビルドし、パソコン上で端末を再現するシミュレータ・エミュレータや、接続した実機にインストールして動作を確認します。シミュレータ・エミュレータと実機では性能やカメラなどのセンサーの有無が異なるため、両方で確認する場面があります。最初に押さえるのは、プロジェクト、ターゲット（モジュール）、ビルド構成の関係と、ブレークポイントで処理を止めて変数の値を確かめるデバッガーの使い方です。
 
@@ -62,4 +62,4 @@ roadmap.shで学ぶ：[iOS](https://roadmap.sh/ios)（Xcode、Project Files、In
 
 ## 評価を記録する
 
-[個人のスキル評価書式](../../templates/individual-assessment.md)に、現在の判定、根拠、支援と制約、次の到達条件を記録します。
+[個人の習熟度評価書式](../../templates/individual-assessment.md)に、現在の判定、根拠、支援と制約、次の到達条件を記録します。
