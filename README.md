@@ -42,7 +42,7 @@ git push origin v1.0.0
 
 **Publish GitHub Pages** がビルド・ブラウザ検証後に公開します。公開URLはActionsのdeploymentまたはSettings → Pagesに表示されます。標準URLは `https://YOUR_OWNER.github.io/mobile-engineering-guide/` です。
 
-React Native の前提スキルへの参照先（`build/document-map.json` の `frontendGuide.url` と `docs/skills/implementation/react-native.basic.md` のリンク）に含まれる `YOUR_OWNER` も、フロントエンド領域のガイドを公開した所有者名に置き換えてください。
+React Native の前提スキルへの参照先（`build/document-map.json` の `frontendGuide.url` と `docs/skills/implementation/react-native.basic.md` のリンク）は、同じ所有者で公開しているフロントエンド領域のガイドを指します。別の所有者で公開する場合は、その所有者名に置き換えてください。
 
 GitHub Freeでは公開リポジトリからPagesを公開できます。公開サイトにログインは不要です。[公式仕様](https://docs.github.com/en/pages/getting-started-with-github-pages/what-is-github-pages)
 

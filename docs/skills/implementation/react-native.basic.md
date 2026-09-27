@@ -8,7 +8,7 @@ description: "React Native実装の基準と使い方。モバイルアプリ開
 **スキルID：** `react-native.basic`  
 **スキル領域：** [フレームワーク・実装領域](index.md)  
 **対象プラットフォーム：** React Native  
-**主な前提：** JavaScript、TypeScript、React（[フロントエンド開発ガイド](https://github.com/YOUR_OWNER/frontend-engineering-guide)を参照）
+**主な前提：** JavaScript、TypeScript、React（[フロントエンド開発ガイド](https://github.com/yamaguchiyoshito/frontend-engineering-guide)を参照）
 
 [習熟度の共通定義と判定方法](../../guide/individual-assessment.md)に沿って、根拠を確認します。
 
